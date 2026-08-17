@@ -1,0 +1,23 @@
+name: Feature request
+description: Suggest an improvement or additional test-lab capability
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: use_case
+    attributes:
+      label: What would you like to do?
+      description: Describe the testing scenario and why the current workflow does not cover it.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested solution
+    validations:
+      required: true
+  - type: textarea
+    id: references
+    attributes:
+      label: Useful references
+      description: Add screenshots, mission examples, or relevant game-file identifiers if available.

@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a reproducible Universal Test Lab problem
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for helping improve Universal Test Lab.
+  - type: input
+    id: version
+    attributes:
+      label: Application version
+      placeholder: v0.10.0
+    validations:
+      required: true
+  - type: input
+    id: game_version
+    attributes:
+      label: War Thunder version
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the selected aircraft, pylon loadout, map, and target where relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Select ...
+        2. Mount ...
+        3. Build and launch ...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or generated mission details
+      description: Do not include account credentials or other private information.

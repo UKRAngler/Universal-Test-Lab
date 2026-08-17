@@ -1,0 +1,12 @@
+<ID|readonly|noverify>;<english>
+;
+campaigns/UniversalTestLab;Universal Test Lab
+campaigns/UniversalTestLab/desc;One configurable War Thunder test mission.
+;
+chapters/TestDrive;Tests
+chapters/TestDrive/desc;Aircraft and weapon tests.
+;
+universal_test_lab/name;Universal Test Lab
+universal_test_lab/desc;One configurable mission for aircraft, weapons, targets and nuclear tests.
+missions/universal_test_lab/date;Custom test session
+location/Clean_Testdrive;Clean Test Range

@@ -1,0 +1,10 @@
+dist/
+*.user
+*.suo
+*.pdb
+*.tmp
+*.bak
+.vs/
+.idea/
+bin/
+obj/
