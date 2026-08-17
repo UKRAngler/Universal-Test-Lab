@@ -1961,6 +1961,7 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
     internal sealed class AboutForm : Form
     {
         private const string SupportUrl = "https://buy.stripe.com/bJe00bbHB0GH0qI655fQI00";
+        private const string ProjectUrl = "https://github.com/UKRAngler/Universal-Test-Lab";
         private const string InspirationVideoUrl = "https://youtu.be/k0_Cz1ytgrQ?si=Sa5fDdDP8CatKawM";
         private const string Ask3ladUrl = "https://www.youtube.com/@Ask3lad";
 
@@ -1996,8 +1997,9 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
             content.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 40));
             root.Controls.Add(content, 0, 2);
 
-            TableLayoutPanel info = new TableLayoutPanel { Dock = DockStyle.Fill, RowCount = 3, ColumnCount = 1, Padding = new Padding(0, 0, 18, 0) };
+            TableLayoutPanel info = new TableLayoutPanel { Dock = DockStyle.Fill, RowCount = 4, ColumnCount = 1, Padding = new Padding(0, 0, 18, 0) };
             info.RowStyles.Add(new RowStyle(SizeType.Percent, 100));
+            info.RowStyles.Add(new RowStyle(SizeType.Absolute, 44));
             info.RowStyles.Add(new RowStyle(SizeType.Absolute, 44));
             info.RowStyles.Add(new RowStyle(SizeType.Absolute, 44));
             content.Controls.Add(info, 0, 0);
@@ -2019,6 +2021,11 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
             Theme.Button(channel, false);
             channel.Click += delegate { OpenUrl(Ask3ladUrl); };
             info.Controls.Add(channel, 0, 2);
+
+            Button project = new Button { Text = "OPEN PROJECT ON GITHUB", Dock = DockStyle.Fill, Margin = new Padding(8, 3, 8, 3) };
+            Theme.Button(project, false);
+            project.Click += delegate { OpenUrl(ProjectUrl); };
+            info.Controls.Add(project, 0, 3);
 
             TableLayoutPanel support = new TableLayoutPanel { Dock = DockStyle.Fill, RowCount = 4, ColumnCount = 1, Padding = new Padding(16), BackColor = Theme.Surface };
             support.RowStyles.Add(new RowStyle(SizeType.Absolute, 34));
