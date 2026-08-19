@@ -12,18 +12,22 @@ Universal Test Lab is a Windows GUI for building hot-load War Thunder User Missi
 - Editable internal bomb bays for aircraft such as the B-52H and Tu-95M.
 - Configurable air, ground, and naval targets, including hostile air-defence systems.
 - Named custom presets stored locally on the PC.
+- The selected War Thunder folder is remembered, so the EXE can be kept anywhere.
 - Hot mission rebuilding without restarting War Thunder.
 - 100% internal fuel, 1,100 km/h air spawn, and ten-second ammunition restoration.
 
 ## Installation
 
 1. Download the latest `Universal_Test_Lab` ZIP from Releases and extract it.
-2. Run `UniversalTestLab.exe`.
-3. Check the detected War Thunder directory and select **Install Base**.
+2. Keep `UniversalTestLab.exe` in any folder and run it.
+3. Select the War Thunder root folder once, then select **Install Base**. The path is saved locally for future launches.
 4. Build a setup with **Build & Apply Mission**.
-5. Reopen War Thunder's User Missions list and launch the current **HOT UTL** mission.
+5. In War Thunder, close the **User Missions** tab/window completely and open **User Missions** again. This refreshes the generated mission.
+6. Launch the current **HOT UTL** mission.
 
 The executable is not digitally signed, so Windows SmartScreen may show a warning.
+
+Simply returning to the already-open User Missions list is not enough after regeneration; the tab must be closed and opened again.
 
 ## Important injection limitation
 
