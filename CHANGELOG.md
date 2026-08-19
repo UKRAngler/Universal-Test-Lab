@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.11.2 — 2026-08-19
+
+### Changed
+
+- Added aircraft-aware initial and respawn speeds: 700 km/h for early jets at Rank V or below and 450 km/h for propeller aircraft.
+- Modern jets keep the existing 1,100 km/h profile, while the FPV drone keeps its dedicated 100 km/h profile.
+- The application detects jet aircraft from their War Thunder unit definition, so rank alone cannot misclassify high-rank propeller aircraft as jets.
+
 ## v0.11.1 — 2026-08-19
 
 ### Fixed
