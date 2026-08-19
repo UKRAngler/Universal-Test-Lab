@@ -214,6 +214,40 @@ namespace UniversalTestLab
         }
     }
 
+    internal static class SettingsStore
+    {
+        public static string FilePath
+        {
+            get { return Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "UniversalTestLab", "game_folder.txt"); }
+        }
+
+        public static string LoadGameFolder()
+        {
+            try
+            {
+                if (!File.Exists(FilePath)) return "";
+                string path = File.ReadAllText(FilePath, Encoding.UTF8).Trim().Trim('"');
+                if (String.IsNullOrWhiteSpace(path)) return "";
+                path = Path.GetFullPath(path);
+                return File.Exists(Path.Combine(path, "aces.vromfs.bin")) ? path : "";
+            }
+            catch { return ""; }
+        }
+
+        public static void SaveGameFolder(string path)
+        {
+            try
+            {
+                if (String.IsNullOrWhiteSpace(path)) return;
+                path = Path.GetFullPath(path.Trim().Trim('"'));
+                if (!File.Exists(Path.Combine(path, "aces.vromfs.bin"))) return;
+                Directory.CreateDirectory(Path.GetDirectoryName(FilePath));
+                File.WriteAllText(FilePath, path, new UTF8Encoding(false));
+            }
+            catch { }
+        }
+    }
+
     internal sealed class BlockSpan
     {
         public int Start;
@@ -1314,12 +1348,14 @@ namespace UniversalTestLab
             string applicationFolder = AppDomain.CurrentDomain.BaseDirectory.TrimEnd(Path.DirectorySeparatorChar, Path.AltDirectorySeparatorChar);
             string[] candidates =
             {
+                SettingsStore.LoadGameFolder(),
                 applicationFolder,
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "WarThunder"),
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFilesX86), @"Steam\steamapps\common\War Thunder"),
                 Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ProgramFiles), @"War Thunder")
             };
-            foreach (string candidate in candidates) if (File.Exists(Path.Combine(candidate, "aces.vromfs.bin"))) return candidate;
+            foreach (string candidate in candidates)
+                if (!String.IsNullOrWhiteSpace(candidate) && File.Exists(Path.Combine(candidate, "aces.vromfs.bin"))) return candidate;
             return applicationFolder;
         }
 
@@ -1327,7 +1363,9 @@ namespace UniversalTestLab
         {
             string root = gameFolder.Text.Trim().Trim('"');
             if (!File.Exists(Path.Combine(root, "aces.vromfs.bin"))) throw new InvalidOperationException("The selected folder does not contain aces.vromfs.bin. Select the War Thunder root folder.");
-            return Path.GetFullPath(root);
+            root = Path.GetFullPath(root);
+            SettingsStore.SaveGameFolder(root);
+            return root;
         }
 
         private void BrowseFolder()
@@ -1336,7 +1374,11 @@ namespace UniversalTestLab
             {
                 dialog.Description = "Select the War Thunder root folder";
                 dialog.SelectedPath = Directory.Exists(gameFolder.Text) ? gameFolder.Text : "";
-                if (dialog.ShowDialog(this) == DialogResult.OK) gameFolder.Text = dialog.SelectedPath;
+                if (dialog.ShowDialog(this) == DialogResult.OK)
+                {
+                    gameFolder.Text = dialog.SelectedPath;
+                    SettingsStore.SaveGameFolder(dialog.SelectedPath);
+                }
             }
         }
 
@@ -1400,7 +1442,7 @@ namespace UniversalTestLab
             {
                 InstallBase(ValidGameRoot(), true);
                 SetStatus("Base mission and clean test range installed.", false);
-                MessageBox.Show(this, "Base mission installed. Reopen User Missions in War Thunder; no game restart is required.", "Universal Test Lab", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show(this, "Base mission installed. Close the User Missions tab in War Thunder and open it again; no game restart is required.", "Universal Test Lab", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex) { ShowError(ex); }
         }
@@ -1450,6 +1492,11 @@ namespace UniversalTestLab
                 fm = BuildDownloadedFpvVariant(quad, originalFpv);
             }
             else fm = File.ReadAllText(ExtractGameBlk(root, "gamedata/flightmodels/" + target.Id + ".blk"), Encoding.UTF8);
+            if (!HasExplicitFlightModel(fm))
+            {
+                ExtractGameBlk(root, "gamedata/flightmodels/fm/" + target.Id + ".blk");
+                EnsureExplicitFlightModel(ref fm, target.Id);
+            }
             RemoveFuelTankPresets(ref fm);
             string classId = "utl_run_" + token + "_player";
             string presetId = "utl_run_" + token + "_loadout";
@@ -1481,6 +1528,19 @@ namespace UniversalTestLab
             WriteBytes(fmOut, new UTF8Encoding(false).GetBytes(fm));
             WriteBytes(presetOut, new UTF8Encoding(false).GetBytes(loadout.ToString()));
             return new GeneratedAircraft { ClassId = classId, PresetId = presetId, FlightModelPath = fmOut, PresetPath = presetOut };
+        }
+
+        internal static bool HasExplicitFlightModel(string unitBlk)
+        {
+            return Regex.IsMatch(unitBlk ?? "", @"(?m)^\s*fmFile:t\s*=");
+        }
+
+        internal static void EnsureExplicitFlightModel(ref string unitBlk, string originalAircraftId)
+        {
+            if (HasExplicitFlightModel(unitBlk)) return;
+            if (String.IsNullOrWhiteSpace(originalAircraftId)) throw new ArgumentException("Original aircraft ID is required.", "originalAircraftId");
+            string cleanId = originalAircraftId.Trim().Replace('\\', '/').Trim('/');
+            unitBlk = "fmFile:t = \"fm/" + cleanId + ".blk\"" + Environment.NewLine + (unitBlk ?? "");
         }
 
         internal static void RemoveFuelTankPresets(ref string fm)
@@ -1694,14 +1754,17 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 if (title.Length > 150) title = title.Substring(0, 150);
                 string description = IsFpvDrone(selected)
                     ? "Player-controlled FPV strike drone with local impact detonation."
-                    : (nuclear ? "Custom hot-load aircraft with native nuclear weapons." : "Custom hot-load aircraft and pylon setup. Reopen User Missions after applying.");
+                    : (nuclear ? "Custom hot-load aircraft with native nuclear weapons." : "Custom hot-load aircraft and pylon setup.");
+                description += " Close and reopen the User Missions tab after applying.";
                 text = BlkTools.UpdateMissionLabels(text, title, description);
                 string missionDir = Path.Combine(root, MissionFolderRelative);
                 Directory.CreateDirectory(missionDir);
                 string missionPath = Path.Combine(missionDir, "universal_test_lab_hot_" + token + ".blk");
                 WriteBytes(missionPath, new UTF8Encoding(false).GetBytes(text));
                 CleanupPreviousGeneratedFiles(root, missionPath, generated);
-                SetStatus("Applied: " + selected.Display + " with " + assignments.Count + " configured stations. Reopen User Missions in War Thunder.", false);
+                string refreshInstructions = "Mission generated successfully.\r\n\r\nIn War Thunder:\r\n1. Close the User Missions tab.\r\n2. Open User Missions again to refresh the mission list.\r\n3. Launch the current HOT UTL mission.";
+                SetStatus("Mission generated. Close and reopen the User Missions tab in War Thunder to refresh it.", false);
+                MessageBox.Show(this, refreshInstructions, "Mission generated", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex) { ShowError(ex); }
         }
@@ -2177,6 +2240,15 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                     tankCleanup.IndexOf("missile.blk", StringComparison.Ordinal) < 0 ||
                     tankCleanup.Count(c => c == '{') != tankCleanup.Count(c => c == '}'))
                     throw new InvalidOperationException("Phantom fuel-tank cleanup self-test failed.");
+                string legacyAircraft = "model:t = \"cw_21\"\nweapon_presets {\n}\n";
+                MainForm.EnsureExplicitFlightModel(ref legacyAircraft, "cw_21");
+                string modernAircraft = "model:t = \"modern\"\nfmFile:t = \"fm/modern.blk\"\n";
+                MainForm.EnsureExplicitFlightModel(ref modernAircraft, "modern");
+                if (legacyAircraft.IndexOf("fmFile:t = \"fm/cw_21.blk\"", StringComparison.Ordinal) < 0 ||
+                    Regex.Matches(legacyAircraft, @"(?m)^\s*fmFile:t\s*=").Count != 1 ||
+                    Regex.Matches(modernAircraft, @"(?m)^\s*fmFile:t\s*=").Count != 1 ||
+                    modernAircraft.IndexOf("fm/modern.blk", StringComparison.Ordinal) < 0)
+                    throw new InvalidOperationException("Legacy aircraft flight-model reference self-test failed.");
                 string samSource = "bullet {\nbulletName:t=\"us_iris_t_sl\"\nbulletType:t=\"sam_tank\"\nrocket {\nmass:r=155\nmesh:t=\"iris_t_sl_rocket\"\nshellAnimChar:t=\"iris_t_sl_rocket_deployed_char\"\nguidance {\nuncageBeforeLaunch:b=true\n}\n}\n}";
                 string samAdapter = MainForm.BuildGroundSamAdapter(samSource, "us_iris_t_sl");
                 if (samAdapter.IndexOf("rocketGun:b = true", StringComparison.Ordinal) < 0 ||
@@ -2201,7 +2273,7 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                     fpv.IndexOf("mass:r = 2.6", StringComparison.Ordinal) < 0 ||
                     fpv.Count(c => c == '{') != fpv.Count(c => c == '}'))
                     throw new InvalidOperationException("Downloaded FPV compatibility self-test failed.");
-                Console.WriteLine("SELFTEST OK aircraft={0} weapons={1} native-nuclear=yes fpv-impact=yes clean-menu=yes f2-injected=yes pods=yes ground-sam=yes", LinesForTest("UTL.aircraft.tsv"), LinesForTest("UTL.weapon_catalog.tsv"));
+                Console.WriteLine("SELFTEST OK aircraft={0} weapons={1} native-nuclear=yes fpv-impact=yes clean-menu=yes f2-injected=yes pods=yes ground-sam=yes legacy-fm=yes", LinesForTest("UTL.aircraft.tsv"), LinesForTest("UTL.weapon_catalog.tsv"));
                 return;
             }
             Application.EnableVisualStyles();
