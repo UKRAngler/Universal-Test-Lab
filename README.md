@@ -14,7 +14,8 @@ Universal Test Lab is a Windows GUI for building hot-load War Thunder User Missi
 - Named custom presets stored locally on the PC.
 - The selected War Thunder folder is remembered, so the EXE can be kept anywhere.
 - Hot mission rebuilding without restarting War Thunder.
-- 100% internal fuel, 1,100 km/h air spawn, and ten-second ammunition restoration.
+- 100% internal fuel and adaptive initial/respawn speeds: 1,100 km/h for modern jets, 700 km/h for early jets (Rank V or below), 450 km/h for propeller aircraft, and 100 km/h for the FPV drone.
+- Ten-second ammunition restoration.
 
 ## Installation
 

@@ -119,6 +119,7 @@ namespace UniversalTestLab
         public string PresetId;
         public string FlightModelPath;
         public string PresetPath;
+        public int SpawnSpeedKmh;
     }
 
     internal sealed class SavedPresetEntry
@@ -1056,7 +1057,7 @@ namespace UniversalTestLab
             shipTargetBox = TargetRowCombo(shipTargets.Cast<object>().ToList());
             shipCount = CountBox(1);
             grid.Controls.Add(ComboAndCount(shipTargetBox, shipCount), 0, 8);
-            Label details = Theme.Label("FLIGHT PROFILE\r\n• 100% internal fuel\r\n• 1,100 km/h initial spawn and respawn\r\n• FPV drone uses a safe 100 km/h spawn\r\n• Ammunition restore every 10 seconds\r\n• No external fuel tanks unless mounted\r\n\r\nHOSTILE makes the selected ground unit actively engage you.\r\n☢ Nuclear weapons use their native in-game detonation.", false);
+            Label details = Theme.Label("FLIGHT PROFILE\r\n• 100% internal fuel\r\n• 1,100 km/h for modern jets\r\n• 700 km/h for early jets (Rank V or below)\r\n• 450 km/h for propeller aircraft\r\n• FPV drone uses a safe 100 km/h spawn\r\n• Ammunition restore every 10 seconds\r\n• No external fuel tanks unless mounted\r\n\r\nHOSTILE makes the selected ground unit actively engage you.\r\n☢ Nuclear weapons use their native in-game detonation.", false);
             details.Padding = new Padding(4, 12, 4, 4);
             grid.Controls.Add(details, 0, 9);
             Label hint = Theme.Label("Apply creates a new hot-load mission. Reopen User Missions in War Thunder; no game restart is required.", false);
@@ -1183,6 +1184,32 @@ namespace UniversalTestLab
         private static bool IsFpvDrone(Aircraft item)
         {
             return item != null && item.Id.Equals("uav_inf_fpv_strike_drone", StringComparison.OrdinalIgnoreCase);
+        }
+
+        internal static bool LooksLikeJetAircraft(string unitBlk)
+        {
+            string text = unitBlk ?? "";
+            return Regex.IsMatch(text, @"(?i)(jet_(?:fighter|bomber)_metaparts|armor_jet_engine|(?:standard|afterburner|start)ExhaustFxType:t\s*=\s*""jet_)");
+        }
+
+        internal static int ResolveSpawnSpeed(Aircraft item, string unitBlk)
+        {
+            if (IsFpvDrone(item)) return 100;
+            if (LooksLikeJetAircraft(unitBlk))
+                return item != null && item.Rank > 0 && item.Rank <= 5 ? 700 : 1100;
+            return 450;
+        }
+
+        internal static string ApplyPlayerSpawnSpeed(string mission, int speedKmh)
+        {
+            if (String.IsNullOrEmpty(mission)) throw new ArgumentException("Mission text is required.", "mission");
+            if (speedKmh <= 0) throw new ArgumentOutOfRangeException("speedKmh");
+            Regex marker = new Regex(@"(?m)^(\s*)speed:r=1100\s*$");
+            if (!marker.IsMatch(mission)) throw new InvalidOperationException("Player spawn-speed markers are missing from the mission template.");
+            return marker.Replace(mission, delegate(Match match)
+            {
+                return match.Groups[1].Value + "speed:r=" + speedKmh.ToString(CultureInfo.InvariantCulture);
+            });
         }
 
         private void BuildPylonStrip()
@@ -1492,6 +1519,7 @@ namespace UniversalTestLab
                 fm = BuildDownloadedFpvVariant(quad, originalFpv);
             }
             else fm = File.ReadAllText(ExtractGameBlk(root, "gamedata/flightmodels/" + target.Id + ".blk"), Encoding.UTF8);
+            int spawnSpeedKmh = ResolveSpawnSpeed(target, fm);
             if (!HasExplicitFlightModel(fm))
             {
                 ExtractGameBlk(root, "gamedata/flightmodels/fm/" + target.Id + ".blk");
@@ -1527,7 +1555,7 @@ namespace UniversalTestLab
             string presetOut = Path.Combine(root, @"content\pkg_user\gameData\flightModels\weaponPresets", presetId + ".blk");
             WriteBytes(fmOut, new UTF8Encoding(false).GetBytes(fm));
             WriteBytes(presetOut, new UTF8Encoding(false).GetBytes(loadout.ToString()));
-            return new GeneratedAircraft { ClassId = classId, PresetId = presetId, FlightModelPath = fmOut, PresetPath = presetOut };
+            return new GeneratedAircraft { ClassId = classId, PresetId = presetId, FlightModelPath = fmOut, PresetPath = presetOut, SpawnSpeedKmh = spawnSpeedKmh };
         }
 
         internal static bool HasExplicitFlightModel(string unitBlk)
@@ -1740,7 +1768,7 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 string text = Embedded.Text("UTL.universal_test_lab.blk");
                 text = BlkTools.DisablePlayerSwitch(text);
                 text = BlkTools.RemoveBotNotifications(text);
-                if (IsFpvDrone(selected)) text = text.Replace("speed:r=1100", "speed:r=100");
+                text = ApplyPlayerSpawnSpeed(text, generated.SpawnSpeedKmh);
                 text = BlkTools.UpdateUnit(text, "You", generated.ClassId, generated.PresetId, 1);
                 text = BlkTools.UpdateUnit(text, "Target_Air_02", air.Id, air.DefaultPreset, (int)airCount.Value);
                 text = BlkTools.UpdateUnit(text, "Target_03", ground.Id, ground.DefaultPreset, (int)groundCount.Value);
@@ -2249,6 +2277,19 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                     Regex.Matches(modernAircraft, @"(?m)^\s*fmFile:t\s*=").Count != 1 ||
                     modernAircraft.IndexOf("fm/modern.blk", StringComparison.Ordinal) < 0)
                     throw new InvalidOperationException("Legacy aircraft flight-model reference self-test failed.");
+                Aircraft propAircraft = new Aircraft { Id = "cw_21", Rank = 1 };
+                Aircraft earlyJet = new Aircraft { Id = "f-80", Rank = 5 };
+                Aircraft modernJet = new Aircraft { Id = "ef_2000_typhoon_aesa", Rank = 9 };
+                string jetDefinition = "MetaPartsBlk:t = \"gameData/FlightModels/dm/metaparts/jet_fighter_metaparts.blk\"\nstandardExhaustFxType:t = \"jet_exhaust\"\n";
+                if (MainForm.ResolveSpawnSpeed(propAircraft, legacyAircraft) != 450 ||
+                    MainForm.ResolveSpawnSpeed(earlyJet, jetDefinition) != 700 ||
+                    MainForm.ResolveSpawnSpeed(modernJet, jetDefinition) != 1100 ||
+                    MainForm.ResolveSpawnSpeed(new Aircraft { Id = "uav_inf_fpv_strike_drone", Rank = 8 }, jetDefinition) != 100)
+                    throw new InvalidOperationException("Aircraft spawn-speed profile self-test failed.");
+                string earlyJetMission = MainForm.ApplyPlayerSpawnSpeed(Embedded.Text("UTL.universal_test_lab.blk"), 700);
+                if (earlyJetMission.IndexOf("speed:r=1100", StringComparison.Ordinal) >= 0 ||
+                    Regex.Matches(earlyJetMission, @"(?m)^\s*speed:r=700\s*$").Count != 4)
+                    throw new InvalidOperationException("Mission spawn-speed replacement self-test failed.");
                 string samSource = "bullet {\nbulletName:t=\"us_iris_t_sl\"\nbulletType:t=\"sam_tank\"\nrocket {\nmass:r=155\nmesh:t=\"iris_t_sl_rocket\"\nshellAnimChar:t=\"iris_t_sl_rocket_deployed_char\"\nguidance {\nuncageBeforeLaunch:b=true\n}\n}\n}";
                 string samAdapter = MainForm.BuildGroundSamAdapter(samSource, "us_iris_t_sl");
                 if (samAdapter.IndexOf("rocketGun:b = true", StringComparison.Ordinal) < 0 ||
@@ -2273,7 +2314,7 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                     fpv.IndexOf("mass:r = 2.6", StringComparison.Ordinal) < 0 ||
                     fpv.Count(c => c == '{') != fpv.Count(c => c == '}'))
                     throw new InvalidOperationException("Downloaded FPV compatibility self-test failed.");
-                Console.WriteLine("SELFTEST OK aircraft={0} weapons={1} native-nuclear=yes fpv-impact=yes clean-menu=yes f2-injected=yes pods=yes ground-sam=yes legacy-fm=yes", LinesForTest("UTL.aircraft.tsv"), LinesForTest("UTL.weapon_catalog.tsv"));
+                Console.WriteLine("SELFTEST OK aircraft={0} weapons={1} native-nuclear=yes fpv-impact=yes clean-menu=yes f2-injected=yes pods=yes ground-sam=yes legacy-fm=yes adaptive-spawn=yes", LinesForTest("UTL.aircraft.tsv"), LinesForTest("UTL.weapon_catalog.tsv"));
                 return;
             }
             Application.EnableVisualStyles();
