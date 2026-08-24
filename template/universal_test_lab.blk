@@ -16,6 +16,8 @@ mission_settings{
     level:t="levels/Clean_Testdrive.bin"
     environment:t="Day"
     weather:t="clear"
+    isLimitedFuel:b=false
+    isLimitedAmmo:b=false
     locName:t="Universal Test Lab - starter"
     locDesc:t="Select a configuration in UniversalTestLab.exe."
     name:t="universal_test_lab"
@@ -1139,8 +1141,8 @@ triggers{
   }
 
   "Player Ammo Reload 10s"{
-    is_enabled:b=yes
-    comments:t=""
+    is_enabled:b=no
+    comments:t="Disabled: timed unitRestore resets optics and active seekers; generated missions use noAmmo instead"
 
     props{
       actionsType:t="PERFORM_ONE_BY_ONE"

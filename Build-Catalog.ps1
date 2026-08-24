@@ -26,6 +26,65 @@ function Clean-DisplayName([string]$value) {
   return ((Clean-Field $value) -replace '^[^A-Za-z0-9]+', '').Trim()
 }
 
+function Get-VehicleDisplayName([string]$id) {
+  if ($id -eq 'us_m1a2_sep3_abrams') { return 'M1A2 SEP V3' }
+  foreach ($suffix in @('_shop', '_1', '_0')) {
+    $key = $id + $suffix
+    if ($unitNames.ContainsKey($key) -and -not [string]::IsNullOrWhiteSpace($unitNames[$key])) {
+      return Clean-DisplayName $unitNames[$key]
+    }
+  }
+  return Clean-DisplayName ($id -replace '_', ' ')
+}
+
+function Format-ProjectileName([string]$value) {
+  $name = Clean-Field $value
+  $name = [regex]::Replace($name, '(?i)\b(\d+(?:\.\d+)?)\s*mm\b', '$1 mm')
+  $name = [regex]::Replace($name, '(?i)\b([A-Z]*\d+)A(\d+)\b', '$1A$2')
+  $name = [regex]::Replace($name, '(?i)\bXM(\d+)\b', 'XM$1')
+  $name = [regex]::Replace($name, '(?i)\bAPDS[ _-]*FS\b', 'APFSDS')
+  $name = [regex]::Replace($name, '(?i)\bHEAT[ _-]*FS\b', 'HEAT-FS')
+  $name = [regex]::Replace($name, '(?i)\bHE[ _-]*OR\b', 'HE-OR')
+  return $name
+}
+
+function Friendly-ProjectileType([string]$value) {
+  $kind = (Clean-Field $value).ToLowerInvariant()
+  if ($kind -match 'apds[_-]?fs|apfsds') { return 'APFSDS' }
+  if ($kind -match 'apds') { return 'APDS' }
+  if ($kind -match 'apcbc') { return 'APCBC' }
+  if ($kind -match 'aphe') { return 'APHE' }
+  if ($kind -match 'heat.*(vt|mp)') { return 'HEAT-MP-T' }
+  if ($kind -match 'heat') { return 'HEAT-FS' }
+  if ($kind -match 'atgm|guided') { return 'ATGM' }
+  if ($kind -match 'hesh') { return 'HESH' }
+  if ($kind -match 'shrapnel') { return 'Shrapnel' }
+  if ($kind -match 'smoke') { return 'Smoke' }
+  if ($kind -match 'dist|proximity|radio') { return 'HE-FRAG (proximity fuse)' }
+  if ($kind -match 'he_frag') { return 'HE-FRAG' }
+  if ($kind -match 'he_or') { return 'HE-OR' }
+  if ($kind -match 'he') { return 'HE' }
+  if ($kind -match 'sap') { return 'SAP' }
+  if ($kind -match 'ap') { return 'AP' }
+  return [Globalization.CultureInfo]::InvariantCulture.TextInfo.ToTitleCase(($kind -replace '[_-]+', ' '))
+}
+
+function Get-GroundModificationTier([string]$id, [string]$text) {
+  $known = @{
+    'new_tank_tracks' = 1; 'tank_tool_kit' = 1; 'new_tank_horizontal_aiming' = 1
+    'new_tank_suspension' = 2; 'new_tank_brakes' = 2; 'manual_extinguisher' = 2; 'tank_new_gun' = 2
+    'new_tank_filter' = 3; 'tank_medical_kit' = 3; 'new_tank_vertical_aiming' = 3; 'tank_engine_smoke_screen_system' = 3
+    'new_tank_transmission' = 4; 'new_tank_engine' = 4; 'art_support' = 4; 'night_vision_system' = 4
+  }
+  if ($known.ContainsKey($id)) { return [int]$known[$id] }
+  $tierMatch = [regex]::Match($text, '(?m)^\s*tier:i\s*=\s*(-?\d+)')
+  if ($tierMatch.Success) { return [Math]::Max(1, [int]$tierMatch.Groups[1].Value + 1) }
+  if ($id -match '(?i)ammo_pack$') { return 1 }
+  if ($id -match '(?i)laser_rangefinder|rangefinder|lws') { return 4 }
+  if ($id -match '(?i)protection|armor|armour') { return 3 }
+  return 0
+}
+
 function Load-EnglishNames([string]$path) {
   $map = @{}
   foreach ($line in [IO.File]::ReadLines($path)) {
@@ -76,8 +135,54 @@ function Get-NamedBlocks([string]$text, [string]$name) {
 
 function Get-PresetPairs([string]$text, [string]$pathNeedle) {
   $escaped = [regex]::Escape($pathNeedle)
-  $pattern = '(?s)preset\s*\{\s*name:t\s*=\s*"([^"]+)"\s*blk:t\s*=\s*"' + $escaped + '([^"]+)\.blk"'
+  # Some helicopter definitions use gameData/flightModels while aircraft use
+  # gameData/FlightModels. BLK paths are case-insensitive in the game.
+  $pattern = '(?is)preset\s*\{\s*name:t\s*=\s*"([^"]+)"\s*blk:t\s*=\s*"' + $escaped + '([^"]+)\.blk"'
   return [regex]::Matches($text, $pattern)
+}
+
+function Get-DirectChildBlocks([string]$containerText) {
+  $results = New-Object System.Collections.Generic.List[object]
+  $open = $containerText.IndexOf('{')
+  $end = $containerText.LastIndexOf('}')
+  if ($open -lt 0 -or $end -le $open) { return $results }
+  $cursor = $open + 1
+  while ($cursor -lt $end) {
+    $match = [regex]::Match($containerText.Substring($cursor, $end - $cursor), '(?m)^\s*"?([A-Za-z0-9_\-]+)"?\s*\{')
+    if (-not $match.Success) { break }
+    $start = $cursor + $match.Index
+    $childOpen = $containerText.IndexOf('{', $start)
+    if ($childOpen -lt 0 -or $childOpen -ge $end) { break }
+    $depth = 0
+    $quoted = $false
+    $escaped = $false
+    $childEnd = -1
+    for ($i = $childOpen; $i -lt $end; $i++) {
+      $c = $containerText[$i]
+      if ($quoted) {
+        if ($escaped) { $escaped = $false; continue }
+        if ($c -eq '\') { $escaped = $true; continue }
+        if ($c -eq '"') { $quoted = $false }
+        continue
+      }
+      if ($c -eq '"') { $quoted = $true; continue }
+      if ($c -eq '{') { $depth++ }
+      elseif ($c -eq '}') {
+        $depth--
+        if ($depth -eq 0) { $childEnd = $i; break }
+      }
+    }
+    if ($childEnd -lt 0) { break }
+    $results.Add([pscustomobject]@{
+      Name = $match.Groups[1].Value
+      Start = $start
+      Open = $childOpen
+      End = $childEnd
+      Text = $containerText.Substring($start, $childEnd - $start + 1)
+    })
+    $cursor = $childEnd + 1
+  }
+  return $results
 }
 
 function Get-PresetSummary([string]$presetPath) {
@@ -161,6 +266,7 @@ function Get-WeaponCategory([string]$trigger, [string]$icon, [string]$name, [str
 }
 
 $weaponNames = Load-EnglishNames (Join-Path $LangRoot 'units_weaponry.csv')
+$modificationNames = Load-EnglishNames (Join-Path $LangRoot 'units_modifications.csv')
 $weaponMetaCache = @{}
 function Get-WeaponMeta([string]$blk, [string]$trigger, [string]$icon, [int]$bullets) {
   $cacheKey = "$blk|$trigger|$icon|$bullets"
@@ -204,6 +310,9 @@ $slotRows = New-Object System.Collections.Generic.List[string]
 $donorRows = New-Object System.Collections.Generic.List[string]
 $aircraftSlotRows = New-Object System.Collections.Generic.List[string]
 $weaponCatalogRows = New-Object System.Collections.Generic.List[string]
+$modificationRows = New-Object System.Collections.Generic.List[string]
+$groundAmmoRows = New-Object System.Collections.Generic.List[string]
+$groundAmmoSeen = @{}
 $weaponCatalogSeen = @{}
 $playable = @{}
 
@@ -227,8 +336,34 @@ foreach ($file in (Get-ChildItem -LiteralPath $FlightModelsRoot -File -Filter '*
   $rank = if ($null -ne $shop) { $shop.Rank } else { 0 }
   $maxloadMatch = [regex]::Match($text, '(?m)^\s*maxloadMass:r\s*=\s*([0-9.]+)')
   $maxload = if ($maxloadMatch.Success) { $maxloadMatch.Groups[1].Value } else { '0' }
-  $aircraftRows.Add("$id`t$display`t$type`t$defaultName`t$nation`t$rank`t$maxload")
+  $kind = if ($text -match '(?i)hellicopters_metaparts|(?m)^\s*helicopter\s*\{') { 'Helicopter' } else { 'Aircraft' }
+  $aircraftRows.Add("$id`t$display`t$type`t$defaultName`t$nation`t$rank`t$maxload`t$kind")
   $playable[$id] = [pscustomobject]@{ Display = $display; Text = $text }
+
+  $modifications = Get-NamedBlocks $text 'modifications' | Select-Object -First 1
+  if ($null -ne $modifications) {
+    foreach ($mod in (Get-DirectChildBlocks $modifications.Text)) {
+      $modId = $mod.Name
+      $displayKey = 'modification/' + $modId
+      $uncheckedKey = $displayKey + '_unchecked'
+      $modDisplay = if ($modificationNames.ContainsKey($displayKey)) {
+        Clean-Field $modificationNames[$displayKey]
+      } elseif ($modificationNames.ContainsKey($uncheckedKey)) {
+        Clean-Field $modificationNames[$uncheckedKey]
+      } else {
+        Clean-Field ([Globalization.CultureInfo]::InvariantCulture.TextInfo.ToTitleCase(($modId -replace '_', ' ')))
+      }
+      $tierMatch = [regex]::Match($mod.Text, '(?m)^\s*tier:i\s*=\s*(-?\d+)')
+      $classMatch = [regex]::Match($mod.Text, '(?m)^\s*modClass:t\s*=\s*"([^"]+)"')
+      $groupMatch = [regex]::Match($mod.Text, '(?m)^\s*group:t\s*=\s*"([^"]+)"')
+      $requireMatches = [regex]::Matches($mod.Text, '(?m)^\s*(?:reqModification|prevModification):t\s*=\s*"([^"]+)"')
+      $tier = if ($tierMatch.Success) { $tierMatch.Groups[1].Value } else { '0' }
+      $class = if ($classMatch.Success) { $classMatch.Groups[1].Value } else { '' }
+      $group = if ($groupMatch.Success) { $groupMatch.Groups[1].Value } else { '' }
+      $requires = Clean-Field (($requireMatches | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique) -join '|')
+      $modificationRows.Add("$id`t$modId`t$modDisplay`t$tier`t$class`t$group`t$requires")
+    }
+  }
 
   foreach ($pair in $pairs) {
     $presetName = $pair.Groups[1].Value
@@ -251,9 +386,20 @@ $fpvId = 'uav_inf_fpv_strike_drone'
 $fpvPath = Join-Path $FlightModelsRoot ($fpvId + '.blk')
 if ((Test-Path -LiteralPath $fpvPath) -and -not $playable.ContainsKey($fpvId)) {
   $fpvText = [IO.File]::ReadAllText($fpvPath)
-  $aircraftRows.Add("$fpvId`tFPV Strike Drone`ttypeFighter`tuav_inf_fpv_strike_drone_common`tInternational`t8`t0")
+  $aircraftRows.Add("$fpvId`tFPV Strike Drone`ttypeFighter`tuav_inf_fpv_strike_drone_common`tInternational`t8`t0`tDrone")
   $presetRows.Add("$fpvId`tuav_inf_fpv_strike_drone_common`tBuilt-in 2.6 kg HEAT warhead")
   $playable[$fpvId] = [pscustomobject]@{ Display = 'FPV Strike Drone'; Text = $fpvText }
+}
+
+# Event flight model shipped by the game. It has no research-tree preset; the
+# application writes an empty hot-load preset for it when the mission is built.
+$v1Id = 'fau-1'
+$v1Path = Join-Path $FlightModelsRoot ($v1Id + '.blk')
+if ((Test-Path -LiteralPath $v1Path) -and -not $playable.ContainsKey($v1Id)) {
+  $v1Text = [IO.File]::ReadAllText($v1Path)
+  $aircraftRows.Add("$v1Id`tV-1 (Fi 103)`ttypeTransport`tfau-1_default`tEvent / Experimental`t0`t0`tDrone")
+  $presetRows.Add("$v1Id`tfau-1_default`tBuilt-in event warhead")
+  $playable[$v1Id] = [pscustomobject]@{ Display = 'V-1 (Fi 103)'; Text = $v1Text }
 }
 
 foreach ($id in ($playable.Keys | Sort-Object)) {
@@ -364,16 +510,110 @@ foreach ($group in ($samCandidates | Group-Object Bullet | Sort-Object Name)) {
   }
 }
 
-function Build-TargetCatalog([string]$directory, [string]$presetPathNeedle, [string]$outputName) {
+function Add-GroundModifications([string]$id, [string]$text) {
+  $mods = Get-NamedBlocks $text 'modifications' | Select-Object -First 1
+  if ($null -eq $mods) { return }
+  foreach ($mod in (Get-DirectChildBlocks $mods.Text)) {
+    if ($mod.Name -match '(?i)_expendable$') { continue }
+    $tier = Get-GroundModificationTier $mod.Name $mod.Text
+    # Empty projectile-selector blocks are weapon configuration, not research modules.
+    if ($tier -le 0 -and $mod.Name -notmatch '(?i)ammo_pack$' -and $mod.Text -notmatch '(?m)^\s*(?:effects|disableModEffects)\s*\{') { continue }
+    $displayKey = 'modification/' + $mod.Name
+    $uncheckedKey = $displayKey + '_unchecked'
+    $display = if ($modificationNames.ContainsKey($displayKey)) {
+      Format-ProjectileName $modificationNames[$displayKey]
+    } elseif ($modificationNames.ContainsKey($uncheckedKey)) {
+      Format-ProjectileName $modificationNames[$uncheckedKey]
+    } else {
+      Format-ProjectileName ([Globalization.CultureInfo]::InvariantCulture.TextInfo.ToTitleCase(($mod.Name -replace '_', ' ')))
+    }
+    $classMatch = [regex]::Match($mod.Text, '(?m)^\s*modClass:t\s*=\s*"([^"]+)"')
+    $groupMatch = [regex]::Match($mod.Text, '(?m)^\s*group:t\s*=\s*"([^"]+)"')
+    $requireMatches = [regex]::Matches($mod.Text, '(?m)^\s*(?:reqModification|prevModification):t\s*=\s*"([^"]+)"')
+    $class = if ($classMatch.Success) { $classMatch.Groups[1].Value } else { '' }
+    $group = if ($groupMatch.Success) { $groupMatch.Groups[1].Value } else { '' }
+    $requires = Clean-Field (($requireMatches | ForEach-Object { $_.Groups[1].Value } | Select-Object -Unique) -join '|')
+    $modificationRows.Add("$id`t$($mod.Name)`t$display`t$tier`t$class`t$group`t$requires")
+  }
+}
+
+function Build-GroundAmmoCatalog {
+  foreach ($file in (Get-ChildItem -LiteralPath (Join-Path $WeaponsRoot 'groundmodels_weapons') -File -Filter '*user_*.blk' | Sort-Object Name)) {
+    $source = 'gameData/Weapons/groundModels_weapons/' + $file.Name
+    $text = [IO.File]::ReadAllText($file.FullName)
+    foreach ($bullet in (Get-NamedBlocks $text 'bullet')) {
+      $nameMatch = [regex]::Match($bullet.Text, '(?m)^\s*bulletName:t\s*=\s*"([^"]+)"')
+      if (-not $nameMatch.Success) { continue }
+      $bulletName = $nameMatch.Groups[1].Value
+      $key = "$source|$bulletName"
+      if ($groundAmmoSeen.ContainsKey($key)) { continue }
+      $groundAmmoSeen[$key] = $true
+      $displayKey = 'weapons/' + $bulletName
+      $display = if ($weaponNames.ContainsKey($displayKey)) { Format-ProjectileName $weaponNames[$displayKey] } else { Format-ProjectileName ([Globalization.CultureInfo]::InvariantCulture.TextInfo.ToTitleCase(($bulletName -replace '_', ' '))) }
+      $massMatch = [regex]::Match($bullet.Text, '(?m)^\s*mass:r\s*=\s*([0-9.eE+-]+)')
+      $speedMatch = [regex]::Match($bullet.Text, '(?m)^\s*speed:r\s*=\s*([0-9.eE+-]+)')
+      $explosiveMatch = [regex]::Match($bullet.Text, '(?m)^\s*explosiveMass:r\s*=\s*([0-9.eE+-]+)')
+      $caliberMatch = [regex]::Match($bullet.Text, '(?m)^\s*caliber:r\s*=\s*([0-9.eE+-]+)')
+      $typeMatch = [regex]::Match($bullet.Text, '(?m)^\s*bulletType:t\s*=\s*"([^"]+)"')
+      $penetrationMatch = [regex]::Match($bullet.Text, '(?mi)^\s*(?:armorPower:r|ArmorPower0m:p2)\s*=\s*([0-9.eE+-]+)')
+      $mass = if ($massMatch.Success) { $massMatch.Groups[1].Value } else { '0' }
+      $speed = if ($speedMatch.Success) { $speedMatch.Groups[1].Value } else { '0' }
+      $explosive = if ($explosiveMatch.Success) { $explosiveMatch.Groups[1].Value } else { '0' }
+      $caliber = if ($caliberMatch.Success) { $caliberMatch.Groups[1].Value } else { '0' }
+      $kind = if ($typeMatch.Success) { Friendly-ProjectileType $typeMatch.Groups[1].Value } else { 'Projectile' }
+      $penetration = if ($penetrationMatch.Success) { $penetrationMatch.Groups[1].Value } else { '0' }
+      $groundAmmoRows.Add("$source`t$bulletName`t$display`t$kind`t$mass`t$speed`t$explosive`t$caliber`t$penetration")
+    }
+  }
+}
+
+function Build-TargetCatalog([string]$directory, [string]$presetPathNeedle, [string]$outputName, [bool]$includeGroundDetails = $false) {
   $rows = New-Object System.Collections.Generic.List[string]
   foreach ($file in (Get-ChildItem -LiteralPath $directory -File -Filter '*.blk' | Sort-Object Name)) {
     $id = [IO.Path]::GetFileNameWithoutExtension($file.Name)
     $key = $id + '_0'
-    if (-not $unitNames.ContainsKey($key)) { continue }
+    if (-not $unitNames.ContainsKey($key) -and -not $unitNames.ContainsKey($id + '_shop')) { continue }
     $text = [IO.File]::ReadAllText($file.FullName)
     $pairs = Get-PresetPairs $text $presetPathNeedle
     $preset = if ($pairs.Count -gt 0) { $pairs[0].Groups[1].Value } else { $id + '_default' }
-    $rows.Add("$id`t$(Clean-DisplayName $unitNames[$key])`t$preset")
+    $shop = if ($shopMetadata.ContainsKey($id)) { $shopMetadata[$id] } else { $null }
+    $isEventVehicle = $includeGroundDetails -and ($id -match '(?i)_event$|ladungstrager|goliath')
+    $nation = if ($isEventVehicle) { 'Event / Experimental' } elseif ($null -ne $shop) { Nation-Name $shop.Country } elseif ($includeGroundDetails) { 'Event / Experimental' } else { 'Other' }
+    $rank = if ($null -ne $shop) { $shop.Rank } else { 0 }
+    $typeMatch = [regex]::Match($text, '(?m)^\s*type:t\s*=\s*"([^"]+)"')
+    $type = if ($typeMatch.Success) { Clean-Field $typeMatch.Groups[1].Value } else { $(if ($includeGroundDetails) { 'Ground Vehicle' } else { 'Ship' }) }
+    $mainCannon = ''
+    $maxAmmo = 0; $nativeReload = 0; $nativeRecoil = 0
+    if ($includeGroundDetails) {
+      foreach ($weapon in (Get-NamedBlocks $text 'Weapon')) {
+        if ($weapon.Text -notmatch '(?m)^\s*trigger:t\s*=\s*"gunner0"') { continue }
+        $blkMatch = [regex]::Match($weapon.Text, '(?m)^\s*blk:t\s*=\s*"([^"]+)"')
+        if ($blkMatch.Success) {
+          $mainCannon = $blkMatch.Groups[1].Value
+          $ammoMatch = [regex]::Match($weapon.Text, '(?m)^\s*bullets:i\s*=\s*(\d+)')
+          $freqMatch = [regex]::Match($weapon.Text, '(?m)^\s*shotFreq:r\s*=\s*([0-9.eE+-]+)')
+          $recoilMatch = [regex]::Match($weapon.Text, '(?m)^\s*recoilOffset:r\s*=\s*([0-9.eE+-]+)')
+          if ($ammoMatch.Success) { $maxAmmo = [int]$ammoMatch.Groups[1].Value }
+          if ($freqMatch.Success -and [double]$freqMatch.Groups[1].Value -gt 0) { $nativeReload = 1.0 / [double]$freqMatch.Groups[1].Value }
+          if ($recoilMatch.Success) { $nativeRecoil = [double]$recoilMatch.Groups[1].Value }
+          break
+        }
+      }
+      Add-GroundModifications $id $text
+    }
+    $row = "$id`t$(Get-VehicleDisplayName $id)`t$preset`t$nation`t$rank`t$type"
+    if ($includeGroundDetails) {
+      $massMatch = [regex]::Match($text, '(?m)^\s*mass:r\s*=\s*([0-9.eE+-]+)')
+      $forwardMatch = [regex]::Match($text, '(?m)^\s*maxFwdSpeed:r\s*=\s*([0-9.eE+-]+)')
+      $reverseMatch = [regex]::Match($text, '(?m)^\s*maxRevSpeed:r\s*=\s*([0-9.eE+-]+)')
+      $powerMatch = [regex]::Match($text, '(?m)^\s*horsePowers:r\s*=\s*([0-9.eE+-]+)')
+      $nativeMass = if ($massMatch.Success) { $massMatch.Groups[1].Value } else { '0' }
+      $nativeForward = if ($forwardMatch.Success) { $forwardMatch.Groups[1].Value } else { '0' }
+      $nativeReverse = if ($reverseMatch.Success) { $reverseMatch.Groups[1].Value } else { '0' }
+      $nativePower = if ($powerMatch.Success) { $powerMatch.Groups[1].Value } else { '0' }
+      $row += "`t$mainCannon`t$maxAmmo`t$nativeMass`t$nativePower`t$nativeForward`t$nativeReverse`t$($nativeReload.ToString('0.######', [Globalization.CultureInfo]::InvariantCulture))`t$($nativeRecoil.ToString('0.######', [Globalization.CultureInfo]::InvariantCulture))"
+    }
+    $rows.Add($row)
   }
   [IO.File]::WriteAllLines((Join-Path $OutputRoot $outputName), $rows, [Text.UTF8Encoding]::new($false))
 }
@@ -384,8 +624,11 @@ function Build-TargetCatalog([string]$directory, [string]$presetPathNeedle, [str
 [IO.File]::WriteAllLines((Join-Path $OutputRoot 'donor_weapons.tsv'), $donorRows, [Text.UTF8Encoding]::new($false))
 [IO.File]::WriteAllLines((Join-Path $OutputRoot 'aircraft_slots.tsv'), $aircraftSlotRows, [Text.UTF8Encoding]::new($false))
 [IO.File]::WriteAllLines((Join-Path $OutputRoot 'weapon_catalog.tsv'), ($weaponCatalogRows | Sort-Object { ($_ -split "`t")[5] }, { [double](($_ -split "`t")[7]) }, { ($_ -split "`t")[4] }), [Text.UTF8Encoding]::new($false))
-Build-TargetCatalog (Join-Path $UnitsRoot 'tankmodels') 'gameData/units/tankModels/weaponPresets/' 'ground.tsv'
-Build-TargetCatalog (Join-Path $UnitsRoot 'ships') 'gameData/units/ships/weaponPresets/' 'ships.tsv'
+Build-TargetCatalog (Join-Path $UnitsRoot 'tankmodels') 'gameData/units/tankModels/weaponPresets/' 'ground.tsv' $true
+Build-TargetCatalog (Join-Path $UnitsRoot 'ships') 'gameData/units/ships/weaponPresets/' 'ships.tsv' $false
+Build-GroundAmmoCatalog
+[IO.File]::WriteAllLines((Join-Path $OutputRoot 'modifications.tsv'), ($modificationRows | Sort-Object { ($_ -split "`t")[0] }, { [int](($_ -split "`t")[3]) }, { ($_ -split "`t")[2] }), [Text.UTF8Encoding]::new($false))
+[IO.File]::WriteAllLines((Join-Path $OutputRoot 'ground_ammo.tsv'), ($groundAmmoRows | Sort-Object { ($_ -split "`t")[3] }, { ($_ -split "`t")[2] }, { ($_ -split "`t")[1] }), [Text.UTF8Encoding]::new($false))
 
 $nuclearRows = @(
   "nt_su_24m`tSu-24M — RN-40 (30 kt)`tnt_su_24m_rn_40",
@@ -399,4 +642,4 @@ $nuclearRows = @(
 )
 [IO.File]::WriteAllLines((Join-Path $OutputRoot 'nuclear.tsv'), $nuclearRows, [Text.UTF8Encoding]::new($false))
 
-Write-Output "Aircraft=$($aircraftRows.Count) Presets=$($presetRows.Count) Slots=$($slotRows.Count) Pylons=$($aircraftSlotRows.Count) DonorMounts=$($donorRows.Count) Weapons=$($weaponCatalogRows.Count)"
+Write-Output "Aircraft=$($aircraftRows.Count) Presets=$($presetRows.Count) Slots=$($slotRows.Count) Pylons=$($aircraftSlotRows.Count) DonorMounts=$($donorRows.Count) Weapons=$($weaponCatalogRows.Count) Modifications=$($modificationRows.Count)"

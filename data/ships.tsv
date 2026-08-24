@@ -1,616 +1,623 @@
-fr_adroit_class	Adroit-class, L'Intrépide (P630)	torpedoes
-fr_arras_class_amiens	Arras-class, Amiens	arras_class_amiens_default
-fr_arras_class_arras	Arras-class, Arras	arras_class_arras_default
-fr_battleship_bretagne_class_bretagne	Bretagne-class, Bretagne, 1925	fr_battleship_bretagne_class_bretagne_torpedoes
-fr_battleship_bretagne_class_lorraine	Bretagne-class, Lorraine, 1944	fr_battleship_bretagne_class_lorraine_default
-fr_battleship_courbet_class_courbet	Courbet-class, Courbet, 1920	fr_battleship_courbet_class_courbet_torpedoes
-fr_battleship_courbet_class_paris	Courbet-class, Paris, 1939	fr_battleship_courbet_class_paris_default
-fr_battleship_dunkerque	Dunkerque-class, Dunkerque, 1939	fr_battleship_dunkerque_default
-fr_battleship_richelieu_class_clemenceau	Richelieu-class, Clemenceau, project	fr_battleship_richelieu_class_jean_bart_default
-fr_battleship_richelieu_class_jean_bart	Richelieu-class, Jean Bart, 1955	fr_battleship_richelieu_class_jean_bart_default
-fr_battleship_richelieu_class_richelieu	Richelieu-class, Richelieu, 1943	fr_battleship_richelieu_class_richelieu_default
-fr_battleship_strasbourg	Dunkerque-class, Strasbourg, 1942	fr_battleship_strasbourg_default
-fr_cruiser_chateaurenault_class_guichen	Chateaurenault-class, Guichen (D607), 1957	torpedoes
-fr_cruiser_dugauy_class_dugauy_trouin	Duguay-Trouin-class, Duguay-Trouin, 1944	it_cruiser_zara_class_default
-fr_cruiser_dugauy_class_primaguet	Duguay-Trouin-class, Primauguet, 1940	torpedoes
-fr_cruiser_emile_bertin	Emile Bertin-class, Emile Bertin, 1942	fr_cruiser_emile_bertin_torpedoes
-fr_cruiser_jeanne_darc	Jeanne d'Arc-class, Jeanne d'Arc, 1944	fr_cruiser_jeanne_darc_default
-fr_cruiser_la_galissoniere_class_gloire	La Galissonnière-class, Gloire, 1947	torpedoes
-fr_cruiser_la_galissoniere_class_la_galissoniere	La Galissonnière-class, La Galissonnière, 1941	torpedoes
-fr_cruiser_suffren_class_colbert	Suffren-class, Colbert, 1942	fr_cruiser_suffren_class_colbert_torpedoes
-fr_cruiser_suffren_class_dupleix	Suffren-class, Dupleix, 1942	fr_cruiser_suffren_class_dupleix_torpedoes
-fr_cruiser_suffren_class_suffren	Suffren-class, Suffren, 1945	fr_cruiser_suffren_class_suffren_default
-fr_destroyer_aigle_class_aigle	Aigle-class (C), Aigle, 1942	torpedoes
-fr_destroyer_aigle_class_milan	Aigle-class (D), Milan, 1942	fr_destroyer_aigle_class_milan_torpedoes
-fr_destroyer_aigle_class_vautour	Aigle-class (C), Vautour, 1931	fr_destroyer_aigle_class_vautour_torpedoes
-fr_destroyer_bourrasque_class_bourrasque	Bourrasque-class, Bourrasque, 1939	fr_destroyer_bourrasque_class_bourrasque_torpedoes
-fr_destroyer_bourrasque_class_tornade	Bourrasque-class, Tornade, 1939	fr_destroyer_bourrasque_class_tornade_torpedoes
-fr_destroyer_desaix_class_kleber	Desaix-class, Kleber (D603), 1952	torpedoes
-fr_destroyer_guepard_class_verdun	Guepard-class, Verdun, 1941	torpedoes
-fr_destroyer_hunt_3series	Hunt-class, La Combattante, 1944	torpedoes
-fr_destroyer_jaguar_class_chacal	Jaguar-class, Chacal, 1938	torpedoes
-fr_destroyer_jaguar_class_leopard	Jaguar-class, Leopard, 1942	fr_destroyer_jaguar_class_leopard_torpedoes
-fr_destroyer_jaguar_class_panthere	Jaguar-class, Panthere, 1940	fr_destroyer_jaguar_class_panthere_torpedoes
-fr_destroyer_le_fantasque_class_le_malin	Le Fantasque-class, Le Malin, 1943	fr_destroyer_le_fantasque_class_le_malin_torpedoes
-fr_destroyer_le_fantasque_class_le_triomphant	Le Fantasque-class, Le Triomphant, 1942	torpedoes
-fr_destroyer_marceau_class_marceau	Type 1936A (Mob)-class, Marceau, 1950	fr_destroyer_marceau_class_marceau_torpedoes
-fr_destroyer_mogador_class_mogador	Mogador-class, Mogador, 1940	torpedoes
-fr_destroyer_vauquelin_class_vauquelin	Vauquelin-class, Vauquelin, 1941	torpedoes
-fr_elan_class_commandant_domine	Elan-class, Commandant Dominé	depth_charges
-fr_flower_class_aconit	Flower-class, Aconit (K58)	bomb_mortar
-fr_frigate_corse_class_brestois	Corse-class, Le Brestois (F762)	torpedoes
-fr_frigate_corse_class_corse	Le Corse-class, Le Corse (F761)	torpedoes
-fr_frigate_croix_de_lorraine_class_la_surprise	Croix de Lorraine-class, La Surprise (F08)	stern_depth_charges
-fr_lcg_m_l9059	Landing Craft, Gun (Medium), L9059	lcg_m_l9059_default
-fr_marne_class_aisne	Marne-class, Aisne	fr_marne_class_aisne_default
-fr_marne_class_marne	Marne-class, Marne	fr_marne_class_marne_default
-fr_mtb96_vosper	MTB Vosper 3 series, MTB-96	torpedoes
-fr_p730_combattante	La Combattante (P730)	p730_combattante_default
-fr_trident_class_glaive_p671	Trident-class, Glaive (P671)	trident_class_glaive_p671_default
-fr_type40k_vedette	Vedette 40k, VTB-19	torpedoes
-fr_vlt1	40k-class, VLT-1	torpedoes
-fr_vlt2	40k-class, VLT-2	torpedoes
-fr_vtb10	VTB-10	torpedoes
-fr_vtb11	VTB-11	torpedoes
-fr_vtb12_mod	VTB-12	torpedoes
-fr_vtb13	VTB-13	fr_vtb13_default
-fr_vtb14	VTB-14	torpedoes
-fr_vtb18	VTB-18	torpedoes
-fr_vtb8	VTB-8	torpedoes
-fr_vtb9	VTB-9	torpedoes
-germ_artilleriefahrprahm_typ_d1	D1-class, AF D1	germ_artilleriefahrprahm_typ_d1_default
-germ_artilleriefahrprahm_typ_d3	D3-class, AF D3	germ_artilleriefahrprahm_typ_d3_default
-germ_battlecruiser_derfflinger	Derfflinger-class, SMS Derfflinger, 1916	germ_battlecruiser_derfflinger_torpedoes
-germ_battlecruiser_ersatz_yorck	Ersatz Yorck-class, Ersatz Yorck, project	torpedoes
-germ_battlecruiser_mackensen_class	Mackensen-class, Mackensen, project	torpedoes
-germ_battlecruiser_von_der_tann	SMS Von der Tann, 1914	torpedoes
-germ_battleship_baden	Bayern-class, SMS Baden, 1918	torpedoes
-germ_battleship_bayern	Bayern-class, SMS Bayern, 1916	torpedoes
-germ_battleship_bismarck	Bismarck-class, Bismarck, 1941	germ_battleship_bismarck_default
-germ_battleship_gneisenau_380mm	Scharnhorst-class, Gneisenau, project	torpedoes
-germ_battleship_helgoland	Helgoland-class, SMS Helgoland, 1911	torpedoes
-germ_battleship_kaiser	Kaiser-class, SMS Kaiser, 1911	torpedoes
-germ_battleship_konig	König-class, SMS König, 1916	germ_battleship_konig_torpedoes
-germ_battleship_nassau	Nassau-class, SMS Nassau, 1910	torpedoes
-germ_battleship_ostfriesland	Helgoland-class, SMS Ostfriesland, 1911	germ_battleship_ostfriesland_torpedoes
-germ_battleship_sachsen	Bayern-class, SMS Sachsen, project	torpedoes
-germ_battleship_scharnhorst	Scharnhorst-class, Scharnhorst, 1943	torpedoes
-germ_battleship_westfalen	Nassau-class, SMS Westfalen, 1916	germ_battleship_westfalen_default
-germ_cargo_ship_goldenfels_ec	Cargo ship	germ_cargo_ship_goldenfels_default
-germ_cargo_ship_goldenfels	Cargo ship	germ_cargo_ship_goldenfels_default
-germ_cruiser_admiral_graf_spee	Deutschland-class, Admiral Graf Spee, 1939	torpedoes
-germ_cruiser_admiral_hipper	Admiral Hipper-class, Admiral Hipper, 1942	torpedoes
-germ_cruiser_admiral_scheer	Deutschland-class, Admiral Scheer, 1945	torpedoes
-germ_cruiser_elbing	Pillau-class, SMS Elbing, 1915	germ_cruiser_elbing_torpedoes
-germ_cruiser_emden_1944_ec	Emden, 1944	torpedoes
-germ_cruiser_emden_1944	Emden, 1944	torpedoes
-germ_cruiser_karlsruhe	K-class, Karlsruhe, 1940	torpedoes
-germ_cruiser_koln_ec	K-class, Köln, 1940	torpedoes
-germ_cruiser_koln	K-class, Köln, 1940	torpedoes
-germ_cruiser_leipzig	Leipzig-class, Leipzig, 1944	germ_cruiser_leipzig_default
-germ_cruiser_nurnberg_ec	Nürnberg-class, Nürnberg, 1944	torpedoes
-germ_cruiser_nurnberg	Leipzig-class, Nürnberg, 1944	torpedoes
-germ_cruiser_prinz_eugen	Admiral Hipper-class, Prinz Eugen, 1945	torpedoes
-germ_destroyer_class1924_iltis	Raubtier-class, Luchs, 1932	torpedoes
-germ_destroyer_class1924_jaguar1941	Raubtier-class, Jaguar, 1941	torpedoes
-germ_destroyer_class1924_leopard1932_ec	Type 1924 Leopard, modernization of 1932	torpedoes
-germ_destroyer_class1924_leopard1932	Raubtier-class, Leopard, 1932	torpedoes
-germ_destroyer_class1934a_1940_ec	Type 1934A-class, Z12 Erich Giese, 1940	torpedoes
-germ_destroyer_class1934a_1940	Type 1934A-class, Z12 Erich Giese, 1940	torpedoes
-germ_destroyer_class1934a_1944	Type 1934A-class, Z15 Erich Steinbrinck, project	torpedoes
-germ_destroyer_class1936_z20_ec	Destroyer	torpedoes
-germ_destroyer_class1936_z20_karlgalster	Type 1936-class, Z20 Karl Galster, 1945	torpedoes
-germ_destroyer_class1936_z20_tutorial	Destroyer	torpedoes
-germ_destroyer_class1936_z20	Type 1936-class, Z22 Anton Schmitt, 1940	torpedoes
-germ_destroyer_class1936a_mob_z32	Type 1936A (Mob)-class, Z32, 1942	torpedoes
-germ_destroyer_class1936a_z25	Type 1936A, Z25, 1945	torpedoes
-germ_destroyer_class1936b	Type 1936B, Z43, 1944	torpedoes
-germ_destroyer_class1936c_z46	Type 1936C, Z46, project	germ_destroyer_class1936c_z46_torpedoes
-germ_destroyer_class1936c_z47	Type 1936C, Z47, project	torpedoes
-germ_destroyer_class1939_t22_ec	Type 1939-class, T22, 1944	torpedoes
-germ_destroyer_class1939_t22	Type 1939-class, T22, 1944	torpedoes
-germ_destroyer_class1939_t31	Type 1939, T31, 1944	torpedoes
-germ_destroyer_class1942_z51	Type 1942, Z51, project	torpedoes
-germ_destroyer_class1944_z52	Type 1944, Z52, project	torpedoes
-germ_destroyer_fletcher_zerstorer4	Z1-class, Z4 Zerstörer (D 178), 1960	torpedoes
-germ_destroyer_lutjens_class_lutjens	Lütjens-class, Lütjens (D185), 1969	torpedoes
-germ_escort_typem1935	M-class, M-17	bomb_mortar
-germ_escort_typem1943	M-class, M-802	torpedoes
-germ_frigate_koln_lubeck	Köln-class, Lübeck (F224)	torpedoes
-germ_frigate_koln	Köln-class, Köln F220	torpedoes
-germ_kanonenboot_k2	K class, K2, 1941	germ_kanonenboot_k2_default
-germ_kanonenboot_k4_lorelei	K4-class, Lorelei, 1944	germ_kanonenboot_k4_lorelei_default
-germ_km5	KM-5	torpedoes
-germ_kondor2_class	Project 89.2, Bernau	kondor2_class_default
-germ_ls_class	LS 3	torpedoes
-germ_ls4_class	LS 4 Esau	torpedoes
-germ_minelayer_drache	R-1-class, Drache	bomb_mortar
-germ_mz_1	MZ1	torpedoes
-germ_pr_131	Pr.131.400 Libelle, V-990	torpedoes
-germ_pr1331	KSS-3.Ranges Pr.1331, Parchim	torpedoes
-germ_rboot_r130	R-130-class, R-130	germ_rboot_r130_default
-germ_rboot_r301	R-301-class, R-301	torpedoes
-germ_rboot_r41	R-41-class, R-41	germ_rboot_r41_default
-germ_rdm242	Krischan der Große	germ_rdm242_default
-germ_s_100_class	S-100-class, S-100	torpedoes
-germ_s_100_s_174_class	S-100-class, S-147	torpedoes
-germ_s_100_s204_lang	S-100-class, S204 Lang	torpedoes
-germ_s_700_s_701	S-700-class, S-701	germ_s_700_s_701_torpedoes
-germ_s30_s61	S-30-class, S-61	torpedoes
-germ_s38	S-38	torpedoes
-germ_s38b	S-38b	torpedoes
-germ_schutze_class	Schütze-class, Schütze (M1062)	schutze_class_default
-germ_sf40_leichte_flakkampffaehre	Siebelfähre 40 Light	germ_sf40_leichte_flakkampffaehre_default
-germ_sf40_schwere_flakkampffaehre	Siebelfähre 40 Heavy	germ_sf40_schwere_flakkampffaehre_default
-germ_skr_pr50_karl_marx	Pr.50, Karl Marx	torpedoes
-germ_type140_jaguar	Jaguar-class, Jaguar (140)	torpedoes
-germ_type143_albatros	Albatros-class, Albatros (143)	torpedoes
-germ_type143_bussard	Albatros-class, Bussard (143)	torpedoes
-germ_type152_hugin	152-class, Hugin (P6191)	torpedoes
-germ_type153_pfeil	153-class, Pfeil (P6193)	torpedoes
-germ_vs10_hydrofoil	VS-10	torpedoes
-germ_vs8_hydrofoil	VS-8 Schell I	emc_mines
-giftbox	Present	giftbox_default
-it_alano_9851	Alano-class, Alano (L9851)	it_alano_9851_default
-it_albatros_class_f543	Albatros-class, Albatros F543	it_albatros_class_f543_bomb_mortars
-it_albatros_class_f544	Albatros-class, Alcione F544	bomb_mortars
-it_battleship_andrea_doria	Duilio-class, RN Andrea Doria, 1930	torpedoes
-it_battleship_caio_duilio	Duilio-class, RN Duilio, 1942	it_battleship_caio_duilio_default
-it_battleship_conte_di_cavour	Conte di Cavour-class, RN Conte di Cavour, project	it_battleship_conte_di_cavour_default
-it_battleship_dante_alighieri	RN Dante Alighieri, 1923	it_battleship_dante_alighieri_default
-it_battleship_francesco_caracciolo	RN Francesco Caracciolo, project	it_battleship_francesco_caracciolo_default
-it_battleship_leonardo_da_vinci	Conte di Cavour-class, RN Leonardo da Vinci, 1915	torpedoes
-it_battleship_littorio_class_littorio	Littorio-class, RN Italia, 1943	it_battleship_littorio_class_littorio_default
-it_battleship_littorio_class_roma	Littorio-class, RN Roma, 1943	it_battleship_littorio_class_roma_default
-it_cassiopea_p401	Cassiopea-class, Cassiopea P401	depth_charges
-it_ciclone_class_ghibli	Ciclone-class, RN Ghibli	torpedoes
-it_cruiser_bartolomeocolleoni_1940	Alberto da Giussano-class, RN Bartolomeo Colleoni, 1932	torpedoes
-it_cruiser_bolzano	Trento-class, RN Bolzano, 1937	torpedoes
-it_cruiser_cadorna_class_cadorna	Luigi Cadorna-class, RN Luigi Cadorna, 1944	it_cruiser_cadorna_class_cadorna_default
-it_cruiser_cadorna_class_diaz	Luigi Cadorna-class, RN Armando Diaz, 1938	torpedoes
-it_cruiser_capitani_romani_class_attilio_regolo_ec	Capitani Romani-class, RN Attilio Regolo, 1942	torpedoes
-it_cruiser_capitani_romani_class_attilio_regolo	Capitani Romani-class, RN Attilio Regolo, 1942	torpedoes
-it_cruiser_etna_class	Etna-class, RN Etna, project	it_cruiser_etna_class_default
-it_cruiser_eugenio_di_savoia	Duca d’Aosta-class, RN Eugenio di Savoia, 1943	torpedoes
-it_cruiser_garibaldi_class_abruzzi	Duca degli Abruzzi-class, RN Duca degli Abruzzi, 1944	torpedoes
-it_cruiser_montecuccoli_ec	Raimondo Montecuccoli-class, RN Raimondo Montecuccoli, 1943	it_cruiser_montecuccoli_torpedoes
-it_cruiser_montecuccoli	Raimondo Montecuccoli-class, RN Raimondo Montecuccoli, 1943	it_cruiser_montecuccoli_torpedoes
-it_cruiser_trento_ec	Trento-class, RN Trento, 1942	torpedoes
-it_cruiser_trento	Trento-class, RN Trento, 1942	torpedoes
-it_cruiser_zara_class_ec	Zara-class, RN Zara, 1941	it_cruiser_zara_class_default
-it_cruiser_zara_class_pola	Zara-class, RN Pola, 1941	it_cruiser_zara_class_default
-it_cruiser_zara_class	Zara-class, RN Zara, 1941	it_cruiser_zara_class_default
-it_destroyer_aquilone	Turbine-class, RN Aquilone, 1939	torpedoes
-it_destroyer_comandanti_medaglie_doro	Comandanti Medaglie d'Oro-class, RN Comandante Margottini, project	torpedoes
-it_destroyer_dardo	Dardo-class, RN Dardo, 1935	torpedoes
-it_destroyer_fletcher_geniere	Fante-class, Geniere (D 555), 1972	it_destroyer_fletcher_geniere_torpedoes
-it_destroyer_impetuoso_class_impetuoso	Indomito class, Impetuoso (D 558), 1958	torpedoes
-it_destroyer_leone_class_tigre	Leone-class, RN Tigre, 1934	torpedoes
-it_destroyer_leone_class	Leone-class, RN Leone, 1938	torpedoes
-it_destroyer_maestrale_class_grecale	Maestrale-class, Grecale, 1949	torpedoes
-it_destroyer_navigatori_class_verazzano	Navigatori-class, RN Giovanni da Verazzano, 1940	torpedoes
-it_destroyer_oriani_class_gioberti	Alfredo Oriani-class, RN Vincenzo Gioberti, 1942	torpedoes
-it_destroyer_saetta	Dardo-class, RN Saetta, 1942	torpedoes
-it_destroyer_soldati_serie1_camicianera	Soldati-class, RN Corazziere, 1943	torpedoes
-it_destroyer_soldati_serie1_geniere	Soldati-class, RN Geniere, 1942	torpedoes
-it_destroyer_soldati_serie1	Soldati-class, RN Aviere, 1940	torpedoes
-it_destroyer_turbine	Turbine-class, RN Turbine, 1927	torpedoes
-it_destroyer_vifor_class_aquila	Aquila-class, RN Aquila,1917	torpedoes
-it_gabbiano_class_c16	Gabbiano-class, Folaga, 1953	torpedoes
-it_gabbiano_class	Gabbiano-class, RN Gabbiano, 1942	torpedoes
-it_mas_classe429	Velocissimo Classe 427, MAS 429	it_mas_classe429_default
-it_mas_classe500_3_1944	Velocissimo Classe 500, MAS 561	torpedoes
-it_mas_classe500_3	Velocissimo Classe 500, MAS 555	torpedoes
-it_mas_classe500_4	Velocissimo Classe 500, MAS 569	torpedoes
-it_mas_stefano_turr	Mototorpediniera, Stefano Turr	torpedoes
-it_mas441	MAS 441	depth_charges
-it_mc_485	S 26-class, MC 485	torpedoes
-it_mc490_folgore	Sperimentale CRDA, MC-490	torpedoes
-it_mc492_baleno	MC-491, Baleno MC-492	torpedoes
-it_ms15_1a	CRDA 60t(1a), MS-15	torpedoes
-it_ms444	MS 444	torpedoes
-it_ms471_1a	CRDA 60t (1a), MV-611	it_ms471_1a_default
-it_ms473_2a_art	CRDA 60t Convertibile, MS-473	depth_charges
-it_ms473_2a	CRDA 60t Convertible, MS-472	torpedoes
-it_ms53_2a	CRDA 60t (2a), MS-53	torpedoes
-it_p420_sparviero	Sparviero-class, Sparviero (P 420)	it_p420_sparviero_default
-it_p493_freccia	MC 590, Freccia P-493	it_p493_freccia_default
-it_p494_saetta	MC 590, Saetta P-494	it_p494_saetta_default
-it_vas_baglietto_68t_1serie	Baglietto 68t, VAS 201	torpedoes
-jp_abtei_pr1	Soukou-Tei, Sakigake	jp_abtei_pr1_default
-jp_abtei_pr4	Soukou-Tei, Soukou-Tei No.4	jp_abtei_pr4_default
-jp_aircraftcarrier_shokaku	Shokaku-class,IJN Shokaku	jp_aircraftcarrier_shokaku_default
-jp_armoredcruiser_ikoma	Tsukuba-class, IJN Ikoma, 1912	torpedoes
-jp_armoredcruiser_kurama	Kurama-class, IJN Kurama, 1920	torpedoes
-jp_battlecruiser_amagi	Amagi-class, IJN Amagi, project	torpedoes
-jp_battlecruiser_haruna	Kongo-class, IJN Haruna, 1945	jp_battlecruiser_haruna_default
-jp_battlecruiser_hiei	Kongo-class, IJN Hiei, 1926	torpedoes
-jp_battlecruiser_kirishima	Kongo-class, IJN Kirishima, 1942	jp_battlecruiser_kirishima_default
-jp_battlecruiser_kongo	Kongo-class, IJN Kongo, 1944	jp_battlecruiser_kongo_default
-jp_battleship_fuso	Fuso-class, IJN Fuso, 1944	jp_battleship_fuso_default
-jp_battleship_hyuga	Ise-class, IJN Hyuga, 1920	torpedoes
-jp_battleship_ise	Ise-class, IJN Ise, 1941	jp_battleship_ise_default
-jp_battleship_musashi	Yamato-class, IJN Musashi, 1943	jp_battleship_musashi_default
-jp_battleship_mutsu	Nagato-class, IJN Mutsu, 1922	torpedoes
-jp_battleship_nagato	Nagato-class, IJN Nagato, 1944	jp_battleship_nagato_default
-jp_battleship_settsu	Kawachi-class, IJN Settsu, 1920	torpedoes
-jp_battleship_tosa	Tosa-class, IJN Tosa, project	torpedoes
-jp_battleship_yamashiro	Fuso-class, IJN Yamashiro, 1920	torpedoes
-jp_battleship_yamato	Yamato-class, IJN Yamato, 1945	jp_battleship_yamato_default
-jp_cargo_ship_kashino_ec	Cargo ship	jp_cargo_ship_kashino_default
-jp_cargo_ship_kashino	Cargo ship	jp_cargo_ship_kashino_default
-jp_cruiser_agano_ec	Agano-class, IJN Agano, 1944	torpedoes
-jp_cruiser_agano	Agano-class, IJN Agano, 1944	torpedoes
-jp_cruiser_aoba	Aoba-class, IJN Aoba, 1945	torpedoes
-jp_cruiser_furutaka_ec	Furutaka-class, IJN Furutaka, 1942	torpedoes
-jp_cruiser_furutaka	Furutaka-class, IJN Furutaka, 1942	torpedoes
-jp_cruiser_haguro	Myoko-class, IJN Haguro, 1944	torpedoes
-jp_cruiser_isuzu	Nagara-class, IJN Isuzu, 1944	torpedoes
-jp_cruiser_kako_ec	Furutaka-class, IJN Kako, (1935)	torpedoes
-jp_cruiser_kako	Furutaka-class, IJN Kako, (1935)	torpedoes
-jp_cruiser_kuma_ec	Kuma class (1941)	torpedoes
-jp_cruiser_kuma	Kuma-class, IJN Tama, 1942	torpedoes
-jp_cruiser_mogami_mikuma	Mogami-class, IJN Mikuma, 1939	torpedoes
-jp_cruiser_mogami_suzuya	Mogami-class, IJN Suzuya, 1937	torpedoes
-jp_cruiser_mogami	Mogami-class, IJN Mogami, 1940	torpedoes
-jp_cruiser_myoko	Myoko-class, IJN Myoko, 1944	jp_cruiser_myoko_default
-jp_cruiser_oyodo	Oyodo-class, IJN Oyodo, 1944	jp_cruiser_oyodo_default
-jp_cruiser_sendai	Sendai-class, IJN Sendai, 1942	torpedoes
-jp_cruiser_tone	Tone-class, IJN Tone (1945)	torpedoes
-jp_cruiser_yubari	Yubari-class, IJN Yubari, 1944	torpedoes
-jp_daihatsu_landing_craft	Daihatsu-class landing craft	jp_daihatsu_landing_craft_default
-jp_destroyer_akizuki_ec	Akizuki-class, IJN Akizuki, 1944	torpedoes
-jp_destroyer_akizuki	Akizuki-class, IJN Akizuki, 1944	torpedoes
-jp_destroyer_ayanami	Ayanami-class, JDS Ayanami (DD-103)	torpedoes
-jp_destroyer_chidori	Chidori-class, Chidori	torpedoes
-jp_destroyer_fubuki_ec	Fubuki class, 2 group, Ayanami (1936)	torpedoes
-jp_destroyer_fubuki	Fubuki class, IJN Ayanami, 1936	torpedoes
-jp_destroyer_harukaze	Harukaze-class, JDS Harukaze (DD 101), 1956	hedgehog_mortar
-jp_destroyer_hatsuharu	Hatsuharu-class, IJN Hatsuharu, 1933	torpedoes
-jp_destroyer_hatsuzuki	Akizuki-class, IJN Hatsuzuki, 1942	torpedoes
-jp_destroyer_hayanami	Yugumo-class, IJN Hayanami, 1943	torpedoes
-jp_destroyer_isuzu	Isuzu-class, Isuzu (DE-211)	torpedoes
-jp_destroyer_kagero	Kagero-class, IJN Kagero, 1943	torpedoes
-jp_destroyer_kiyoshimo	Yugumo-class, IJN Kiyoshimo, 1944	torpedoes
-jp_destroyer_matsu	Matsu-class, IJN Matsu, 1944	torpedoes
-jp_destroyer_momi	Momi class, IJN Momi, 1930	torpedoes
-jp_destroyer_murasame	Murasame-class, JDS Murasame (DD-107), 1976	torpedoes
-jp_destroyer_mutsuki_ec	Mutsuki class (1941)	torpedoes
-jp_destroyer_mutsuki	Mutsuki-class, IJN Mutsuki, 1941	torpedoes
-jp_destroyer_nenohi	Hatsuharu-class, IJN Nenohi, 1942	torpedoes
-jp_destroyer_satsuki	Mutsuki-class, IJN Satsuki, 1935	torpedoes
-jp_destroyer_shimakaze	Shimakaze-class, IJN Shimakaze, 1944	torpedoes
-jp_destroyer_suzutsuki	Akizuki-class, IJN Suzutsuki, 1945	torpedoes
-jp_destroyer_tade	Momi class, IJN Tade, 1930	torpedoes
-jp_destroyer_yugumo_ec	Yugumo-class, IJN Yugumo, 1942	torpedoes
-jp_destroyer_yugumo	Yugumo-class, IJN Yugumo, 1942	torpedoes
-jp_destroyer_yugure	Fletcher-class, JDS Yūgure (DD-184), 1960	mk6_bomb_mortar
-jp_destroyer_yukikaze	Kagero-class, IJN Yukikaze, 1945	torpedoes
-jp_destroyer_yuudachi	Shiratsuyu-class, IJN Yuudachi, 1942	torpedoes
-jp_escort_akebono_class	Akebono-class, Akebono (DE-201)	jp_escort_akebono_class_default
-jp_escort_chikugo_class	Chikugo-class, Chikugo (DE-215)	torpedoes
-jp_escort_hiburi_class_shisaka	Hiburi-class, Shisaka	jp_escort_hiburi_class_shisaka_default
-jp_escort_hiburi_class_syonan	Hiburi-class, Syonan	jp_escort_hiburi_class_syonan_default
-jp_escort_ikazuchi_class	Ikazuchi-class, Ikazuchi (DE-202)	jp_escort_ikazuchi_class_default
-jp_karotei_type2	Type 4 (mod. 2), Kuchiku-Tei Ka-Ro	jp_karotei_type2_default
-jp_karotei_type4	Type 4 (mod. 4), Kuchiku-Tei Ka-Ro	jp_karotei_type4_default
-jp_kusen_tei_13_1942	Type K-8 No.13, Kusentei	jp_kusen_tei_13_1942_default
-jp_kusen_tei_13_1944	Type K-8 No.13, Kusentei late modification	jp_kusen_tei_13_1944_default
-jp_minelayer_tsugaru	Tsugaru-class, IJN Tsugaru, 1943	bomb_mortar
-jp_no1_ch2	Type K-3 No.1, Kusentei	jp_no1_ch2_default
-jp_no4_ch8	Type K-7 No.4, Kusentei	jp_no4_ch8_default
-jp_pc301_kari_class	Kari-class, Kari (PC-301)	jp_pc301_kari_class_default
-jp_pg02	No.1-class, PG-02	jp_pg02_default
-jp_sehatei_mod1	Ha-Go (mod. 1)	jp_sehatei_mod1_default
-jp_t14_class_mod01	Type T-14 (mod. 1)	torpedoes
-jp_t14_class_mod02	Type T-14 (mod. 2)	torpedoes
-jp_t14_class	Type T-14	torpedoes
-jp_t51a	Type T-51a	torpedoes
-jp_t51b	Type T-51b	torpedoes
-jp_type_11_pt_15	Type 11, PT-15	torpedoes
-jp_type_t1_1941	Type T-1	torpedoes
-jp_type1_pt2	Type 1, PT-802	torpedoes
-jp_type38_1944	Type T-38	torpedoes
-jp_type5_escortboat	Type 5	jp_type5_escortboat_default
-jp_type7_pt808	Type 7, PT-808	torpedoes
-jp_ujishima_msc	YMS-1-class, JDS Ujishima (MSC-655)	bomb_mortar
-jp_yuri_class_asagao	Yuri-class, Asagao (YTE-01)	rocket_launcher
-uk_70ft_mgb	70 ft MGB-61	uk_70ft_mgb_default
-uk_71ft_mgb	71 ft MGB-75	uk_71ft_mgb_default
-uk_71ft_mtb460	71 ft MTB-460	torpedoes
-uk_73ft_vosper_type1	73 ft Vosper(1) MTB-379	torpedoes
-uk_73ft_vosper_type2	73 ft Vosper(2) MTB-523	torpedoes
-uk_aircraftcarrier_ark_royal	HMS Ark Royal (R09)	uk_aircraftcarrier_ark_royal_default
-uk_aircraftcarrier_illustrious	Illustrious-class, HMS Illustrious (87)	uk_aircraftcarrier_illustrious_default
-uk_attack_class_arrow	Attack-class, HMAS Arrow	uk_attack_class_arrow_default
-uk_battlecruiser_glorious	Courageous-class, HMS Glorious (56), 1919	torpedoes
-uk_battlecruiser_hood	Admiral-class, HMS Hood (51), 1941	torpedoes
-uk_battlecruiser_invincible	Invincible-class, HMS Invincible (85), 1916	torpedoes
-uk_battlecruiser_queen_mary	Queen Mary-class, HMS Queen Mary (14), 1914	torpedoes
-uk_battlecruiser_renown	Renown-class, HMS Renown (72), 1944	torpedoes
-uk_battlecruiser_repulse	Renown-class, HMS Repulse (34), 1941	torpedoes
-uk_battleship_centurion	King George V-class, HMS Centurion (12), 1913	torpedoes
-uk_battleship_colossus	Colossus-class, HMS Colossus (24), 1918	torpedoes
-uk_battleship_dreadnought	Dreadnought-class, HMS Dreadnought (00), 1917	torpedoes
-uk_battleship_iron_duke	Iron Duke-class, HMS Iron Duke (18), 1928	torpedoes
-uk_battleship_marlborough	Iron Duke-class, HMS Marlborough (66), 1927	torpedoes
-uk_battleship_nelson	Nelson-class, HMS Nelson (28), 1945	uk_battleship_nelson_default
-uk_battleship_orion	Orion-class, HMS Orion (52), 1914	torpedoes
-uk_battleship_prince_of_wales	King George V-class, HMS Prince of Wales (53), 1941	uk_battleship_prince_of_wales_default
-uk_battleship_q_elizabet_class_barham	Queen Elizabeth-class, HMS Barham (04), 1916	torpedoes
-uk_battleship_q_elizabet_class_warspite	Queen Elizabeth-class, HMS Warspite (03), 1942	uk_battleship_q_elizabet_class_warspite_default
-uk_battleship_rodney	Nelson-class, HMS Rodney (29), 1940	torpedoes
-uk_battleship_vanguard	Vanguard-class, HMS Vanguard (23), 1946	uk_battleship_vanguard_default
-uk_brave_borderer	Brave-class, Brave Borderer (P1011)	torpedoes
-uk_cargo_ship_liberty_ec	Cargo ship	us_cargo_ship_liberty_default
-uk_cargo_ship_liberty	Cargo ship	us_cargo_ship_liberty_default
-uk_corvette_orla	Peacock-class, LÉ Orla (P41)	uk_corvette_orla_default
-uk_corvette_peacock	Peacock-class, HMS Peacock (P239)	uk_corvette_peacock_default
-uk_cruiser_arethusa_ec	Arethusa-class, HMS Arethusa (26), 1943	torpedoes
-uk_cruiser_arethusa	Arethusa-class, HMS Arethusa (26), 1943	torpedoes
-uk_cruiser_belfast	Town-class, HMS Belfast (C35), 1959	uk_cruiser_belfast_default
-uk_cruiser_dido_ec	Dido-class, HMS Dido (37), 1941	torpedoes
-uk_cruiser_dido	Dido-class, HMS Dido (37), 1941	torpedoes
-uk_cruiser_enterprise_d52_ec	Emerald-class, HMS Enterprise (D52), 1944	torpedoes
-uk_cruiser_enterprise_d52	Emerald-class, HMS Enterprise (D52), 1944	torpedoes
-uk_cruiser_fiji_class_fiji	Colony-class, HMS Fiji (C83), 1941	torpedoes
-uk_cruiser_hawkins	Hawkins-class, HMS Hawkins (D86), 1942	torpedoes
-uk_cruiser_kent	County-class, HMS Kent (54), 1934	torpedoes
-uk_cruiser_leander_ec	Leander-class, HMNZS Leander, 1942	torpedoes
-uk_cruiser_leander	Leander-class, HMNZS Leander (75), 1942	torpedoes
-uk_cruiser_liverpool	Town-class, HMS Liverpool (C11), 1952	torpedoes
-uk_cruiser_london	County-class, HMS London (69), 1945	torpedoes
-uk_cruiser_norfolk	County-class, HMS Norfolk (78), 1943	uk_cruiser_norfolk_torpedoes
-uk_cruiser_southampton	Town-class, HMS Southampton (C83), 1940	torpedoes
-uk_cruiser_tiger	Tiger-class, HMS Tiger (C20), 1960	uk_cruiser_tiger_default
-uk_cruiser_york	York-class, HMS York (90), 1941	torpedoes
-uk_dark_class_mtb_td	Dark-class, Dark Aggressor (FPB 1102) TD	torpedoes
-uk_dark_class_mtb	Dark-class, Dark Aggressor (FPB 1102)	torpedoes
-uk_dark_class	Dark-class, Dark Adventurer (FPB 1101)	uk_dark_class_default
-uk_destroyer_battle_2series	Battle-class, HMS Armada (D14), 1943	torpedoes
-uk_destroyer_battle_cadiz	Battle-class, HMS Cadiz (D79), 1951	torpedoes
-uk_destroyer_battle_tobruk	Battle-class, HMAS Tobruk (D37), 1950	torpedoes
-uk_destroyer_clemson_churchill_ec	Clemson class, HMS Churchill (L45)	torpedoes
-uk_destroyer_clemson_churchill	Town-class, HMS Churchill (I45), 1942	torpedoes
-uk_destroyer_clemson_montgomery_g95	Town-class, HMS Montgomery (G95), 1941	torpedoes
-uk_destroyer_daring_class_daring	Daring-class, HMS Daring (D05), 1956	torpedoes
-uk_destroyer_daring_class_diamond	Daring-class, HMS Diamond (D35), 1958	torpedoes
-uk_destroyer_daring_class_diana	Daring-class, HMS Diana (D126), 1958	uk_destroyer_daring_class_diana_default
-uk_destroyer_g_garland	G-class, ORP Garland (H37), 1942	torpedoes
-uk_destroyer_g_grafton_ec	G-class, HMS Grafton (H89), 1936	torpedoes
-uk_destroyer_g_grafton	G-class, HMS Grafton (H89), 1936	torpedoes
-uk_destroyer_haida	Tribal-class, HMCS Haida (G63), 1943	torpedoes
-uk_destroyer_hunt_2series	Hunt-class, HMS Calpe (L71), 1942	uk_destroyer_hunt_2series_default
-uk_destroyer_hunt_4series	Hunt-class, HMS Brissenden (L79), 1943	torpedoes
-uk_destroyer_j_class	J-class, HMS Jervis (F00), 1944	torpedoes
-uk_destroyer_k_class	K-class, HMS Kelvin (F37), 1939	torpedoes
-uk_destroyer_n_class_ec	N-class, HMAS Nepal (G25), 1942	torpedoes
-uk_destroyer_n_class	N-class, HMAS Nepal (G25), 1942	torpedoes
-uk_destroyer_restigouche_class_terranova	Restigouche-class, HMCS Terra Nova (DDE 229)	mk_vii_bomb_mortar
-uk_destroyer_st_class_saumarez	S-class, HMS Saumarez (G12), 1945	torpedoes
-uk_destroyer_tribal_ec	Tribal-class, HMS Eskimo (F75), 1941	torpedoes
-uk_destroyer_tribal_mohawk	Tribal-class, HMS Mohawk (L31), 1941	torpedoes
-uk_destroyer_tribal	Tribal-class, HMS Eskimo (F75), 1941	torpedoes
-uk_destroyer_v_class_valhalla	V-class, HMS Valhalla (G45), 1924	torpedoes
-uk_destroyer_v_class_vega	V-class, HMS Vega (L41), 1944	mk_vii_bomb_mortar
-uk_destroyer_v_class_verdun	V-class, HMS Verdun (L93), 1941	mk_vii_bomb_mortar
-uk_egret_class	Egret-class, HMS Egret (L75), 1943	board_mortar
-uk_fairmile_a_ml100	Fairmile A (ML100)	mk_vii_depth_charges
-uk_fairmile_b_ml345	Fairmile B (ML345)	mk_vii_depth_charges
-uk_fairmile_c_332	Fairmile C (332)	uk_fairmile_c_332_default
-uk_fairmile_c	Fairmile C (312)	uk_fairmile_c_default
-uk_fairmile_d_5001_5029	Fairmile D (5001)	torpedoes
-uk_fairmile_d_601_616	Fairmile D (601)	uk_fairmile_d_601_616_default
-uk_fairmile_d_617_632	Fairmile D (617)	torpedoes
-uk_fairmile_d_697_800	Fairmile D (697)	torpedoes
-uk_fairmile_lcs_l_h_mk2	Fairmile H LCS(L)(2)	uk_fairmile_lcs_l_h_mk2_default
-uk_flower_class	Flower-class, HMCS Brantford (K-218)	uk_flower_class_default
-uk_fremantle_class	Fremantle-class, HMAS Fremantle (P203)	uk_fremantle_class_default
-uk_frigate_leopard	Leopard-class, HMS Leopard (F14)	uk_frigate_river_default
-uk_frigate_river	River-class, HMS Spey (K-246)	uk_frigate_river_default
-uk_frigate_whitby_blackpool	Whitby-class, HMS Blackpool (F77)	torpedoes
-uk_frigate_whitby	Whitby-class, HMS Whitby (F36)	bomb_mortar
-uk_gay_class_archer	Gay-class, HMS Gay Archer (1041)	depth_charges
-uk_hdml_ml1383	HDML, ML 1383	uk_hdml_ml1383_depth_charges
-uk_higgins_78ft_mtb422	Higgins 78ft MTB-422	torpedoes
-uk_isles_class_trawler	Isles-class, HMS Liscomb (T-285)	uk_isles_class_trawler_default
-uk_minelayer_abdiel_class_abdiel	Abdiel-class, HMS Abdiel (M39), 1941	type_a_mk1_mines
-uk_mtb_1series	MTB-1 1 series	torpedoes
-uk_mtb_2series	MTB-1 2 series	torpedoes
-uk_mtb_vosper_1series	MTB Vosper 1 series	torpedoes
-uk_mtb_vosper_2series	MTB Vosper 2 series	torpedoes
-uk_mtb35_vosper	MTB Vosper 1 series, MTB-35	torpedoes
-uk_sgb_304	SGB Grey Fox (S304)	torpedoes
-uk_sgb_309	SGB Grey Goose (S309)	torpedoes
-us_admirable_class	Admirable-class, USS Candid (AM-154)	depth_charges
-us_aircraftcarrier_enterprise	Yorktown-class, USS Enterprise (CV-6), 1942	us_aircraftcarrier_enterprise_default
-us_aircraftcarrier_forrestal	USS Forrestal, CVA-59	us_aircraftcarrier_forrestal_default
-us_aircraftcarrier_lexington	Lexington-class, USS Lexington (CV-2), 1941	us_aircraftcarrier_lexington_default
-us_aircraftcarrier_saratoga	Lexington-class, USS Saratoga (CV-3), 1942	us_aircraftcarrier_saratoga_default
-us_ashville_class_douglas	Asheville-class, USS Douglas (PGM-100)	us_ashville_class_douglas_default
-us_ashville_class	Asheville-class, USS Asheville (PGM-84)	us_ashville_class_default
-us_battlecruiser_alaska_class	Alaska-class, USS Alaska (CB-1), 1944	us_battlecruiser_alaska_class_default
-us_battleship_arizona_1931	Pennsylvania-class, USS Arizona (BB-39), 1938	us_battleship_arizona_1931_default
-us_battleship_arkansas	Wyoming-class, USS Arkansas (BB-33), 1942	us_battleship_arkansas_default
-us_battleship_colorado_class_colorado	Colorado-class, USS Colorado (BB-45), 1942	us_battleship_colorado_class_colorado_default
-us_battleship_colorado_class_maryland	Colorado-class, USS Maryland (BB-46), 1945	us_battleship_colorado_class_colorado_default
-us_battleship_iowa_class_iowa	Iowa-class, USS Iowa (BB-61), 1945	us_battleship_iowa_class_iowa_default
-us_battleship_mississippi	New Mexico-class, USS Mississippi (BB-41), 1945	us_battleship_mississippi_default
-us_battleship_nevada	Nevada-class, USS Nevada (BB-36), 1944	us_battleship_nevada_common
-us_battleship_north_carolina_class	North Carolina-class, USS North Carolina (BB-55), 1942	us_battleship_north_carolina_class_default
-us_battleship_north_dakota	Delaware-class, USS North Dakota (BB-29), 1919	us_battleship_north_dakota_torpedoes
-us_battleship_oklahoma	Nevada-class, USS Oklahoma (BB-37), 1926	torpedoes
-us_battleship_south_dakota	South Dakota-class, USS South Dakota (BB-57), 1945	us_battleship_south_dakota_default
-us_battleship_tennessee	Tennessee-class, USS Tennessee (BB-43), 1943	us_battleship_tennessee_default
-us_battleship_texas	New York-class, USS Texas (BB-35), 1945	us_battleship_texas_default
-us_battleship_wyoming_class	Wyoming-class, USS Wyoming (BB-32), 1927	us_battleship_wyoming_class_default
-us_cargo_ship_liberty_ec	Cargo ship	us_cargo_ship_liberty_default
-us_cargo_ship_liberty	Cargo ship	us_cargo_ship_liberty_default
-us_cargo_ship_ss_ohio	Cargo ship	us_cargo_ship_ss_ohio_default
-us_cruiser_atlanta_class_atlanta	Atlanta-class, USS Atlanta (CL-51), 1941	torpedoes
-us_cruiser_baltimore_class_pittsburgh	Baltimore-class, USS Pittsburgh (CA-72), 1953	us_cruiser_baltimore_class_default
-us_cruiser_baltimore_class	Baltimore-class,USS Baltimore (CA-68), 1943	us_cruiser_baltimore_class_default
-us_cruiser_brooklyn_class_brooklyn	Brooklyn-class, USS Brooklyn (CL-40), 1941	us_cruiser_brooklyn_class_brooklyn_default
-us_cruiser_brooklyn_class_helena	Brooklyn-class, USS Helena (CL-50), 1943	us_cruiser_brooklyn_class_helena_default
-us_cruiser_cleveland_class_cleveland	Cleveland-class, USS Cleveland (CL-55), 1942	us_cruiser_cleveland_class_cleveland_default
-us_cruiser_des_moines_class_newport_news	Des Moines-class, USS Newport News (CA-148), 1972	us_cruiser_des_moines_class_newport_news_default
-us_cruiser_des_moines_class	Des Moines-class, USS Des Moines (CA-134), 1948	us_cruiser_des_moines_class_default
-us_cruiser_fargo_class	Fargo-class, USS Fargo (CL-106), 1946	us_fargo_class_default
-us_cruiser_new_orleans_class	New Orleans-class, USS New Orleans (CA-32), 1945	us_cruiser_new_orleans_default
-us_cruiser_northampton_class	Northampton-class, USS Northampton (CA-26), 1941	us_cruiser_northampton_class_default
-us_cruiser_omaha_class_detroit	Omaha-class, USS Detroit (CL-8), 1942	torpedoes
-us_cruiser_omaha_class_raleigh	Omaha-class, USS Raleigh (CL-7), 1942	torpedoes
-us_cruiser_omaha_class_trenton	Omaha-class, USS Trenton (CL-11), 1930	torpedoes
-us_cruiser_oregon_class	Oregon City-class,USS Oregon City (CA-122), 1946	us_cruiser_oregon_class_default
-us_cruiser_pensacola_class	Pensacola-class, USS Pensacola (CA-24), 1941	us_cruiser_pensacola_class_default
-us_cruiser_portland_class	Portland-class, USS Portland (CA-33), 1942	us_cruiser_portland_class_default
-us_cruiser_rckt_california	USS California	us_cruiser_rckt_california_default
-us_cruiser_worcester_class_roanoke	Worcester-class, USS Roanoke (CL-145), 1949	us_cruiser_worcester_class_roanoke_default
-us_cyclone_class_cyclone	Cyclone-class, USS Cyclone (PC-1)	us_cyclone_class_cyclone_default
-us_destroyer_bagley_class_bagley	Bagley-class, USS Bagley (DD-386), 1941	torpedoes
-us_destroyer_bagley_class_helm	Bagley-class, USS Helm (DD-388), 1944	torpedoes
-us_destroyer_cf_adams_class_cf_adams_ec	Charles F. Adams-class, USS Charles F. Adams (DDG-2), 1961	torpedoes
-us_destroyer_cf_adams_class_cf_adams	Charles F. Adams-class, USS Charles F. Adams (DDG-2), 1961	torpedoes
-us_destroyer_clemson_barker	Clemson-class, USS Barker (DD-213), 1942	torpedoes
-us_destroyer_clemson_litchfield	Clemson-class, USS Litchfield (DD-336), 1936	torpedoes
-us_destroyer_clemson_welborn_c_wood	Clemson-class, USS Welborn C. Wood (DD-195), 1936	torpedoes
-us_destroyer_farragut_1942	Farragut-class, USS Aylwin (DD-355), 1942	torpedoes
-us_destroyer_fletcher_bennion	Fletcher-class, USS Bennion (DD-662), 1944	torpedoes
-us_destroyer_fletcher_cowell	Fletcher-class, USS Cowell (DD-547), 1943	torpedoes
-us_destroyer_fletcher	Fletcher-class, USS Fletcher (DD-445), 1942	torpedoes
-us_destroyer_forrestsherman_class	Forrest Sherman-class, USS Forrest Sherman (DD-931), 1956	torpedoes
-us_destroyer_gearing_frank_knox	Gearing-class, Frank Knox (DD-742), 1944	torpedoes
-us_destroyer_gearing	Gearing-class, USS Gearing (DD-710), 1945	torpedoes
-us_destroyer_gridley	Gridley-class, USS Gridley (DD-380), 1943	torpedoes
-us_destroyer_mitscher_wilkinson	Mitscher-class, USS Wilkinson (DL-5), 1958	torpedoes
-us_destroyer_mitscher	Mitscher-class, USS Mitscher (DL-2), 1954	torpedoes
-us_destroyer_porter_1941	Porter-class, USS Porter (DD-356), 1941	torpedoes
-us_destroyer_porter_1942	Porter-class, USS Moffett (DD-362), 1942	torpedoes
-us_destroyer_porter_1944	Porter-class, USS Phelps (DD-360), 1944	torpedoes
-us_destroyer_somers_davis	Somers-class, USS Davis (DD-395), 1942	torpedoes
-us_destroyer_somers	Somers-class, USS Somers (DD-381), 1938	torpedoes
-us_destroyer_sumner	Allen M. Sumner-class, USS Sumner (DD-692), 1944	torpedoes
-us_elco_77ft_pt20	Elco 77 ft PT-20	torpedoes
-us_elco_77ft_pt59	Elco 77 ft PT-59	us_elco_77ft_pt59_default
-us_elco_80ft_pt_boat_mod01	Elco 80 ft PT-314	torpedoes
-us_elco_80ft_pt_boat_mod02	Elco 80 ft PT-565	torpedoes
-us_elco_80ft_pt_boat_thunderbolt	Elco 80 ft, Thunderbolt (PT-556)	torpedoes
-us_elco_80ft_pt_boat	Elco 80 ft PT-103	torpedoes
-us_elco_80ft_pt109_boat	Elco 80 ft PT-109	torpedoes
-us_elco_80ft_pt174	Elco 80 ft PT-174	torpedoes
-us_flagstaff_pgh1	USS Flagstaff (PGH-1)	us_flagstaff_pgh1_default
-us_frigate_buckley_class_coolbaugh	Buckley-class, USS Coolbaugh (DE-217)	bomb_mortars
-us_frigate_dealey	Dealey-class, USS Dealey (DE-1006)	depth_chagres
-us_frigate_tacoma	Tacoma-class, USS Hoquiam (PF-5)	depth_charges
-us_higgins_78ft_pt625	Higgins 78 ft PT-200	torpedoes
-us_higgins_78ft_pt658	Higgins 78 ft PT-658	torpedoes
-us_higgins_78ft_pt71	Higgins 78 ft PT-71	torpedoes
-us_huckins_78ft_pt262	Huckins 78 ft PT-262	torpedoes
-us_huckins_78ft_pt95	Huckins PT-95	torpedoes
-us_lcm_zippo	Landing Craft Support (Flamethrower) Zippo	lcm_zippo_default
-us_lcs_l_3	Landing Craft Support (Large) (Mark 3)	us_lcs_l_3_default
-us_nasty_ptf	80 ft Nasty PTF-7	us_nasty_ptf_default
-us_pc_451	Experimental class sub-chaser PC-451	us_pc_451_default
-us_pc_466_carmi	PC-461-class, Carmi (PC-466)	us_pc_466_carmi_default
-us_pgm_59_class	PGM-59 class, Kim Qui (HQ 605)	us_pgm_59_class_default
-us_pgm_9_class	PGM-9-class, PGM-9	us_pc_466_carmi_default
-us_pt3	58 ft PT-3	torpedoes
-us_pt6	Higgins 81 ft PT-6	torpedoes
-us_pt810	89 ft PT-810	torpedoes
-us_pt811	94 ft PT-811	torpedoes
-us_pt812	105 ft PT-812	us_pt812_default
-us_sc_497	110 ft SC-497	us_sc_497_default
-us_tucumcari_pgh2	USS Tucumcari (PGH-2)	us_tucumcari_pgh2_default
-ussr_1124_ack	Pr.1124 late modification	ussr_1124_ack_default
-ussr_1124_art	Pr.1124 early modification	ussr_1124_art_default
-ussr_1124_rct	Pr.1124 MLRS	ussr_1124_rct_default
-ussr_aircraftcarrier_admiral_kuznetsov	Admiral Kuznetsov	ussr_aircraftcarrier_admiral_kuznetsov_default
-ussr_aircraftcarrier_baku	Baku, project 11434	ussr_aircraftcarrier_baku_default
-ussr_battlecruiser_izmail	Izmail-class, Izmail, project	torpedoes
-ussr_battlecruiser_kronshtadt	Project 69, Kronshtadt, project	ussr_battlecruiser_kronshtadt_default
-ussr_battlecruiser_sevastopol	Project 69I, Sevastopol, project	ussr_battlecruiser_sevastopol_default
-ussr_battlecruiser_stalingrad	Project 82, Stalingrad, project	ussr_battlecruiser_stalingrad_default
-ussr_battleship_arhangelsk	Revenge-class, Arkhangelsk, 1944	ussr_battleship_arhangelsk_default
-ussr_battleship_imperatritsa_mariya	Imperatritsa Mariya-class, Imperatritsa Mariya, 1916	torpedoes
-ussr_battleship_marat	Sevastopol-class, Marat, 1941	ussr_battleship_marat_torpedoes
-ussr_battleship_novorossiysk	Conte di Cavour-class, Novorossiysk, 1953	ussr_battleship_novorossiysk_default
-ussr_battleship_oktyabrskaya_revolutsiya	Sevastopol-class, Oktyabrskaya Revolutsiya, 1946	ussr_battleship_oktyabrskaya_revolutsiya_default
-ussr_battleship_parizhskaya_kommuna	Sevastopol-class, Parizhskaya Kommuna, 1941	ussr_battleship_parizhskaya_kommuna_default
-ussr_battleship_poltava	Sevastopol-class, Poltava, 1914	torpedoes
-ussr_battleship_pr23_sovetskij_soyuz	Project 23, Sovetsky Soyuz, project	ussr_battleship_pr23_sovetskij_soyuz_default
-ussr_bmo	BMO pr 194	ussr_bmo_default
-ussr_cargo_ship_liberty	Cargo ship	us_cargo_ship_liberty_default
-ussr_cruiser_chapayev	Pr.68-K, Chapayev, 1950	ussr_cruiser_chapayev_default
-ussr_cruiser_chervona_ukraina	Svetlana-class, Chervona Ukraina, 1941	torpedoes
-ussr_cruiser_kerch	Duca d’Aosta-class, Kerch, 1953	torpedoes
-ussr_cruiser_kirov	Pr.26, Kirov, 1941	torpedoes
-ussr_cruiser_krasnyi_kavkaz	Svetlana-class, Krasny Kavkaz, 1944	torpedoes
-ussr_cruiser_krasnyi_krim	Svetlana-class, Krasny Krym, 1943	torpedoes
-ussr_cruiser_maxim_gorky	Pr.26-bis, Maxim Gorky, 1941	torpedoes
-ussr_cruiser_mikhail_kutuzov	Pr.68-A, Mikhail Kutuzov, 1986	ussr_cruiser_mikhail_kutuzov_default
-ussr_cruiser_omaha_class_murmansk	Omaha-class, Murmansk, 1945	torpedoes
-ussr_cruiser_shcherbakov	Pr.68-bis-ZiF, Shcherbakov, project	ussr_cruiser_shcherbakov_default
-ussr_cruiser_sverdlov	Pr.68-bis, Sverdlov, 1952	torpedoes
-ussr_cruiser_voroshilov	Pr.26, Voroshilov, 1943	torpedoes
-ussr_cruiser_zheleznyakov	Pr.68-K, Zheleznyakov, 1951	ussr_cruiser_zheleznyakov_default
-ussr_d3_tk126	Pr.P-19-ОК, TK-126	torpedoes
-ussr_d3	Pr.P-19-OK, D-3-class	torpedoes
-ussr_destroyer_7_besposhchadny	Pr.7, Besposhchadny, 1943	torpedoes
-ussr_destroyer_7_ryany	Pr.7, Ryany, 1945	torpedoes
-ussr_destroyer_7y_stroyny	Pr.7U, Stroyny, 1945	torpedoes
-ussr_destroyer_7y	Pr.7U, Soobrazitelny, 1943	torpedoes
-ussr_destroyer_frunze	Novik-class, Frunze, 1940	torpedoes
-ussr_destroyer_kerch	Fidonisy-class, Kerch, 1917	torpedoes
-ussr_destroyer_leningrad	Leningrad-class, Leningrad, 1944	torpedoes
-ussr_destroyer_moskva	Leningrad-class, Moskva, 1941	torpedoes
-ussr_destroyer_pr20_tashkent	Pr.20, Tashkent, 1942	torpedoes
-ussr_destroyer_pr30_ognevoy	Pr.30, Ognevoy, 1944	torpedoes
-ussr_destroyer_pr30bis_bezuprechnyi	Pr.30-bis, Bezuprechny, 1950	torpedoes
-ussr_destroyer_pr30bis_smelyi	Pr.30-bis, Smelyi, 1955	torpedoes
-ussr_destroyer_pr41_neustrashimy	Pr. 41, Neustrashimy, 1960	torpedoes
-ussr_destroyer_pr45	Pr.45, Opytny, 1942	torpedoes
-ussr_destroyer_pr48k_erevan	Pr.48-K, Erevan, project	torpedoes
-ussr_destroyer_pr56_blagorodny	Pr.56-PLO, Blagorodnyy, 1978	torpedoes
-ussr_destroyer_pr56_bravy_ec	Pr. 56-K, Bravy, 1967	torpedoes
-ussr_destroyer_pr56_bravy	Pr.56-K, Bravy, 1967	torpedoes
-ussr_destroyer_pr56_spokoinyy	Pr.56, Spokoinyy, 1956	torpedoes
-ussr_destroyer_rckt_pr956	Project 956	ussr_destroyer_rckt_pr956_default
-ussr_destroyer_regele_ferdinand_class_letuchiy	Regele Ferdinand-class, Letuchiy, 1945	torpedoes
-ussr_g5_mtb_landing_craft	G-5 Type (landing craft)	ussr_g5_mtb_landing_craft_default
-ussr_g5_mtb_shvak	G-5 Type (ShVAK)	torpedoes
-ussr_g5_mtb	G-5 Type	torpedoes
-ussr_g5_rct	G-5 Type XI-bis TKA-412	rocket_launcher
-ussr_mbk_161_1943	MBK-161 early modifications	ussr_mbk_161_1943_default
-ussr_mbk_161_1944	MBK-161 late modification	ussr_mbk_161_1944_default
-ussr_mkl_186_mk85	MBK pr.186 (MK 85)	ussr_mkl_186_mk85_default
-ussr_mkl_186	MBK pr.186	ussr_mkl_186_default
-ussr_mo_4	MO-4 Type	ussr_mo_4_default
-ussr_mpk_122a	MPK pr.122A	ussr_mpk_122a_default
-ussr_mpk_122bis	MPK Pr.122bis	ussr_mpk_122bis_default
-ussr_mpk_163	Pr.122bis (MPK-163)	ussr_mpk_163_default
-ussr_mpk_201k	MPK Pr.201K	ussr_mpk_201m_rocket_launcher
-ussr_mpk_201m	MPK Pr.201M	ussr_mpk_201m_rocket_launcher
-ussr_mpk_204	MPK Pr.204	torpedoes
-ussr_mpk_pr_1124_ec	Pr.1124, MPK-33	torpedoes
-ussr_mpk_pr_1124	Pr.1124, MPK-33	torpedoes
-ussr_mpk_pr11451	MPK Pr.11451	torpedoes
-ussr_mpk_pr12412	MPK Pr.12412	torpedoes
-ussr_mpk_pr12412p	MPK Pr.12412P	torpedoes
-ussr_mpk_pr1331m	MPK Pr.1331M	torpedoes
-ussr_od_200	OD-200	ussr_od_200_default
-ussr_pr_103_sm4	Pr.103, SM-4-class	torpedoes
-ussr_pr_1204_late	Pr.1204 late modification	bm_14_17_rocket_launcher
-ussr_pr_1204	Pr.1204	ussr_pr_1204_default
-ussr_pr_123bis	Pr.123-bis	torpedoes
-ussr_pr_123k_hydrofoils	Pr.123K (A-10bis)	torpedoes
-ussr_pr_183_egypt_bm_21	Pr.183 BM-21	ussr_pr_183_egypt_bm_21_default
-ussr_pr_191	Pr.191	ussr_pr_191_default
-ussr_pr_191m	Pr.191M	ussr_pr_191m_default
-ussr_pr_205pe_k225	Pr.205PE, AK-225	ussr_pr_205pe_k225_default
-ussr_pr253l	Pr.253L	ussr_pr253l_default
-ussr_skr_groza_1943	Uragan-class, SKR Groza	torpedoes
-ussr_skr_pr159	Pr.159, SKR-1	torpedoes
-ussr_skr_pr35	Pr. 35 SKR-7	torpedoes
-ussr_skr_pr50_jenot	Pr.50, SKR Yenot	torpedoes
-ussr_skr_pr50plo_rosomacha	Pr.50, SKR Rosomacha	torpedoes
-ussr_ya_5m	Ya-5M	ussr_ya_5m_default
+fr_adroit_class	L'Intrépide	torpedoes	France	3	typeTorpedoBoat
+fr_arras_class_amiens	Amiens	arras_class_amiens_default	France	3	typeGunBoat
+fr_arras_class_arras	Arras	arras_class_arras_default	France	3	typeGunBoat
+fr_battleship_bretagne_class_bretagne	Bretagne	fr_battleship_bretagne_class_bretagne_torpedoes	France	5	typeDestroyer
+fr_battleship_bretagne_class_lorraine	Lorraine	fr_battleship_bretagne_class_lorraine_default	France	5	typeDestroyer
+fr_battleship_courbet_class_courbet	Courbet	fr_battleship_courbet_class_courbet_torpedoes	France	5	typeDestroyer
+fr_battleship_courbet_class_paris	Paris	fr_battleship_courbet_class_paris_default	France	5	typeDestroyer
+fr_battleship_dunkerque	Dunkerque	fr_battleship_dunkerque_default	France	6	typeDestroyer
+fr_battleship_richelieu_class_clemenceau	Clemenceau	fr_battleship_richelieu_class_jean_bart_default	France	7	typeDestroyer
+fr_battleship_richelieu_class_jean_bart	Jean Bart	fr_battleship_richelieu_class_jean_bart_default	France	7	typeDestroyer
+fr_battleship_richelieu_class_richelieu	Richelieu	fr_battleship_richelieu_class_richelieu_default	France	7	typeDestroyer
+fr_battleship_strasbourg	Strasbourg	fr_battleship_strasbourg_default	France	6	typeDestroyer
+fr_cruiser_chateaurenault_class_guichen	Guichen	torpedoes	France	2	typeDestroyer
+fr_cruiser_dugauy_class_dugauy_trouin	Duguay-Trouin	it_cruiser_zara_class_default	France	3	typeDestroyer
+fr_cruiser_dugauy_class_primaguet	Primauguet	torpedoes	France	3	typeDestroyer
+fr_cruiser_emile_bertin	Emile Bertin	fr_cruiser_emile_bertin_torpedoes	France	4	typeDestroyer
+fr_cruiser_jeanne_darc	Jeanne d'Arc	fr_cruiser_jeanne_darc_default	France	3	typeDestroyer
+fr_cruiser_la_galissoniere_class_gloire	Gloire	torpedoes	France	4	typeDestroyer
+fr_cruiser_la_galissoniere_class_la_galissoniere	La Galissonnière	torpedoes	France	4	typeDestroyer
+fr_cruiser_suffren_class_colbert	Colbert	fr_cruiser_suffren_class_colbert_torpedoes	France	4	typeDestroyer
+fr_cruiser_suffren_class_dupleix	Dupleix	fr_cruiser_suffren_class_dupleix_torpedoes	France	4	typeDestroyer
+fr_cruiser_suffren_class_suffren	Suffren	fr_cruiser_suffren_class_suffren_default	France	4	typeDestroyer
+fr_destroyer_aigle_class_aigle	Aigle	torpedoes	France	2	typeDestroyer
+fr_destroyer_aigle_class_milan	Milan	fr_destroyer_aigle_class_milan_torpedoes	France	2	typeDestroyer
+fr_destroyer_aigle_class_vautour	Vautour	fr_destroyer_aigle_class_vautour_torpedoes	France	2	typeDestroyer
+fr_destroyer_bourrasque_class_bourrasque	Bourrasque	fr_destroyer_bourrasque_class_bourrasque_torpedoes	France	1	typeDestroyer
+fr_destroyer_bourrasque_class_tornade	Tornade	fr_destroyer_bourrasque_class_tornade_torpedoes	France	1	typeDestroyer
+fr_destroyer_desaix_class_kleber	Kleber	torpedoes	France	2	typeDestroyer
+fr_destroyer_guepard_class_verdun	Verdun	torpedoes	France	1	typeDestroyer
+fr_destroyer_hunt_3series	La Combattante	torpedoes	France	1	typeDestroyer
+fr_destroyer_jaguar_class_chacal	Chacal	torpedoes	France	1	typeDestroyer
+fr_destroyer_jaguar_class_leopard	Leopard	fr_destroyer_jaguar_class_leopard_torpedoes	France	1	typeDestroyer
+fr_destroyer_jaguar_class_panthere	Panthere	fr_destroyer_jaguar_class_panthere_torpedoes	France	1	typeDestroyer
+fr_destroyer_le_fantasque_class_le_malin	Le Malin	fr_destroyer_le_fantasque_class_le_malin_torpedoes	France	3	typeDestroyer
+fr_destroyer_le_fantasque_class_le_triomphant	Le Triomphant	torpedoes	France	3	typeDestroyer
+fr_destroyer_marceau_class_marceau	Marceau	fr_destroyer_marceau_class_marceau_torpedoes	France	2	typeDestroyer
+fr_destroyer_mogador_class_mogador	Mogador	torpedoes	France	3	typeDestroyer
+fr_destroyer_vauquelin_class_vauquelin	Vauquelin	torpedoes	France	2	typeDestroyer
+fr_elan_class_commandant_domine	Commandant Dominé	depth_charges	France	4	typeTorpedoGunBoat
+fr_flower_class_aconit	Aconit	bomb_mortar	France	2	typeGunBoat
+fr_frigate_corse_class_brestois	Le Brestois	torpedoes	France	5	typeTorpedoGunBoat
+fr_frigate_corse_class_corse	Le Corse	torpedoes	France	4	typeTorpedoGunBoat
+fr_frigate_croix_de_lorraine_class_la_surprise	La Surprise	stern_depth_charges	France	4	typeTorpedoGunBoat
+fr_lcg_m_l9059	L9059	lcg_m_l9059_default	France	3	typeGunBoat
+fr_marne_class_aisne	Aisne	fr_marne_class_aisne_default	France	3	typeTorpedoGunBoat
+fr_marne_class_marne	Marne	fr_marne_class_marne_default	France	3	typeTorpedoGunBoat
+fr_mtb96_vosper	MTB-96	torpedoes	France	2	typeTorpedoBoat
+fr_p730_combattante	La Combattante	p730_combattante_default	France	5	typeGunBoat
+fr_trident_class_glaive_p671	Glaive	trident_class_glaive_p671_default	France	3	typeGunBoat
+fr_type40k_vedette	VTB-19	torpedoes	France	2	typeTorpedoBoat
+fr_vlt1	VLT-1	torpedoes	France	4	typeTorpedoBoat
+fr_vlt2	VLT-2	torpedoes	France	4	typeTorpedoBoat
+fr_vtb10	VTB-10	torpedoes	France	1	typeTorpedoBoat
+fr_vtb11	VTB-11	torpedoes	France	1	typeTorpedoBoat
+fr_vtb12_mod	VTB-12	torpedoes	France	1	typeTorpedoBoat
+fr_vtb13	VTB-13	fr_vtb13_default	France	1	typeGunBoat
+fr_vtb14	VTB-14	torpedoes	France	1	typeTorpedoBoat
+fr_vtb18	VTB-18	torpedoes	France	1	typeTorpedoBoat
+fr_vtb8	VTB-8	torpedoes	France	1	typeTorpedoBoat
+fr_vtb9	VTB-9	torpedoes	France	1	typeTorpedoBoat
+germ_artilleriefahrprahm_typ_d1	AF D1	germ_artilleriefahrprahm_typ_d1_default	Germany	4	typeNavalFerryBarge
+germ_artilleriefahrprahm_typ_d3	AF D3	germ_artilleriefahrprahm_typ_d3_default	Germany	4	typeNavalFerryBarge
+germ_battlecruiser_derfflinger	SMS Derfflinger	germ_battlecruiser_derfflinger_torpedoes	Germany	5	typeDestroyer
+germ_battlecruiser_ersatz_yorck	Ersatz Yorck	torpedoes	Germany	6	typeDestroyer
+germ_battlecruiser_mackensen_class	Mackensen	torpedoes	Germany	6	typeDestroyer
+germ_battlecruiser_von_der_tann	SMS Von der Tann	torpedoes	Germany	5	typeDestroyer
+germ_battleship_baden	SMS Baden	torpedoes	Germany	6	typeDestroyer
+germ_battleship_bayern	SMS Bayern	torpedoes	Germany	6	typeDestroyer
+germ_battleship_bismarck	Bismarck	germ_battleship_bismarck_default	Germany	7	typeDestroyer
+germ_battleship_gneisenau_380mm	Gneisenau	torpedoes	Germany	6	typeDestroyer
+germ_battleship_helgoland	SMS Helgoland	torpedoes	Germany	5	typeDestroyer
+germ_battleship_kaiser	SMS Kaiser	torpedoes	Germany	5	typeDestroyer
+germ_battleship_konig	SMS König	germ_battleship_konig_torpedoes	Germany	5	typeDestroyer
+germ_battleship_nassau	SMS Nassau	torpedoes	Germany	5	typeDestroyer
+germ_battleship_ostfriesland	SMS Ostfriesland	germ_battleship_ostfriesland_torpedoes	Germany	5	typeDestroyer
+germ_battleship_sachsen	SMS Sachsen	torpedoes	Germany	6	typeDestroyer
+germ_battleship_scharnhorst	Scharnhorst	torpedoes	Germany	6	typeDestroyer
+germ_battleship_westfalen	SMS Westfalen	germ_battleship_westfalen_default	Germany	5	typeDestroyer
+germ_cargo_ship_goldenfels_ec	Cargo ship	germ_cargo_ship_goldenfels_default	Other	0	typeShip
+germ_cargo_ship_goldenfels	Cargo ship	germ_cargo_ship_goldenfels_default	Other	0	typeShip
+germ_cruiser_admiral_graf_spee	Admiral Graf Spee	torpedoes	Germany	4	typeDestroyer
+germ_cruiser_admiral_hipper	Admiral Hipper	torpedoes	Germany	4	typeDestroyer
+germ_cruiser_admiral_scheer	Admiral Scheer	torpedoes	Germany	4	typeDestroyer
+germ_cruiser_elbing	SMS Elbing	germ_cruiser_elbing_torpedoes	Germany	3	typeDestroyer
+germ_cruiser_emden_1944_ec	Emden	torpedoes	Other	0	typeDestroyer
+germ_cruiser_emden_1944	Emden	torpedoes	Germany	3	typeDestroyer
+germ_cruiser_karlsruhe	Karlsruhe	torpedoes	Germany	4	typeDestroyer
+germ_cruiser_koln_ec	Köln	torpedoes	Other	0	typeDestroyer
+germ_cruiser_koln	Köln	torpedoes	Germany	4	typeDestroyer
+germ_cruiser_leipzig	Leipzig	germ_cruiser_leipzig_default	Germany	4	typeDestroyer
+germ_cruiser_nurnberg_ec	Nürnberg	torpedoes	Other	0	typeDestroyer
+germ_cruiser_nurnberg	Nürnberg	torpedoes	Germany	4	typeDestroyer
+germ_cruiser_prinz_eugen	Prinz Eugen	torpedoes	Germany	4	typeDestroyer
+germ_destroyer_class1924_iltis	Luchs	torpedoes	Germany	1	typeDestroyer
+germ_destroyer_class1924_jaguar1941	Jaguar	torpedoes	Germany	2	typeDestroyer
+germ_destroyer_class1924_leopard1932_ec	Type 1924	torpedoes	Other	0	typeDestroyer
+germ_destroyer_class1924_leopard1932	Leopard	torpedoes	Germany	1	typeDestroyer
+germ_destroyer_class1934a_1940_ec	Z12 Erich Giese	torpedoes	Other	0	typeDestroyer
+germ_destroyer_class1934a_1940	Z12 Erich Giese	torpedoes	Germany	2	typeDestroyer
+germ_destroyer_class1934a_1944	Z15 Erich Steinbrinck	torpedoes	Germany	1	typeDestroyer
+germ_destroyer_class1936_z20_ec	Destroyer	torpedoes	Other	0	typeDestroyer
+germ_destroyer_class1936_z20_karlgalster	Z20 Karl Galster	torpedoes	Germany	3	typeDestroyer
+germ_destroyer_class1936_z20_tutorial	Destroyer	torpedoes	Other	0	typeDestroyer
+germ_destroyer_class1936_z20	Z22 Anton Schmitt	torpedoes	Germany	2	typeDestroyer
+germ_destroyer_class1936a_mob_z32	Z32	torpedoes	Germany	2	typeDestroyer
+germ_destroyer_class1936a_z25	Z25	torpedoes	Germany	3	typeDestroyer
+germ_destroyer_class1936b	Z43	torpedoes	Germany	2	typeDestroyer
+germ_destroyer_class1936c_z46	Z46	germ_destroyer_class1936c_z46_torpedoes	Germany	3	typeDestroyer
+germ_destroyer_class1936c_z47	Z47	torpedoes	Germany	3	typeDestroyer
+germ_destroyer_class1939_t22_ec	T22	torpedoes	Other	0	typeDestroyer
+germ_destroyer_class1939_t22	T22	torpedoes	Germany	1	typeDestroyer
+germ_destroyer_class1939_t31	T31	torpedoes	Germany	3	typeDestroyer
+germ_destroyer_class1942_z51	Z51	torpedoes	Germany	3	typeDestroyer
+germ_destroyer_class1944_z52	Z52	torpedoes	Germany	3	typeDestroyer
+germ_destroyer_fletcher_zerstorer4	Z4 Zerstörer	torpedoes	Germany	2	typeDestroyer
+germ_destroyer_lutjens_class_lutjens	Lütjens	torpedoes	Germany	4	typeDestroyer
+germ_escort_typem1935	M-17	bomb_mortar	Germany	4	typeGunBoat
+germ_escort_typem1943	M-802	torpedoes	Germany	4	typeGunBoat
+germ_frigate_koln_lubeck	Lübeck	torpedoes	Germany	4	typeTorpedoGunBoat
+germ_frigate_koln	Köln	torpedoes	Germany	5	typeTorpedoGunBoat
+germ_kanonenboot_k2	K2	germ_kanonenboot_k2_default	Germany	1	typeDestroyer
+germ_kanonenboot_k4_lorelei	Lorelei	germ_kanonenboot_k4_lorelei_default	Germany	1	typeDestroyer
+germ_km5	KM-5	torpedoes	Germany	1	typeShip
+germ_kondor2_class	Bernau	kondor2_class_default	Germany	4	typeSubmarineChaser
+germ_ls_class	LS 3	torpedoes	Germany	1	typeShip
+germ_ls4_class	LS 4 Esau	torpedoes	Germany	1	typeShip
+germ_minelayer_drache	Drache	bomb_mortar	Germany	4	typeGunBoat
+germ_mz_1	MZ1	torpedoes	Germany	4	typeGunBoat
+germ_pr_131	V-990	torpedoes	Germany	3	typeTorpedoBoat
+germ_pr_206	Pr. 206	torpedoes	Germany	5	typeGunBoat
+germ_pr1331	Parchim	torpedoes	Germany	5	typeTorpedoGunBoat
+germ_rboot_r130	R-130	germ_rboot_r130_default	Germany	2	typeGunBoat
+germ_rboot_r301	R-301	torpedoes	Germany	2	typeGunBoat
+germ_rboot_r41	R-41	germ_rboot_r41_default	Germany	1	typeGunBoat
+germ_rdm242	Krischan der Große	germ_rdm242_default	Germany	4	typeGunBoat
+germ_s_100_class	S-100	torpedoes	Germany	2	typeTorpedoBoat
+germ_s_100_s_174_class	S-147	torpedoes	Germany	3	typeTorpedoBoat
+germ_s_100_s204_lang	S-204 Lang	torpedoes	Germany	3	typeTorpedoBoat
+germ_s_700_s_701	S-701	germ_s_700_s_701_torpedoes	Germany	3	typeTorpedoBoat
+germ_s30_s61	S-61	torpedoes	Germany	2	typeTorpedoBoat
+germ_s38	S-38	torpedoes	Germany	1	typeTorpedoBoat
+germ_s38b	S-38b	torpedoes	Germany	2	typeTorpedoBoat
+germ_schutze_class	Schütze	schutze_class_default	Germany	4	typeSubmarineChaser
+germ_sf40_leichte_flakkampffaehre	SF40 Light	germ_sf40_leichte_flakkampffaehre_default	Germany	3	typeNavalFerryBarge
+germ_sf40_schwere_flakkampffaehre	SF40 Heavy	germ_sf40_schwere_flakkampffaehre_default	Germany	3	typeNavalFerryBarge
+germ_skr_pr50_karl_marx	Karl Marx	torpedoes	Germany	4	typeTorpedoGunBoat
+germ_type140_jaguar	Jaguar	torpedoes	Germany	5	typeTorpedoBoat
+germ_type143_albatros	Albatros	torpedoes	Germany	5	typeGunBoat
+germ_type143_bussard	Bussard	torpedoes	Germany	5	typeGunBoat
+germ_type152_hugin	Hugin	torpedoes	Germany	5	typeTorpedoBoat
+germ_type153_pfeil	Pfeil	torpedoes	Germany	5	typeTorpedoBoat
+germ_vs10_hydrofoil	VS-10	torpedoes	Germany	3	typeMinelayer
+germ_vs8_hydrofoil	VS-8	emc_mines	Germany	3	typeMinelayer
+giftbox	Present	giftbox_default	Other	0	Ship
+it_a1_vosper	GIS 811	torpedoes	Italy	3	typeTorpedoBoat
+it_alano_9851	Alano	it_alano_9851_default	Italy	5	typeGunBoat
+it_albatros_class_f543	Albatros	it_albatros_class_f543_bomb_mortars	Italy	5	typeTorpedoGunBoat
+it_albatros_class_f544	Alcione	bomb_mortars	Italy	5	typeTorpedoGunBoat
+it_battleship_andrea_doria	RN Andrea Doria	torpedoes	Italy	5	typeDestroyer
+it_battleship_caio_duilio	RN Duilio	it_battleship_caio_duilio_default	Italy	6	typeDestroyer
+it_battleship_conte_di_cavour	RN Conte di Cavour	it_battleship_conte_di_cavour_default	Italy	6	typeDestroyer
+it_battleship_dante_alighieri	RN Dante Alighieri	it_battleship_dante_alighieri_default	Italy	5	typeDestroyer
+it_battleship_francesco_caracciolo	RN Francesco Caracciolo	it_battleship_francesco_caracciolo_default	Italy	5	typeDestroyer
+it_battleship_leonardo_da_vinci	RN Leonardo da Vinci	torpedoes	Italy	5	typeDestroyer
+it_battleship_littorio_class_littorio	RN Italia	it_battleship_littorio_class_littorio_default	Italy	7	typeDestroyer
+it_battleship_littorio_class_roma	RN Roma	it_battleship_littorio_class_roma_default	Italy	7	typeDestroyer
+it_cassiopea_p401	Cassiopea	depth_charges	Italy	5	typeTorpedoGunBoat
+it_ciclone_class_ghibli	RN Ghibli	torpedoes	Italy	5	typeTorpedoGunBoat
+it_cruiser_bartolomeocolleoni_1940	RN Bartolomeo Colleoni	torpedoes	Italy	3	typeDestroyer
+it_cruiser_bolzano	RN Bolzano	torpedoes	Italy	4	typeDestroyer
+it_cruiser_cadorna_class_cadorna	RN Luigi Cadorna	it_cruiser_cadorna_class_cadorna_default	Italy	3	typeDestroyer
+it_cruiser_cadorna_class_diaz	RN Armando Diaz	torpedoes	Italy	3	typeDestroyer
+it_cruiser_capitani_romani_class_attilio_regolo_ec	RN Attilio Regolo	torpedoes	Other	0	typeDestroyer
+it_cruiser_capitani_romani_class_attilio_regolo	RN Attilio Regolo	torpedoes	Italy	3	typeDestroyer
+it_cruiser_etna_class	RN Etna	it_cruiser_etna_class_default	Italy	3	typeDestroyer
+it_cruiser_eugenio_di_savoia	RN Eugenio di Savoia	torpedoes	Italy	4	typeDestroyer
+it_cruiser_garibaldi_class_abruzzi	RN Duca degli Abruzzi	torpedoes	Italy	5	typeDestroyer
+it_cruiser_montecuccoli_ec	RN Raimondo Montecuccoli	it_cruiser_montecuccoli_torpedoes	Other	0	typeDestroyer
+it_cruiser_montecuccoli	RN Raimondo Montecuccoli	it_cruiser_montecuccoli_torpedoes	Italy	4	typeDestroyer
+it_cruiser_trento_ec	RN Trento	torpedoes	Other	0	typeDestroyer
+it_cruiser_trento	RN Trento	torpedoes	Italy	4	typeDestroyer
+it_cruiser_zara_class_ec	RN Zara	it_cruiser_zara_class_default	Other	0	typeDestroyer
+it_cruiser_zara_class_pola	RN Pola	it_cruiser_zara_class_default	Italy	4	typeDestroyer
+it_cruiser_zara_class	RN Zara	it_cruiser_zara_class_default	Italy	5	typeDestroyer
+it_destroyer_aquilone	RN Aquilone	torpedoes	Italy	1	typeDestroyer
+it_destroyer_comandanti_medaglie_doro	RN Comandante Margottini	torpedoes	Italy	2	typeDestroyer
+it_destroyer_dardo	RN Dardo	torpedoes	Italy	1	typeDestroyer
+it_destroyer_fletcher_geniere	Geniere	it_destroyer_fletcher_geniere_torpedoes	Italy	2	typeDestroyer
+it_destroyer_impetuoso_class_impetuoso	Impetuoso	torpedoes	Italy	2	typeDestroyer
+it_destroyer_leone_class_tigre	RN Tigre	torpedoes	Italy	3	typeDestroyer
+it_destroyer_leone_class	RN Leone	torpedoes	Italy	2	typeDestroyer
+it_destroyer_maestrale_class_grecale	Grecale	torpedoes	Italy	1	typeDestroyer
+it_destroyer_navigatori_class_verazzano	RN Da Verazzano	torpedoes	Italy	3	typeDestroyer
+it_destroyer_oriani_class_gioberti	RN Vincenzo Gioberti	torpedoes	Italy	1	typeDestroyer
+it_destroyer_saetta	RN Saetta	torpedoes	Italy	1	typeDestroyer
+it_destroyer_soldati_serie1_camicianera	RN Corazziere	torpedoes	Italy	2	typeDestroyer
+it_destroyer_soldati_serie1_geniere	RN Geniere	torpedoes	Italy	3	typeDestroyer
+it_destroyer_soldati_serie1	RN Aviere	torpedoes	Italy	3	typeDestroyer
+it_destroyer_turbine	RN Turbine	torpedoes	Italy	1	typeDestroyer
+it_destroyer_vifor_class_aquila	RN Aquila	torpedoes	Italy	1	typeDestroyer
+it_gabbiano_class_c16	Folaga	torpedoes	Italy	4	typeGunBoat
+it_gabbiano_class	RN Gabbiano	torpedoes	Italy	4	typeGunBoat
+it_mas_classe429	MAS 429	it_mas_classe429_default	Italy	1	typeGunBoat
+it_mas_classe500_3_1944	MAS 561	torpedoes	Italy	1	typeTorpedoBoat
+it_mas_classe500_3	MAS 555	torpedoes	Italy	1	typeTorpedoBoat
+it_mas_classe500_4	MAS 569	torpedoes	Italy	1	typeTorpedoBoat
+it_mas_stefano_turr	Stefano Turr	torpedoes	Italy	2	typeTorpedoBoat
+it_mas441	MAS 441	depth_charges	Italy	2	typeGunBoat
+it_mc_485	MC-485	torpedoes	Italy	3	typeTorpedoBoat
+it_mc490_folgore	MC-490	torpedoes	Italy	4	typeTorpedoBoat
+it_mc492_baleno	Baleno MC-492	torpedoes	Italy	4	typeTorpedoBoat
+it_ms15_1a	MS-15	torpedoes	Italy	2	typeTorpedoBoat
+it_ms444	MS 444	torpedoes	Italy	3	typeTorpedoBoat
+it_ms471_1a	MV-611	it_ms471_1a_default	Italy	3	typeGunBoat
+it_ms473_2a_art	MS-473	depth_charges	Italy	4	typeGunBoat
+it_ms473_2a	MS-472	torpedoes	Italy	3	typeTorpedoBoat
+it_ms53_2a	MS-53	torpedoes	Italy	2	typeTorpedoBoat
+it_p420_sparviero	Sparviero	it_p420_sparviero_default	Italy	4	typeGunBoat
+it_p493_freccia	Freccia P-493	it_p493_freccia_default	Italy	4	typeTorpedoBoat
+it_p494_saetta	Saetta P-494	it_p494_saetta_default	Italy	5	typeGunBoat
+it_vas_baglietto_68t_1serie	VAS 201	torpedoes	Italy	1	typeTorpedoBoat
+jp_abtei_pr1	Soukou-Tei	jp_abtei_pr1_default	Japan	1	typeGunBoat
+jp_abtei_pr4	Soukou-Tei No.4	jp_abtei_pr4_default	Japan	2	typeGunBoat
+jp_aircraftcarrier_shokaku	IJN Shokaku	jp_aircraftcarrier_shokaku_default	Other	0	typeShip
+jp_armoredcruiser_ikoma	IJN Ikoma	torpedoes	Japan	4	typeDestroyer
+jp_armoredcruiser_kurama	IJN Kurama	torpedoes	Japan	5	typeDestroyer
+jp_battlecruiser_amagi	IJN Amagi	torpedoes	Japan	6	typeDestroyer
+jp_battlecruiser_haruna	IJN Haruna	jp_battlecruiser_haruna_default	Japan	5	typeDestroyer
+jp_battlecruiser_hiei	IJN Hiei	torpedoes	Japan	5	typeDestroyer
+jp_battlecruiser_kirishima	IJN Kirishima	jp_battlecruiser_kirishima_default	Japan	5	typeDestroyer
+jp_battlecruiser_kongo	IJN Kongo	jp_battlecruiser_kongo_default	Japan	6	typeDestroyer
+jp_battleship_fuso	IJN Fuso	jp_battleship_fuso_default	Japan	6	typeDestroyer
+jp_battleship_hyuga	IJN Hyuga	torpedoes	Japan	5	typeDestroyer
+jp_battleship_ise	IJN Ise	jp_battleship_ise_default	Japan	6	typeDestroyer
+jp_battleship_musashi	IJN Musashi	jp_battleship_musashi_default	Japan	7	typeDestroyer
+jp_battleship_mutsu	IJN Mutsu	torpedoes	Japan	6	typeDestroyer
+jp_battleship_nagato	IJN Nagato	jp_battleship_nagato_default	Japan	6	typeDestroyer
+jp_battleship_settsu	IJN Settsu	torpedoes	Japan	5	typeDestroyer
+jp_battleship_tosa	IJN Tosa	torpedoes	Japan	6	typeDestroyer
+jp_battleship_yamashiro	IJN Yamashiro	torpedoes	Japan	5	typeDestroyer
+jp_battleship_yamato	IJN Yamato	jp_battleship_yamato_default	Japan	7	typeDestroyer
+jp_cargo_ship_kashino_ec	Cargo ship	jp_cargo_ship_kashino_default	Other	0	typeShip
+jp_cargo_ship_kashino	Cargo ship	jp_cargo_ship_kashino_default	Other	0	typeShip
+jp_cruiser_agano_ec	IJN Agano	torpedoes	Other	0	typeDestroyer
+jp_cruiser_agano	IJN Agano	torpedoes	Japan	4	typeDestroyer
+jp_cruiser_aoba	IJN Aoba	torpedoes	Japan	4	typeDestroyer
+jp_cruiser_furutaka_ec	IJN Furutaka	torpedoes	Other	0	typeDestroyer
+jp_cruiser_furutaka	IJN Furutaka	torpedoes	Japan	4	typeDestroyer
+jp_cruiser_haguro	IJN Haguro	torpedoes	Japan	4	typeDestroyer
+jp_cruiser_isuzu	IJN Isuzu	torpedoes	Japan	3	typeDestroyer
+jp_cruiser_kako_ec	IJN Kako	torpedoes	Other	0	typeDestroyer
+jp_cruiser_kako	IJN Kako	torpedoes	Japan	3	typeDestroyer
+jp_cruiser_kuma_ec	Kuma	torpedoes	Other	0	typeDestroyer
+jp_cruiser_kuma	IJN Tama	torpedoes	Japan	3	typeDestroyer
+jp_cruiser_mogami_mikuma	IJN Mikuma	torpedoes	Japan	5	typeDestroyer
+jp_cruiser_mogami_suzuya	IJN Suzuya	torpedoes	Japan	5	typeDestroyer
+jp_cruiser_mogami	IJN Mogami	torpedoes	Japan	5	typeDestroyer
+jp_cruiser_myoko	IJN Myoko	jp_cruiser_myoko_default	Japan	4	typeDestroyer
+jp_cruiser_oyodo	IJN Oyodo	jp_cruiser_oyodo_default	Japan	4	typeDestroyer
+jp_cruiser_sendai	IJN Sendai	torpedoes	Japan	3	typeDestroyer
+jp_cruiser_tone	IJN Tone	torpedoes	Japan	5	typeDestroyer
+jp_cruiser_yubari	IJN Yubari	torpedoes	Japan	3	typeDestroyer
+jp_daihatsu_landing_craft	Landing craft	jp_daihatsu_landing_craft_default	Other	0	typeSubmarineChaser
+jp_destroyer_akizuki_ec	IJN Akizuki	torpedoes	Other	0	typeDestroyer
+jp_destroyer_akizuki	IJN Akizuki	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_ayanami	JDS Ayanami (DD-103)	torpedoes	Japan	5	typeTorpedoGunBoat
+jp_destroyer_chidori	Chidori	torpedoes	Japan	5	typeTorpedoGunBoat
+jp_destroyer_fubuki_ec	Ayanami	torpedoes	Other	0	typeDestroyer
+jp_destroyer_fubuki	IJN Ayanami	torpedoes	Japan	2	typeDestroyer
+jp_destroyer_harukaze	JDS Harukaze (DD-101)	hedgehog_mortar	Japan	2	typeDestroyer
+jp_destroyer_hatsuharu	IJN Hatsuharu	torpedoes	Japan	2	typeDestroyer
+jp_destroyer_hatsuzuki	IJN Hatsuzuki	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_hayanami	IJN Hayanami	torpedoes	Japan	2	typeDestroyer
+jp_destroyer_isuzu	Isuzu	torpedoes	Japan	5	typeTorpedoGunBoat
+jp_destroyer_kagero	IJN Kagero	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_kiyoshimo	IJN Kiyoshimo	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_matsu	IJN Matsu	torpedoes	Japan	1	typeDestroyer
+jp_destroyer_momi	IJN Momi	torpedoes	Japan	1	typeDestroyer
+jp_destroyer_murasame	JDS Murasame (DD-107)	torpedoes	Japan	2	typeDestroyer
+jp_destroyer_mutsuki_ec	Mutsuki	torpedoes	Other	0	typeDestroyer
+jp_destroyer_mutsuki	IJN Mutsuki	torpedoes	Japan	1	typeDestroyer
+jp_destroyer_nenohi	IJN Nenohi	torpedoes	Japan	2	typeDestroyer
+jp_destroyer_satsuki	IJN Satsuki	torpedoes	Japan	1	typeDestroyer
+jp_destroyer_shimakaze	IJN Shimakaze	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_suzutsuki	IJN Suzutsuki	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_tade	IJN Tade	torpedoes	Japan	1	typeDestroyer
+jp_destroyer_yugumo_ec	IJN Yugumo	torpedoes	Other	0	typeDestroyer
+jp_destroyer_yugumo	IJN Yugumo	torpedoes	Japan	2	typeDestroyer
+jp_destroyer_yugure	JDS Yūgure (DD-184)	mk6_bomb_mortar	Japan	2	typeDestroyer
+jp_destroyer_yukikaze	IJN Yukikaze	torpedoes	Japan	3	typeDestroyer
+jp_destroyer_yuudachi	IJN Yuudachi	torpedoes	Japan	3	typeDestroyer
+jp_escort_akebono_class	Akebono	jp_escort_akebono_class_default	Japan	4	typeTorpedoGunBoat
+jp_escort_chikugo_class	Chikugo	torpedoes	Japan	4	typeTorpedoGunBoat
+jp_escort_hiburi_class_shisaka	Shisaka	jp_escort_hiburi_class_shisaka_default	Japan	5	typeTorpedoGunBoat
+jp_escort_hiburi_class_syonan	Syonan	jp_escort_hiburi_class_syonan_default	Japan	5	typeTorpedoGunBoat
+jp_escort_ikazuchi_class	Ikazuchi	jp_escort_ikazuchi_class_default	Japan	4	typeTorpedoGunBoat
+jp_karotei_type2	Type 4 (mod. 2)	jp_karotei_type2_default	Japan	2	typeGunBoat
+jp_karotei_type4	Type 4 (mod. 4)	jp_karotei_type4_default	Japan	2	typeGunBoat
+jp_kusen_tei_13_1942	Type K-8 No.13	jp_kusen_tei_13_1942_default	Japan	2	typeSubmarineChaser
+jp_kusen_tei_13_1944	Type K-8 No.13 late	jp_kusen_tei_13_1944_default	Japan	3	typeSubmarineChaser
+jp_minelayer_tsugaru	IJN Tsugaru	bomb_mortar	Japan	2	typeDestroyer
+jp_no1_ch2	Type K-3 No.1	jp_no1_ch2_default	Japan	3	typeSubmarineChaser
+jp_no4_ch8	Type K-7 No.4	jp_no4_ch8_default	Japan	3	typeSubmarineChaser
+jp_pc301_kari_class	Kari	jp_pc301_kari_class_default	Japan	3	typeSubmarineChaser
+jp_pg02	PG 02	jp_pg02_default	Japan	4	typeGunBoat
+jp_sehatei_mod1	Ha-Go (mod. 1)	jp_sehatei_mod1_default	Japan	2	typeGunBoat
+jp_t14_class_mod01	Type T-14 (mod. 1)	torpedoes	Japan	1	typeTorpedoBoat
+jp_t14_class_mod02	Type T-14 (mod. 2)	torpedoes	Japan	1	typeTorpedoBoat
+jp_t14_class	Type T-14	torpedoes	Japan	1	typeTorpedoBoat
+jp_t51a	Type T-51a	torpedoes	Japan	3	typeTorpedoBoat
+jp_t51b	Type T-51b	torpedoes	Japan	3	typeTorpedoBoat
+jp_type_11_pt_15	PT-15	torpedoes	Japan	4	typeTorpedoBoat
+jp_type_t1_1941	Type T-1	torpedoes	Japan	1	typeTorpedoBoat
+jp_type1_pt2	PT-802	torpedoes	Japan	2	typeTorpedoBoat
+jp_type38_1944	Type T-38	torpedoes	Japan	2	typeTorpedoBoat
+jp_type5_escortboat	Type 5	jp_type5_escortboat_default	Japan	1	typeGunBoat
+jp_type7_pt808	PT-808	torpedoes	Japan	3	typeTorpedoBoat
+jp_ujishima_msc	JDS Ujishima (MSC-655)	bomb_mortar	Japan	2	typeGunBoat
+jp_yuri_class_asagao	Asagao (YTE-01)	rocket_launcher	Japan	5	typeGunBoat
+uk_70ft_mgb	MGB-61	uk_70ft_mgb_default	Great Britain	1	typeGunBoat
+uk_71ft_mgb	MGB-75	uk_71ft_mgb_default	Great Britain	2	typeGunBoat
+uk_71ft_mtb460	MTB-460	torpedoes	Great Britain	3	typeTorpedoBoat
+uk_73ft_vosper_type1	MTB-379	torpedoes	Great Britain	2	typeTorpedoBoat
+uk_73ft_vosper_type2	MTB-523	torpedoes	Great Britain	2	typeTorpedoBoat
+uk_aircraftcarrier_ark_royal	HMS Ark Royal	uk_aircraftcarrier_ark_royal_default	Other	0	typeShip
+uk_aircraftcarrier_illustrious	HMS Illustrious	uk_aircraftcarrier_illustrious_default	Other	0	typeShip
+uk_attack_class_arrow	HMAS Arrow	uk_attack_class_arrow_default	Great Britain	4	typeGunBoat
+uk_battlecruiser_glorious	HMS Glorious	torpedoes	Great Britain	5	typeDestroyer
+uk_battlecruiser_hood	HMS Hood	torpedoes	Great Britain	6	typeDestroyer
+uk_battlecruiser_invincible	HMS Invincible	torpedoes	Great Britain	4	typeDestroyer
+uk_battlecruiser_queen_mary	HMS Queen Mary	torpedoes	Great Britain	5	typeDestroyer
+uk_battlecruiser_renown	HMS Renown	torpedoes	Great Britain	5	typeDestroyer
+uk_battlecruiser_repulse	HMS Repulse	torpedoes	Great Britain	6	typeDestroyer
+uk_battleship_centurion	HMS Centurion	torpedoes	Great Britain	5	typeDestroyer
+uk_battleship_colossus	HMS Colossus	torpedoes	Great Britain	5	typeDestroyer
+uk_battleship_dreadnought	HMS Dreadnought	torpedoes	Great Britain	5	typeDestroyer
+uk_battleship_iron_duke	HMS Iron Duke	torpedoes	Great Britain	5	typeDestroyer
+uk_battleship_marlborough	HMS Marlborough	torpedoes	Great Britain	6	typeDestroyer
+uk_battleship_nelson	HMS Nelson	uk_battleship_nelson_default	Great Britain	6	typeDestroyer
+uk_battleship_orion	HMS Orion	torpedoes	Great Britain	5	typeDestroyer
+uk_battleship_prince_of_wales	HMS Prince of Wales	uk_battleship_prince_of_wales_default	Great Britain	6	typeDestroyer
+uk_battleship_q_elizabet_class_barham	HMS Barham	torpedoes	Great Britain	6	typeDestroyer
+uk_battleship_q_elizabet_class_warspite	HMS Warspite	uk_battleship_q_elizabet_class_warspite_default	Great Britain	6	typeDestroyer
+uk_battleship_rodney	HMS Rodney	torpedoes	Great Britain	6	typeDestroyer
+uk_battleship_vanguard	HMS Vanguard	uk_battleship_vanguard_default	Great Britain	7	typeDestroyer
+uk_brave_borderer	Brave Borderer	torpedoes	Great Britain	5	typeTorpedoBoat
+uk_cargo_ship_liberty_ec	Cargo ship	us_cargo_ship_liberty_default	Other	0	typeShip
+uk_cargo_ship_liberty	Cargo ship	us_cargo_ship_liberty_default	Other	0	typeShip
+uk_corvette_orla	LÉ Orla	uk_corvette_orla_default	Great Britain	4	typeGunBoat
+uk_corvette_peacock	HMS Peacock	uk_corvette_peacock_default	Great Britain	5	typeGunBoat
+uk_cruiser_arethusa_ec	Arethusa	torpedoes	Other	0	typeDestroyer
+uk_cruiser_arethusa	HMS Arethusa	torpedoes	Great Britain	3	typeDestroyer
+uk_cruiser_belfast	HMS Belfast	uk_cruiser_belfast_default	Great Britain	4	typeDestroyer
+uk_cruiser_dido_ec	Dido	torpedoes	Other	0	typeDestroyer
+uk_cruiser_dido	HMS Dido	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_enterprise_d52_ec	HMS Enterprise	torpedoes	Other	0	typeDestroyer
+uk_cruiser_enterprise_d52	HMS Enterprise	torpedoes	Great Britain	3	typeDestroyer
+uk_cruiser_fiji_class_fiji	HMS Fiji	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_hawkins	HMS Hawkins	torpedoes	Great Britain	3	typeDestroyer
+uk_cruiser_kent	HMS Kent	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_leander_ec	Leander	torpedoes	Other	0	typeDestroyer
+uk_cruiser_leander	HMNZS Leander	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_liverpool	HMS Liverpool	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_london	HMS London	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_norfolk	HMS Norfolk	uk_cruiser_norfolk_torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_southampton	HMS Southampton	torpedoes	Great Britain	4	typeDestroyer
+uk_cruiser_tiger	HMS Tiger	uk_cruiser_tiger_default	Great Britain	5	typeDestroyer
+uk_cruiser_york	HMS York	torpedoes	Great Britain	4	typeDestroyer
+uk_dark_class_mtb_td	Dark Aggressor TD	torpedoes	Great Britain	3	typeGunBoat
+uk_dark_class_mtb	Dark Aggressor	torpedoes	Great Britain	3	typeGunBoat
+uk_dark_class	Dark Adventurer	uk_dark_class_default	Great Britain	2	typeGunBoat
+uk_destroyer_battle_2series	HMS Armada	torpedoes	Great Britain	3	typeDestroyer
+uk_destroyer_battle_cadiz	HMS Cadiz	torpedoes	Great Britain	3	typeDestroyer
+uk_destroyer_battle_tobruk	HMAS Tobruk	torpedoes	Great Britain	3	typeDestroyer
+uk_destroyer_clemson_churchill_ec	Clemson	torpedoes	Other	0	typeDestroyer
+uk_destroyer_clemson_churchill	HMS Churchill	torpedoes	Great Britain	1	typeDestroyer
+uk_destroyer_clemson_montgomery_g95	HMS Montgomery	torpedoes	Great Britain	1	typeDestroyer
+uk_destroyer_daring_class_daring	HMS Daring	torpedoes	Great Britain	3	typeDestroyer
+uk_destroyer_daring_class_diamond	HMS Diamond	torpedoes	Great Britain	3	typeDestroyer
+uk_destroyer_daring_class_diana	HMS Diana	uk_destroyer_daring_class_diana_default	Great Britain	3	typeDestroyer
+uk_destroyer_g_garland	ORP Garland	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_g_grafton_ec	G-class	torpedoes	Other	0	typeDestroyer
+uk_destroyer_g_grafton	HMS Grafton	torpedoes	Great Britain	1	typeDestroyer
+uk_destroyer_haida	HMCS Haida	torpedoes	Great Britain	3	typeDestroyer
+uk_destroyer_hunt_2series	HMS Calpe	uk_destroyer_hunt_2series_default	Great Britain	1	typeDestroyer
+uk_destroyer_hunt_4series	HMS Brissenden	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_j_class	HMS Jervis	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_k_class	HMS Kelvin	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_n_class_ec	HMAS Nepal	torpedoes	Other	0	typeDestroyer
+uk_destroyer_n_class	HMAS Nepal	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_restigouche_class_terranova	HMCS Terra Nova	mk_vii_bomb_mortar	Great Britain	5	typeDestroyer
+uk_destroyer_st_class_saumarez	HMS Saumarez	torpedoes	Great Britain	1	typeDestroyer
+uk_destroyer_tribal_ec	HMS Eskimo	torpedoes	Other	0	typeDestroyer
+uk_destroyer_tribal_mohawk	HMS Mohawk	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_tribal	HMS Eskimo	torpedoes	Great Britain	2	typeDestroyer
+uk_destroyer_v_class_valhalla	HMS Valhalla	torpedoes	Great Britain	1	typeDestroyer
+uk_destroyer_v_class_vega	HMS Vega	mk_vii_bomb_mortar	Great Britain	1	typeDestroyer
+uk_destroyer_v_class_verdun	HMS Verdun	mk_vii_bomb_mortar	Great Britain	1	typeDestroyer
+uk_egret_class	HMS Egret	board_mortar	Great Britain	2	typeDestroyer
+uk_fairmile_a_ml100	Fairmile A (ML100)	mk_vii_depth_charges	Great Britain	1	typeGunBoat
+uk_fairmile_b_ml345	Fairmile B (ML345)	mk_vii_depth_charges	Great Britain	2	typeGunBoat
+uk_fairmile_c_332	Fairmile C (332)	uk_fairmile_c_332_default	Great Britain	4	typeGunBoat
+uk_fairmile_c	Fairmile C (312)	uk_fairmile_c_default	Great Britain	3	typeGunBoat
+uk_fairmile_d_5001_5029	Fairmile D (5001)	torpedoes	Great Britain	3	typeTorpedoBoat
+uk_fairmile_d_601_616	Fairmile D (601)	uk_fairmile_d_601_616_default	Great Britain	3	typeGunBoat
+uk_fairmile_d_617_632	Fairmile D (617)	torpedoes	Great Britain	3	typeGunBoat
+uk_fairmile_d_697_800	Fairmile D (697)	torpedoes	Great Britain	4	typeTorpedoBoat
+uk_fairmile_lcs_l_h_mk2	Fairmile H LCS(L)(2)	uk_fairmile_lcs_l_h_mk2_default	Great Britain	3	typeGunBoat
+uk_flower_class	HMCS Brantford	uk_flower_class_default	Great Britain	2	typeGunBoat
+uk_fremantle_class	HMAS Fremantle	uk_fremantle_class_default	Great Britain	4	typeGunBoat
+uk_frigate_leopard	HMS Leopard	uk_frigate_river_default	Great Britain	5	typeDestroyer
+uk_frigate_river	HMS Spey	uk_frigate_river_default	Great Britain	4	typeTorpedoGunBoat
+uk_frigate_whitby_blackpool	HMS Blackpool	torpedoes	Great Britain	5	typeDestroyer
+uk_frigate_whitby	HMS Whitby	bomb_mortar	Great Britain	4	typeDestroyer
+uk_gay_class_archer	HMS Gay Archer	depth_charges	Great Britain	3	typeGunBoat
+uk_hdml_ml1383	ML 1383	uk_hdml_ml1383_depth_charges	Great Britain	1	typeGunBoat
+uk_higgins_78ft_mtb422	MTB-422	torpedoes	Great Britain	3	typeTorpedoBoat
+uk_isles_class_trawler	HMS Liscomb	uk_isles_class_trawler_default	Great Britain	2	typeGunBoat
+uk_minelayer_abdiel_class_abdiel	HMS Abdiel	type_a_mk1_mines	Great Britain	2	typeDestroyer
+uk_mtb_1series	MTB-1(1)	torpedoes	Great Britain	1	typeTorpedoBoat
+uk_mtb_2series	MTB-1(2)	torpedoes	Great Britain	1	typeTorpedoBoat
+uk_mtb_vosper_1series	MTB Vosper	torpedoes	Great Britain	1	typeTorpedoBoat
+uk_mtb_vosper_2series	MTB Vosper(2)	torpedoes	Great Britain	1	typeTorpedoBoat
+uk_mtb35_vosper	MTB-35	torpedoes	Great Britain	1	typeTorpedoBoat
+uk_sgb_304	SGB Grey Fox	torpedoes	Great Britain	4	typeGunBoat
+uk_sgb_309	SGB Grey Goose	torpedoes	Great Britain	3	typeGunBoat
+us_admirable_class	USS Candid	depth_charges	USA	4	typeGunBoat
+us_aircraftcarrier_enterprise	USS Enterprise	us_aircraftcarrier_enterprise_default	Other	0	typeShip
+us_aircraftcarrier_forrestal	USS Forrestal	us_aircraftcarrier_forrestal_default	Other	0	typeShip
+us_aircraftcarrier_lexington	USS Lexington	us_aircraftcarrier_lexington_default	Other	0	typeShip
+us_aircraftcarrier_saratoga	USS Saratoga	us_aircraftcarrier_saratoga_default	Other	0	typeShip
+us_ashville_class_douglas	USS Douglas	us_ashville_class_douglas_default	USA	4	typeGunBoat
+us_ashville_class	USS Asheville	us_ashville_class_default	USA	4	typeGunBoat
+us_battlecruiser_alaska_class	USS Alaska	us_battlecruiser_alaska_class_default	USA	6	typeDestroyer
+us_battleship_arizona_1931	USS Arizona	us_battleship_arizona_1931_default	USA	6	typeDestroyer
+us_battleship_arkansas	USS Arkansas	us_battleship_arkansas_default	USA	5	typeDestroyer
+us_battleship_colorado_class_colorado	USS Colorado	us_battleship_colorado_class_colorado_default	USA	6	typeDestroyer
+us_battleship_colorado_class_maryland	USS Maryland	us_battleship_colorado_class_colorado_default	USA	6	typeDestroyer
+us_battleship_iowa_class_iowa	USS Iowa	us_battleship_iowa_class_iowa_default	USA	7	typeDestroyer
+us_battleship_mississippi	USS Mississippi	us_battleship_mississippi_default	USA	6	typeDestroyer
+us_battleship_nevada	USS Nevada	us_battleship_nevada_common	USA	6	typeDestroyer
+us_battleship_north_carolina_class	USS North Carolina	us_battleship_north_carolina_class_default	USA	7	typeDestroyer
+us_battleship_north_dakota	USS North Dakota	us_battleship_north_dakota_torpedoes	USA	5	typeDestroyer
+us_battleship_oklahoma	USS Oklahoma	torpedoes	USA	6	typeDestroyer
+us_battleship_south_dakota	USS South Dakota	us_battleship_south_dakota_default	USA	7	typeDestroyer
+us_battleship_tennessee	USS Tennessee	us_battleship_tennessee_default	USA	6	typeDestroyer
+us_battleship_texas	USS Texas	us_battleship_texas_default	USA	5	typeDestroyer
+us_battleship_wyoming_class	USS Wyoming	us_battleship_wyoming_class_default	USA	5	typeDestroyer
+us_cargo_ship_liberty_ec	Cargo ship	us_cargo_ship_liberty_default	Other	0	typeShip
+us_cargo_ship_liberty	Cargo ship	us_cargo_ship_liberty_default	Other	0	typeShip
+us_cargo_ship_ss_ohio	Cargo ship	us_cargo_ship_ss_ohio_default	Other	0	typeShip
+us_cruiser_atlanta_class_atlanta	USS Atlanta	torpedoes	USA	4	typeDestroyer
+us_cruiser_baltimore_class_pittsburgh	USS Pittsburgh	us_cruiser_baltimore_class_default	USA	5	typeDestroyer
+us_cruiser_baltimore_class	USS Baltimore	us_cruiser_baltimore_class_default	USA	5	typeDestroyer
+us_cruiser_brooklyn_class_brooklyn	USS Brooklyn	us_cruiser_brooklyn_class_brooklyn_default	USA	4	typeDestroyer
+us_cruiser_brooklyn_class_helena	USS Helena	us_cruiser_brooklyn_class_helena_default	USA	4	typeDestroyer
+us_cruiser_cleveland_class_cleveland	USS Cleveland	us_cruiser_cleveland_class_cleveland_default	USA	4	typeDestroyer
+us_cruiser_des_moines_class_newport_news	USS Newport News	us_cruiser_des_moines_class_newport_news_default	USA	5	typeDestroyer
+us_cruiser_des_moines_class	USS Des Moines	us_cruiser_des_moines_class_default	USA	5	typeDestroyer
+us_cruiser_fargo_class	USS Fargo	us_fargo_class_default	USA	4	typeDestroyer
+us_cruiser_new_orleans_class	USS New Orleans	us_cruiser_new_orleans_default	USA	4	typeDestroyer
+us_cruiser_northampton_class	USS Northampton	us_cruiser_northampton_class_default	USA	4	typeDestroyer
+us_cruiser_omaha_class_detroit	USS Detroit	torpedoes	USA	3	typeDestroyer
+us_cruiser_omaha_class_raleigh	USS Raleigh	torpedoes	USA	3	typeDestroyer
+us_cruiser_omaha_class_trenton	USS Trenton	torpedoes	USA	3	typeDestroyer
+us_cruiser_oregon_class	USS Oregon City	us_cruiser_oregon_class_default	USA	5	typeDestroyer
+us_cruiser_pensacola_class	USS Pensacola	us_cruiser_pensacola_class_default	USA	4	typeDestroyer
+us_cruiser_portland_class	USS Portland	us_cruiser_portland_class_default	USA	4	typeDestroyer
+us_cruiser_rckt_california	USS California	us_cruiser_rckt_california_default	Other	0	typeDestroyer
+us_cruiser_worcester_class_roanoke	USS Roanoke	us_cruiser_worcester_class_roanoke_default	USA	5	typeDestroyer
+us_cyclone_class_cyclone	USS Cyclone	us_cyclone_class_cyclone_default	USA	5	typeGunBoat
+us_destroyer_bagley_class_bagley	USS Bagley	torpedoes	USA	2	typeDestroyer
+us_destroyer_bagley_class_helm	USS Helm	torpedoes	USA	2	typeDestroyer
+us_destroyer_cf_adams_class_cf_adams_ec	USS Charles F. Adams	torpedoes	Other	0	typeDestroyer
+us_destroyer_cf_adams_class_cf_adams	USS Charles F. Adams	torpedoes	USA	4	typeDestroyer
+us_destroyer_clemson_barker	USS Barker	torpedoes	USA	1	typeDestroyer
+us_destroyer_clemson_litchfield	USS Litchfield	torpedoes	USA	1	typeDestroyer
+us_destroyer_clemson_welborn_c_wood	USS Welborn C. Wood	torpedoes	USA	1	typeDestroyer
+us_destroyer_farragut_1942	USS Aylwin	torpedoes	USA	1	typeDestroyer
+us_destroyer_fletcher_bennion	USS Bennion	torpedoes	USA	3	typeDestroyer
+us_destroyer_fletcher_cowell	USS Cowell	torpedoes	USA	3	typeDestroyer
+us_destroyer_fletcher	USS Fletcher	torpedoes	USA	2	typeDestroyer
+us_destroyer_forrestsherman_class	USS Forrest Sherman	torpedoes	USA	4	typeDestroyer
+us_destroyer_gearing_frank_knox	USS Frank Knox	torpedoes	USA	3	typeDestroyer
+us_destroyer_gearing	USS Gearing	torpedoes	USA	3	typeDestroyer
+us_destroyer_gridley	USS Gridley	torpedoes	USA	2	typeDestroyer
+us_destroyer_mitscher_wilkinson	USS Wilkinson	torpedoes	USA	2	typeDestroyer
+us_destroyer_mitscher	USS Mitscher	torpedoes	USA	2	typeDestroyer
+us_destroyer_porter_1941	USS Porter	torpedoes	USA	3	typeDestroyer
+us_destroyer_porter_1942	USS Moffett	torpedoes	USA	3	typeDestroyer
+us_destroyer_porter_1944	USS Phelps	torpedoes	USA	3	typeDestroyer
+us_destroyer_somers_davis	USS Davis	torpedoes	USA	3	typeDestroyer
+us_destroyer_somers	USS Somers	torpedoes	USA	3	typeDestroyer
+us_destroyer_sumner	USS Sumner	torpedoes	USA	3	typeDestroyer
+us_elco_77ft_pt20	PT-20	torpedoes	USA	1	typeTorpedoBoat
+us_elco_77ft_pt59	PT-59	us_elco_77ft_pt59_default	USA	3	typeGunBoat
+us_elco_80ft_pt_boat_mod01	PT-314	torpedoes	USA	3	typeTorpedoBoat
+us_elco_80ft_pt_boat_mod02	PT-565	torpedoes	USA	3	typeTorpedoBoat
+us_elco_80ft_pt_boat_thunderbolt	Thunderbolt (PT-556)	torpedoes	USA	3	typeTorpedoBoat
+us_elco_80ft_pt_boat	PT-103	torpedoes	USA	2	typeTorpedoBoat
+us_elco_80ft_pt109_boat	PT-109	torpedoes	USA	2	typeTorpedoBoat
+us_elco_80ft_pt174	PT-174	torpedoes	USA	2	typeTorpedoBoat
+us_flagstaff_pgh1	USS Flagstaff	us_flagstaff_pgh1_default	USA	3	typeGunBoat
+us_frigate_buckley_class_coolbaugh	USS Coolbaugh	bomb_mortars	USA	5	typeDestroyer
+us_frigate_dealey	USS Dealey	depth_chagres	USA	5	typeDestroyer
+us_frigate_tacoma	USS Hoquiam	depth_charges	USA	5	typeDestroyer
+us_higgins_78ft_pt625	PT-200	torpedoes	USA	3	typeTorpedoBoat
+us_higgins_78ft_pt658	PT-658	torpedoes	USA	3	typeTorpedoBoat
+us_higgins_78ft_pt71	PT-71	torpedoes	USA	2	typeTorpedoBoat
+us_huckins_78ft_pt262	PT-262	torpedoes	USA	2	typeTorpedoBoat
+us_huckins_78ft_pt95	PT-95	torpedoes	USA	1	typeTorpedoBoat
+us_lcm_zippo	LCM(6) Zippo	lcm_zippo_default	USA	3	typeGunBoat
+us_lcs_l_3	LCS(L)(3)	us_lcs_l_3_default	USA	5	typeGunBoat
+us_nasty_ptf	PTF-7	us_nasty_ptf_default	USA	1	typeGunBoat
+us_pc_451	PC-451	us_pc_451_default	USA	2	typeSubmarineChaser
+us_pc_466_carmi	Carmi (PC-466)	us_pc_466_carmi_default	USA	2	typeSubmarineChaser
+us_pgm_59_class	Kim Qui	us_pgm_59_class_default	USA	3	typeGunBoat
+us_pgm_9_class	PGM-9	us_pc_466_carmi_default	USA	4	typeGunBoat
+us_pt3	PT-3	torpedoes	USA	1	typeTorpedoBoat
+us_pt6	PT-6	torpedoes	USA	1	typeTorpedoBoat
+us_pt810	PT-810	torpedoes	USA	5	typeTorpedoBoat
+us_pt811	PT-811	torpedoes	USA	4	typeTorpedoBoat
+us_pt812	PT-812	us_pt812_default	USA	4	typeGunBoat
+us_sc_497	SC-497	us_sc_497_default	USA	2	typeSubmarineChaser
+us_tucumcari_pgh2	USS Tucumcari	us_tucumcari_pgh2_default	USA	4	typeGunBoat
+ussr_1124_ack	Pr.1124 late	ussr_1124_ack_default	USSR / Russia	3	typeGunBoat
+ussr_1124_art	Pr.1124 early	ussr_1124_art_default	USSR / Russia	2	typeGunBoat
+ussr_1124_rct	Pr.1124 MLRS	ussr_1124_rct_default	USSR / Russia	2	typeGunBoat
+ussr_aircraftcarrier_admiral_kuznetsov	Admiral Kuznetsov	ussr_aircraftcarrier_admiral_kuznetsov_default	Other	0	typeShip
+ussr_aircraftcarrier_baku	Baku	ussr_aircraftcarrier_baku_default	Other	0	typeShip
+ussr_battlecruiser_izmail	Izmail	torpedoes	USSR / Russia	5	typeDestroyer
+ussr_battlecruiser_kronshtadt	Kronshtadt	ussr_battlecruiser_kronshtadt_default	USSR / Russia	6	typeDestroyer
+ussr_battlecruiser_sevastopol	Sevastopol	ussr_battlecruiser_sevastopol_default	USSR / Russia	6	typeDestroyer
+ussr_battlecruiser_stalingrad	Stalingrad	ussr_battlecruiser_stalingrad_default	USSR / Russia	6	typeDestroyer
+ussr_battleship_arhangelsk	Arkhangelsk	ussr_battleship_arhangelsk_default	USSR / Russia	6	typeDestroyer
+ussr_battleship_imperatritsa_mariya	Imperatritsa Mariya	torpedoes	USSR / Russia	5	typeDestroyer
+ussr_battleship_marat	Marat	ussr_battleship_marat_torpedoes	USSR / Russia	5	typeDestroyer
+ussr_battleship_novorossiysk	Novorossiysk	ussr_battleship_novorossiysk_default	USSR / Russia	6	typeDestroyer
+ussr_battleship_oktyabrskaya_revolutsiya	Oktyabrskaya Revolutsiya	ussr_battleship_oktyabrskaya_revolutsiya_default	USSR / Russia	5	typeDestroyer
+ussr_battleship_parizhskaya_kommuna	Parizhskaya Kommuna	ussr_battleship_parizhskaya_kommuna_default	USSR / Russia	5	typeDestroyer
+ussr_battleship_poltava	Poltava	torpedoes	USSR / Russia	5	typeDestroyer
+ussr_battleship_pr23_sovetskij_soyuz	Sovetsky Soyuz	ussr_battleship_pr23_sovetskij_soyuz_default	USSR / Russia	7	typeDestroyer
+ussr_bmo	BMO	ussr_bmo_default	USSR / Russia	4	typeGunBoat
+ussr_cargo_ship_liberty	Cargo ship	us_cargo_ship_liberty_default	Other	0	typeShip
+ussr_cruiser_chapayev	Chapayev	ussr_cruiser_chapayev_default	USSR / Russia	4	typeDestroyer
+ussr_cruiser_chervona_ukraina	Chervona Ukraina	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_cruiser_kerch	Kerch	torpedoes	USSR / Russia	4	typeDestroyer
+ussr_cruiser_kirov	Kirov	torpedoes	USSR / Russia	4	typeDestroyer
+ussr_cruiser_krasnyi_kavkaz	Krasny Kavkaz	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_cruiser_krasnyi_krim	Krasny Krym	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_cruiser_maxim_gorky	Maxim Gorky	torpedoes	USSR / Russia	5	typeDestroyer
+ussr_cruiser_mikhail_kutuzov	Mikhail Kutuzov	ussr_cruiser_mikhail_kutuzov_default	USSR / Russia	4	typeDestroyer
+ussr_cruiser_omaha_class_murmansk	Murmansk	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_cruiser_shcherbakov	Shcherbakov	ussr_cruiser_shcherbakov_default	USSR / Russia	5	typeDestroyer
+ussr_cruiser_sverdlov	Sverdlov	torpedoes	USSR / Russia	4	typeDestroyer
+ussr_cruiser_voroshilov	Voroshilov	torpedoes	USSR / Russia	4	typeDestroyer
+ussr_cruiser_zheleznyakov	Zheleznyakov	ussr_cruiser_zheleznyakov_default	USSR / Russia	4	typeDestroyer
+ussr_d3_tk126	TK-126	torpedoes	USSR / Russia	1	typeTorpedoBoat
+ussr_d3	D-3	torpedoes	USSR / Russia	1	typeTorpedoBoat
+ussr_destroyer_7_besposhchadny	Besposhchadny	torpedoes	USSR / Russia	1	typeDestroyer
+ussr_destroyer_7_ryany	Ryany	torpedoes	USSR / Russia	2	typeDestroyer
+ussr_destroyer_7y_stroyny	Stroyny	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_7y	Soobrazitelny	torpedoes	USSR / Russia	2	typeDestroyer
+ussr_destroyer_frunze	Frunze	torpedoes	USSR / Russia	1	typeDestroyer
+ussr_destroyer_kerch	Kerch	torpedoes	USSR / Russia	1	typeDestroyer
+ussr_destroyer_leningrad	Leningrad	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_moskva	Moskva	torpedoes	USSR / Russia	2	typeDestroyer
+ussr_destroyer_pr20_tashkent	Tashkent	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_pr30_ognevoy	Ognevoy	torpedoes	USSR / Russia	2	typeDestroyer
+ussr_destroyer_pr30bis_bezuprechnyi	Bezuprechny	torpedoes	USSR / Russia	2	typeDestroyer
+ussr_destroyer_pr30bis_smelyi	Smelyi	torpedoes	USSR / Russia	2	typeDestroyer
+ussr_destroyer_pr41_neustrashimy	Neustrashimy	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_pr45	Opytny	torpedoes	USSR / Russia	1	typeDestroyer
+ussr_destroyer_pr48k_erevan	Erevan	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_pr56_blagorodny	Blagorodnyy	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_pr56_bravy_ec	Bravy	torpedoes	Other	0	typeDestroyer
+ussr_destroyer_pr56_bravy	Bravy	torpedoes	USSR / Russia	4	typeDestroyer
+ussr_destroyer_pr56_spokoinyy	Spokoinyy	torpedoes	USSR / Russia	3	typeDestroyer
+ussr_destroyer_rckt_pr956	Project 956	ussr_destroyer_rckt_pr956_default	Other	0	typeDestroyer
+ussr_destroyer_regele_ferdinand_class_letuchiy	Letuchiy	torpedoes	USSR / Russia	1	typeDestroyer
+ussr_g5_mtb_landing_craft	Landing craft	ussr_g5_mtb_landing_craft_default	Other	0	typeTorpedoBoat
+ussr_g5_mtb_shvak	G-5 (ShVAK)	torpedoes	USSR / Russia	1	typeTorpedoBoat
+ussr_g5_mtb	G-5	torpedoes	USSR / Russia	1	typeTorpedoBoat
+ussr_g5_rct	TKA-412	rocket_launcher	USSR / Russia	1	typeGunBoat
+ussr_mbk_161_1943	MBK-161 early	ussr_mbk_161_1943_default	USSR / Russia	3	typeGunBoat
+ussr_mbk_161_1944	MBK-161 late	ussr_mbk_161_1944_default	USSR / Russia	4	typeGunBoat
+ussr_mkl_186_mk85	MBK pr.186 (MK 85)	ussr_mkl_186_mk85_default	USSR / Russia	4	typeGunBoat
+ussr_mkl_186	MBK pr.186	ussr_mkl_186_default	USSR / Russia	4	typeGunBoat
+ussr_mo_4	MO-4	ussr_mo_4_default	USSR / Russia	1	typeGunBoat
+ussr_mpk_122a	MPK pr.122A	ussr_mpk_122a_default	USSR / Russia	2	typeSubmarineChaser
+ussr_mpk_122bis	MPK Pr.122bis	ussr_mpk_122bis_default	USSR / Russia	2	typeSubmarineChaser
+ussr_mpk_163	MPK-163	ussr_mpk_163_default	USSR / Russia	2	typeSubmarineChaser
+ussr_mpk_201k	MPK Pr.201K	ussr_mpk_201m_rocket_launcher	USSR / Russia	4	typeSubmarineChaser
+ussr_mpk_201m	MPK Pr.201M	ussr_mpk_201m_rocket_launcher	USSR / Russia	4	typeSubmarineChaser
+ussr_mpk_204	MPK Pr.204	torpedoes	USSR / Russia	4	typeSubmarineChaser
+ussr_mpk_pr_1124_ec	MPK-33	torpedoes	Other	0	typeTorpedoGunBoat
+ussr_mpk_pr_1124	MPK-33	torpedoes	USSR / Russia	5	typeTorpedoGunBoat
+ussr_mpk_pr11451	MPK Pr.11451	torpedoes	USSR / Russia	5	typeGunBoat
+ussr_mpk_pr12412	MPK Pr.12412	torpedoes	USSR / Russia	5	typeGunBoat
+ussr_mpk_pr12412p	MPK Pr.12412P	torpedoes	USSR / Russia	4	typeGunBoat
+ussr_mpk_pr1331m	MPK Pr.1331M	torpedoes	USSR / Russia	5	typeTorpedoGunBoat
+ussr_od_200	OD-200	ussr_od_200_default	USSR / Russia	1	typeGunBoat
+ussr_pr_103_sm4	SM-4	torpedoes	USSR / Russia	1	typeTorpedoBoat
+ussr_pr_1204_late	Pr.1204 late	bm_14_17_rocket_launcher	USSR / Russia	3	typeGunBoat
+ussr_pr_1204	Pr.1204	ussr_pr_1204_default	USSR / Russia	2	typeGunBoat
+ussr_pr_123bis	Pr.123-bis	torpedoes	USSR / Russia	2	typeTorpedoBoat
+ussr_pr_123k_hydrofoils	Pr.123K (A-10bis)	torpedoes	USSR / Russia	2	typeTorpedoBoat
+ussr_pr_123k	Pr.123K	torpedoes	USSR / Russia	2	typeTorpedoBoat
+ussr_pr_183_egypt_bm_21	Pr.183 BM-21	ussr_pr_183_egypt_bm_21_default	USSR / Russia	3	typeGunBoat
+ussr_pr_183	Pr.183	torpedoes	USSR / Russia	4	typeTorpedoBoat
+ussr_pr_191	Pr.191	ussr_pr_191_default	USSR / Russia	3	typeGunBoat
+ussr_pr_191m	Pr.191M	ussr_pr_191m_default	USSR / Russia	3	typeGunBoat
+ussr_pr_205pe_k225	AK-225	ussr_pr_205pe_k225_default	USSR / Russia	5	typeGunBoat
+ussr_pr_206_race	Pr. 206	torpedoes	USSR / Russia	5	typeGunBoat
+ussr_pr_206	Pr. 206	torpedoes	USSR / Russia	5	typeGunBoat
+ussr_pr_206m	Pr.206-M	torpedoes	USSR / Russia	5	typeGunBoat
+ussr_pr253l	Pr.253L	ussr_pr253l_default	USSR / Russia	2	typeGunBoat
+ussr_skr_groza_1943	Groza	torpedoes	USSR / Russia	4	typeTorpedoGunBoat
+ussr_skr_pr159	SKR-1	torpedoes	USSR / Russia	5	typeTorpedoGunBoat
+ussr_skr_pr35	SKR-7	torpedoes	USSR / Russia	5	typeTorpedoGunBoat
+ussr_skr_pr50_jenot	Yenot	torpedoes	USSR / Russia	5	typeTorpedoGunBoat
+ussr_skr_pr50plo_rosomacha	Rosomacha	torpedoes	USSR / Russia	4	typeTorpedoGunBoat
+ussr_ya_5m	Ya-5M	ussr_ya_5m_default	USSR / Russia	1	typeGunBoat

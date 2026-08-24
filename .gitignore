@@ -8,3 +8,9 @@ dist/
 .idea/
 bin/
 obj/
+_game_extract/
+_mission_extract/
+cleanup-backups/
+diagnostics/
+*.zip
+*.sha256
