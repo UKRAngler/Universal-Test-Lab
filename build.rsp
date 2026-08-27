@@ -19,6 +19,7 @@
 /resource:data\aircraft_slots.tsv,UTL.aircraft_slots.tsv
 /resource:data\weapon_catalog.tsv,UTL.weapon_catalog.tsv
 /resource:data\modifications.tsv,UTL.modifications.tsv
+/resource:data\combined_maps.tsv,UTL.combined_maps.tsv
 /resource:template\universal_test_lab.blk,UTL.universal_test_lab.blk
 /resource:template\usr.csv,UTL.usr.csv
 /resource:resources\Clean_Testdrive.bin,UTL.Clean_Testdrive.bin

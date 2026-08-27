@@ -22,7 +22,7 @@ jobs:
 
       - name: Package beta
         shell: powershell
-        run: .\Package-Release.ps1 -Version v0.12.0-beta.1
+        run: .\Package-Release.ps1 -Version v0.12.0-beta.2
 
       - name: Upload beta artifact
         uses: actions/upload-artifact@v4
@@ -30,6 +30,6 @@ jobs:
           name: Universal-Test-Lab-beta-${{ github.sha }}
           path: |
             dist/UniversalTestLab.exe
-            dist/Universal_Test_Lab_v0.12.0-beta.1.zip
+            dist/Universal_Test_Lab_v0.12.0-beta.2.zip
             dist/SHA256SUMS.txt
           if-no-files-found: error

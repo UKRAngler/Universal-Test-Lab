@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyDescription("War Thunder User Mission and vehicle test workspace (public beta)")]
 [assembly: AssemblyCompany("AstraSEP")]
 [assembly: AssemblyVersion("0.12.0.0")]
-[assembly: AssemblyFileVersion("0.12.0.0")]
-[assembly: AssemblyInformationalVersion("0.12.0-beta.1")]
+[assembly: AssemblyFileVersion("0.12.0.2")]
+[assembly: AssemblyInformationalVersion("0.12.0-beta.2")]
 
 namespace UniversalTestLab
 {
@@ -580,6 +580,47 @@ namespace UniversalTestLab
         public override string ToString() { return Display; }
     }
 
+    internal sealed class CombinedSpawn
+    {
+        public string Kind;
+        public int Side;
+        public string Option;
+        public string Label;
+        public string Transform;
+        public string ObjectClass;
+        public override string ToString() { return Label; }
+    }
+
+    internal sealed class CombinedCapturePoint
+    {
+        public string Id;
+        public string Label;
+        public string Transform;
+    }
+
+    internal sealed class CombinedMap
+    {
+        public string Id;
+        public string Display;
+        public string Level;
+        public readonly List<CombinedSpawn> Spawns = new List<CombinedSpawn>();
+        public readonly List<CombinedCapturePoint> CapturePoints = new List<CombinedCapturePoint>();
+        public override string ToString() { return Display; }
+    }
+
+    internal sealed class CombinedScenarioSettings
+    {
+        public bool Enabled;
+        public string MapId;
+        public int Side = 1;
+        public string SpawnOption;
+
+        public CombinedScenarioSettings Copy()
+        {
+            return new CombinedScenarioSettings { Enabled = Enabled, MapId = MapId, Side = Side, SpawnOption = SpawnOption };
+        }
+    }
+
     internal sealed class DonorWeapon
     {
         public string AircraftId;
@@ -1012,6 +1053,338 @@ namespace UniversalTestLab
             return ReplaceSpan(text, span, block);
         }
 
+        public static string ConfigureCombinedScenario(string text, CombinedMap map, CombinedSpawn spawn)
+        {
+            if (map == null || String.IsNullOrWhiteSpace(map.Level)) throw new InvalidOperationException("The selected combined-battles map is invalid.");
+            if (spawn == null || String.IsNullOrWhiteSpace(spawn.Transform)) throw new InvalidOperationException("The selected combined-battles spawn is invalid.");
+            int side = spawn.Side == 2 ? 2 : 1;
+
+            BlockSpan missionSettings = FirstBlock(text, "mission_settings", 0);
+            if (missionSettings == null) throw new InvalidOperationException("Mission settings are missing.");
+            BlockSpan mission = FirstBlock(missionSettings.Text, "mission", 0);
+            if (mission == null) throw new InvalidOperationException("Mission definition is missing.");
+            string missionText = ReplaceStringField(mission.Text, "level", map.Level.Replace("\"", ""));
+            string updatedSettings = ReplaceSpan(missionSettings.Text, mission, missionText);
+            BlockSpan playerSettings = FirstBlock(updatedSettings, "player", 0);
+            if (playerSettings == null) throw new InvalidOperationException("Player-side settings are missing.");
+            string playerSettingsText = Regex.Replace(playerSettings.Text, @"(?m)^(\s*army:i\s*=\s*)-?\d+\s*$", delegate(Match match)
+            {
+                return match.Groups[1].Value + side.ToString(CultureInfo.InvariantCulture);
+            }, RegexOptions.IgnoreCase);
+            updatedSettings = ReplaceSpan(updatedSettings, playerSettings, playerSettingsText);
+            text = ReplaceSpan(text, missionSettings, updatedSettings);
+
+            double verticalOffset = spawn.Kind.Equals("aircraft", StringComparison.OrdinalIgnoreCase) && spawn.Option.Equals("airfield", StringComparison.OrdinalIgnoreCase) ? 3.0 :
+                spawn.Kind.Equals("helicopter", StringComparison.OrdinalIgnoreCase) ? 1.5 :
+                spawn.Kind.Equals("ground", StringComparison.OrdinalIgnoreCase) ? 1.0 : 0.0;
+            string playerTransform = NormalizeTransform(spawn.Transform, verticalOffset, 1.0);
+            BlockSpan player = UnitBlockByName(text, "You");
+            string playerBlock = ReplaceMatrixField(player.Text, "tm", playerTransform);
+            playerBlock = Regex.Replace(playerBlock, @"(?m)^(\s*army:i\s*=\s*)-?\d+\s*$", delegate(Match match)
+            {
+                return match.Groups[1].Value + side.ToString(CultureInfo.InvariantCulture);
+            }, RegexOptions.IgnoreCase);
+            text = ReplaceSpan(text, player, playerBlock);
+
+            // Combined-battles mode is intentionally a solo sandbox. Rebuild the
+            // units section with only the player and the selected physical runway or
+            // helipad object, so no range targets or map bots can be instantiated.
+            BlockSpan units = FirstBlock(text, "units", 0);
+            if (units == null) throw new InvalidOperationException("Mission units block is missing.");
+            player = UnitBlockByName(text, "You");
+            StringBuilder unitsText = new StringBuilder();
+            unitsText.AppendLine("units{");
+            unitsText.AppendLine(player.Text.TrimEnd());
+            if (!String.IsNullOrWhiteSpace(spawn.ObjectClass))
+            {
+                if (!Regex.IsMatch(spawn.ObjectClass, @"^[A-Za-z0-9_./-]+$")) throw new InvalidOperationException("The selected spawn object is invalid.");
+                unitsText.AppendLine();
+                unitsText.AppendLine("  objectGroups{");
+                unitsText.AppendLine("    name:t=\"UTL_Selected_Spawn_Base\"");
+                unitsText.AppendLine("    tm:m=" + NormalizeTransform(spawn.Transform, 0.0, 1.0));
+                unitsText.AppendLine("    unit_class:t=\"" + spawn.ObjectClass + "\"");
+                unitsText.AppendLine("    objLayer:i=2");
+                unitsText.AppendLine("    props{");
+                unitsText.AppendLine("      army:i=" + side.ToString(CultureInfo.InvariantCulture));
+                unitsText.AppendLine("      active:b=yes");
+                unitsText.AppendLine("    }");
+                unitsText.AppendLine("  }");
+            }
+            unitsText.Append("}");
+            text = ReplaceSpan(text, units, unitsText.ToString());
+
+            BlockSpan triggers = FirstBlock(text, "triggers", 0);
+            if (triggers == null) throw new InvalidOperationException("Mission triggers block is missing.");
+            StringBuilder triggerText = new StringBuilder();
+            triggerText.AppendLine("triggers{");
+            triggerText.AppendLine("  isCategory:b=yes");
+            triggerText.AppendLine("  is_enabled:b=yes");
+            foreach (string triggerName in new[] { "\"Player Full Internal Fuel\"", "\"Player Respawn Flight Profile\"" })
+            {
+                BlockSpan playerTrigger = FirstBlock(text, triggerName, 0);
+                if (playerTrigger != null)
+                {
+                    triggerText.AppendLine();
+                    triggerText.AppendLine(playerTrigger.Text.TrimEnd());
+                }
+            }
+            bool aircraftMap = spawn.Kind.Equals("aircraft", StringComparison.OrdinalIgnoreCase);
+            List<CombinedCapturePoint> navigationCaptures = map.CapturePoints
+                .Where(x => x != null && !String.IsNullOrWhiteSpace(x.Transform))
+                .OrderBy(x => x.Label, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+            List<CombinedSpawn> navigationSpawns = map.Spawns
+                .Where(x => x != null && x.Kind.Equals(spawn.Kind, StringComparison.OrdinalIgnoreCase) && !String.IsNullOrWhiteSpace(x.Transform))
+                .OrderBy(x => x.Side)
+                .ThenBy(x => x.Option, StringComparer.OrdinalIgnoreCase)
+                .ToList();
+            if (navigationCaptures.Count > 0 || navigationSpawns.Count > 0)
+                AppendCombinedNavigationTrigger(triggerText, navigationCaptures, navigationSpawns,
+                    spawn.Kind.Equals("ground", StringComparison.OrdinalIgnoreCase));
+            if (aircraftMap)
+            {
+                triggerText.AppendLine(@"
+  ""UTL Aircraft Map Extent""{
+    is_enabled:b=yes
+    comments:t=""Use an aviation-scale tactical map without imposing an out-of-bounds kill zone""
+
+    props{
+      actionsType:t=""PERFORM_ONE_BY_ONE""
+      conditionsType:t=""ALL""
+      enableAfterComplete:b=no
+    }
+
+    events{
+      initMission{}
+    }
+
+    conditions{}
+
+    actions{
+      missionBattleArea{
+        air:b=yes
+        ground:b=no
+        mapArea:b=no
+        airMapArea:b=yes
+        killArea:b=no
+        detectionArea:b=no
+        killOutOfBattleArea:b=no
+        newGridHorizontalCellCount:i=0
+        area:t=""UTL_Air_Map_Area""
+      }
+    }
+
+    else_actions{}
+  }");
+            }
+            triggerText.Append("}");
+            text = ReplaceSpan(text, triggers, triggerText.ToString());
+
+            // Clean-test-range zones and waypoints belong to another level. Keeping
+            // them would leave stray HUD markers and actions at unrelated coordinates.
+            BlockSpan areas = FirstBlock(text, "areas", 0);
+            if (areas != null)
+            {
+                string areaText = BuildCombinedNavigationAreas(map, spawn, aircraftMap, navigationCaptures, navigationSpawns);
+                text = ReplaceSpan(text, areas, areaText);
+            }
+            BlockSpan wayPoints = FirstBlock(text, "wayPoints", 0);
+            if (wayPoints != null) text = ReplaceSpan(text, wayPoints, "wayPoints{\r\n}");
+            return text;
+        }
+
+        public static string CombinedRespawnTransform(CombinedSpawn spawn)
+        {
+            if (spawn == null) throw new ArgumentNullException("spawn");
+            double verticalOffset = spawn.Kind.Equals("aircraft", StringComparison.OrdinalIgnoreCase) && spawn.Option.Equals("airfield", StringComparison.OrdinalIgnoreCase) ? 3.0 :
+                spawn.Kind.Equals("helicopter", StringComparison.OrdinalIgnoreCase) ? 1.5 :
+                spawn.Kind.Equals("ground", StringComparison.OrdinalIgnoreCase) ? 1.0 : 0.0;
+            return NormalizeTransform(spawn.Transform, verticalOffset, 10.0);
+        }
+
+        private static void AppendCombinedNavigationTrigger(StringBuilder output, IList<CombinedCapturePoint> captures, IList<CombinedSpawn> spawns, bool showCaptureHud)
+        {
+            output.AppendLine();
+            output.AppendLine("  \"UTL Combined Map Markers\"{");
+            output.AppendLine("    is_enabled:b=yes");
+            output.AppendLine("    comments:t=\"Native Domination capture and spawn locations for navigation only\"");
+            output.AppendLine();
+            output.AppendLine("    props{");
+            output.AppendLine("      actionsType:t=\"PERFORM_ONE_BY_ONE\"");
+            output.AppendLine("      conditionsType:t=\"ALL\"");
+            output.AppendLine("      enableAfterComplete:b=no");
+            output.AppendLine("    }");
+            output.AppendLine();
+            output.AppendLine("    events{");
+            output.AppendLine("      initMission{}");
+            output.AppendLine("    }");
+            output.AppendLine();
+            output.AppendLine("    conditions{}");
+            output.AppendLine();
+            output.AppendLine("    actions{");
+            foreach (CombinedCapturePoint capture in captures)
+            {
+                output.AppendLine("      missionMarkAsCaptureZone{");
+                output.AppendLine("        army:i=0");
+                output.AppendLine("        timeMultiplier:r=1");
+                output.AppendLine("        disableZone:b=no");
+                output.AppendLine("        name_for_respawn_base:t=\"\"");
+                output.AppendLine("        target:t=\"" + CombinedCaptureAreaName(capture) + "\"");
+                output.AppendLine("        canCaptureOnGround:b=no");
+                output.AppendLine("        canCaptureInAir:b=no");
+                output.AppendLine("        playAirfieldSound:b=no");
+                output.AppendLine("        canCaptureByGM:b=no");
+                output.AppendLine("        onlyPlayersCanCapture:b=yes");
+                output.AppendLine("        useHUDMarkers:b=" + (showCaptureHud ? "yes" : "no"));
+                output.AppendLine("        showBorderOnMap:b=yes");
+                output.AppendLine("        zoneDefenders{}");
+                output.AppendLine("        capture_tags{");
+                output.AppendLine("          tank:b=no");
+                output.AppendLine("        }");
+                output.AppendLine("      }");
+            }
+            foreach (CombinedSpawn marker in spawns)
+            {
+                bool ground = marker.Kind.Equals("ground", StringComparison.OrdinalIgnoreCase);
+                bool airfield = marker.Option.Equals("airfield", StringComparison.OrdinalIgnoreCase) || marker.Kind.Equals("helicopter", StringComparison.OrdinalIgnoreCase);
+                string location = ground ? "missions/spawn_01" : airfield ? "missions/airfield_spawn" : "missions/air_spawn";
+                output.AppendLine("      missionMarkAsRespawnPoint{");
+                output.AppendLine("        loc_name:t=\"" + location + "\"");
+                output.AppendLine("        spawnEffect:b=no");
+                output.AppendLine("        isStrictSpawn:b=no");
+                output.AppendLine("        resetStrictSpawnIndex:b=no");
+                output.AppendLine("        isAirfield:b=" + (airfield ? "yes" : "no"));
+                output.AppendLine("        isUnit:b=no");
+                output.AppendLine("        forceCreate:b=no");
+                output.AppendLine("        useExisting:b=no");
+                output.AppendLine("        ignoreTeamsOnReuse:b=no");
+                output.AppendLine("        isIndividual:b=" + (ground ? "yes" : "no"));
+                output.AppendLine("        onlyOnePlayerPerSpawnPoint:b=no");
+                output.AppendLine("        removeAreas:b=no");
+                output.AppendLine("        replaceAreas:b=no");
+                output.AppendLine("        canSpawnOnNeutral:b=no");
+                output.AppendLine("        showOnMap:b=yes");
+                output.AppendLine("        radius:r=-1");
+                output.AppendLine("        target:t=\"" + CombinedSpawnAreaName(marker) + "\"");
+                output.AppendLine("        team:t=\"" + (marker.Side == 2 ? "B" : "A") + "\"");
+                output.AppendLine("        tags{");
+                output.AppendLine("          tank:b=" + (ground ? "yes" : "no"));
+                output.AppendLine("        }");
+                output.AppendLine("      }");
+            }
+            output.AppendLine("    }");
+            output.AppendLine();
+            output.AppendLine("    else_actions{}");
+            output.AppendLine("  }");
+        }
+
+        private static string BuildCombinedNavigationAreas(CombinedMap map, CombinedSpawn selectedSpawn, bool aircraftMap, IList<CombinedCapturePoint> captures, IList<CombinedSpawn> spawns)
+        {
+            StringBuilder output = new StringBuilder();
+            output.AppendLine("areas{");
+            if (aircraftMap)
+                AppendCombinedArea(output, "UTL_Air_Map_Area", CombinedAirMapTransform(map, selectedSpawn));
+            foreach (CombinedCapturePoint capture in captures)
+                AppendCombinedArea(output, CombinedCaptureAreaName(capture), CanonicalTransform(capture.Transform));
+            foreach (CombinedSpawn marker in spawns)
+            {
+                double radius = marker.Kind.Equals("aircraft", StringComparison.OrdinalIgnoreCase) ? 180.0 :
+                    marker.Kind.Equals("helicopter", StringComparison.OrdinalIgnoreCase) ? 90.0 : 45.0;
+                AppendCombinedArea(output, CombinedSpawnAreaName(marker), NormalizeTransform(marker.Transform, 0.0, radius));
+            }
+            output.Append("}");
+            return output.ToString();
+        }
+
+        private static void AppendCombinedArea(StringBuilder output, string name, string transform)
+        {
+            output.AppendLine("  " + name + "{");
+            output.AppendLine("    type:t=\"Sphere\"");
+            output.AppendLine("    tm:m=" + transform);
+            output.AppendLine("    objLayer:i=0");
+            output.AppendLine();
+            output.AppendLine("    props{}");
+            output.AppendLine("  }");
+        }
+
+        private static string CombinedCaptureAreaName(CombinedCapturePoint capture)
+        {
+            return "UTL_Capture_" + CombinedToken(capture == null ? "Point" : capture.Label);
+        }
+
+        private static string CombinedSpawnAreaName(CombinedSpawn spawn)
+        {
+            return "UTL_Spawn_S" + (spawn != null && spawn.Side == 2 ? "2" : "1") + "_" + CombinedToken(spawn == null ? "point" : spawn.Option);
+        }
+
+        private static string CombinedToken(string value)
+        {
+            string token = Regex.Replace(value ?? "", @"[^A-Za-z0-9_]+", "_").Trim('_');
+            return String.IsNullOrEmpty(token) ? "point" : token;
+        }
+
+        private static string CanonicalTransform(string source)
+        {
+            MatchCollection matches = Regex.Matches(source ?? "", @"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?");
+            if (matches.Count != 12) throw new InvalidOperationException("Map marker transform does not contain a 3x4 mission matrix.");
+            double[] values = matches.Cast<Match>().Select(x => Double.Parse(x.Value, NumberStyles.Float, CultureInfo.InvariantCulture)).ToArray();
+            Func<double, string> number = value => Math.Abs(value) < 0.0000001 ? "0" : value.ToString("0.######", CultureInfo.InvariantCulture);
+            return "[[" + number(values[0]) + ", " + number(values[1]) + ", " + number(values[2]) + "] [" +
+                number(values[3]) + ", " + number(values[4]) + ", " + number(values[5]) + "] [" +
+                number(values[6]) + ", " + number(values[7]) + ", " + number(values[8]) + "] [" +
+                number(values[9]) + ", " + number(values[10]) + ", " + number(values[11]) + "]]";
+        }
+
+        private static string ReplaceMatrixField(string block, string field, string value)
+        {
+            Regex regex = new Regex("(?m)^(\\s*)" + Regex.Escape(field) + @":m\s*=\s*\[\[[^\r\n]+\]\]\s*$");
+            if (!regex.IsMatch(block)) throw new InvalidOperationException("BLK matrix field not found: " + field);
+            return regex.Replace(block, delegate(Match match) { return match.Groups[1].Value + field + ":m=" + value; }, 1);
+        }
+
+        private static string NormalizeTransform(string source, double verticalOffset, double orientationScale)
+        {
+            MatchCollection matches = Regex.Matches(source ?? "", @"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?");
+            if (matches.Count != 12) throw new InvalidOperationException("Spawn transform does not contain a 3x4 mission matrix.");
+            double[] values = matches.Cast<Match>().Select(x => Double.Parse(x.Value, NumberStyles.Float, CultureInfo.InvariantCulture)).ToArray();
+            for (int row = 0; row < 3; row++)
+            {
+                int offset = row * 3;
+                double length = Math.Sqrt(values[offset] * values[offset] + values[offset + 1] * values[offset + 1] + values[offset + 2] * values[offset + 2]);
+                if (length < 0.000001) throw new InvalidOperationException("Spawn transform contains an empty orientation row.");
+                for (int column = 0; column < 3; column++) values[offset + column] = values[offset + column] / length * orientationScale;
+            }
+            values[10] += verticalOffset;
+            Func<double, string> number = value => Math.Abs(value) < 0.0000001 ? "0" : value.ToString("0.######", CultureInfo.InvariantCulture);
+            return "[[" + number(values[0]) + ", " + number(values[1]) + ", " + number(values[2]) + "] [" +
+                number(values[3]) + ", " + number(values[4]) + ", " + number(values[5]) + "] [" +
+                number(values[6]) + ", " + number(values[7]) + ", " + number(values[8]) + "] [" +
+                number(values[9]) + ", " + number(values[10]) + ", " + number(values[11]) + "]]";
+        }
+
+        private static string CombinedAirMapTransform(CombinedMap map, CombinedSpawn selectedSpawn)
+        {
+            List<double[]> points = new List<double[]>();
+            IEnumerable<CombinedSpawn> candidates = (map == null ? Enumerable.Empty<CombinedSpawn>() : map.Spawns)
+                .Where(x => x != null && x.Kind.Equals("aircraft", StringComparison.OrdinalIgnoreCase));
+            foreach (CombinedSpawn candidate in candidates.Concat(new[] { selectedSpawn }).Where(x => x != null))
+            {
+                MatchCollection values = Regex.Matches(candidate.Transform ?? "", @"[-+]?(?:\d+(?:\.\d*)?|\.\d+)(?:[eE][-+]?\d+)?");
+                if (values.Count != 12) continue;
+                points.Add(new[]
+                {
+                    Double.Parse(values[9].Value, NumberStyles.Float, CultureInfo.InvariantCulture),
+                    Double.Parse(values[11].Value, NumberStyles.Float, CultureInfo.InvariantCulture)
+                });
+            }
+            if (points.Count == 0) throw new InvalidOperationException("Aircraft map coordinates are missing.");
+            double centerX = (points.Min(x => x[0]) + points.Max(x => x[0])) / 2.0;
+            double centerZ = (points.Min(x => x[1]) + points.Max(x => x[1])) / 2.0;
+            const double radius = 40000.0;
+            Func<double, string> number = value => Math.Abs(value) < 0.0000001 ? "0" : value.ToString("0.######", CultureInfo.InvariantCulture);
+            return "[[" + number(radius) + ", 0, 0] [0, " + number(radius) + ", 0] [0, 0, " + number(radius) + "] [" + number(centerX) + ", 0, " + number(centerZ) + "]]";
+        }
+
         public static string ConfigureUnitModifications(string text, string name, bool applyAll, IEnumerable<string> modifications)
         {
             BlockSpan span = UnitBlockByName(text, name);
@@ -1428,6 +1801,11 @@ namespace UniversalTestLab
 
         public static string ConfigureInstantPlayerRespawn(string text, bool ground, int airSpeedKmh)
         {
+            return ConfigureInstantPlayerRespawn(text, ground, airSpeedKmh, null);
+        }
+
+        public static string ConfigureInstantPlayerRespawn(string text, bool ground, int airSpeedKmh, string customSpawnTransform)
+        {
             BlockSpan mission = FirstBlock(text, "mission", 0);
             if (mission == null) throw new InvalidOperationException("Mission settings block is missing.");
             string missionBlock = mission.Text;
@@ -1485,7 +1863,17 @@ namespace UniversalTestLab
             text = text.Insert(triggers.End, trigger);
             BlockSpan areas = FirstBlock(text, "areas", 0);
             if (areas == null) throw new InvalidOperationException("Mission areas block is missing.");
-            string positions = ground
+            string positions = !String.IsNullOrWhiteSpace(customSpawnTransform)
+                ? @"
+  " + spawn + @"{
+    type:t=""Sphere""
+    tm:m=" + customSpawnTransform + @"
+    objLayer:i=0
+
+    props{}
+  }
+"
+                : ground
                 ? @"
   UTL_Player_Ground_Spawn{
     type:t=""Sphere""
@@ -1508,6 +1896,11 @@ namespace UniversalTestLab
         }
 
         public static string AccelerateRangeRecovery(string text)
+        {
+            return AccelerateRangeRecovery(text, true);
+        }
+
+        public static string AccelerateRangeRecovery(string text, bool includeRangeRecovery)
         {
             text = Regex.Replace(text, @"(wait\s*\{\s*time:r\s*=\s*)(?:5|10|15)(\s*\})", "${1}0.25${2}", RegexOptions.IgnoreCase);
             // The old template restored the whole player unit on a timer. Apart
@@ -1549,6 +1942,8 @@ namespace UniversalTestLab
 
     else_actions{}
   }
+";
+            if (includeRangeRecovery) extras += @"
 
   ""UTL APS Carrier Recovery Compatible""{
     is_enabled:b=yes
@@ -1929,6 +2324,7 @@ namespace UniversalTestLab
         private readonly List<DonorWeapon> globalWeapons = new List<DonorWeapon>();
         private readonly List<AircraftModification> modifications = new List<AircraftModification>();
         private readonly List<GroundAmmo> groundAmmo = new List<GroundAmmo>();
+        private readonly List<CombinedMap> combinedMaps = new List<CombinedMap>();
         private readonly List<PylonSlot> pylons = new List<PylonSlot>();
         private readonly Dictionary<int, PylonAssignment> assignments = new Dictionary<int, PylonAssignment>();
         private readonly Dictionary<int, Button> pylonButtons = new Dictionary<int, Button>();
@@ -1966,6 +2362,7 @@ namespace UniversalTestLab
         private Exception workspaceLastError;
         private List<string> workspaceGroundTargetOverrides;
         private bool workspacePassiveShip;
+        private CombinedScenarioSettings workspaceCombinedScenario;
 
         private const string MissionFolderRelative = @"UserMissions\Universal Test Lab";
         private const string StarterMissionName = "universal_test_lab_start.blk";
@@ -1997,6 +2394,7 @@ namespace UniversalTestLab
         internal IList<TargetUnit> WorkspaceShipTargets { get { return shipTargets; } }
         internal IList<AircraftModification> WorkspaceModifications { get { return modifications; } }
         internal IList<GroundAmmo> WorkspaceGroundAmmo { get { return groundAmmo; } }
+        internal IList<CombinedMap> WorkspaceCombinedMaps { get { return combinedMaps; } }
         internal string WorkspaceGameFolder
         {
             get { return gameFolder.Text; }
@@ -2193,6 +2591,11 @@ namespace UniversalTestLab
 
         internal bool WorkspaceGenerateMission(string airTargetId, int airTargetCount, IList<string> groundTargetIds, bool hostile, string shipTargetId, int shipTargetCount, bool passiveShip)
         {
+            return WorkspaceGenerateMission(airTargetId, airTargetCount, groundTargetIds, hostile, shipTargetId, shipTargetCount, passiveShip, null);
+        }
+
+        internal bool WorkspaceGenerateMission(string airTargetId, int airTargetCount, IList<string> groundTargetIds, bool hostile, string shipTargetId, int shipTargetCount, bool passiveShip, CombinedScenarioSettings combinedScenario)
+        {
             SelectComboById(airTargetBox, airTargetId);
             string firstGround = groundTargetIds == null ? null : groundTargetIds.FirstOrDefault(x => !String.IsNullOrWhiteSpace(x));
             SelectComboById(groundTargetBox, firstGround);
@@ -2203,6 +2606,7 @@ namespace UniversalTestLab
             hostileGround.Checked = hostile;
             workspaceGroundTargetOverrides = groundTargetIds == null ? null : groundTargetIds.Where(x => !String.IsNullOrWhiteSpace(x)).Take(7).ToList();
             workspacePassiveShip = passiveShip;
+            workspaceCombinedScenario = combinedScenario == null ? null : combinedScenario.Copy();
             suppressSuccessDialog = true;
             lastGenerationSucceeded = false;
             workspaceOperation = true;
@@ -2214,6 +2618,7 @@ namespace UniversalTestLab
                 suppressSuccessDialog = false;
                 workspaceGroundTargetOverrides = null;
                 workspacePassiveShip = false;
+                workspaceCombinedScenario = null;
             }
             if (workspaceLastError != null) throw workspaceLastError;
             return lastGenerationSucceeded;
@@ -2320,6 +2725,28 @@ namespace UniversalTestLab
                     ModClass = p[4], Group = p[5], Requires = p[6]
                 });
             }
+            foreach (string line in Lines("UTL.combined_maps.tsv"))
+            {
+                string[] p = line.Split('\t');
+                int side;
+                if (p.Length < 9 || !Int32.TryParse(p[4], NumberStyles.Integer, CultureInfo.InvariantCulture, out side)) continue;
+                CombinedMap map = combinedMaps.FirstOrDefault(x => x.Id.Equals(p[0], StringComparison.OrdinalIgnoreCase));
+                if (map == null)
+                {
+                    map = new CombinedMap { Id = p[0], Display = p[1], Level = p[2] };
+                    combinedMaps.Add(map);
+                }
+                if (p[3].Equals("capture", StringComparison.OrdinalIgnoreCase))
+                {
+                    map.CapturePoints.Add(new CombinedCapturePoint { Id = p[5], Label = p[6], Transform = p[7] });
+                    continue;
+                }
+                map.Spawns.Add(new CombinedSpawn
+                {
+                    Kind = p[3], Side = side, Option = p[5], Label = p[6], Transform = p[7], ObjectClass = p[8]
+                });
+            }
+            combinedMaps.Sort(delegate(CombinedMap left, CombinedMap right) { return StringComparer.CurrentCultureIgnoreCase.Compare(left.Display, right.Display); });
             PopulateWeaponNations();
         }
 
@@ -4082,6 +4509,19 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 string token = DateTime.UtcNow.ToString("yyyyMMddHHmmssfff", CultureInfo.InvariantCulture) + "_" + Process.GetCurrentProcess().Id;
                 bool groundPlayer = IsGroundVehicle(selected);
                 bool helicopterPlayer = !groundPlayer && IsHelicopter(selected, null);
+                CombinedMap combinedMap = null;
+                CombinedSpawn combinedSpawn = null;
+                if (workspaceCombinedScenario != null && workspaceCombinedScenario.Enabled)
+                {
+                    combinedMap = combinedMaps.FirstOrDefault(x => x.Id.Equals(workspaceCombinedScenario.MapId ?? "", StringComparison.OrdinalIgnoreCase));
+                    if (combinedMap == null) throw new InvalidOperationException("Select a valid combined-battles map.");
+                    string playerKind = groundPlayer ? "ground" : helicopterPlayer ? "helicopter" : "aircraft";
+                    int selectedSide = workspaceCombinedScenario.Side == 2 ? 2 : 1;
+                    combinedSpawn = combinedMap.Spawns.FirstOrDefault(x => x.Side == selectedSide && x.Kind.Equals(playerKind, StringComparison.OrdinalIgnoreCase) && x.Option.Equals(workspaceCombinedScenario.SpawnOption ?? "", StringComparison.OrdinalIgnoreCase));
+                    if (combinedSpawn == null)
+                        combinedSpawn = combinedMap.Spawns.FirstOrDefault(x => x.Side == selectedSide && x.Kind.Equals(playerKind, StringComparison.OrdinalIgnoreCase));
+                    if (combinedSpawn == null) throw new InvalidOperationException("This map has no compatible spawn for the selected vehicle and side.");
+                }
                 GeneratedAircraft generated = groundPlayer ? BuildCustomGroundVehicle(root, selected, token) : BuildCustomAircraft(root, selected, token);
                 WriteMissionLocalization(root, generated, selected);
                 Aircraft air = ResolveAircraft(airTargetBox);
@@ -4097,7 +4537,8 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 else
                 {
                     text = BlkTools.UpdateUnit(text, "You", generated.ClassId, generated.PresetId, 1);
-                    text = ApplyPlayerSpawnSpeed(text, generated.SpawnSpeedKmh);
+                    int playerSpawnSpeed = combinedSpawn != null && !combinedSpawn.Option.Equals("air", StringComparison.OrdinalIgnoreCase) ? 0 : generated.SpawnSpeedKmh;
+                    text = ApplyPlayerSpawnSpeed(text, playerSpawnSpeed);
                     text = ApplyPlayerFuel(text, settings);
                     text = ApplyPlayerGunBelts(text, settings);
                 }
@@ -4108,36 +4549,48 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 // vehicles, however, must receive their requested research state too;
                 // skipping this call forced every player tank to a stock configuration.
                 text = BlkTools.ConfigureUnitModifications(text, "You", helicopterPlayer || settings.UseAllModifications, helicopterPlayer ? Enumerable.Empty<string>() : settings.EnabledModifications);
-                text = BlkTools.UpdateUnit(text, "Target_Air_02", air.Id, air.DefaultPreset, (int)airCount.Value);
-                if (workspaceGroundTargetOverrides != null && workspaceGroundTargetOverrides.Count > 0)
+                if (combinedMap != null && combinedSpawn != null)
                 {
-                    for (int index = 0; index < Math.Min(7, workspaceGroundTargetOverrides.Count); index++)
-                    {
-                        TargetUnit configured = groundTargets.FirstOrDefault(x => x.Id.Equals(workspaceGroundTargetOverrides[index], StringComparison.OrdinalIgnoreCase));
-                        if (configured == null) continue;
-                        string unitName = "Target_" + (index + 1).ToString("00", CultureInfo.InvariantCulture);
-                        text = BlkTools.UpdateUnit(text, unitName, configured.Id, configured.DefaultPreset, 1);
-                        if (hostileGround.Checked) text = BlkTools.MakeGroundTargetHostile(text, unitName);
-                    }
+                    text = BlkTools.ConfigureCombinedScenario(text, combinedMap, combinedSpawn);
                 }
                 else
                 {
-                    text = BlkTools.UpdateUnit(text, "Target_03", ground.Id, ground.DefaultPreset, (int)groundCount.Value);
-                    if (hostileGround.Checked) text = BlkTools.MakeGroundTargetHostile(text, "Target_03");
+                    text = BlkTools.UpdateUnit(text, "Target_Air_02", air.Id, air.DefaultPreset, (int)airCount.Value);
+                    if (workspaceGroundTargetOverrides != null && workspaceGroundTargetOverrides.Count > 0)
+                    {
+                        for (int index = 0; index < Math.Min(7, workspaceGroundTargetOverrides.Count); index++)
+                        {
+                            TargetUnit configured = groundTargets.FirstOrDefault(x => x.Id.Equals(workspaceGroundTargetOverrides[index], StringComparison.OrdinalIgnoreCase));
+                            if (configured == null) continue;
+                            string unitName = "Target_" + (index + 1).ToString("00", CultureInfo.InvariantCulture);
+                            text = BlkTools.UpdateUnit(text, unitName, configured.Id, configured.DefaultPreset, 1);
+                            if (hostileGround.Checked) text = BlkTools.MakeGroundTargetHostile(text, unitName);
+                        }
+                    }
+                    else
+                    {
+                        text = BlkTools.UpdateUnit(text, "Target_03", ground.Id, ground.DefaultPreset, (int)groundCount.Value);
+                        if (hostileGround.Checked) text = BlkTools.MakeGroundTargetHostile(text, "Target_03");
+                    }
+                    text = BlkTools.UpdateUnit(text, "Ship_Target", ship.Id, ship.DefaultPreset, (int)shipCount.Value);
+                    if (workspacePassiveShip) text = BlkTools.MakeShipPassive(text, "Ship_Target");
                 }
-                text = BlkTools.UpdateUnit(text, "Ship_Target", ship.Id, ship.DefaultPreset, (int)shipCount.Value);
-                if (workspacePassiveShip) text = BlkTools.MakeShipPassive(text, "Ship_Target");
-                text = BlkTools.AccelerateRangeRecovery(text);
-                text = BlkTools.ConfigureInstantPlayerRespawn(text, groundPlayer, generated.SpawnSpeedKmh);
+                text = BlkTools.AccelerateRangeRecovery(text, combinedMap == null);
+                text = BlkTools.ConfigureInstantPlayerRespawn(text, groundPlayer, generated.SpawnSpeedKmh,
+                    combinedSpawn == null ? null : BlkTools.CombinedRespawnTransform(combinedSpawn));
                 bool nuclear = assignments.Values.Any(a => a.Weapon.Category == "Nuclear Weapons");
                 if (IsFpvDrone(selected)) text = BlkTools.AddFpvDetonationTriggers(text);
-                string title = groundPlayer
+                string title = combinedMap != null
+                    ? "HOT UTL - " + selected.Display + " - " + combinedMap.Display
+                    : groundPlayer
                     ? "HOT UTL - " + selected.Display + " - Ground Test"
                     : IsFpvDrone(selected)
                     ? "HOT UTL - FPV Strike Drone"
                     : "HOT UTL - " + selected.Display + " - Custom " + assignments.Count + " stations";
                 if (title.Length > 150) title = title.Substring(0, 150);
-                string description = groundPlayer
+                string description = combinedMap != null
+                    ? "Solo combined-battles sandbox on the " + combinedMap.Display + " Domination layout. Side " + combinedSpawn.Side.ToString(CultureInfo.InvariantCulture) + ", " + combinedSpawn.Label + ". No AI units."
+                    : groundPlayer
                     ? "Custom ground vehicle, ammunition, modules and mobility test."
                     : IsFpvDrone(selected)
                     ? "Player-controlled FPV strike drone with local impact detonation."
@@ -4752,6 +5205,83 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                     hostileMission.IndexOf("attack_type:t=\"fire_at_will\"", StringComparison.Ordinal) < 0 ||
                     hostileMission.IndexOf("object:t=\"Target_03\"", StringComparison.Ordinal) < 0)
                     throw new InvalidOperationException("Hostile ground-target self-test failed.");
+                CombinedMap combinedTestMap = new CombinedMap { Id = "selftest", Display = "Self Test", Level = "levels/avg_abandoned_factory.bin" };
+                CombinedSpawn combinedTestSpawn = new CombinedSpawn
+                {
+                    Kind = "aircraft", Side = 2, Option = "airfield", Label = "Airfield",
+                    Transform = "[[0.6, 0, -0.8] [0, 1, 0] [0.8, 0, 0.6] [8171.8, 49.45, -11873.2]]",
+                    ObjectClass = "dynaf_pg_1line_3000_universal"
+                };
+                combinedTestMap.Spawns.Add(new CombinedSpawn
+                {
+                    Kind = "aircraft", Side = 1, Option = "airfield", Label = "Airfield",
+                    Transform = "[[1, 0, 0] [0, 1, 0] [0, 0, 1] [-8100, 44, 11900]]",
+                    ObjectClass = "dynaf_pg_1line_3000_universal"
+                });
+                combinedTestMap.Spawns.Add(combinedTestSpawn);
+                CombinedSpawn combinedGroundTestSpawn = new CombinedSpawn
+                {
+                    Kind = "ground", Side = 1, Option = "ground_1", Label = "Ground spawn 1",
+                    Transform = "[[1, 0, 0] [0, 1, 0] [0, 0, 1] [1000, 15, 1500]]"
+                };
+                combinedTestMap.Spawns.Add(combinedGroundTestSpawn);
+                combinedTestMap.Spawns.Add(new CombinedSpawn
+                {
+                    Kind = "ground", Side = 2, Option = "ground_1", Label = "Ground spawn 1",
+                    Transform = "[[-1, 0, 0] [0, 1, 0] [0, 0, -1] [3000, 16, 3500]]"
+                });
+                combinedTestMap.CapturePoints.Add(new CombinedCapturePoint
+                {
+                    Id = "capture_a", Label = "A",
+                    Transform = "[[45, 0, 0] [0, 35, 0] [0, 0, 45] [100, 5, 200]]"
+                });
+                combinedTestMap.CapturePoints.Add(new CombinedCapturePoint
+                {
+                    Id = "capture_b", Label = "B",
+                    Transform = "[[50, 0, 0] [0, 35, 0] [0, 0, 50] [400, 6, 500]]"
+                });
+                combinedTestMap.CapturePoints.Add(new CombinedCapturePoint
+                {
+                    Id = "capture_c", Label = "C",
+                    Transform = "[[55, 0, 0] [0, 35, 0] [0, 0, 55] [700, 7, 800]]"
+                });
+                string combinedMission = BlkTools.ConfigureCombinedScenario(text, combinedTestMap, combinedTestSpawn);
+                combinedMission = BlkTools.AccelerateRangeRecovery(combinedMission, false);
+                combinedMission = BlkTools.ConfigureInstantPlayerRespawn(combinedMission, false, 0, BlkTools.CombinedRespawnTransform(combinedTestSpawn));
+                BlockSpan combinedUnits = BlkTools.FirstBlock(combinedMission, "units", 0);
+                BlockSpan combinedPlayer = BlkTools.UnitBlockByName(combinedMission, "You");
+                if (combinedMission.Count(c => c == '{') != combinedMission.Count(c => c == '}') ||
+                    combinedMission.IndexOf("level:t=\"levels/avg_abandoned_factory.bin\"", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("name:t=\"Target_03\"", StringComparison.Ordinal) >= 0 ||
+                    combinedMission.IndexOf("unit_class:t=\"dynaf_pg_1line_3000_universal\"", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("UTL_Selected_Spawn_Base", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("[8171.8, 52.45, -11873.2]", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("UTL_Player_Air_Spawn", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("UTL Aircraft Map Extent", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("airMapArea:b=yes", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("killOutOfBattleArea:b=no", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("UTL_Air_Map_Area", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("[[40000, 0, 0] [0, 40000, 0] [0, 0, 40000]", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("UTL Combined Map Markers", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("target:t=\"UTL_Capture_A\"", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("target:t=\"UTL_Capture_B\"", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("target:t=\"UTL_Capture_C\"", StringComparison.Ordinal) < 0 ||
+                    Regex.Matches(combinedMission, "missionMarkAsCaptureZone\\{").Count != 3 ||
+                    Regex.Matches(combinedMission, "missionMarkAsRespawnPoint\\{").Count != 2 ||
+                    combinedMission.IndexOf("canCaptureOnGround:b=no", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("canCaptureInAir:b=no", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("useHUDMarkers:b=no", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("showOnMap:b=yes", StringComparison.Ordinal) < 0 ||
+                    combinedMission.IndexOf("Starting Capzone", StringComparison.Ordinal) >= 0 ||
+                    combinedMission.IndexOf("UTL APS Carrier Recovery Compatible", StringComparison.Ordinal) >= 0 ||
+                    combinedMission.IndexOf("UTL Fast Rearm Policy", StringComparison.Ordinal) < 0 ||
+                    combinedUnits == null || combinedPlayer.Text.IndexOf("army:i=2", StringComparison.Ordinal) < 0)
+                    throw new InvalidOperationException("Combined-battles scenario self-test failed.");
+                string combinedGroundMission = BlkTools.ConfigureCombinedScenario(text, combinedTestMap, combinedGroundTestSpawn);
+                if (combinedGroundMission.IndexOf("useHUDMarkers:b=yes", StringComparison.Ordinal) < 0 ||
+                    combinedGroundMission.IndexOf("UTL Aircraft Map Extent", StringComparison.Ordinal) >= 0 ||
+                    Regex.Matches(combinedGroundMission, "missionMarkAsRespawnPoint\\{").Count != 2)
+                    throw new InvalidOperationException("Combined ground-map marker self-test failed.");
                 if (fpvMission.Count(c => c == '{') != fpvMission.Count(c => c == '}') ||
                     fpvMission.IndexOf("UTL FPV Detonation - Target_03", StringComparison.Ordinal) < 0 ||
                     fpvMission.IndexOf("effect:t=\"hit_81_132mm_heat\"", StringComparison.Ordinal) < 0 ||
@@ -4990,6 +5520,16 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                     weaponCatalog.IndexOf("us_b28.blk", StringComparison.OrdinalIgnoreCase) < 0 ||
                     weaponCatalog.IndexOf("su_rds37.blk", StringComparison.OrdinalIgnoreCase) < 0)
                     throw new InvalidOperationException("Extended weapon catalog self-test failed.");
+                List<string[]> combinedCatalogRows = Embedded.Text("UTL.combined_maps.tsv")
+                    .Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries)
+                    .Select(line => line.Split('\t')).Where(fields => fields.Length >= 9).ToList();
+                List<IGrouping<string, string[]>> combinedCatalogMaps = combinedCatalogRows
+                    .GroupBy(fields => fields[0], StringComparer.OrdinalIgnoreCase).ToList();
+                if (combinedCatalogMaps.Count != 48 || combinedCatalogMaps.Any(group =>
+                    group.Count(fields => !fields[3].Equals("capture", StringComparison.OrdinalIgnoreCase)) != 12 ||
+                    group.Count(fields => fields[3].Equals("capture", StringComparison.OrdinalIgnoreCase)) < 2 ||
+                    group.Count(fields => fields[3].Equals("capture", StringComparison.OrdinalIgnoreCase)) > 3))
+                    throw new InvalidOperationException("Combined map/spawn/marker catalog self-test failed.");
                 string countermeasureSource = "bullets:i = 90\nisBulletBelt:b = false\nbullet {\n bulletType:t = \"flr\"\n bulletName:t = \"flare_launcher\"\n rocket { mass:r=0.1 }\n}\nbullet {\n bulletType:t = \"chff\"\n bulletName:t = \"chaffs_launcher\"\n rocket { mass:r=0.01 }\n}\n";
                 string customBelt = MainForm.BuildCountermeasureBelt(countermeasureSource, 6, 3);
                 if (customBelt.IndexOf("bullets:i = 9", StringComparison.Ordinal) < 0 ||

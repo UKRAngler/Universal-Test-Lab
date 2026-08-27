@@ -1,0 +1,720 @@
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	ground	1	ground_1	Ground spawn 1	[[-30.3619, 0.0, -95.2793] [0.0, 97.6116, 0.0] [95.2793, 0.0, -30.3619] [1880.75, 8.05554, 1446.41]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	ground	1	ground_2	Ground spawn 2	[[56.5429, 0.0, -82.4797] [0.0, 97.6116, 0.0] [82.4797, 0.0, 56.5429] [2255.8, 8.06313, 1455.14]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	aircraft	1	airfield	Airfield	[[0.594822, 0.0, -0.803856] [0.0, 1.0, 0.0] [0.803856, 0.0, 0.594822] [8171.8, 49.45, -11873.2]]	dynaf_pg_1line_3000_universal
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	aircraft	1	air	Air spawn	[[-150.001, 0.0, 259.809] [0.0, 300.0, 0.0] [-259.809, 0.0, -150.001] [9596.36, 2000.0, -11067.5]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.483282, 0.0, -0.875464] [0.0, 1.0, 0.0] [0.875464, 0.0, 0.483282] [3555.66, 67.3994, -1754.86]]	dynHelipad_beton_a_ussr
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.0122172, 0.0, -0.999924] [0.0, 1.0, 0.0] [0.999924, 0.0, 0.0122172] [3769.28, 88.7178, -5284.39]]	dynHelipad_beton_b_ussr
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	ground	2	ground_1	Ground spawn 1	[[-4.37114e-6, 0.0, -100.0] [0.0, 97.6116, 0.0] [100.0, 0.0, -4.37114e-6] [1891.35, 8.05539, 2412.56]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	ground	2	ground_2	Ground spawn 2	[[-39.4448, 0.0, -91.8918] [0.0, 97.6116, 0.0] [91.8918, 0.0, -39.4448] [2220.8, 8.05554, 2443.45]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	aircraft	2	airfield	Airfield	[[0.797532, 0.0, 0.603277] [0.0, 1.0, 0.0] [-0.603277, 0.0, 0.797532] [12366.4, 55.5723, 13990.5]]	dynaf_pg_1line_3000_universal
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	aircraft	2	air	Air spawn	[[-87.258, 0.0, -287.031] [0.0, 300.0, 0.0] [287.031, 0.0, -87.258] [9563.6, 2000.0, 14928.6]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.232186, 0.0, 0.97267] [0.0, 1.0, 0.0] [-0.97267, 0.0, -0.232186] [1917.72, 12.9355, 5918.25]]	dynHelipad_beton_a_usa
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.25038, 0.0, 0.968148] [0.0, 1.0, 0.0] [-0.968148, 0.0, 0.25038] [2265.13, 22.8704, 9160.9]]	dynHelipad_beton_b_usa
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	capture	0	capture_a	A	[[-42.8736, 0.0, 6.16559e-6] [0.0, 35.85, 0.0] [-6.16559e-6, 0.0, -42.8736] [2431.58, 12.8221, 1939.0]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	capture	0	capture_b	B	[[-42.8736, 0.0, 6.16559e-6] [0.0, 35.85, 0.0] [-6.16559e-6, 0.0, -42.8736] [2082.78, 8.05005, 1939.0]]	
+abandoned_factory	Abandoned Factory	levels/avg_abandoned_factory.bin	capture	0	capture_c	C	[[-42.8736, 0.0, 6.16559e-6] [0.0, 35.85, 0.0] [-6.16559e-6, 0.0, -42.8736] [1686.73, 8.05005, 1939.0]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	ground	1	ground_1	Ground spawn 1	[[57.4025, 0.0, 138.582] [0.0, 97.6116, 0.0] [-138.582, 0.0, 57.4025] [-48.4, 140.0, 687.65]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	ground	1	ground_2	Ground spawn 2	[[57.4025, 0.0, 138.582] [0.0, 97.6116, 0.0] [-138.582, 0.0, 57.4025] [-19.15, 155.9, 1024.0]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	aircraft	1	airfield	Airfield	[[-0.921618, 0.0, 0.388097] [0.0, 1.0, 0.0] [-0.388097, 0.0, -0.921618] [-11461.3, 226.834, 6246.12]]	dynaf_pg_1line_3000_universal
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	aircraft	1	air	Air spawn	[[110.389, 0.0, -278.954] [0.0, 300.0, 0.0] [278.954, 0.0, 110.389] [-5303.46, 2000.0, 14346.6]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.451764, 0.0, 0.892137] [0.0, 1.0, 0.0] [-0.892137, 0.0, -0.451764] [-1850.05, 219.582, 4115.08]]	dynHelipad_beton_a_ussr
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.467265, 0.0, 0.884116] [0.0, 1.0, 0.0] [-0.884116, 0.0, -0.467265] [-3317.35, 506.95, 7301.1]]	dynHelipad_beton_b_ussr
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	ground	2	ground_1	Ground spawn 1	[[57.4025, 0.0, 138.582] [0.0, 97.6116, 0.0] [-138.582, 0.0, 57.4025] [939.15, 142.15, -116.15]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	ground	2	ground_2	Ground spawn 2	[[57.4025, 0.0, 138.582] [0.0, 97.6116, 0.0] [-138.582, 0.0, 57.4025] [1277.35, 160.6, 85.75]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	aircraft	2	airfield	Airfield	[[0.253302, 0.0, -0.967387] [0.0, 1.0, 0.0] [0.967387, 0.0, 0.253302] [4314.01, 62.6378, -12596.2]]	dynaf_pg_1line_3000_universal
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	aircraft	2	air	Air spawn	[[-110.389, 0.0, 278.954] [0.0, 300.0, 0.0] [-278.954, 0.0, -110.389] [5744.96, 2000.0, -13565.5]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.428256, 0.0, -0.903656] [0.0, 1.0, 0.0] [0.903656, 0.0, 0.428256] [2200.7, 148.617, -3389.65]]	dynHelipad_beton_a_usa
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.396459, 0.0, -0.918052] [0.0, 1.0, 0.0] [0.918052, 0.0, 0.396459] [4000.15, 137.385, -6545.0]]	dynHelipad_beton_b_usa
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	capture	0	capture_a	A	[[-33.3436, 0.0, 34.5283] [0.0, 30.56, 0.0] [-34.5283, 0.0, -33.3436] [275.6, 148.8, 17.45]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	capture	0	capture_b	B	[[-40.0636, 0.0, 41.4871] [0.0, 50.0, 0.0] [-41.4871, 0.0, -40.0636] [631.8, 126.7, 511.3]]	
+abandoned_town	Abandoned Town	levels/avg_abandoned_town.bin	capture	0	capture_c	C	[[-33.3435, 0.0, 34.5283] [0.0, 50.0, 0.0] [-34.5283, 0.0, -33.3435] [900.29, 136.506, 971.91]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 80.7091, 0.0] [0.0, 0.0, 150.0] [1040.44, 61.3159, 1957.97]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 80.7091, 0.0] [0.0, 0.0, 150.0] [1718.71, 61.316, 2833.1]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	aircraft	1	airfield	Airfield	[[-0.910645, 0.0, 0.413189] [0.0, 1.0, 0.0] [-0.413189, 0.0, -0.910645] [-9102.44, 318.934, 9503.96]]	dynaf_pg_1line_3000_sand
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	aircraft	1	air	Air spawn	[[300.0, 0.0, -7.62939e-6] [0.0, 300.0, 0.0] [7.62939e-6, 0.0, 300.0] [-13198.7, 2000.0, 1949.11]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.984793, 0.0, 0.173733] [0.0, 1.0, 0.0] [-0.173733, 0.0, -0.984793] [-2054.95, 305.954, 6482.31]]	dynHelipad_beton_a_ussr
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.947413, 0.0, 0.320013] [0.0, 1.0, 0.0] [-0.320013, 0.0, -0.947413] [-5783.36, 280.521, 8005.79]]	dynHelipad_beton_b_ussr
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 80.7091, 0.0] [0.0, 0.0, 150.0] [1898.66, 61.3162, 1008.62]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 80.7091, 0.0] [0.0, 0.0, 150.0] [2822.44, 61.3162, 1768.03]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	aircraft	2	airfield	Airfield	[[0.935409, 0.0, 0.353568] [0.0, 1.0, 0.0] [-0.353568, 0.0, 0.935409] [13266.6, 250.763, 9436.18]]	dynaf_pg_1line_3000_sand
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	aircraft	2	air	Air spawn	[[-300.0, 0.0, 7.62939e-6] [0.0, 300.0, 0.0] [-7.62939e-6, 0.0, -300.0] [16820.4, 2000.0, 1952.08]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.979185, 0.0, 0.202969] [0.0, 1.0, 0.0] [-0.202969, 0.0, 0.979185] [6045.3, 261.29, 6446.86]]	dynHelipad_beton_a_usa
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.921879, 0.0, 0.38748] [0.0, 1.0, 0.0] [-0.38748, 0.0, 0.921879] [10095.2, 255.691, 7639.02]]	dynHelipad_beton_b_usa
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	capture	0	capture_a	A	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1293.75, 3.95, 1330.85]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	capture	0	capture_b	B	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2055.55, 73.4, 2061.3]]	
+africa_desert	Africa Desert	levels/avg_africa_desert.bin	capture	0	capture_c	C	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2583.75, 86.75, 2653.25]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	ground	1	ground_1	Ground spawn 1	[[-25.3087, 0.0, -776.694] [0.0, 300.0, 0.0] [1387.74, 0.0, -45.2195] [1902.77, 13.7, 1137.75]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	ground	1	ground_2	Ground spawn 2	[[8.5943, 0.0, -777.059] [0.0, 300.0, 0.0] [1388.39, 0.0, 15.356] [1921.85, 12.9, 1142.16]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	aircraft	1	airfield	Airfield	[[-0.459952, 0.0, -0.887943] [0.0, 1.0, 0.0] [0.887943, 0.0, -0.459952] [-5135.47, 441.046, -9490.02]]	dynaf_pg_1line_3000_universal
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	aircraft	1	air	Air spawn	[[-211.175, 0.0, 213.085] [0.0, 300.0, 0.0] [-213.085, 0.0, -211.175] [12609.8, 2000.0, -8608.64]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.49449, 0.0, -0.869184] [0.0, 1.0, 0.0] [0.869184, 0.0, -0.49449] [68.8186, 27.0735, -1546.2]]	dynHelipad_beton_a_ussr
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.753609, 0.0, -0.657324] [0.0, 1.0, 0.0] [0.657324, 0.0, -0.753609] [-3487.09, 217.276, -2647.78]]	dynHelipad_beton_b_ussr
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	ground	2	ground_1	Ground spawn 1	[[136.169, 0.0, -811.078] [0.0, 300.0, 0.0] [1449.18, 0.0, 243.295] [1685.55, 20.65, 2838.3]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	ground	2	ground_2	Ground spawn 2	[[-6.74158, 0.0, -822.402] [0.0, 300.0, 0.0] [1469.41, 0.0, -12.0483] [1976.4, 39.65, 2859.3]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	aircraft	2	airfield	Airfield	[[-0.487641, 0.0, 0.873044] [0.0, 1.0, 0.0] [-0.873044, 0.0, -0.487641] [-6366.69, 541.861, 12772.9]]	dynaf_pg_1line_3000_universal
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	aircraft	2	air	Air spawn	[[101.336, 0.0, -282.367] [0.0, 300.0, 0.0] [282.367, 0.0, 101.336] [-3028.73, 2000.0, 16178.1]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.228136, 0.0, 0.973629] [0.0, 1.0, 0.0] [-0.973629, 0.0, 0.228136] [2970.6, 59.1529, 5937.35]]	dynHelipad_beton_a_usa
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.271249, 0.0, 0.96251] [0.0, 1.0, 0.0] [-0.96251, 0.0, -0.271249] [-480.78, 103.331, 8744.71]]	dynHelipad_beton_b_usa
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	capture	0	capture_a	A	[[46.044, 0.0, -10.9902] [0.0, 25.0, 0.0] [10.9902, 0.0, 46.044] [1527.76, 11.1024, 1976.14]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	capture	0	capture_b	B	[[49.2294, 0.0, -11.7506] [0.0, 60.0, 0.0] [11.7506, 0.0, 49.2294] [1888.36, 12.2, 1975.94]]	
+alaska_town	Alaska Town	levels/avg_alaska_town.bin	capture	0	capture_c	C	[[76.4994, 0.0, -18.2597] [0.0, 25.0, 0.0] [18.2597, 0.0, 76.4994] [2385.8, 9.75, 1980.65]]	
+alps	Alps	levels/avg_snow_alps.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [1115.93, 218.748, 591.782]]	
+alps	Alps	levels/avg_snow_alps.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [1450.17, 218.748, 906.447]]	
+alps	Alps	levels/avg_snow_alps.bin	aircraft	1	airfield	Airfield	[[0.923879, 0.0, -0.382684] [0.0, 1.0, 0.0] [0.382684, 0.0, 0.923879] [13975.0, 169.7, -2630.51]]	dynaf_pg_1line_3000_snow
+alps	Alps	levels/avg_snow_alps.bin	aircraft	1	air	Air spawn	[[-300.0, 0.0, 1.52588e-5] [0.0, 300.0, 0.0] [-1.52588e-5, 0.0, -300.0] [16042.2, 2000.0, 1013.9]]	
+alps	Alps	levels/avg_snow_alps.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.951534, 0.0, 0.307542] [0.0, 1.0, 0.0] [-0.307542, 0.0, 0.951534] [5115.35, 166.64, 1655.29]]	dynHelipad_beton_a_ussr
+alps	Alps	levels/avg_snow_alps.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.973141, 0.0, -0.230205] [0.0, 1.0, 0.0] [0.230205, 0.0, 0.973141] [8080.41, 234.916, 678.376]]	dynHelipad_beton_b_ussr
+alps	Alps	levels/avg_snow_alps.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [616.035, 218.748, 1193.75]]	
+alps	Alps	levels/avg_snow_alps.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [838.85, 218.748, 1445.93]]	
+alps	Alps	levels/avg_snow_alps.bin	aircraft	2	airfield	Airfield	[[-0.965926, 0.0, -0.258819] [0.0, 1.0, 0.0] [0.258819, 0.0, -0.965926] [-11580.4, 240.2, -3822.48]]	dynaf_pg_1line_3000_snow
+alps	Alps	levels/avg_snow_alps.bin	aircraft	2	air	Air spawn	[[300.0, 0.0, -1.52588e-5] [0.0, 300.0, 0.0] [1.52588e-5, 0.0, 300.0] [-13976.9, 2000.0, 1010.93]]	
+alps	Alps	levels/avg_snow_alps.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.979415, -4.45331e-6, -0.201859] [-1.49831e-5, 1.0, 5.06365e-5] [0.201859, 5.26185e-5, -0.979415] [-2820.43, 205.428, 8.69763]]	dynHelipad_beton_a_usa
+alps	Alps	levels/avg_snow_alps.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.98794, 0.0, -0.154836] [0.0, 1.0, 0.0] [0.154836, 0.0, -0.98794] [-5730.28, 228.123, -631.546]]	dynHelipad_beton_b_usa
+alps	Alps	levels/avg_snow_alps.bin	capture	0	capture_a	A	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [578.731, 246.138, 611.411]]	
+alps	Alps	levels/avg_snow_alps.bin	capture	0	capture_b	B	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1020.36, 214.735, 1023.71]]	
+alps	Alps	levels/avg_snow_alps.bin	capture	0	capture_c	C	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1396.25, 210.889, 1436.32]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [1134.49, 13.2189, 1209.27]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [2409.56, 5.75269, 1195.77]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	aircraft	1	airfield	Airfield	[[-0.761286, 0.0, -0.648415] [0.0, 1.0, 0.0] [0.648415, 0.0, -0.761286] [-2960.51, 169.7, -9497.88]]	dynaf_pg_1line_3000_sand
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	aircraft	1	air	Air spawn	[[102.606, 0.0, 281.908] [0.0, 300.0, 0.0] [-281.908, 0.0, 102.606] [-2631.06, 2000.0, -12225.7]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.0016295, 0.0, -0.999998] [0.0, 1.0, 0.0] [0.999998, 0.0, 0.0016295] [1689.75, 166.641, -2197.45]]	dynHelipad_beton_a_ussr
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.516936, 0.0, -0.856023] [0.0, 1.0, 0.0] [0.856023, 0.0, -0.516936] [-147.583, 234.917, -4721.36]]	dynHelipad_beton_b_ussr
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [2429.29, 22.2283, 2502.5]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 100.0] [1110.55, 30.6143, 2461.37]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	aircraft	2	airfield	Airfield	[[0.209238, 0.0, 0.977865] [0.0, 1.0, 0.0] [-0.977865, 0.0, 0.209238] [7610.95, 240.2, 13799.0]]	dynaf_pg_1line_3000_sand
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	aircraft	2	air	Air spawn	[[-102.606, 0.0, -281.908] [0.0, 300.0, 0.0] [281.908, 0.0, -102.606] [7633.28, 2000.0, 15984.0]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.107516, -4.45331e-6, 0.994204] [5.27924e-5, 1.0, -1.2299e-6] [-0.994204, 5.26185e-5, 0.107516] [2550.42, 205.428, 5861.53]]	dynHelipad_beton_a_usa
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.154892, 0.0, 0.987931] [0.0, 1.0, 0.0] [-0.987931, 0.0, 0.154892] [2831.27, 228.124, 8827.72]]	dynHelipad_beton_b_usa
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	capture	0	capture_a	A	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1177.35, 36.8262, 1871.46]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	capture	0	capture_b	B	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1586.92, 29.7758, 1876.31]]	
+aral_sea	Aral Sea	levels/avg_aral_sea.bin	capture	0	capture_c	C	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2291.62, 13.8338, 1877.26]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 49.0111, 0.0] [0.0, 0.0, 150.0] [735.854, 290.515, 2126.14]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 74.0026, 0.0] [0.0, 0.0, 150.0] [2953.82, 255.698, 1774.67]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	aircraft	1	airfield	Airfield	[[-0.997419, 0.0, -0.0718066] [0.0, 1.0, 0.0] [0.0718066, 0.0, -0.997419] [-9167.78, 256.661, -5559.28]]	dynaf_pg_1line_3000_universal
+ardennes	Ardennes	levels/avg_ardennes.bin	aircraft	1	air	Air spawn	[[195.659, 0.0, 227.414] [0.0, 300.0, 0.0] [-227.414, 0.0, 195.659] [-8146.19, 2000.0, -9938.61]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.143594, 0.0, -0.989636] [0.0, 1.0, 0.0] [0.989636, 0.0, -0.143594] [1542.98, 348.302, -2244.44]]	dynHelipad_beton_a_ussr
+ardennes	Ardennes	levels/avg_ardennes.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.181882, 0.0, -0.98332] [0.0, 1.0, 0.0] [0.98332, 0.0, -0.181882] [-3249.58, 341.297, -8626.26]]	dynHelipad_beton_b_ussr
+ardennes	Ardennes	levels/avg_ardennes.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 49.0111, 0.0] [0.0, 0.0, 150.0] [1576.31, 290.515, 2898.17]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 74.0026, 0.0] [0.0, 0.0, 150.0] [2880.99, 255.698, 2816.86]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	aircraft	2	airfield	Airfield	[[0.740478, 0.0, 0.672081] [0.0, 1.0, 0.0] [-0.672081, 0.0, 0.740478] [12118.8, 292.725, 11292.7]]	dynaf_pg_1line_3000_universal
+ardennes	Ardennes	levels/avg_ardennes.bin	aircraft	2	air	Air spawn	[[-156.633, 0.0, -255.863] [0.0, 300.0, 0.0] [255.863, 0.0, -156.633] [9366.31, 2000.0, 13989.3]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.653226, 0.0, 0.757163] [0.0, 1.0, 0.0] [-0.757163, 0.0, 0.653226] [4931.84, 331.651, 5226.74]]	dynHelipad_beton_a_usa
+ardennes	Ardennes	levels/avg_ardennes.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.258357, 0.0, 0.966049] [0.0, 1.0, 0.0] [-0.966049, 0.0, -0.258357] [10027.4, 305.871, 10851.4]]	dynHelipad_beton_b_usa
+ardennes	Ardennes	levels/avg_ardennes.bin	capture	0	capture_a	A	[[40.0424, 0.0, 0.0] [0.0, 50.844, 0.0] [0.0, 0.0, 40.0424] [841.1, 286.59, 2365.5]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	capture	0	capture_b	B	[[39.8064, 0.0, 0.0] [0.0, 50.5371, 0.0] [0.0, 0.0, 39.8064] [1071.05, 294.171, 2511.89]]	
+ardennes	Ardennes	levels/avg_ardennes.bin	capture	0	capture_c	C	[[40.2128, 0.0, 0.0] [0.0, 51.0531, 0.0] [0.0, 0.0, 40.2128] [1224.74, 291.977, 2757.24]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 49.0111, 0.0] [0.0, 0.0, 150.0] [735.854, 290.515, 2126.14]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 74.0026, 0.0] [0.0, 0.0, 150.0] [2953.82, 255.698, 1774.67]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	aircraft	1	airfield	Airfield	[[-0.997419, 0.0, -0.0718066] [0.0, 1.0, 0.0] [0.0718066, 0.0, -0.997419] [-9167.78, 256.661, -5559.28]]	dynaf_pg_1line_3000_snow
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	aircraft	1	air	Air spawn	[[195.659, 0.0, 227.414] [0.0, 300.0, 0.0] [-227.414, 0.0, 195.659] [-8146.19, 2000.0, -9938.61]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.143594, 0.0, -0.989636] [0.0, 1.0, 0.0] [0.989636, 0.0, -0.143594] [1542.98, 348.302, -2244.44]]	dynHelipad_beton_a_ussr
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.181882, 0.0, -0.98332] [0.0, 1.0, 0.0] [0.98332, 0.0, -0.181882] [-3249.58, 341.297, -8626.26]]	dynHelipad_beton_b_ussr
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 49.0111, 0.0] [0.0, 0.0, 150.0] [1576.31, 290.515, 2898.17]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 74.0026, 0.0] [0.0, 0.0, 150.0] [2880.99, 255.698, 2816.86]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	aircraft	2	airfield	Airfield	[[0.740478, 0.0, 0.672081] [0.0, 1.0, 0.0] [-0.672081, 0.0, 0.740478] [12118.8, 292.725, 11292.7]]	dynaf_pg_1line_3000_snow
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	aircraft	2	air	Air spawn	[[-156.633, 0.0, -255.863] [0.0, 300.0, 0.0] [255.863, 0.0, -156.633] [9366.31, 2000.0, 13989.3]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.653226, 0.0, 0.757163] [0.0, 1.0, 0.0] [-0.757163, 0.0, 0.653226] [4931.84, 331.651, 5226.74]]	dynHelipad_beton_a_usa
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.258357, 0.0, 0.966049] [0.0, 1.0, 0.0] [-0.966049, 0.0, -0.258357] [10027.4, 305.871, 10851.4]]	dynHelipad_beton_b_usa
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	capture	0	capture_a	A	[[40.0424, 0.0, 0.0] [0.0, 50.844, 0.0] [0.0, 0.0, 40.0424] [841.1, 286.59, 2365.5]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	capture	0	capture_b	B	[[39.8064, 0.0, 0.0] [0.0, 50.5371, 0.0] [0.0, 0.0, 39.8064] [1071.05, 294.171, 2511.89]]	
+ardennes_snow	Ardennes Snow	levels/avg_ardennes_snow.bin	capture	0	capture_c	C	[[40.2128, 0.0, 0.0] [0.0, 51.0531, 0.0] [0.0, 0.0, 40.2128] [1224.74, 291.977, 2757.24]]	
+fortress	Fortress	levels/avg_european_fortress.bin	ground	1	ground_1	Ground spawn 1	[[92.1596, 0.0, 84.4487] [0.0, 97.6116, 0.0] [-84.4488, 0.0, 92.1597] [29.6582, 30.8994, -1414.54]]	
+fortress	Fortress	levels/avg_european_fortress.bin	ground	1	ground_2	Ground spawn 2	[[-60.8761, 0.0, 79.3353] [0.0, 97.6116, 0.0] [-79.3353, 0.0, -60.8761] [320.642, 30.333, -1504.08]]	
+fortress	Fortress	levels/avg_european_fortress.bin	aircraft	1	airfield	Airfield	[[0.993936, 0.0, -0.109948] [0.0, 1.0, 0.0] [0.109948, 0.0, 0.993936] [9482.91, 28.2256, 8840.7]]	dynaf_pg_1line_3000_universal
+fortress	Fortress	levels/avg_european_fortress.bin	aircraft	1	air	Air spawn	[[-105.062, 0.0, -281.003] [0.0, 300.0, 0.0] [281.003, 0.0, -105.062] [5256.88, 2000.0, 14070.8]]	
+fortress	Fortress	levels/avg_european_fortress.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.973631, 0.0, 0.228126] [0.0, 1.0, 0.0] [-0.228126, 0.0, 0.973631] [2879.8, 37.5, 776.05]]	dynHelipad_beton_a_ussr
+fortress	Fortress	levels/avg_european_fortress.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.728485, 0.0, 0.685061] [0.0, 1.0, 0.0] [-0.685061, 0.0, 0.728485] [5112.05, 206.9, 3041.55]]	dynHelipad_beton_b_ussr
+fortress	Fortress	levels/avg_european_fortress.bin	ground	2	ground_1	Ground spawn 1	[[25.9727, 0.0, 117.156] [0.0, 97.6116, 0.0] [-117.156, 0.0, 25.9727] [-595.563, 34.8065, -1996.45]]	
+fortress	Fortress	levels/avg_european_fortress.bin	ground	2	ground_2	Ground spawn 2	[[88.4733, 0.0, 81.0708] [0.0, 97.6116, 0.0] [-81.0708, 0.0, 88.4733] [-120.756, 34.304, -2434.46]]	
+fortress	Fortress	levels/avg_european_fortress.bin	aircraft	2	airfield	Airfield	[[-0.877173, 0.0, -0.480174] [0.0, 1.0, 0.0] [0.480174, 0.0, -0.877173] [-10100.7, 240.14, -11722.1]]	dynaf_pg_1line_3000_universal
+fortress	Fortress	levels/avg_european_fortress.bin	aircraft	2	air	Air spawn	[[105.062, 0.0, 281.003] [0.0, 300.0, 0.0] [-281.003, 0.0, 105.062] [-5253.49, 2000.0, -14048.4]]	
+fortress	Fortress	levels/avg_european_fortress.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.76852, 0.0, -0.639824] [0.0, 1.0, 0.0] [0.639824, 0.0, -0.76852] [-1899.0, 55.85, -5307.0]]	dynHelipad_beton_a_usa
+fortress	Fortress	levels/avg_european_fortress.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.370422, 0.0, -0.928864] [0.0, 1.0, 0.0] [0.928864, 0.0, -0.370422] [-4341.05, 161.45, -7622.15]]	dynHelipad_beton_b_usa
+fortress	Fortress	levels/avg_european_fortress.bin	capture	0	capture_a	A	[[30.0, 0.0, 0.0] [0.0, 30.0, 0.0] [0.0, 0.0, 30.0] [-364.689, 50.9767, -1608.06]]	
+fortress	Fortress	levels/avg_european_fortress.bin	capture	0	capture_b	B	[[40.0, 0.0, 0.0] [0.0, 40.0, 0.0] [0.0, 0.0, 40.0] [-99.7, 41.834, -1910.55]]	
+fortress	Fortress	levels/avg_european_fortress.bin	capture	0	capture_c	C	[[30.0, 0.0, 0.0] [0.0, 30.0, 0.0] [0.0, 0.0, 30.0] [352.381, 36.8252, -2060.28]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 244.783, 0.0] [0.0, 0.0, 150.0] [673.829, 180.709, 1158.25]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 244.783, 0.0] [0.0, 0.0, 150.0] [1323.69, 195.367, 771.157]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	aircraft	1	airfield	Airfield	[[0.638899, 0.0, -0.769288] [0.0, 1.0, 0.0] [0.769288, 0.0, 0.638899] [12778.3, 450.68, -6357.43]]	dynaf_pg_1line_3000_universal
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	aircraft	1	air	Air spawn	[[-210.397, 0.0, 213.853] [0.0, 300.0, 0.0] [-213.853, 0.0, -210.397] [12647.2, 2000.0, -8093.4]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.0950287, 0.0, -0.995474] [0.0, 1.0, 0.0] [0.995474, 0.0, -0.0950287] [929.45, 205.4, -1854.75]]	dynHelipad_beton_a_usa
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.0861442, 0.0, -0.996284] [0.0, 1.0, 0.0] [0.996284, 0.0, 0.0861442] [2731.0, 232.9, -7055.6]]	dynHelipad_beton_b_ussr
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 244.783, 0.0] [0.0, 0.0, 150.0] [2594.81, 178.973, 3875.99]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 244.783, 0.0] [0.0, 0.0, 150.0] [3260.83, 190.632, 3164.99]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	aircraft	2	airfield	Airfield	[[0.0252678, 0.0, 0.999682] [0.0, 1.0, 0.0] [-0.999682, 0.0, 0.0252678] [2189.14, 214.554, 15786.2]]	dynaf_pg_1line_3000_universal
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	aircraft	2	air	Air spawn	[[-45.4407, 0.0, -296.539] [0.0, 300.0, 0.0] [296.539, 0.0, -45.4407] [4117.3, 2000.0, 16974.2]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.513631, 0.0, 0.858011] [0.0, 1.0, 0.0] [-0.858011, 0.0, 0.513631] [4436.15, 85.35, 5734.6]]	dynHelipad_beton_a_usa
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.550683, 0.0, 0.834714] [0.0, 1.0, 0.0] [-0.834714, 0.0, 0.550683] [7491.15, 214.35, 9721.1]]	dynHelipad_beton_b_usa
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	capture	0	capture_a	A	[[-42.5068, 0.0, 5.5961] [0.0, 25.0, 0.0] [-5.5961, 0.0, -42.5068] [1167.63, 177.046, 2867.5]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	capture	0	capture_b	B	[[4.97641, 0.0, -1.3918e-6] [0.0, 1.0, 0.0] [-4.98694e-6, 0.0, 3.63658] [1930.03, 225.582, 2241.81]]	
+fulda_02	Fulda (Variant 2)	levels/avg_fulda.bin	capture	0	capture_c	C	[[4.97641, 0.0, -1.3918e-6] [0.0, 1.0, 0.0] [-4.98694e-6, 0.0, 3.63658] [2911.44, 141.632, 1444.48]]	
+fulda	Fulda	levels/avg_fulda.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 335.338, 0.0] [0.0, 0.0, 150.0] [1596.93, 218.83, 1337.6]]	
+fulda	Fulda	levels/avg_fulda.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 335.338, 0.0] [0.0, 0.0, 150.0] [1326.55, 211.381, 1556.7]]	
+fulda	Fulda	levels/avg_fulda.bin	aircraft	1	airfield	Airfield	[[0.638899, 0.0, -0.769288] [0.0, 1.0, 0.0] [0.769288, 0.0, 0.638899] [12778.3, 450.68, -6357.43]]	dynaf_pg_1line_3000_universal
+fulda	Fulda	levels/avg_fulda.bin	aircraft	1	air	Air spawn	[[-210.397, 0.0, 213.853] [0.0, 300.0, 0.0] [-213.853, 0.0, -210.397] [12647.2, 2000.0, -8093.4]]	
+fulda	Fulda	levels/avg_fulda.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.0950287, 0.0, -0.995474] [0.0, 1.0, 0.0] [0.995474, 0.0, -0.0950287] [929.45, 205.4, -1854.75]]	dynHelipad_beton_a_usa
+fulda	Fulda	levels/avg_fulda.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.0861442, 0.0, -0.996284] [0.0, 1.0, 0.0] [0.996284, 0.0, 0.0861442] [2731.0, 232.9, -7055.6]]	dynHelipad_beton_b_ussr
+fulda	Fulda	levels/avg_fulda.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 335.338, 0.0] [0.0, 0.0, 150.0] [2381.43, 201.185, 3011.02]]	
+fulda	Fulda	levels/avg_fulda.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 335.338, 0.0] [0.0, 0.0, 150.0] [2690.48, 212.57, 2843.0]]	
+fulda	Fulda	levels/avg_fulda.bin	aircraft	2	airfield	Airfield	[[0.0252678, 0.0, 0.999682] [0.0, 1.0, 0.0] [-0.999682, 0.0, 0.0252678] [2189.14, 214.554, 15786.2]]	dynaf_pg_1line_3000_universal
+fulda	Fulda	levels/avg_fulda.bin	aircraft	2	air	Air spawn	[[-45.4407, 0.0, -296.539] [0.0, 300.0, 0.0] [296.539, 0.0, -45.4407] [4117.3, 2000.0, 16974.2]]	
+fulda	Fulda	levels/avg_fulda.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.513631, 0.0, 0.858011] [0.0, 1.0, 0.0] [-0.858011, 0.0, 0.513631] [4436.15, 85.35, 5734.6]]	dynHelipad_beton_a_usa
+fulda	Fulda	levels/avg_fulda.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.550683, 0.0, 0.834714] [0.0, 1.0, 0.0] [-0.834714, 0.0, 0.550683] [7491.15, 214.35, 9721.1]]	dynHelipad_beton_b_usa
+fulda	Fulda	levels/avg_fulda.bin	capture	0	capture_a	A	[[-42.5068, 0.0, 5.5961] [0.0, 25.0, 0.0] [-5.5961, 0.0, -42.5068] [1571.96, 196.902, 2509.75]]	
+fulda	Fulda	levels/avg_fulda.bin	capture	0	capture_b	B	[[-42.5068, 0.0, 5.5961] [0.0, 25.0, 0.0] [-5.5961, 0.0, -42.5068] [1930.01, 225.575, 2242.28]]	
+fulda	Fulda	levels/avg_fulda.bin	capture	0	capture_c	C	[[-42.5068, 0.0, 5.5961] [0.0, 25.0, 0.0] [-5.5961, 0.0, -42.5068] [2421.87, 222.443, 1888.83]]	
+greece	Greece	levels/avg_greece.bin	ground	1	ground_1	Ground spawn 1	[[-35.0076, 0.0, -348.245] [0.0, 97.6116, 0.0] [348.245, 0.0, -35.0076] [340.35, 141.255, -799.65]]	
+greece	Greece	levels/avg_greece.bin	ground	1	ground_2	Ground spawn 2	[[-35.0076, 0.0, -348.245] [0.0, 97.6116, 0.0] [348.245, 0.0, -35.0076] [-358.7, 131.321, -798.7]]	
+greece	Greece	levels/avg_greece.bin	aircraft	1	airfield	Airfield	[[0.512223, 0.0, -0.858851] [0.0, 1.0, 0.0] [0.858851, 0.0, 0.512223] [11815.3, 118.329, -10817.4]]	dynaf_pg_1line_3000_universal
+greece	Greece	levels/avg_greece.bin	aircraft	1	air	Air spawn	[[12.7524, 0.0, 299.73] [0.0, 300.0, 0.0] [-299.73, 0.0, 12.7524] [7391.88, 2000.0, -13056.7]]	
+greece	Greece	levels/avg_greece.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.587717, 0.0, -0.809065] [0.0, 1.0, 0.0] [0.809065, 0.0, 0.587717] [2381.21, 80.2661, -3188.69]]	dynHelipad_beton_a_ussr
+greece	Greece	levels/avg_greece.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.739683, 0.0, -0.672954] [0.0, 1.0, 0.0] [0.672954, 0.0, 0.739683] [3151.74, 23.8093, -6434.67]]	dynHelipad_beton_b_ussr
+greece	Greece	levels/avg_greece.bin	ground	2	ground_1	Ground spawn 1	[[-35.0076, 0.0, -348.245] [0.0, 97.6116, 0.0] [348.245, 0.0, -35.0076] [360.14, 141.25, 803.9]]	
+greece	Greece	levels/avg_greece.bin	ground	2	ground_2	Ground spawn 2	[[-35.0076, 0.0, -348.245] [0.0, 97.6116, 0.0] [348.245, 0.0, -35.0076] [-339.15, 131.575, 804.05]]	
+greece	Greece	levels/avg_greece.bin	aircraft	2	airfield	Airfield	[[0.37894, 0.0, 0.925422] [0.0, 1.0, 0.0] [-0.925422, 0.0, 0.37894] [5623.31, 241.108, 14720.2]]	dynaf_pg_1line_3000_universal
+greece	Greece	levels/avg_greece.bin	aircraft	2	air	Air spawn	[[17.7199, 0.0, -299.478] [0.0, 300.0, 0.0] [299.478, 0.0, 17.7199] [3994.84, 2000.0, 14483.7]]	
+greece	Greece	levels/avg_greece.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.0886707, 0.0, 0.99606] [0.0, 1.0, 0.0] [-0.99606, 0.0, -0.0886707] [2561.97, 207.472, 2914.45]]	dynHelipad_beton_a_usa
+greece	Greece	levels/avg_greece.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.240791, 0.0, 0.970578] [0.0, 1.0, 0.0] [-0.970578, 0.0, 0.240791] [4008.89, 236.526, 5969.16]]	dynHelipad_beton_b_usa
+greece	Greece	levels/avg_greece.bin	capture	0	capture_a	A	[[-2.79124, 0.0, -49.9221] [0.0, 30.56, 0.0] [49.9221, 0.0, -2.79124] [-500.0, 51.6536, 0.0]]	
+greece	Greece	levels/avg_greece.bin	capture	0	capture_b	B	[[-10.7892, 0.0, -48.822] [0.0, 50.0, 0.0] [48.822, 0.0, -10.7892] [0.0, 53.7121, 0.0]]	
+greece	Greece	levels/avg_greece.bin	capture	0	capture_c	C	[[-1.42526, 0.0, -49.9797] [0.0, 50.0, 0.0] [49.9797, 0.0, -1.42526] [500.0, 105.564, 0.0]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	ground	1	ground_1	Ground spawn 1	[[130.0, 0.0, 0.0] [0.0, 66.1381, 0.0] [0.0, 0.0, 130.0] [420.124, 2.03802, 2699.17]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	ground	1	ground_2	Ground spawn 2	[[130.0, 0.0, 0.0] [0.0, 66.1381, 0.0] [0.0, 0.0, 130.0] [411.15, -0.0993042, 3255.1]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	aircraft	1	airfield	Airfield	[[0.151211, 0.0, -0.988501] [0.0, 1.0, 0.0] [0.988501, 0.0, 0.151211] [-9360.57, 56.2711, -4409.47]]	dynaf_pg_1line_3000_universal
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	aircraft	1	air	Air spawn	[[185.036, 0.0, -236.14] [0.0, 300.0, 0.0] [236.14, 0.0, 185.036] [-6361.46, 2000.0, 12381.0]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.97398, 0.0, 0.226637] [0.0, 1.0, 0.0] [-0.226637, 0.0, -0.97398] [-2846.37, 32.4008, 4986.28]]	dynHelipad_beton_a_ussr
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.999508, 0.0, -0.031361] [0.0, 1.0, 0.0] [0.031361, 0.0, -0.999508] [-6200.5, 36.4634, 2090.0]]	dynHelipad_beton_b_ussr
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	ground	2	ground_1	Ground spawn 1	[[130.0, 0.0, 0.0] [0.0, 66.1381, 0.0] [0.0, 0.0, 130.0] [1673.99, 2.03778, 2915.83]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	ground	2	ground_2	Ground spawn 2	[[130.0, 0.0, 0.0] [0.0, 66.1381, 0.0] [0.0, 0.0, 130.0] [1401.15, 2.03778, 2487.21]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	aircraft	2	airfield	Airfield	[[0.779836, 0.0, -0.625984] [0.0, 1.0, 0.0] [0.625984, 0.0, 0.779836] [10670.8, 127.325, -7729.18]]	dynaf_pg_1line_3000_universal
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	aircraft	2	air	Air spawn	[[-185.036, 0.0, 236.14] [0.0, 300.0, 0.0] [-236.14, 0.0, -185.036] [8436.75, 2000.0, -6506.47]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.714301, 0.0, -0.699837] [0.0, 1.0, 0.0] [0.699837, 0.0, 0.714301] [4816.84, 20.3895, 473.82]]	dynHelipad_beton_a_usa
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.826353, 0.0, -0.563153] [0.0, 1.0, 0.0] [0.563153, 0.0, 0.826353] [6460.35, 33.1, -2073.5]]	dynHelipad_beton_b_usa
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	capture	0	capture_a	A	[[41.2124, 0.0, 0.0] [0.0, 75.0, 0.0] [0.0, 0.0, 41.2124] [850.6, 6.36426, 3381.9]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	capture	0	capture_b	B	[[41.2124, 0.0, 0.0] [0.0, 75.0, 0.0] [0.0, 0.0, 41.2124] [1382.25, 4.86235, 3302.35]]	
+guadalcanal	Guadalcanal	levels/avg_guadalcanal.bin	capture	0	capture_c	C	[[26.5932, 0.0, 0.0] [0.0, 75.0, 0.0] [0.0, 0.0, 26.5932] [891.15, 14.9741, 2708.3]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	ground	1	ground_1	Ground spawn 1	[[238.376, 0.0, -256.275] [0.0, 97.6116, 0.0] [256.275, 0.0, 238.376] [2721.2, 48.5, 1465.8]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	ground	1	ground_2	Ground spawn 2	[[238.376, 0.0, -256.275] [0.0, 97.6116, 0.0] [256.275, 0.0, 238.376] [2277.25, 49.8, 1057.05]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	aircraft	1	airfield	Airfield	[[0.997928, 0.0, 0.0643178] [0.0, 1.0, 0.0] [-0.0643178, 0.0, 0.997928] [13776.1, 139.456, 2963.72]]	dynaf_pg_1line_3000_universal
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	aircraft	1	air	Air spawn	[[-294.978, 0.0, 54.6702] [0.0, 300.0, 0.0] [-54.6702, 0.0, -294.978] [14576.2, 2000.0, 690.05]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.989808, 0.0, 0.142401] [0.0, 1.0, 0.0] [-0.142401, 0.0, 0.989808] [5720.04, 67.3981, 2259.97]]	dynHelipad_beton_a_ussr
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.940311, 0.0, 0.340315] [0.0, 1.0, 0.0] [-0.340315, 0.0, 0.940311] [8461.67, 88.7178, 4538.3]]	dynHelipad_beton_b_ussr
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	ground	2	ground_1	Ground spawn 1	[[238.376, 0.0, -256.275] [0.0, 97.6116, 0.0] [256.275, 0.0, 238.376] [1432.75, 48.8, 2662.95]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	ground	2	ground_2	Ground spawn 2	[[238.376, 0.0, -256.275] [0.0, 97.6116, 0.0] [256.275, 0.0, 238.376] [989.5, 50.8, 2160.05]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	aircraft	2	airfield	Airfield	[[-0.947434, 0.0, 0.319952] [0.0, 1.0, 0.0] [-0.319952, 0.0, -0.947434] [-9225.58, 145.26, 6347.03]]	dynaf_pg_1line_3000_universal
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	aircraft	2	air	Air spawn	[[294.978, 0.0, -54.6702] [0.0, 300.0, 0.0] [54.6702, 0.0, 294.978] [-10766.0, 2000.0, 4512.95]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.922394, 0.0, 0.386248] [0.0, 1.0, 0.0] [-0.386248, 0.0, -0.922394] [-1676.3, 77.0393, 3835.96]]	dynHelipad_beton_a_usa
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.746155, 0.0, 0.665773] [0.0, 1.0, 0.0] [-0.665773, 0.0, -0.746155] [-3263.05, 156.157, 6662.12]]	dynHelipad_beton_b_usa
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	capture	0	capture_a	A	[[32.6172, 0.0, -37.8962] [0.0, 30.56, 0.0] [37.8962, 0.0, 32.6172] [2200.0, 46.0537, 2200.0]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	capture	0	capture_b	B	[[26.093, 0.0, -42.6515] [0.0, 50.0, 0.0] [42.6515, 0.0, 26.093] [1850.0, 49.9389, 1850.0]]	
+iberian_castle	Iberian Castle	levels/avg_iberian_castle.bin	capture	0	capture_c	C	[[33.6411, 0.0, -36.9902] [0.0, 50.0, 0.0] [36.9902, 0.0, 33.6411] [1500.0, 63.0529, 1500.0]]	
+ireland	Ireland	levels/avg_ireland.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 57.8, 0.0] [0.0, 0.0, 100.0] [1444.1, 69.2, 1204.4]]	
+ireland	Ireland	levels/avg_ireland.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 57.8, 0.0] [0.0, 0.0, 100.0] [1428.4, 57.7, 575.35]]	
+ireland	Ireland	levels/avg_ireland.bin	aircraft	1	airfield	Airfield	[[0.420988, 0.0, 1.3352] [0.0, 1.4, 0.0] [-1.3352, 0.0, 0.420988] [7615.49, 962.085, 13459.5]]	dynaf_pg_1line_3000_universal
+ireland	Ireland	levels/avg_ireland.bin	aircraft	1	air	Air spawn	[[-289.035, 0.0, 80.3701] [0.0, 300.0, 0.0] [-80.3701, 0.0, -289.035] [12763.3, 2183.97, -2151.27]]	
+ireland	Ireland	levels/avg_ireland.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.996521, 0.0, -0.0833552] [0.0, 1.0, 0.0] [0.0833552, 0.0, 0.996521] [5303.4, 246.487, 238.7]]	dynHelipad_beton_a_usa
+ireland	Ireland	levels/avg_ireland.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.520283, 0.0, 0.853994] [0.0, 1.0, 0.0] [-0.853994, 0.0, 0.520283] [7067.11, 181.285, 7456.44]]	dynHelipad_beton_b_ussr
+ireland	Ireland	levels/avg_ireland.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 57.8, 0.0] [0.0, 0.0, 100.0] [577.05, 57.7, 1325.95]]	
+ireland	Ireland	levels/avg_ireland.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 57.8, 0.0] [0.0, 0.0, 100.0] [624.7, 57.7, 630.35]]	
+ireland	Ireland	levels/avg_ireland.bin	aircraft	2	airfield	Airfield	[[-0.130527, 0.0, -0.991445] [0.0, 1.0, 0.0] [0.991445, 0.0, -0.130527] [-7896.09, 496.107, -8718.3]]	dynaf_pg_1line_3000_universal
+ireland	Ireland	levels/avg_ireland.bin	aircraft	2	air	Air spawn	[[293.125, 0.0, -63.8584] [0.0, 300.0, 0.0] [63.8584, 0.0, 293.125] [-10540.8, 2183.97, 4347.56]]	
+ireland	Ireland	levels/avg_ireland.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.943357, 0.0, -0.331782] [0.0, 1.0, 0.0] [0.331782, 0.0, -0.943357] [-2866.07, 678.168, -610.4]]	dynHelipad_beton_a_ussr
+ireland	Ireland	levels/avg_ireland.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.826237, 0.0, -0.563322] [0.0, 1.0, 0.0] [0.563322, 0.0, -0.826237] [-6267.3, 505.949, -4425.75]]	dynHelipad_beton_b_usa
+ireland	Ireland	levels/avg_ireland.bin	capture	0	capture_a	A	[[20.0, 0.0, 0.0] [0.0, 40.0, 0.0] [0.0, 0.0, 20.0] [1031.5, 34.8096, 1378.0]]	
+ireland	Ireland	levels/avg_ireland.bin	capture	0	capture_b	B	[[20.0, 0.0, 0.0] [0.0, 40.0, 0.0] [0.0, 0.0, 20.0] [1033.4, 70.5693, 1091.4]]	
+ireland	Ireland	levels/avg_ireland.bin	capture	0	capture_c	C	[[20.0, 0.0, 0.0] [0.0, 40.0, 0.0] [0.0, 0.0, 20.0] [1000.4, 98.7458, 772.4]]	
+israel	Israel	levels/avg_israel.bin	ground	1	ground_1	Ground spawn 1	[[250.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 250.0] [1478.56, 13.2189, 1221.54]]	
+israel	Israel	levels/avg_israel.bin	ground	1	ground_2	Ground spawn 2	[[250.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 250.0] [2030.66, 5.75269, 1217.21]]	
+israel	Israel	levels/avg_israel.bin	aircraft	1	airfield	Airfield	[[-0.390124, 0.0, -0.920762] [0.0, 1.0, 0.0] [0.920762, 0.0, -0.390124] [-3980.0, 492.419, -9569.18]]	dynaf_pg_1line_3000_sand
+israel	Israel	levels/avg_israel.bin	aircraft	1	air	Air spawn	[[102.606, 0.0, 281.908] [0.0, 300.0, 0.0] [-281.908, 0.0, 102.606] [-2631.06, 2000.0, -12225.7]]	
+israel	Israel	levels/avg_israel.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.0016295, 0.0, -0.999998] [0.0, 1.0, 0.0] [0.999998, 0.0, 0.0016295] [2070.31, 89.2268, -2513.96]]	dynHelipad_beton_a_ussr
+israel	Israel	levels/avg_israel.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.272932, 0.0, -0.962032] [0.0, 1.0, 0.0] [0.962032, 0.0, -0.272932] [216.204, 346.122, -5109.01]]	dynHelipad_beton_b_ussr
+israel	Israel	levels/avg_israel.bin	ground	2	ground_1	Ground spawn 1	[[250.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 250.0] [2044.93, 22.2283, 2495.13]]	
+israel	Israel	levels/avg_israel.bin	ground	2	ground_2	Ground spawn 2	[[250.0, 0.0, 0.0] [0.0, 32.2325, 0.0] [0.0, 0.0, 250.0] [1456.69, 30.6143, 2463.11]]	
+israel	Israel	levels/avg_israel.bin	aircraft	2	airfield	Airfield	[[0.209238, 0.0, 0.977865] [0.0, 1.0, 0.0] [-0.977865, 0.0, 0.209238] [7745.47, 157.754, 14414.3]]	dynaf_pg_1line_3000_sand
+israel	Israel	levels/avg_israel.bin	aircraft	2	air	Air spawn	[[-102.606, 0.0, -281.908] [0.0, 300.0, 0.0] [281.908, 0.0, -102.606] [7633.28, 2000.0, 15984.0]]	
+israel	Israel	levels/avg_israel.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.107516, -4.45331e-6, 0.994204] [5.27924e-5, 1.0, -1.2299e-6] [-0.994204, 5.26185e-5, 0.107516] [2725.19, 57.0734, 6080.43]]	dynHelipad_beton_a_usa
+israel	Israel	levels/avg_israel.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.609246, 0.0, 0.792981] [0.0, 1.0, 0.0] [-0.792981, 0.0, 0.609246] [3320.07, 90.2571, 8897.84]]	dynHelipad_beton_b_usa
+israel	Israel	levels/avg_israel.bin	capture	0	capture_a	A	[[42.4264, 0.0, -42.4264] [0.0, 60.0, 0.0] [42.4264, 0.0, 42.4264] [1176.91, 4.95985, 1872.81]]	
+israel	Israel	levels/avg_israel.bin	capture	0	capture_b	B	[[42.4264, 0.0, -42.4264] [0.0, 60.0, 0.0] [42.4264, 0.0, 42.4264] [1725.7, 4.95284, 1876.37]]	
+israel	Israel	levels/avg_israel.bin	capture	0	capture_c	C	[[40.7293, 0.0, -40.7294] [0.0, 57.6, 0.0] [40.7294, 0.0, 40.7293] [2293.64, 4.61809, 1875.02]]	
+japan	Japan	levels/avg_japan.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 186.45, 0.0] [0.0, 0.0, 150.0] [1662.25, 344.76, 1550.25]]	
+japan	Japan	levels/avg_japan.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 186.45, 0.0] [0.0, 0.0, 150.0] [1919.55, 344.76, 1452.75]]	
+japan	Japan	levels/avg_japan.bin	aircraft	1	airfield	Airfield	[[-0.115791, 0.0, -0.993273] [0.0, 1.0, 0.0] [0.993273, 0.0, -0.115791] [1902.11, -88.3716, -11874.6]]	dynaf_pg_1line_3000_universal
+japan	Japan	levels/avg_japan.bin	aircraft	1	air	Air spawn	[[-35.1385, 0.0, 297.935] [0.0, 300.0, 0.0] [-297.935, 0.0, -35.1385] [3768.9, 2500.0, -12754.0]]	
+japan	Japan	levels/avg_japan.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.0397619, 0.0, -0.999209] [0.0, 1.0, 0.0] [0.999209, 0.0, -0.0397619] [2173.95, 564.3, -2255.3]]	dynHelipad_beton_a_ussr
+japan	Japan	levels/avg_japan.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.115866, 0.0, -0.993265] [0.0, 1.0, 0.0] [0.993265, 0.0, -0.115866] [538.212, 547.94, -6325.51]]	dynHelipad_beton_b_ussr
+japan	Japan	levels/avg_japan.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 186.45, 0.0] [0.0, 0.0, 150.0] [2168.85, 344.01, 2766.75]]	
+japan	Japan	levels/avg_japan.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 186.45, 0.0] [0.0, 0.0, 150.0] [2392.95, 341.09, 2676.35]]	
+japan	Japan	levels/avg_japan.bin	aircraft	2	airfield	Airfield	[[-0.0745542, 0.0, 0.997218] [0.0, 1.0, 0.0] [-0.997218, 0.0, -0.0745542] [2088.36, 483.099, 15954.3]]	dynaf_pg_1line_3000_universal
+japan	Japan	levels/avg_japan.bin	aircraft	2	air	Air spawn	[[81.8362, 0.0, -288.622] [0.0, 300.0, 0.0] [288.622, 0.0, 81.8362] [-2084.79, 2500.0, 16592.6]]	
+japan	Japan	levels/avg_japan.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.0535564, 0.0, 0.998565] [0.0, 1.0, 0.0] [-0.998565, 0.0, -0.0535564] [1978.6, 355.0, 6317.65]]	dynHelipad_beton_a_usa
+japan	Japan	levels/avg_japan.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.0937889, 0.0, 0.995592] [0.0, 1.0, 0.0] [-0.995592, 0.0, 0.0937889] [1896.99, 326.556, 10801.5]]	dynHelipad_beton_b_usa
+japan	Japan	levels/avg_japan.bin	capture	0	capture_a	A	[[4.93384, 0.0, 0.649548] [0.0, 1.0, 0.0] [-0.474672, 0.0, 3.60547] [1465.37, 331.19, 2371.16]]	
+japan	Japan	levels/avg_japan.bin	capture	0	capture_b	B	[[4.93384, 0.0, 0.649548] [0.0, 1.0, 0.0] [-0.474672, 0.0, 3.60547] [2029.3, 358.7, 2112.57]]	
+japan	Japan	levels/avg_japan.bin	capture	0	capture_c	C	[[4.93384, 0.0, 0.649548] [0.0, 1.0, 0.0] [-0.474672, 0.0, 3.60547] [2598.71, 355.46, 1880.29]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 60.2, 0.0] [0.0, 0.0, 150.0] [5694.0, 172.5, -1281.65]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 60.2, 0.0] [0.0, 0.0, 150.0] [4765.45, 172.5, -1438.8]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	aircraft	1	airfield	Airfield	[[-0.67559, 0.0, -0.737277] [0.0, 1.0, 0.0] [0.737277, 0.0, -0.67559] [-4718.97, 572.088, -9804.71]]	dynaf_pg_1line_3000_universal
+karelia	Karelia	levels/avg_karelia_forest_a.bin	aircraft	1	air	Air spawn	[[28.7809, 0.0, 298.617] [0.0, 300.0, 0.0] [-298.617, 0.0, 28.7809] [4600.0, 2183.97, -5959.93]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.641351, 0.0, -0.767247] [0.0, 1.0, 0.0] [0.767247, 0.0, -0.641351] [2513.04, 113.575, -4314.59]]	dynHelipad_beton_a_ussr
+karelia	Karelia	levels/avg_karelia_forest_a.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.667837, 0.0, -0.744306] [0.0, 1.0, 0.0] [0.744306, 0.0, -0.667837] [129.448, 213.737, -6306.89]]	dynHelipad_beton_b_ussr
+karelia	Karelia	levels/avg_karelia_forest_a.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 60.2, 0.0] [0.0, 0.0, 150.0] [5714.65, 172.5, -767.4]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 60.2, 0.0] [0.0, 0.0, 150.0] [4744.25, 172.5, -562.5]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	aircraft	2	airfield	Airfield	[[-0.67559, 0.0, 0.737277] [0.0, 1.0, 0.0] [-0.737277, 0.0, -0.67559] [-3121.24, 706.199, 9419.09]]	dynaf_pg_1line_3000_universal
+karelia	Karelia	levels/avg_karelia_forest_a.bin	aircraft	2	air	Air spawn	[[-28.7809, 0.0, -298.617] [0.0, 300.0, 0.0] [298.617, 0.0, -28.7809] [5557.47, 2183.97, 4000.59]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.543968, 0.0, 0.839105] [0.0, 1.0, 0.0] [-0.839105, 0.0, -0.543968] [2997.91, 231.026, 2329.35]]	dynHelipad_beton_a_usa
+karelia	Karelia	levels/avg_karelia_forest_a.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.76275, 0.0, 0.646693] [0.0, 1.0, 0.0] [-0.646693, 0.0, -0.76275] [-378.755, 195.233, 3874.17]]	dynHelipad_beton_b_usa
+karelia	Karelia	levels/avg_karelia_forest_a.bin	capture	0	capture_a	A	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [5028.65, 162.628, -758.75]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	capture	0	capture_b	B	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [5265.3, 185.206, -982.65]]	
+karelia	Karelia	levels/avg_karelia_forest_a.bin	capture	0	capture_c	C	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [5018.9, 162.578, -1229.25]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	ground	1	ground_1	Ground spawn 1	[[-112.253, 0.0, -99.4956] [0.0, 100.0, 0.0] [99.4956, 0.0, -112.253] [868.612, 386.332, 554.417]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	ground	1	ground_2	Ground spawn 2	[[-112.253, 0.0, -99.4956] [0.0, 100.0, 0.0] [99.4956, 0.0, -112.253] [477.35, 397.35, 653.4]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	aircraft	1	airfield	Airfield	[[0.0956997, 0.0, -0.99541] [0.0, 1.0, 0.0] [0.99541, 0.0, 0.0956997] [3062.41, 360.892, -12569.0]]	dynaf_pg_1line_3000_universal
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	aircraft	1	air	Air spawn	[[-88.459, 0.0, 286.662] [0.0, 300.0, 0.0] [-286.662, 0.0, -88.459] [5859.2, 2119.4, -13180.8]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.27437, 0.0, -0.961625] [0.0, 1.0, 0.0] [0.961625, 0.0, 0.27437] [2334.89, 458.109, -2992.42]]	dynHelipad_beton_a_ussr
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.570393, 0.0, -0.821371] [0.0, 1.0, 0.0] [0.821371, 0.0, 0.570393] [5011.55, 429.583, -6096.45]]	dynHelipad_beton_b_ussr
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	ground	2	ground_1	Ground spawn 1	[[-106.788, 0.0, -105.34] [0.0, 100.0, 0.0] [105.34, 0.0, -106.788] [1532.3, 376.329, 1341.31]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	ground	2	ground_2	Ground spawn 2	[[-106.788, 0.0, -105.34] [0.0, 100.0, 0.0] [105.34, 0.0, -106.788] [1362.6, 376.35, 1725.25]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	aircraft	2	airfield	Airfield	[[-0.243924, 0.0, 0.969795] [0.0, 1.0, 0.0] [-0.969795, 0.0, -0.243924] [538.758, 211.854, 14338.7]]	dynaf_pg_1line_3000_universal
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	aircraft	2	air	Air spawn	[[97.0429, 0.0, -283.871] [0.0, 300.0, 0.0] [283.871, 0.0, 97.0429] [-3765.75, 2119.4, 15228.5]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.128087, 0.0, 0.991763] [0.0, 1.0, 0.0] [-0.991763, 0.0, 0.128087] [1821.54, 196.639, 4918.86]]	dynHelipad_beton_a_usa
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.197531, 0.0, 0.980297] [0.0, 1.0, 0.0] [-0.980297, 0.0, -0.197531] [-0.235229, 226.035, 8882.2]]	dynHelipad_beton_b_usa
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	capture	0	capture_a	A	[[24.9844, 0.0, 3.28926] [0.0, 25.2, 0.0] [-3.28926, 0.0, 24.9844] [910.9, 414.2, 1246.15]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	capture	0	capture_b	B	[[22.6584, 0.0, -0.989286] [0.0, 25.2, 0.0] [0.989286, 0.0, 22.6584] [1129.45, 379.187, 988.95]]	
+karpaty	Karpaty	levels/avg_karpaty_passage.bin	capture	0	capture_c	C	[[25.176, 0.0, -1.09921] [0.0, 25.2, 0.0] [1.09921, 0.0, 25.176] [1435.6, 390.4, 742.25]]	
+korea	Korea	levels/avg_korea_lake.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 37.7788, 0.0] [0.0, 0.0, 100.0] [1519.52, 356.379, 1562.74]]	
+korea	Korea	levels/avg_korea_lake.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 37.7788, 0.0] [0.0, 0.0, 100.0] [1060.59, 356.379, 1673.13]]	
+korea	Korea	levels/avg_korea_lake.bin	aircraft	1	airfield	Airfield	[[-0.35148, 0.0, 0.936195] [0.0, 1.0, 0.0] [-0.936195, 0.0, -0.35148] [2572.6, 589.845, 14062.7]]	dynaf_pg_1line_3000_universal
+korea	Korea	levels/avg_korea_lake.bin	aircraft	1	air	Air spawn	[[113.771, 0.0, -277.59] [0.0, 300.0, 0.0] [277.59, 0.0, 113.771] [-4832.15, 2119.4, 14797.1]]	
+korea	Korea	levels/avg_korea_lake.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.141788, 0.0, 0.989897] [0.0, 1.0, 0.0] [-0.989897, 0.0, -0.141788] [721.086, 498.562, 5361.63]]	dynHelipad_beton_a_ussr
+korea	Korea	levels/avg_korea_lake.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.506638, 0.0, 0.86216] [0.0, 1.0, 0.0] [-0.86216, 0.0, 0.506638] [2668.6, 492.569, 8394.25]]	dynHelipad_beton_b_ussr
+korea	Korea	levels/avg_korea_lake.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 37.7788, 0.0] [0.0, 0.0, 100.0] [1058.65, 356.379, 356.629]]	
+korea	Korea	levels/avg_korea_lake.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 37.7788, 0.0] [0.0, 0.0, 100.0] [1559.77, 356.379, 414.398]]	
+korea	Korea	levels/avg_korea_lake.bin	aircraft	2	airfield	Airfield	[[0.596225, 0.0, -0.802817] [0.0, 1.0, 0.0] [0.802817, 0.0, 0.596225] [11719.4, 482.257, -7326.0]]	dynaf_pg_1line_3000_universal
+korea	Korea	levels/avg_korea_lake.bin	aircraft	2	air	Air spawn	[[-122.07, 0.0, 274.042] [0.0, 300.0, 0.0] [-274.042, 0.0, -122.07] [7295.75, 2119.4, -12618.5]]	
+korea	Korea	levels/avg_korea_lake.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.848737, 0.0, -0.528814] [0.0, 1.0, 0.0] [0.528814, 0.0, 0.848737] [5298.73, 472.35, -253.755]]	dynHelipad_beton_a_usa
+korea	Korea	levels/avg_korea_lake.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.829367, 0.0, -0.558705] [0.0, 1.0, 0.0] [0.558705, 0.0, 0.829367] [7527.1, 507.295, -1688.44]]	dynHelipad_beton_b_usa
+korea	Korea	levels/avg_korea_lake.bin	capture	0	capture_a	A	[[34.8, 0.0, 0.0] [0.0, 33.8, 0.0] [0.0, 0.0, 34.8] [814.345, 344.664, 1021.72]]	
+korea	Korea	levels/avg_korea_lake.bin	capture	0	capture_b	B	[[72.576, 0.0, 0.0] [0.0, 46.95, 0.0] [0.0, 0.0, 72.576] [1202.85, 342.0, 1008.02]]	
+korea	Korea	levels/avg_korea_lake.bin	capture	0	capture_c	C	[[42.8736, 0.0, 0.0] [0.0, 35.85, 0.0] [0.0, 0.0, 42.8736] [1710.17, 336.452, 983.693]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 84.5848, 0.0] [0.0, 0.0, 150.0] [2220.64, 206.896, 2495.11]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 84.5848, 0.0] [0.0, 0.0, 150.0] [2772.49, 192.581, 2192.46]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	aircraft	1	airfield	Airfield	[[0.357491, 0.0, 0.933916] [0.0, 1.0, 0.0] [-0.933916, 0.0, 0.357491] [12404.6, 42.3511, 10498.6]]	dynaf_pg_1line_3000_universal
+krymsk	Krymsk	levels/avg_krymsk.bin	aircraft	1	air	Air spawn	[[-223.552, 0.0, -200.062] [0.0, 300.0, 0.0] [200.062, 0.0, -223.552] [11840.5, 2000.0, 10609.5]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.851558, 0.0, 0.524259] [0.0, 1.0, 0.0] [-0.524259, 0.0, 0.851558] [5766.53, 130.836, 4009.23]]	dynHelipad_beton_a_ussr
+krymsk	Krymsk	levels/avg_krymsk.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.624968, 0.0, 0.78065] [0.0, 1.0, 0.0] [-0.78065, 0.0, 0.624968] [8121.6, 35.7009, 6746.95]]	dynHelipad_beton_b_ussr
+krymsk	Krymsk	levels/avg_krymsk.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 84.5848, 0.0] [0.0, 0.0, 150.0] [1501.62, 219.805, 1685.44]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 84.5848, 0.0] [0.0, 0.0, 150.0] [1718.32, 219.805, 1177.73]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	aircraft	2	airfield	Airfield	[[-0.939527, 0.0, 0.342476] [0.0, 1.0, 0.0] [-0.342476, 0.0, -0.939527] [-9247.75, 470.5, -5197.94]]	dynaf_pg_1line_3000_universal
+krymsk	Krymsk	levels/avg_krymsk.bin	aircraft	2	air	Air spawn	[[223.552, 0.0, 200.062] [0.0, 300.0, 0.0] [-200.062, 0.0, 223.552] [-7533.76, 2000.0, -6729.16]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.91657, 0.0, -0.399874] [0.0, 1.0, 0.0] [0.399874, 0.0, -0.91657] [-1308.23, 332.826, -806.932]]	dynHelipad_beton_a_usa
+krymsk	Krymsk	levels/avg_krymsk.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.336563, 0.0, -0.94166] [0.0, 1.0, 0.0] [0.94166, 0.0, -0.336563] [-1994.45, 288.703, -4546.3]]	dynHelipad_beton_b_ussr
+krymsk	Krymsk	levels/avg_krymsk.bin	capture	0	capture_a	A	[[29.2509, 0.0, 0.0] [0.0, 90.0424, 0.0] [0.0, 0.0, 29.2509] [1901.4, 210.439, 2069.59]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	capture	0	capture_b	B	[[28.9843, 0.0, 0.0] [0.0, 91.695, 0.0] [0.0, 0.0, 28.9843] [2216.79, 203.627, 1798.62]]	
+krymsk	Krymsk	levels/avg_krymsk.bin	capture	0	capture_c	C	[[29.1475, 0.0, 0.0] [0.0, 107.796, 0.0] [0.0, 0.0, 29.1475] [2632.63, 197.455, 1326.19]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [632.95, -3.5, 2780.1]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [1430.22, -3.5, 3361.13]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	aircraft	1	airfield	Airfield	[[-0.819153, 0.0, -0.573576] [0.0, 1.0, 0.0] [0.573576, 0.0, -0.819153] [-12075.7, 88.0381, 404.301]]	dynaf_pg_1line_3000_universal
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	aircraft	1	air	Air spawn	[[250.195, 0.0, -165.538] [0.0, 300.0, 0.0] [165.538, 0.0, 250.195] [-11452.0, 2000.0, 9575.83]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.835705, 0.0, 0.549177] [0.0, 1.0, 0.0] [-0.549177, 0.0, -0.835705] [-1756.02, 62.9967, 4670.25]]	dynHelipad_beton_a_ussr
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.999627, 0.0, 0.027323] [0.0, 1.0, 0.0] [-0.027323, 0.0, -0.999627] [-6937.85, 91.95, 2323.0]]	dynHelipad_beton_b_ussr
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [2370.0, -3.5, 746.846]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [2935.11, -3.50122, 1447.79]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	aircraft	2	airfield	Airfield	[[0.258819, 0.0, -0.965926] [0.0, 1.0, 0.0] [0.965926, 0.0, 0.258819] [9319.81, 72.4657, -9483.39]]	dynaf_pg_1line_3000_universal
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	aircraft	2	air	Air spawn	[[-250.195, 0.0, 165.538] [0.0, 300.0, 0.0] [-165.538, 0.0, -250.195] [13585.0, 2000.0, -6986.11]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.911518, 0.0, -0.41126] [0.0, 1.0, 0.0] [0.41126, 0.0, 0.911518] [5991.6, 41.15, 100.2]]	dynHelipad_beton_a_usa
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.373634, 0.0, -0.927577] [0.0, 1.0, 0.0] [0.927577, 0.0, 0.373634] [5919.3, 103.0, -6215.75]]	dynHelipad_beton_b_usa
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	capture	0	capture_a	A	[[163.828, 0.0, 0.0] [0.0, 70.77, 0.0] [0.0, 0.0, 163.828] [1053.15, 48.7323, 1360.25]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	capture	0	capture_b	B	[[108.346, 0.0, 0.0] [0.0, 70.0, 0.0] [0.0, 0.0, 108.346] [1981.15, 67.85, 2192.05]]	
+kursk_villages_02	Kursk Villages (Variant 2)	levels/avg_kursk_villages.bin	capture	0	capture_c	C	[[86.8084, 0.0, 0.0] [0.0, 74.88, 0.0] [0.0, 0.0, 86.8084] [2793.4, 1.15, 2937.6]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [1594.95, -3.5, 3005.65]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [1413.21, -3.5, 3395.75]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	aircraft	1	airfield	Airfield	[[-0.819153, 0.0, -0.573576] [0.0, 1.0, 0.0] [0.573576, 0.0, -0.819153] [-12075.7, 88.0381, 404.301]]	dynaf_pg_1line_3000_universal
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	aircraft	1	air	Air spawn	[[250.195, 0.0, -165.538] [0.0, 300.0, 0.0] [165.538, 0.0, 250.195] [-11452.0, 2000.0, 9575.83]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.835705, 0.0, 0.549177] [0.0, 1.0, 0.0] [-0.549177, 0.0, -0.835705] [-1756.02, 62.9967, 4670.25]]	dynHelipad_beton_a_ussr
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.999627, 0.0, 0.027323] [0.0, 1.0, 0.0] [-0.027323, 0.0, -0.999627] [-6937.85, 91.95, 2323.0]]	dynHelipad_beton_b_ussr
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [2699.5, -3.5, 1696.85]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 191.9, 0.0] [0.0, 0.0, 150.0] [2934.55, -3.5, 1424.1]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	aircraft	2	airfield	Airfield	[[0.258819, 0.0, -0.965926] [0.0, 1.0, 0.0] [0.965926, 0.0, 0.258819] [9319.81, 72.4657, -9483.39]]	dynaf_pg_1line_3000_universal
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	aircraft	2	air	Air spawn	[[-250.195, 0.0, 165.538] [0.0, 300.0, 0.0] [-165.538, 0.0, -250.195] [13585.0, 2000.0, -6986.11]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.911518, 0.0, -0.41126] [0.0, 1.0, 0.0] [0.41126, 0.0, 0.911518] [5991.6, 41.15, 100.2]]	dynHelipad_beton_a_usa
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.373634, 0.0, -0.927577] [0.0, 1.0, 0.0] [0.927577, 0.0, 0.373634] [5919.3, 103.0, -6215.75]]	dynHelipad_beton_b_usa
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	capture	0	capture_a	A	[[50.0, 0.0, 0.0] [0.0, 73.45, 0.0] [0.0, 0.0, 50.0] [1769.95, 50.6409, 2377.15]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	capture	0	capture_b	B	[[50.0, 0.0, 0.0] [0.0, 73.45, 0.0] [0.0, 0.0, 50.0] [1995.85, 67.8313, 2193.45]]	
+kursk_villages	Kursk Villages	levels/avg_kursk_villages.bin	capture	0	capture_c	C	[[50.0, 0.0, 0.0] [0.0, 73.45, 0.0] [0.0, 0.0, 50.0] [2133.25, 57.0835, 2018.5]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [993.899, 400.95, 162.215]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [1117.74, 406.008, -1124.78]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	aircraft	1	airfield	Airfield	[[0.772481, 0.0, -0.635036] [0.0, 1.0, 0.0] [0.635036, 0.0, 0.772481] [11432.3, 37.5681, -7744.19]]	dynaf_pg_1line_3000_universal
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	aircraft	1	air	Air spawn	[[-251.602, 0.0, 163.392] [0.0, 300.0, 0.0] [-163.392, 0.0, -251.602] [12599.5, 2000.0, -8177.76]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.754038, 0.0, -0.656831] [0.0, 1.0, 0.0] [0.656831, 0.0, 0.754038] [3720.86, 49.6482, -2681.68]]	dynHelipad_beton_a_ussr
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.663277, 0.0, -0.748373] [0.0, 1.0, 0.0] [0.748373, 0.0, 0.663277] [8776.6, 38.8327, -4668.99]]	dynHelipad_beton_b_ussr
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-1013.99, 387.84, 51.9639]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-970.337, 389.977, -1267.67]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	aircraft	2	airfield	Airfield	[[-0.616849, 0.0, 0.787082] [0.0, 1.0, 0.0] [-0.787082, 0.0, -0.616849] [-9790.93, 58.2744, 8869.47]]	dynaf_pg_1line_3000_universal
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	aircraft	2	air	Air spawn	[[251.602, 0.0, -163.392] [0.0, 300.0, 0.0] [163.392, 0.0, 251.602] [-12578.3, 2000.0, 8169.58]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.396287, 0.0, 0.918126] [0.0, 1.0, 0.0] [-0.918126, 0.0, -0.396287] [-1877.88, 175.179, 4148.57]]	dynHelipad_beton_a_usa
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.82106, 0.0, 0.570842] [0.0, 1.0, 0.0] [-0.570842, 0.0, -0.82106] [-6794.83, 36.5194, 6788.84]]	dynHelipad_beton_b_usa
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	capture	0	capture_a	A	[[57.6739, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 57.6739] [-16.2465, 400.424, 100.759]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	capture	0	capture_b	B	[[48.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 48.0] [19.7569, 416.275, -533.058]]	
+lazzaro_italy_new_city	Lazzaro Italy New City	levels/avg_lazzaro_italy_new_city.bin	capture	0	capture_c	C	[[48.0616, 0.0, 0.0] [0.0, 30.56, 0.0] [0.0, 0.0, 48.0616] [49.6792, 403.033, -1179.93]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 139.269, 0.0] [0.0, 0.0, 150.0] [2430.36, 13.0065, 2090.91]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 139.269, 0.0] [0.0, 0.0, 150.0] [1970.53, 1.84593, 1613.4]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	aircraft	1	airfield	Airfield	[[0.671676, 0.0, -0.740844] [0.0, 1.0, 0.0] [0.740844, 0.0, 0.671676] [7755.9, 302.25, -7537.8]]	dynaf_pg_1line_3000_universal
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	aircraft	1	air	Air spawn	[[-127.883, 0.0, 271.378] [0.0, 300.0, 0.0] [-271.378, 0.0, -127.883] [8093.75, 2000.0, -9988.75]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.18989, 0.0, -0.981805] [0.0, 1.0, 0.0] [0.981805, 0.0, 0.18989] [3470.21, 392.625, -1926.84]]	dynHelipad_beton_a_ussr
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.175488, 0.0, -0.984481] [0.0, 1.0, 0.0] [0.984481, 0.0, 0.175488] [4157.48, 324.043, -7031.96]]	dynHelipad_beton_b_ussr
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 139.269, 0.0] [0.0, 0.0, 150.0] [1016.04, 24.0206, 3235.9]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 139.269, 0.0] [0.0, 0.0, 150.0] [652.369, 29.6681, 2929.05]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	aircraft	2	airfield	Airfield	[[-0.598177, 0.0, 0.801365] [0.0, 1.0, 0.0] [-0.801365, 0.0, -0.598177] [-2848.65, 121.1, 12921.2]]	dynaf_pg_1line_3000_universal
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	aircraft	2	air	Air spawn	[[267.661, 0.0, -135.489] [0.0, 300.0, 0.0] [135.489, 0.0, 267.661] [-11056.0, 2000.0, 11099.0]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.481664, 0.0, 0.876355] [0.0, 1.0, 0.0] [-0.876355, 0.0, -0.481664] [350.448, 66.1007, 5690.28]]	dynHelipad_beton_a_usa
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.605625, 0.0, 0.79575] [0.0, 1.0, 0.0] [-0.79575, 0.0, -0.605625] [-3721.73, 141.894, 9326.08]]	dynHelipad_beton_b_usa
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	capture	0	capture_a	A	[[80.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 80.0] [1132.56, 2.47605, 2084.48]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	capture	0	capture_b	B	[[50.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 50.0] [1672.93, 5.2167, 2647.01]]	
+mozdok_02	Mozdok (Variant 2)	levels/avg_mozdok.bin	capture	0	capture_c	C	[[50.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 50.0] [2106.92, 11.052, 3142.3]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	ground	1	ground_1	Ground spawn 1	[[1.13247e-5, 0.0, -150.0] [0.0, 129.956, 0.0] [150.0, 0.0, 1.13247e-5] [-336.0, 2.0, -818.0]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	ground	1	ground_2	Ground spawn 2	[[1.13247e-5, 0.0, -150.0] [0.0, 129.956, 0.0] [150.0, 0.0, 1.13247e-5] [603.8, 2.0, -384.35]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	aircraft	1	airfield	Airfield	[[-0.0436192, 0.0, -0.999048] [0.0, 1.0, 0.0] [0.999048, 0.0, -0.0436192] [1031.55, 88.4197, -14429.3]]	dynaf_pg_1line_3000_universal
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	aircraft	1	air	Air spawn	[[4.60152e-5, 0.0, 300.0] [0.0, 300.0, 0.0] [-300.0, 0.0, 4.60152e-5] [96.4512, 2000.0, -15019.0]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.510186, 0.0, -0.860064] [0.0, 1.0, 0.0] [0.860064, 0.0, 0.510186] [1966.54, 81.748, -3518.07]]	dynHelipad_beton_a_ussr
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.000125096, 0.0, -1.0] [0.0, 1.0, 0.0] [1.0, 0.0, 0.000125096] [232.45, 93.2361, -8929.8]]	dynHelipad_beton_b_ussr
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	ground	2	ground_1	Ground spawn 1	[[1.13247e-5, 0.0, -150.0] [0.0, 145.374, 0.0] [150.0, 0.0, 1.13247e-5] [-653.6, 3.5, 637.0]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	ground	2	ground_2	Ground spawn 2	[[1.13247e-5, 0.0, -150.0] [0.0, 145.374, 0.0] [150.0, 0.0, 1.13247e-5] [-274.05, 3.5, 707.3]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	aircraft	2	airfield	Airfield	[[-0.0871557, 0.0, 0.996195] [0.0, 1.0, 0.0] [-0.996195, 0.0, -0.0871557] [-516.861, 9.99068, 14432.7]]	dynaf_pg_1line_3000_universal
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	aircraft	2	air	Air spawn	[[-7.16429e-7, 0.0, -300.0] [0.0, 300.0, 0.0] [300.0, 0.0, -7.16429e-7] [96.4492, 2000.0, 14980.9]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.518367, 0.0, 0.855158] [0.0, 1.0, 0.0] [-0.855158, 0.0, -0.518367] [-2308.82, 29.9686, 3392.91]]	dynHelipad_beton_a_usa
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.236192, 0.0, 0.971707] [0.0, 1.0, 0.0] [-0.971707, 0.0, 0.236192] [-501.65, 24.3298, 9053.3]]	dynHelipad_beton_b_usa
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	capture	0	capture_a	A	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [-438.65, 11.4, -89.25]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	capture	0	capture_b	B	[[0.21644, 0.0, 0.976296] [0.0, 1.0, 0.0] [-0.976296, 0.0, 0.21644] [-125.41, 2.29651, -82.85]]	
+netherlands_02	Netherlands (Variant 2)	levels/avg_netherlands.bin	capture	0	capture_c	C	[[0.21644, 0.0, 0.976296] [0.0, 1.0, 0.0] [-0.976296, 0.0, 0.21644] [145.15, 11.45, 160.4]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	ground	1	ground_1	Ground spawn 1	[[0.976296, 0.0, -0.21644] [0.0, 1.0, 0.0] [0.21644, 0.0, 0.976296] [2829.05, 53.0, 1339.5]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	ground	1	ground_2	Ground spawn 2	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2790.79, 50.9702, 2599.32]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	aircraft	1	airfield	Airfield	[[0.953717, 0.0, 0.300706] [0.0, 1.0, 0.0] [-0.300706, 0.0, 0.953717] [15336.8, 130.83, 3237.07]]	dynaf_pg_1line_3000_universal
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	aircraft	1	air	Air spawn	[[-270.184, 0.0, -130.388] [0.0, 300.0, 0.0] [130.388, 0.0, -270.184] [15621.9, 2000.0, 10066.2]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.999166, 0.0, -0.0408399] [0.0, 1.0, 0.0] [0.0408399, 0.0, 0.999166] [6216.28, 122.962, 2098.31]]	dynHelipad_beton_a_ussr
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.960284, 0.0, 0.279025] [0.0, 1.0, 0.0] [-0.279025, 0.0, 0.960284] [12663.3, 61.1136, 345.778]]	dynHelipad_beton_b_ussr
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	ground	2	ground_1	Ground spawn 1	[[0.737277, 0.0, -0.67559] [0.0, 1.0, 0.0] [0.67559, 0.0, 0.737277] [1508.0, 38.7931, 2882.75]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	ground	2	ground_2	Ground spawn 2	[[0.999222, 0.0, 0.039435] [0.0, 1.0, 0.0] [-0.039435, 0.0, 0.999222] [1249.45, 51.4, 1445.6]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	aircraft	2	airfield	Airfield	[[-0.976408, 0.0, -0.215935] [0.0, 1.0, 0.0] [0.215935, 0.0, -0.976408] [-11193.0, 70.1252, -1139.83]]	dynaf_pg_1line_3000_universal
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	aircraft	2	air	Air spawn	[[270.184, 0.0, 130.388] [0.0, 300.0, 0.0] [-130.388, 0.0, 270.184] [-11037.4, 2000.0, -3150.1]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.909595, 0.0, 0.415497] [0.0, 1.0, 0.0] [-0.415497, 0.0, -0.909595] [-1639.09, 103.856, 3421.59]]	dynHelipad_beton_a_usa
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.96786, 0.0, -0.251492] [0.0, 1.0, 0.0] [0.251492, 0.0, -0.96786] [-7704.75, 16.9717, -3807.64]]	dynHelipad_beton_b_usa
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	capture	0	capture_a	A	[[-78.0947, 0.0, 17.3555] [0.0, 50.0, 0.0] [-17.3555, 0.0, -78.0947] [2156.35, 47.7529, 2662.05]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	capture	0	capture_b	B	[[-160.25, 0.0, 35.6137] [0.0, 192.0, 0.0] [-35.6137, 0.0, -160.25] [2044.5, 59.8, 2052.55]]	
+normandy_02	Normandy (Variant 2)	levels/avg_normandy.bin	capture	0	capture_c	C	[[-78.0947, 0.0, 17.3555] [0.0, 50.0, 0.0] [-17.3555, 0.0, -78.0947] [2049.4, 58.8075, 1447.24]]	
+normandy	Normandy	levels/avg_normandy.bin	ground	1	ground_1	Ground spawn 1	[[377.084, 0.0, 0.0] [0.0, 100.0, 0.0] [0.0, 0.0, 377.084] [3196.05, 51.1945, 3384.97]]	
+normandy	Normandy	levels/avg_normandy.bin	ground	1	ground_2	Ground spawn 2	[[386.123, 0.0, 0.0] [0.0, 100.0, 0.0] [0.0, 0.0, 386.123] [3196.2, 51.1945, 3059.99]]	
+normandy	Normandy	levels/avg_normandy.bin	aircraft	1	airfield	Airfield	[[0.953717, 0.0, 0.300706] [0.0, 1.0, 0.0] [-0.300706, 0.0, 0.953717] [15336.8, 130.83, 3237.07]]	dynaf_pg_1line_3000_universal
+normandy	Normandy	levels/avg_normandy.bin	aircraft	1	air	Air spawn	[[-270.184, 0.0, -130.388] [0.0, 300.0, 0.0] [130.388, 0.0, -270.184] [15621.9, 2000.0, 10066.2]]	
+normandy	Normandy	levels/avg_normandy.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.999166, 0.0, -0.0408399] [0.0, 1.0, 0.0] [0.0408399, 0.0, 0.999166] [6216.28, 122.962, 2098.31]]	dynHelipad_beton_a_ussr
+normandy	Normandy	levels/avg_normandy.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.960284, 0.0, 0.279025] [0.0, 1.0, 0.0] [-0.279025, 0.0, 0.960284] [12663.3, 61.1136, 345.778]]	dynHelipad_beton_b_ussr
+normandy	Normandy	levels/avg_normandy.bin	ground	2	ground_1	Ground spawn 1	[[350.91, 0.0, 0.0] [0.0, 100.0, 0.0] [0.0, 0.0, 350.91] [1465.93, -4.02966, 3397.49]]	
+normandy	Normandy	levels/avg_normandy.bin	ground	2	ground_2	Ground spawn 2	[[353.483, 0.0, 0.0] [0.0, 100.0, 0.0] [0.0, 0.0, 353.483] [1466.26, -4.02966, 3122.49]]	
+normandy	Normandy	levels/avg_normandy.bin	aircraft	2	airfield	Airfield	[[-0.976408, 0.0, -0.215935] [0.0, 1.0, 0.0] [0.215935, 0.0, -0.976408] [-11193.0, 70.1252, -1139.83]]	dynaf_pg_1line_3000_universal
+normandy	Normandy	levels/avg_normandy.bin	aircraft	2	air	Air spawn	[[270.184, 0.0, 130.388] [0.0, 300.0, 0.0] [-130.388, 0.0, 270.184] [-11037.4, 2000.0, -3150.1]]	
+normandy	Normandy	levels/avg_normandy.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.909595, 0.0, 0.415497] [0.0, 1.0, 0.0] [-0.415497, 0.0, -0.909595] [-1639.09, 103.856, 3421.59]]	dynHelipad_beton_a_usa
+normandy	Normandy	levels/avg_normandy.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.96786, 0.0, -0.251492] [0.0, 1.0, 0.0] [0.251492, 0.0, -0.96786] [-7704.75, 16.9717, -3807.64]]	dynHelipad_beton_b_usa
+normandy	Normandy	levels/avg_normandy.bin	capture	0	capture_a	A	[[-40.9997, 0.0, 9.11165] [0.0, 50.0, 0.0] [-9.11165, 0.0, -40.9997] [2292.65, -3.82236, 3737.23]]	
+normandy	Normandy	levels/avg_normandy.bin	capture	0	capture_b	B	[[-40.9997, 0.0, 9.11165] [0.0, 50.0, 0.0] [-9.11165, 0.0, -40.9997] [2289.94, -0.231476, 3393.06]]	
+normandy	Normandy	levels/avg_normandy.bin	capture	0	capture_c	C	[[-42.1713, 0.0, 9.372] [0.0, 50.0, 0.0] [-9.372, 0.0, -42.1713] [2292.08, 35.4294, 2942.43]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [782.437, 14.4, 173.25]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [741.65, 19.45, -748.3]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	aircraft	1	airfield	Airfield	[[0.988525, 0.0, 0.151048] [0.0, 1.0, 0.0] [-0.151048, 0.0, 0.988525] [12798.2, 55.8853, 1690.72]]	dynaf_pg_1line_3000_universal
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	aircraft	1	air	Air spawn	[[-293.445, 0.0, -62.3744] [0.0, 300.0, 0.0] [62.3744, 0.0, -293.445] [14691.7, 2000.0, 3126.63]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.973631, 0.0, 0.228126] [0.0, 1.0, 0.0] [-0.228126, 0.0, 0.973631] [4060.16, 67.3992, 983.597]]	dynHelipad_beton_a_ussr
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.940311, 0.0, 0.340315] [0.0, 1.0, 0.0] [-0.340315, 0.0, 0.940311] [6717.7, 81.2, 2067.15]]	dynHelipad_beton_b_ussr
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-881.92, 1.3, 138.45]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-889.745, 3.4, -749.05]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	aircraft	2	airfield	Airfield	[[-0.403597, 0.0, -0.914937] [0.0, 1.0, 0.0] [0.914937, 0.0, -0.403597] [-5035.91, 6.04195, -11765.0]]	dynaf_pg_1line_3000_universal
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	aircraft	2	air	Air spawn	[[105.062, 0.0, 281.003] [0.0, 300.0, 0.0] [-281.003, 0.0, 105.062] [-5253.49, 2000.0, -14048.4]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.76852, 0.0, -0.639824] [0.0, 1.0, 0.0] [0.639824, 0.0, -0.76852] [-2884.23, 12.936, -2794.41]]	dynHelipad_beton_a_usa
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.370422, 0.0, -0.928864] [0.0, 1.0, 0.0] [0.928864, 0.0, -0.370422] [-2952.01, 1.05933, -6578.6]]	dynHelipad_beton_b_usa
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	capture	0	capture_a	A	[[49.9783, 0.0, -1.47354] [0.0, 30.56, 0.0] [1.47354, 0.0, 49.9783] [-76.7, -6.5, 586.7]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	capture	0	capture_b	B	[[49.0896, 0.0, -9.49785] [0.0, 50.0, 0.0] [9.49785, 0.0, 49.0896] [-57.25, -6.5, -317.65]]	
+northern_valley_02	Northern Valley (Variant 2)	levels/avg_northern_valley.bin	capture	0	capture_c	C	[[49.9999, 0.0, -0.106575] [0.0, 50.0, 0.0] [0.106575, 0.0, 49.9999] [-38.4, 3.3, -1218.45]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 100.0] [576.739, 14.3999, 204.167]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 100.0] [600.654, 19.4502, -357.992]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	aircraft	1	airfield	Airfield	[[0.988525, 0.0, 0.151048] [0.0, 1.0, 0.0] [-0.151048, 0.0, 0.988525] [12798.2, 55.8853, 1690.72]]	dynaf_pg_1line_3000_universal
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	aircraft	1	air	Air spawn	[[-293.445, 0.0, -62.3744] [0.0, 300.0, 0.0] [62.3744, 0.0, -293.445] [14691.7, 2000.0, 3126.63]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.973631, 0.0, 0.228126] [0.0, 1.0, 0.0] [-0.228126, 0.0, 0.973631] [4060.16, 67.3992, 983.597]]	dynHelipad_beton_a_ussr
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.940311, 0.0, 0.340315] [0.0, 1.0, 0.0] [-0.340315, 0.0, 0.940311] [6717.7, 81.2, 2067.15]]	dynHelipad_beton_b_ussr
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 100.0] [-712.045, 1.2998, 138.633]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 100.0] [-706.924, 3.3999, -415.497]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	aircraft	2	airfield	Airfield	[[-0.403597, 0.0, -0.914937] [0.0, 1.0, 0.0] [0.914937, 0.0, -0.403597] [-5035.91, 6.04195, -11765.0]]	dynaf_pg_1line_3000_universal
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	aircraft	2	air	Air spawn	[[105.062, 0.0, 281.003] [0.0, 300.0, 0.0] [-281.003, 0.0, 105.062] [-5253.49, 2000.0, -14048.4]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.76852, 0.0, -0.639824] [0.0, 1.0, 0.0] [0.639824, 0.0, -0.76852] [-2884.23, 12.936, -2794.41]]	dynHelipad_beton_a_usa
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.370422, 0.0, -0.928864] [0.0, 1.0, 0.0] [0.928864, 0.0, -0.370422] [-2952.01, 1.05933, -6578.6]]	dynHelipad_beton_b_usa
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	capture	0	capture_a	A	[[49.9783, 0.0, -1.47354] [0.0, 30.56, 0.0] [1.47354, 0.0, 49.9783] [-76.7, -6.5, 586.7]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	capture	0	capture_b	B	[[49.0896, 0.0, -9.49785] [0.0, 50.0, 0.0] [9.49785, 0.0, 49.0896] [-57.25, -6.5, 118.17]]	
+northern_valley	Northern Valley	levels/avg_northern_valley.bin	capture	0	capture_c	C	[[49.9999, 0.0, -0.106575] [0.0, 50.0, 0.0] [0.106575, 0.0, 49.9999] [-38.4, 3.3, -344.625]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	ground	1	ground_1	Ground spawn 1	[[-25.3087, 0.0, -776.694] [0.0, 300.0, 0.0] [1387.74, 0.0, -45.2195] [1902.77, 13.7, 1137.75]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	ground	1	ground_2	Ground spawn 2	[[8.5943, 0.0, -777.059] [0.0, 300.0, 0.0] [1388.39, 0.0, 15.356] [1921.85, 12.9, 1142.16]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	aircraft	1	airfield	Airfield	[[-0.459952, 0.0, -0.887943] [0.0, 1.0, 0.0] [0.887943, 0.0, -0.459952] [-5135.47, 441.046, -9490.02]]	dynaf_pg_1line_3000_universal
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	aircraft	1	air	Air spawn	[[-211.175, 0.0, 213.085] [0.0, 300.0, 0.0] [-213.085, 0.0, -211.175] [12609.8, 2000.0, -8608.64]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.49449, 0.0, -0.869184] [0.0, 1.0, 0.0] [0.869184, 0.0, -0.49449] [68.8186, 27.0735, -1546.2]]	dynHelipad_beton_a_ussr
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.753609, 0.0, -0.657324] [0.0, 1.0, 0.0] [0.657324, 0.0, -0.753609] [-3487.09, 217.276, -2647.78]]	dynHelipad_beton_b_ussr
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	ground	2	ground_1	Ground spawn 1	[[136.169, 0.0, -811.078] [0.0, 300.0, 0.0] [1449.18, 0.0, 243.295] [1685.55, 20.65, 2838.3]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	ground	2	ground_2	Ground spawn 2	[[-6.74158, 0.0, -822.402] [0.0, 300.0, 0.0] [1469.41, 0.0, -12.0483] [1976.4, 39.65, 2859.3]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	aircraft	2	airfield	Airfield	[[-0.487641, 0.0, 0.873044] [0.0, 1.0, 0.0] [-0.873044, 0.0, -0.487641] [-6366.69, 541.861, 12772.9]]	dynaf_pg_1line_3000_universal
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	aircraft	2	air	Air spawn	[[101.336, 0.0, -282.367] [0.0, 300.0, 0.0] [282.367, 0.0, 101.336] [-3028.73, 2000.0, 16178.1]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.228136, 0.0, 0.973629] [0.0, 1.0, 0.0] [-0.973629, 0.0, 0.228136] [2970.6, 59.1529, 5937.35]]	dynHelipad_beton_a_usa
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.271249, 0.0, 0.96251] [0.0, 1.0, 0.0] [-0.96251, 0.0, -0.271249] [-480.78, 103.331, 8744.71]]	dynHelipad_beton_b_usa
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	capture	0	capture_a	A	[[46.044, 0.0, -10.9902] [0.0, 25.0, 0.0] [10.9902, 0.0, 46.044] [1527.76, 11.1024, 1976.14]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	capture	0	capture_b	B	[[49.2294, 0.0, -11.7506] [0.0, 60.0, 0.0] [11.7506, 0.0, 49.2294] [1888.36, 12.2, 1975.94]]	
+nuclear_incident	Nuclear Incident	levels/avg_nuclear_incident.bin	capture	0	capture_c	C	[[76.4994, 0.0, -18.2597] [0.0, 25.0, 0.0] [18.2597, 0.0, 76.4994] [2385.8, 9.75, 1980.65]]	
+poland	Poland	levels/avg_poland.bin	ground	1	ground_1	Ground spawn 1	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2671.53, 7.25001, 2126.2]]	
+poland	Poland	levels/avg_poland.bin	ground	1	ground_2	Ground spawn 2	[[0.996195, 0.0, 0.0871554] [0.0, 1.0, 0.0] [-0.0871554, 0.0, 0.996195] [3207.2, 16.7171, 1575.73]]	
+poland	Poland	levels/avg_poland.bin	aircraft	1	airfield	Airfield	[[0.999416, 0.0, 0.0341604] [0.0, 1.0, 0.0] [-0.0341604, 0.0, 0.999416] [15531.0, 88.8359, 2395.61]]	dynaf_pg_1line_3000_universal
+poland	Poland	levels/avg_poland.bin	aircraft	1	air	Air spawn	[[-297.624, 0.0, 37.6892] [0.0, 300.0, 0.0] [-37.6892, 0.0, -297.624] [16874.0, 2000.0, 98.5713]]	
+poland	Poland	levels/avg_poland.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.99993, 0.0, -0.0118273] [0.0, 1.0, 0.0] [0.0118273, 0.0, 0.99993] [6263.75, 58.4189, 2171.9]]	dynHelipad_beton_a_usa
+poland	Poland	levels/avg_poland.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.9999, 0.0, -0.0141668] [0.0, 1.0, 0.0] [0.0141668, 0.0, 0.9999] [11168.3, 97.9, 1003.85]]	dynHelipad_beton_b_ussr
+poland	Poland	levels/avg_poland.bin	ground	2	ground_1	Ground spawn 1	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1324.51, 15.55, 2077.82]]	
+poland	Poland	levels/avg_poland.bin	ground	2	ground_2	Ground spawn 2	[[0.906308, 0.0, -0.422618] [0.0, 1.0, 0.0] [0.422618, 0.0, 0.906308] [1120.29, 4.29999, 1451.65]]	
+poland	Poland	levels/avg_poland.bin	aircraft	2	airfield	Airfield	[[-0.939693, 0.0, -0.34202] [0.0, 1.0, 0.0] [0.34202, 0.0, -0.939693] [-11696.9, 51.05, 1177.86]]	dynaf_pg_1line_3000_universal
+poland	Poland	levels/avg_poland.bin	aircraft	2	air	Air spawn	[[297.624, 0.0, -37.6892] [0.0, 300.0, 0.0] [37.6892, 0.0, 297.624] [-12907.8, 2000.0, 3867.08]]	
+poland	Poland	levels/avg_poland.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.997668, 0.0, 0.0682489] [0.0, 1.0, 0.0] [-0.0682489, 0.0, -0.997668] [-1930.35, 39.15, 1627.7]]	dynHelipad_beton_a_ussr
+poland	Poland	levels/avg_poland.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.998117, 0.0, 0.0613427] [0.0, 1.0, 0.0] [-0.0613427, 0.0, -0.998117] [-7130.15, 57.8474, 2000.75]]	dynHelipad_beton_b_usa
+poland	Poland	levels/avg_poland.bin	capture	0	capture_a	A	[[48.0616, 0.0, 0.0] [0.0, 30.56, 0.0] [0.0, 0.0, 48.0616] [2030.3, 3.65849, 2271.8]]	
+poland	Poland	levels/avg_poland.bin	capture	0	capture_b	B	[[57.6739, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 57.6739] [2045.55, 1.05, 1770.65]]	
+poland	Poland	levels/avg_poland.bin	capture	0	capture_c	C	[[48.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 48.0] [2225.05, 16.9, 1372.65]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	ground	1	ground_1	Ground spawn 1	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [3614.0, 4.55, 2969.3]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	ground	1	ground_2	Ground spawn 2	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [3682.0, 4.55, 1090.0]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	aircraft	1	airfield	Airfield	[[0.999416, 0.0, 0.0341604] [0.0, 1.0, 0.0] [-0.0341604, 0.0, 0.999416] [15531.0, 88.8359, 2395.61]]	dynaf_pg_1line_3000_universal
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	aircraft	1	air	Air spawn	[[-297.624, 0.0, 37.6892] [0.0, 300.0, 0.0] [-37.6892, 0.0, -297.624] [16874.0, 2000.0, 98.5713]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.999905, 0.0, -0.0137983] [0.0, 1.0, 0.0] [0.0137983, 0.0, 0.999905] [6263.75, 58.4189, 2171.9]]	dynHelipad_beton_a_usa
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.999861, 0.0, -0.0166713] [0.0, 1.0, 0.0] [0.0166713, 0.0, 0.999861] [11168.3, 97.9, 1003.85]]	dynHelipad_beton_b_ussr
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	ground	2	ground_1	Ground spawn 1	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [437.95, 4.55, 2926.25]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	ground	2	ground_2	Ground spawn 2	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [335.45, 4.55, 1058.85]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	aircraft	2	airfield	Airfield	[[-0.939693, 0.0, -0.34202] [0.0, 1.0, 0.0] [0.34202, 0.0, -0.939693] [-11696.9, 51.05, 1177.86]]	dynaf_pg_1line_3000_universal
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	aircraft	2	air	Air spawn	[[297.624, 0.0, -37.6892] [0.0, 300.0, 0.0] [37.6892, 0.0, 297.624] [-12907.8, 2000.0, 3867.08]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.999078, 0.0, 0.0429297] [0.0, 1.0, 0.0] [-0.0429297, 0.0, -0.999078] [-1930.35, 39.15, 1627.7]]	dynHelipad_beton_a_ussr
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.987433, 0.0, 0.15804] [0.0, 1.0, 0.0] [-0.15804, 0.0, -0.987433] [-7130.15, 62.7532, 2000.75]]	dynHelipad_beton_b_usa
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	capture	0	capture_a	A	[[51.585, 0.0, -47.318] [0.0, 51.09, 0.0] [47.318, 0.0, 51.585] [2011.0, 15.0, 3403.0]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	capture	0	capture_b	B	[[-3.96172, 0.0, 0.880443] [0.0, 1.152, 0.0] [-0.880443, 0.0, -3.96172] [2011.0, 16.05, 2047.0]]	
+poland_02	Poland (Variant 2)	levels/avg_poland.bin	capture	0	capture_c	C	[[-69.7971, 0.0, 15.5115] [0.0, 50.0, 0.0] [-15.5115, 0.0, -69.7971] [2011.0, 19.9, 804.0]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	ground	1	ground_1	Ground spawn 1	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2671.53, 7.25001, 2126.2]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	ground	1	ground_2	Ground spawn 2	[[0.996195, 0.0, 0.0871554] [0.0, 1.0, 0.0] [-0.0871554, 0.0, 0.996195] [3207.2, 16.7171, 1575.73]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	aircraft	1	airfield	Airfield	[[0.999416, 0.0, 0.0341604] [0.0, 1.0, 0.0] [-0.0341604, 0.0, 0.999416] [15531.0, 88.8359, 2395.61]]	dynaf_pg_1line_3000_snow
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	aircraft	1	air	Air spawn	[[-297.624, 0.0, 37.6892] [0.0, 300.0, 0.0] [-37.6892, 0.0, -297.624] [16874.0, 2000.0, 98.5713]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.99993, 0.0, -0.0118273] [0.0, 1.0, 0.0] [0.0118273, 0.0, 0.99993] [6263.75, 58.4189, 2171.9]]	dynHelipad_beton_a_usa
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.9999, 0.0, -0.0141668] [0.0, 1.0, 0.0] [0.0141668, 0.0, 0.9999] [11168.3, 97.9, 1003.85]]	dynHelipad_beton_b_ussr
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	ground	2	ground_1	Ground spawn 1	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1324.51, 15.55, 2077.82]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	ground	2	ground_2	Ground spawn 2	[[0.906308, 0.0, -0.422618] [0.0, 1.0, 0.0] [0.422618, 0.0, 0.906308] [1120.29, 4.29999, 1451.65]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	aircraft	2	airfield	Airfield	[[-0.939693, 0.0, -0.34202] [0.0, 1.0, 0.0] [0.34202, 0.0, -0.939693] [-11696.9, 51.05, 1177.86]]	dynaf_pg_1line_3000_snow
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	aircraft	2	air	Air spawn	[[297.624, 0.0, -37.6892] [0.0, 300.0, 0.0] [37.6892, 0.0, 297.624] [-12907.8, 2000.0, 3867.08]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.997668, 0.0, 0.0682489] [0.0, 1.0, 0.0] [-0.0682489, 0.0, -0.997668] [-1930.35, 39.15, 1627.7]]	dynHelipad_beton_a_ussr
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.998117, 0.0, 0.0613427] [0.0, 1.0, 0.0] [-0.0613427, 0.0, -0.998117] [-7130.15, 57.8474, 2000.75]]	dynHelipad_beton_b_usa
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	capture	0	capture_a	A	[[48.0616, 0.0, 0.0] [0.0, 30.56, 0.0] [0.0, 0.0, 48.0616] [2030.3, 3.65849, 2271.8]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	capture	0	capture_b	B	[[57.6739, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 57.6739] [2045.55, 1.05, 1770.65]]	
+poland_snow	Poland Snow	levels/avg_poland_snow.bin	capture	0	capture_c	C	[[48.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 48.0] [2225.05, 16.9, 1372.65]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	ground	1	ground_1	Ground spawn 1	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [3614.0, 4.55, 2969.3]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	ground	1	ground_2	Ground spawn 2	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [3682.0, 4.55, 1090.0]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	aircraft	1	airfield	Airfield	[[0.999416, 0.0, 0.0341604] [0.0, 1.0, 0.0] [-0.0341604, 0.0, 0.999416] [15531.0, 88.8359, 2395.61]]	dynaf_pg_1line_3000_snow
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	aircraft	1	air	Air spawn	[[-297.624, 0.0, 37.6892] [0.0, 300.0, 0.0] [-37.6892, 0.0, -297.624] [16874.0, 2000.0, 98.5713]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.999905, 0.0, -0.0137983] [0.0, 1.0, 0.0] [0.0137983, 0.0, 0.999905] [6263.75, 58.4189, 2171.9]]	dynHelipad_beton_a_usa
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.999861, 0.0, -0.0166713] [0.0, 1.0, 0.0] [0.0166713, 0.0, 0.999861] [11168.3, 97.9, 1003.85]]	dynHelipad_beton_b_ussr
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	ground	2	ground_1	Ground spawn 1	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [437.95, 4.55, 2926.25]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	ground	2	ground_2	Ground spawn 2	[[300.0, 0.0, 0.0] [0.0, 77.3, 0.0] [0.0, 0.0, 300.0] [335.45, 4.55, 1058.85]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	aircraft	2	airfield	Airfield	[[-0.939693, 0.0, -0.34202] [0.0, 1.0, 0.0] [0.34202, 0.0, -0.939693] [-11696.9, 51.05, 1177.86]]	dynaf_pg_1line_3000_snow
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	aircraft	2	air	Air spawn	[[297.624, 0.0, -37.6892] [0.0, 300.0, 0.0] [37.6892, 0.0, 297.624] [-12907.8, 2000.0, 3867.08]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.999078, 0.0, 0.0429297] [0.0, 1.0, 0.0] [-0.0429297, 0.0, -0.999078] [-1930.35, 39.15, 1627.7]]	dynHelipad_beton_a_ussr
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.987433, 0.0, 0.15804] [0.0, 1.0, 0.0] [-0.15804, 0.0, -0.987433] [-7130.15, 62.7532, 2000.75]]	dynHelipad_beton_b_usa
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	capture	0	capture_a	A	[[51.585, 0.0, -47.318] [0.0, 51.09, 0.0] [47.318, 0.0, 51.585] [2011.25, 6.31332, 3403.8]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	capture	0	capture_b	B	[[-3.96172, 0.0, 0.880443] [0.0, 1.152, 0.0] [-0.880443, 0.0, -3.96172] [2010.95, 60.0, 2047.5]]	
+poland_snow_02	Poland Snow (Variant 2)	levels/avg_poland_snow.bin	capture	0	capture_c	C	[[-69.7971, 0.0, 15.5115] [0.0, 50.0, 0.0] [-15.5115, 0.0, -69.7971] [2011.05, 4.96241, 804.45]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 86.4802, 0.0] [0.0, 0.0, 100.0] [3494.25, 9.82581, 1660.67]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 86.4802, 0.0] [0.0, 0.0, 100.0] [3149.22, 9.85001, 1804.4]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	aircraft	1	airfield	Airfield	[[0.782459, 0.0, -0.622703] [0.0, 1.0, 0.0] [0.622703, 0.0, 0.782459] [10658.7, 67.876, -9814.38]]	dynaf_pg_1line_3000_universal
+rheinland	Rheinland	levels/avg_rheinland.bin	aircraft	1	air	Air spawn	[[5.2883, 0.0, 299.954] [0.0, 300.0, 0.0] [-299.954, 0.0, 5.2883] [3466.18, 2000.0, -12974.6]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.0994122, 0.0, -0.995046] [0.0, 1.0, 0.0] [0.995046, 0.0, 0.0994122] [3286.47, 21.8363, -1915.84]]	dynHelipad_beton_a_ussr
+rheinland	Rheinland	levels/avg_rheinland.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.4931, 0.0, -0.869973] [0.0, 1.0, 0.0] [0.869973, 0.0, 0.4931] [5706.81, 14.6665, -5707.05]]	dynHelipad_beton_b_ussr
+rheinland	Rheinland	levels/avg_rheinland.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 86.4802, 0.0] [0.0, 0.0, 100.0] [3712.63, 9.82581, 2561.35]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 86.4802, 0.0] [0.0, 0.0, 100.0] [3166.94, 9.85001, 2423.9]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	aircraft	2	airfield	Airfield	[[-0.538909, 0.0, 0.842364] [0.0, 1.0, 0.0] [-0.842364, 0.0, -0.538909] [-1403.32, 106.17, 14789.6]]	dynaf_pg_1line_3000_universal
+rheinland	Rheinland	levels/avg_rheinland.bin	aircraft	2	air	Air spawn	[[-5.2883, 0.0, -299.954] [0.0, 300.0, 0.0] [299.954, 0.0, -5.2883] [3992.38, 2000.0, 17040.0]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.350048, 0.0, 0.936732] [0.0, 1.0, 0.0] [-0.936732, 0.0, 0.350048] [3989.12, 30.7847, 6120.89]]	dynHelipad_beton_a_usa
+rheinland	Rheinland	levels/avg_rheinland.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.348842, 0.0, 0.937181] [0.0, 1.0, 0.0] [-0.937181, 0.0, -0.348842] [1783.05, 11.3576, 9868.45]]	dynHelipad_beton_b_usa
+rheinland	Rheinland	levels/avg_rheinland.bin	capture	0	capture_a	A	[[1.66893e-5, 0.0, -140.0] [0.0, 140.0, 0.0] [140.0, 0.0, 1.66893e-5] [3416.35, 81.9, 2135.01]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	capture	0	capture_b	B	[[4.76837e-6, 0.0, -40.0] [0.0, 40.0, 0.0] [40.0, 0.0, 4.76837e-6] [3922.55, 52.9004, 2222.86]]	
+rheinland	Rheinland	levels/avg_rheinland.bin	capture	0	capture_c	C	[[4.76837e-6, 0.0, -40.0] [0.0, 40.0, 0.0] [40.0, 0.0, 4.76837e-6] [3835.65, 55.55, 1802.06]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	ground	1	ground_1	Ground spawn 1	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-1482.61, 12.6646, 1083.72]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	ground	1	ground_2	Ground spawn 2	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-2444.44, 16.6436, 823.916]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	aircraft	1	airfield	Airfield	[[0.770282, 0.0, -0.637702] [0.0, 1.0, 0.0] [0.637702, 0.0, 0.770282] [-782.697, 184.556, -10407.5]]	dynaf_pg_1line_3000_universal
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	aircraft	1	air	Air spawn	[[-81.2478, 0.0, 288.789] [0.0, 300.0, 0.0] [-288.789, 0.0, -81.2478] [1763.83, 2000.0, -12130.6]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.424736, 0.0, -0.905317] [0.0, 1.0, 0.0] [0.905317, 0.0, 0.424736] [-176.453, 21.7074, -1677.47]]	dynHelipad_beton_a_ussr
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.434406, 0.0, -0.900717] [0.0, 1.0, 0.0] [0.900717, 0.0, 0.434406] [1427.49, 154.187, -6895.78]]	dynHelipad_beton_b_ussr
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	ground	2	ground_1	Ground spawn 1	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-2021.79, 12.6646, 3591.71]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	ground	2	ground_2	Ground spawn 2	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-2982.56, 3.25684, 3583.04]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	aircraft	2	airfield	Airfield	[[-0.357131, 0.0, 0.934055] [0.0, 1.0, 0.0] [-0.934055, 0.0, -0.357131] [-4718.11, 88.4855, 15793.9]]	dynaf_pg_1line_3000_universal
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	aircraft	2	air	Air spawn	[[81.2478, 0.0, -288.789] [0.0, 300.0, 0.0] [288.789, 0.0, 81.2478] [-6368.88, 2000.0, 16766.1]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.177149, 0.0, 0.984184] [0.0, 1.0, 0.0] [-0.984184, 0.0, 0.177149] [-2169.91, 85.7373, 6043.44]]	dynHelipad_beton_a_usa
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.314176, 0.0, 0.949365] [0.0, 1.0, 0.0] [-0.949365, 0.0, -0.314176] [-4405.13, 256.908, 11820.7]]	dynHelipad_beton_b_usa
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	capture	0	capture_a	A	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-3299.68, 12.1294, 2138.81]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	capture	0	capture_b	B	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-2305.77, 47.9557, 2322.99]]	
+sector_montmedy_02	Sector Montmedy (Variant 2)	levels/avg_sector_montmedy.bin	capture	0	capture_c	C	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-1318.15, 54.9857, 2528.23]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	ground	1	ground_1	Ground spawn 1	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-1854.54, 20.375, 1754.25]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	ground	1	ground_2	Ground spawn 2	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-2456.6, 11.2641, 1647.8]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	aircraft	1	airfield	Airfield	[[0.770282, 0.0, -0.637702] [0.0, 1.0, 0.0] [0.637702, 0.0, 0.770282] [-782.697, 184.556, -10407.5]]	dynaf_pg_1line_3000_universal
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	aircraft	1	air	Air spawn	[[-81.2478, 0.0, 288.789] [0.0, 300.0, 0.0] [-288.789, 0.0, -81.2478] [1763.83, 2000.0, -12130.6]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.424736, 0.0, -0.905317] [0.0, 1.0, 0.0] [0.905317, 0.0, 0.424736] [-176.453, 21.7074, -1677.47]]	dynHelipad_beton_a_ussr
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.434406, 0.0, -0.900717] [0.0, 1.0, 0.0] [0.900717, 0.0, 0.434406] [1427.49, 154.187, -6895.78]]	dynHelipad_beton_b_ussr
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	ground	2	ground_1	Ground spawn 1	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-2283.52, 27.96, 3070.91]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	ground	2	ground_2	Ground spawn 2	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-2745.7, 24.8482, 2985.59]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	aircraft	2	airfield	Airfield	[[-0.357131, 0.0, 0.934055] [0.0, 1.0, 0.0] [-0.934055, 0.0, -0.357131] [-4718.11, 88.4855, 15793.9]]	dynaf_pg_1line_3000_universal
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	aircraft	2	air	Air spawn	[[81.2478, 0.0, -288.789] [0.0, 300.0, 0.0] [288.789, 0.0, 81.2478] [-6368.88, 2000.0, 16766.1]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.177149, 0.0, 0.984184] [0.0, 1.0, 0.0] [-0.984184, 0.0, 0.177149] [-2169.91, 85.7373, 6043.44]]	dynHelipad_beton_a_usa
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.314176, 0.0, 0.949365] [0.0, 1.0, 0.0] [-0.949365, 0.0, -0.314176] [-4405.13, 256.908, 11820.7]]	dynHelipad_beton_b_usa
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	capture	0	capture_a	A	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-2803.21, 54.6932, 2275.3]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	capture	0	capture_b	B	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-2305.77, 47.9557, 2322.99]]	
+sector_montmedy	Sector Montmedy	levels/avg_sector_montmedy.bin	capture	0	capture_c	C	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-1814.65, 54.9858, 2510.92]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	ground	1	ground_1	Ground spawn 1	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-1482.61, 12.6646, 1083.72]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	ground	1	ground_2	Ground spawn 2	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-2444.44, 16.6436, 823.916]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	aircraft	1	airfield	Airfield	[[0.770282, 0.0, -0.637702] [0.0, 1.0, 0.0] [0.637702, 0.0, 0.770282] [-782.697, 184.556, -10407.5]]	dynaf_pg_1line_3000_snow
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	aircraft	1	air	Air spawn	[[-81.2478, 0.0, 288.789] [0.0, 300.0, 0.0] [-288.789, 0.0, -81.2478] [1763.83, 2000.0, -12130.6]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.424736, 0.0, -0.905317] [0.0, 1.0, 0.0] [0.905317, 0.0, 0.424736] [-176.453, 21.7074, -1677.47]]	dynHelipad_beton_a_ussr
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.434406, 0.0, -0.900717] [0.0, 1.0, 0.0] [0.900717, 0.0, 0.434406] [1427.49, 154.187, -6895.78]]	dynHelipad_beton_b_ussr
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	ground	2	ground_1	Ground spawn 1	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-2021.79, 12.6646, 3591.71]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	ground	2	ground_2	Ground spawn 2	[[1.13247e-5, 0.0, -200.0] [0.0, 112.48, 0.0] [200.0, 0.0, 1.13247e-5] [-2982.56, 3.25684, 3583.04]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	aircraft	2	airfield	Airfield	[[-0.357131, 0.0, 0.934055] [0.0, 1.0, 0.0] [-0.934055, 0.0, -0.357131] [-4718.11, 88.4855, 15793.9]]	dynaf_pg_1line_3000_snow
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	aircraft	2	air	Air spawn	[[81.2478, 0.0, -288.789] [0.0, 300.0, 0.0] [288.789, 0.0, 81.2478] [-6368.88, 2000.0, 16766.1]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.177149, 0.0, 0.984184] [0.0, 1.0, 0.0] [-0.984184, 0.0, 0.177149] [-2169.91, 85.7373, 6043.44]]	dynHelipad_beton_a_usa
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.314176, 0.0, 0.949365] [0.0, 1.0, 0.0] [-0.949365, 0.0, -0.314176] [-4405.13, 256.908, 11820.7]]	dynHelipad_beton_b_usa
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	capture	0	capture_a	A	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-3299.68, 12.1294, 2138.81]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	capture	0	capture_b	B	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-2305.77, 47.9557, 2322.99]]	
+sector_montmedy_snow_02	Sector Montmedy Snow (Variant 2)	levels/avg_sector_montmedy_snow.bin	capture	0	capture_c	C	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-1318.15, 54.9857, 2528.23]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	ground	1	ground_1	Ground spawn 1	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-1854.54, 20.375, 1754.25]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	ground	1	ground_2	Ground spawn 2	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-2456.6, 11.2641, 1647.8]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	aircraft	1	airfield	Airfield	[[0.770282, 0.0, -0.637702] [0.0, 1.0, 0.0] [0.637702, 0.0, 0.770282] [-782.697, 184.556, -10407.5]]	dynaf_pg_1line_3000_snow
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	aircraft	1	air	Air spawn	[[-81.2478, 0.0, 288.789] [0.0, 300.0, 0.0] [-288.789, 0.0, -81.2478] [1763.83, 2000.0, -12130.6]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.424736, 0.0, -0.905317] [0.0, 1.0, 0.0] [0.905317, 0.0, 0.424736] [-176.453, 21.7074, -1677.47]]	dynHelipad_beton_a_ussr
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.434406, 0.0, -0.900717] [0.0, 1.0, 0.0] [0.900717, 0.0, 0.434406] [1427.49, 154.187, -6895.78]]	dynHelipad_beton_b_ussr
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	ground	2	ground_1	Ground spawn 1	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-2283.52, 27.96, 3070.91]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	ground	2	ground_2	Ground spawn 2	[[1.09673e-5, 0.0, -200.0] [0.0, 97.6116, 0.0] [200.0, 0.0, 1.09673e-5] [-2745.7, 24.8482, 2985.59]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	aircraft	2	airfield	Airfield	[[-0.357131, 0.0, 0.934055] [0.0, 1.0, 0.0] [-0.934055, 0.0, -0.357131] [-4718.11, 88.4855, 15793.9]]	dynaf_pg_1line_3000_snow
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	aircraft	2	air	Air spawn	[[81.2478, 0.0, -288.789] [0.0, 300.0, 0.0] [288.789, 0.0, 81.2478] [-6368.88, 2000.0, 16766.1]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.177149, 0.0, 0.984184] [0.0, 1.0, 0.0] [-0.984184, 0.0, 0.177149] [-2169.91, 85.7373, 6043.44]]	dynHelipad_beton_a_usa
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.314176, 0.0, 0.949365] [0.0, 1.0, 0.0] [-0.949365, 0.0, -0.314176] [-4405.13, 256.908, 11820.7]]	dynHelipad_beton_b_usa
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	capture	0	capture_a	A	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-2803.21, 54.6932, 2275.3]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	capture	0	capture_b	B	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-2305.77, 47.9557, 2322.99]]	
+sector_montmedy_snow	Sector Montmedy Snow	levels/avg_sector_montmedy_snow.bin	capture	0	capture_c	C	[[0.0, 0.0, -48.0] [0.0, 50.0, 0.0] [48.0, 0.0, 0.0] [-1814.65, 54.9858, 2510.92]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	ground	1	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 53.8, 0.0] [0.0, 0.0, 100.0] [3427.15, 681.05, 2734.25]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	ground	1	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 53.8, 0.0] [0.0, 0.0, 100.0] [2905.45, 672.35, 2787.15]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	aircraft	1	airfield	Airfield	[[0.0403277, 0.0, 0.999186] [0.0, 1.0, 0.0] [-0.999186, 0.0, 0.0403277] [297.238, 725.54, 15872.7]]	dynaf_pg_1line_3000_sand
+sinai	Sinai	levels/avg_egypt_sinai.bin	aircraft	1	air	Air spawn	[[26.5268, 0.0, -298.825] [0.0, 300.0, 0.0] [298.825, 0.0, 26.5268] [607.895, 2000.0, 17389.7]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.70901, 0.0, 0.705199] [0.0, 1.0, 0.0] [-0.705199, 0.0, 0.70901] [5458.15, 847.4, 5360.15]]	dynHelipad_beton_a_ussr
+sinai	Sinai	levels/avg_egypt_sinai.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.531479, 0.0, 0.847072] [0.0, 1.0, 0.0] [-0.847072, 0.0, 0.531479] [7206.35, 1036.8, 10431.3]]	dynHelipad_beton_b_ussr
+sinai	Sinai	levels/avg_egypt_sinai.bin	ground	2	ground_1	Ground spawn 1	[[100.0, 0.0, 0.0] [0.0, 53.8, 0.0] [0.0, 0.0, 100.0] [3372.9, 681.05, 1668.6]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	ground	2	ground_2	Ground spawn 2	[[100.0, 0.0, 0.0] [0.0, 53.8, 0.0] [0.0, 0.0, 100.0] [2779.1, 665.908, 1610.45]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	aircraft	2	airfield	Airfield	[[-0.0246839, 0.0, -0.999696] [0.0, 1.0, 0.0] [0.999696, 0.0, -0.0246839] [1231.01, 657.945, -11156.0]]	dynaf_pg_1line_3000_sand
+sinai	Sinai	levels/avg_egypt_sinai.bin	aircraft	2	air	Air spawn	[[-26.5268, 0.0, 298.825] [0.0, 300.0, 0.0] [-298.825, 0.0, -26.5268] [3265.22, 2000.0, -12511.5]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.741838, 0.0, -0.67058] [0.0, 1.0, 0.0] [0.67058, 0.0, 0.741838] [5522.15, 942.5, -1150.5]]	dynHelipad_beton_a_usa
+sinai	Sinai	levels/avg_egypt_sinai.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.562328, 0.0, -0.826914] [0.0, 1.0, 0.0] [0.826914, 0.0, 0.562328] [7754.4, 1112.3, -6340.1]]	dynHelipad_beton_b_usa
+sinai	Sinai	levels/avg_egypt_sinai.bin	capture	0	capture_a	A	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2722.75, 681.05, 2189.2]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	capture	0	capture_b	B	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [3116.7, 681.05, 2189.1]]	
+sinai	Sinai	levels/avg_egypt_sinai.bin	capture	0	capture_c	C	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [3800.0, 681.035, 2186.9]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	ground	1	ground_1	Ground spawn 1	[[200.0, 0.0, 0.0] [0.0, 130.95, 0.0] [0.0, 0.0, 200.0] [925.8, 627.7, 3470.0]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 130.95, 0.0] [0.0, 0.0, 150.0] [2394.25, 627.7, 3416.2]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	aircraft	1	airfield	Airfield	[[0.0403277, 0.0, 0.999186] [0.0, 1.0, 0.0] [-0.999186, 0.0, 0.0403277] [297.238, 725.54, 15872.7]]	dynaf_pg_1line_3000_sand
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	aircraft	1	air	Air spawn	[[26.5268, 0.0, -298.825] [0.0, 300.0, 0.0] [298.825, 0.0, 26.5268] [607.895, 2000.0, 17389.7]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.70901, 0.0, 0.705199] [0.0, 1.0, 0.0] [-0.705199, 0.0, 0.70901] [5458.15, 847.4, 5360.15]]	dynHelipad_beton_a_ussr
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.531479, 0.0, 0.847072] [0.0, 1.0, 0.0] [-0.847072, 0.0, 0.531479] [7206.35, 1036.8, 10431.3]]	dynHelipad_beton_b_ussr
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	ground	2	ground_1	Ground spawn 1	[[200.0, 0.0, 0.0] [0.0, 130.95, 0.0] [0.0, 0.0, 200.0] [886.05, 627.7, 1239.45]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 130.95, 0.0] [0.0, 0.0, 150.0] [2316.55, 627.7, 1265.2]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	aircraft	2	airfield	Airfield	[[-0.0246839, 0.0, -0.999696] [0.0, 1.0, 0.0] [0.999696, 0.0, -0.0246839] [1231.01, 657.945, -11156.0]]	dynaf_pg_1line_3000_sand
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	aircraft	2	air	Air spawn	[[-26.5268, 0.0, 298.825] [0.0, 300.0, 0.0] [-298.825, 0.0, -26.5268] [3265.22, 2000.0, -12511.5]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.741838, 0.0, -0.67058] [0.0, 1.0, 0.0] [0.67058, 0.0, 0.741838] [5522.15, 942.5, -1150.5]]	dynHelipad_beton_a_usa
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	helicopter	2	heli_far	Helipad вЂ” far	[[0.562328, 0.0, -0.826914] [0.0, 1.0, 0.0] [0.826914, 0.0, 0.562328] [7754.4, 1112.3, -6340.1]]	dynHelipad_beton_b_usa
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	capture	0	capture_a	A	[[100.0, 0.0, 0.0] [0.0, 35.85, 0.0] [0.0, 0.0, 100.0] [932.0, 678.143, 2354.75]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	capture	0	capture_b	B	[[90.0, 0.0, 0.0] [0.0, 35.85, 0.0] [0.0, 0.0, 90.0] [1726.0, 630.95, 2386.9]]	
+sinai_02	Sinai (Variant 2)	levels/avg_egypt_sinai.bin	capture	0	capture_c	C	[[120.0, 0.0, 0.0] [0.0, 35.85, 0.0] [0.0, 0.0, 120.0] [2123.45, 632.397, 2335.05]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	ground	1	ground_1	Ground spawn 1	[[640.1, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 319.713] [2545.0, -8.3927, 1325.0]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	ground	1	ground_2	Ground spawn 2	[[640.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 319.713] [1461.6, -8.3927, 1325.0]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	aircraft	1	airfield	Airfield	[[0.132533, 0.0, -0.991178] [0.0, 1.0, 0.0] [0.991178, 0.0, 0.132533] [-3911.68, 345.946, -10328.5]]	dynaf_pg_1line_3000_universal
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	aircraft	1	air	Air spawn	[[105.062, 0.0, 281.003] [0.0, 300.0, 0.0] [-281.003, 0.0, 105.062] [-3319.39, 2000.0, -11996.5]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	helicopter	1	heli_near	Helipad вЂ” near	[[-0.38443, 0.0, -0.923154] [0.0, 1.0, 0.0] [0.923154, 0.0, -0.38443] [491.35, 84.2, -1428.5]]	dynHelipad_beton_a_ussr
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	helicopter	1	heli_far	Helipad вЂ” far	[[-0.36581, 0.0, -0.930689] [0.0, 1.0, 0.0] [0.930689, 0.0, -0.36581] [-888.75, 88.7, -5352.7]]	dynHelipad_beton_b_ussr
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	ground	2	ground_1	Ground spawn 1	[[640.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 319.713] [1461.58, -8.3927, 2721.98]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	ground	2	ground_2	Ground spawn 2	[[640.096, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 319.713] [2545.0, -8.3927, 2731.44]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	aircraft	2	airfield	Airfield	[[0.0142125, 0.0, 0.999899] [0.0, 1.0, 0.0] [-0.999899, 0.0, 0.0142125] [-7481.68, 508.54, 12365.5]]	dynaf_pg_1line_3000_universal
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	aircraft	2	air	Air spawn	[[-105.062, 0.0, -281.003] [0.0, 300.0, 0.0] [281.003, 0.0, -105.062] [7190.98, 2000.0, 16122.7]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.201057, 0.0, 0.979578] [0.0, 1.0, 0.0] [-0.979578, 0.0, -0.201057] [1277.6, 68.05, 5804.85]]	dynHelipad_beton_a_usa
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.40363, 0.0, 0.914923] [0.0, 1.0, 0.0] [-0.914923, 0.0, -0.40363] [-1116.25, 114.95, 9103.25]]	dynHelipad_beton_b_usa
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	capture	0	capture_a	A	[[46.044, 0.0, -10.9902] [0.0, 50.0, 0.0] [10.9902, 0.0, 46.044] [1536.45, 0.83847, 2036.22]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	capture	0	capture_b	B	[[49.2294, 0.0, -11.7506] [0.0, 60.0, 0.0] [11.7506, 0.0, 49.2294] [1991.27, 5.71397, 2037.45]]	
+soviet_range	Soviet Range	levels/avg_soviet_range.bin	capture	0	capture_c	C	[[40.1636, 0.0, -9.58668] [0.0, 50.0, 0.0] [9.58668, 0.0, 40.1636] [2428.88, 5.04209, 2007.5]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	ground	1	ground_1	Ground spawn 1	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1351.69, -13.3, 570.188]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	ground	1	ground_2	Ground spawn 2	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [3115.77, -3.40173, 588.683]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	aircraft	1	airfield	Airfield	[[0.382683, 0.0, -0.92388] [0.0, 1.0, 0.0] [0.92388, 0.0, 0.382683] [2870.32, 26.5713, -11309.3]]	dynaf_pg_1line_3000_sand
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	aircraft	1	air	Air spawn	[[-120.117, 0.0, 274.904] [0.0, 300.0, 0.0] [-274.904, 0.0, -120.117] [8429.77, 2000.0, -11909.1]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.014331, 0.0, -0.999897] [0.0, 1.0, 0.0] [0.999897, 0.0, 0.014331] [2486.39, 12.0628, -2077.33]]	dynHelipad_beton_a_ussr
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.193924, 0.0, -0.981016] [0.0, 1.0, 0.0] [0.981016, 0.0, 0.193924] [3774.68, 12.1252, -6673.29]]	dynHelipad_beton_b_ussr
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	ground	2	ground_1	Ground spawn 1	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [1361.49, 12.9631, 3517.91]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	ground	2	ground_2	Ground spawn 2	[[1.0, 0.0, 0.0] [0.0, 1.0, 0.0] [0.0, 0.0, 1.0] [2904.93, -5.03687, 3489.34]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	aircraft	2	airfield	Airfield	[[-0.648986, 0.0, 0.760801] [0.0, 1.0, 0.0] [-0.760801, 0.0, -0.648986] [-5818.73, 167.568, 13405.4]]	dynaf_pg_1line_3000_sand
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	aircraft	2	air	Air spawn	[[120.117, 0.0, -274.904] [0.0, 300.0, 0.0] [274.904, 0.0, 120.117] [-3592.34, 2000.0, 15597.6]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.031551, 0.0, 0.999502] [0.0, 1.0, 0.0] [-0.999502, 0.0, 0.031551] [1720.9, 38.7572, 6031.89]]	dynHelipad_beton_a_usa
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.669148, 0.0, 0.743129] [0.0, 1.0, 0.0] [-0.743129, 0.0, -0.669148] [-3165.28, 152.569, 9292.22]]	dynHelipad_beton_b_usa
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	capture	0	capture_a	A	[[106.548, 0.0, 0.0] [0.0, 56.9331, 0.0] [0.0, 0.0, 106.548] [822.725, -4.70001, 2066.81]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	capture	0	capture_b	B	[[58.5778, 0.0, -12.9864] [0.0, 80.6251, 0.0] [12.9864, 0.0, 58.5778] [2134.5, -1.65, 1936.9]]	
+tunisia_02	Tunisia (Variant 2)	levels/avg_tunisia_desert.bin	capture	0	capture_c	C	[[41.5499, 0.0, 0.0] [0.0, 30.5824, 0.0] [0.0, 0.0, 41.5499] [3300.0, 6.15161, 2132.01]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 54.5839, 0.0] [0.0, 0.0, 150.0] [2513.82, 5.32581, 1439.71]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 54.5839, 0.0] [0.0, 0.0, 150.0] [3417.15, 5.32556, 1468.03]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	aircraft	1	airfield	Airfield	[[0.382683, 0.0, -0.92388] [0.0, 1.0, 0.0] [0.92388, 0.0, 0.382683] [2870.32, 26.5713, -11309.3]]	dynaf_pg_1line_3000_sand
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	aircraft	1	air	Air spawn	[[-120.117, 0.0, 274.904] [0.0, 300.0, 0.0] [-274.904, 0.0, -120.117] [8429.77, 2000.0, -11909.1]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.014331, 0.0, -0.999897] [0.0, 1.0, 0.0] [0.999897, 0.0, 0.014331] [2486.39, 12.0628, -2077.33]]	dynHelipad_beton_a_ussr
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.193924, 0.0, -0.981016] [0.0, 1.0, 0.0] [0.981016, 0.0, 0.193924] [3774.68, 12.1252, -6673.29]]	dynHelipad_beton_b_ussr
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 54.5839, 0.0] [0.0, 0.0, 150.0] [2122.97, 5.32581, 2616.53]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 54.5839, 0.0] [0.0, 0.0, 150.0] [3291.11, 5.32581, 2741.89]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	aircraft	2	airfield	Airfield	[[-0.648986, 0.0, 0.760801] [0.0, 1.0, 0.0] [-0.760801, 0.0, -0.648986] [-5818.73, 167.568, 13405.4]]	dynaf_pg_1line_3000_sand
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	aircraft	2	air	Air spawn	[[120.117, 0.0, -274.904] [0.0, 300.0, 0.0] [274.904, 0.0, 120.117] [-3592.34, 2000.0, 15597.6]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	helicopter	2	heli_near	Helipad вЂ” near	[[0.031551, 0.0, 0.999502] [0.0, 1.0, 0.0] [-0.999502, 0.0, 0.031551] [1720.9, 38.7572, 6031.89]]	dynHelipad_beton_a_usa
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.669148, 0.0, 0.743129] [0.0, 1.0, 0.0] [-0.743129, 0.0, -0.669148] [-3165.28, 152.569, 9292.22]]	dynHelipad_beton_b_usa
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	capture	0	capture_a	A	[[68.904, 0.0, 0.0] [0.0, 162.0, 0.0] [0.0, 0.0, 68.904] [2142.95, -0.645895, 1937.4]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	capture	0	capture_b	B	[[133.765, 0.0, 0.0] [0.0, 175.5, 0.0] [0.0, 0.0, 133.765] [2703.35, -4.95, 2117.1]]	
+tunisia	Tunisia	levels/avg_tunisia_desert.bin	capture	0	capture_c	C	[[54.3449, 0.0, 0.0] [0.0, 108.0, 0.0] [0.0, 0.0, 54.3449] [3305.65, 4.6, 2113.6]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [993.899, 23.5501, 162.215]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [1117.74, 2.57153, -1124.78]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	aircraft	1	airfield	Airfield	[[0.451132, 0.0, 0.892456] [0.0, 1.0, 0.0] [-0.892456, 0.0, 0.451132] [7650.68, 37.5674, 11232.6]]	dynaf_pg_1line_3000_universal
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	aircraft	1	air	Air spawn	[[-271.529, 0.0, 127.563] [0.0, 300.0, 0.0] [-127.563, 0.0, -271.529] [13851.7, 2000.0, -7015.9]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.935206, 0.0, 0.354106] [0.0, 1.0, 0.0] [-0.354106, 0.0, 0.935206] [2951.61, 126.9, 2254.01]]	dynHelipad_beton_a_ussr
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.82348, 0.0, 0.567344] [0.0, 1.0, 0.0] [-0.567344, 0.0, 0.82348] [5020.05, 37.5778, 4525.71]]	dynHelipad_beton_b_ussr
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-1013.99, 17.5055, 51.9639]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-970.337, 0.802063, -1267.67]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	aircraft	2	airfield	Airfield	[[-0.836808, 0.0, -0.547498] [0.0, 1.0, 0.0] [0.547498, 0.0, -0.836808] [-12780.6, 34.7061, -3343.87]]	dynaf_pg_1line_3000_universal
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	aircraft	2	air	Air spawn	[[271.529, 0.0, -127.563] [0.0, 300.0, 0.0] [127.563, 0.0, 271.529] [-13292.0, 2000.0, 5752.3]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.998497, 0.0, 0.0548038] [0.0, 1.0, 0.0] [-0.0548038, 0.0, -0.998497] [-3174.48, 126.871, -819.393]]	dynHelipad_beton_a_usa
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.998518, 0.0, -0.0544202] [0.0, 1.0, 0.0] [0.0544202, 0.0, -0.998518] [-7017.65, 35.8914, -656.143]]	dynHelipad_beton_b_usa
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	capture	0	capture_a	A	[[47.4699, 0.0, -7.5185] [0.0, 30.56, 0.0] [7.5185, 0.0, 47.4699] [-29.1211, 4.89417, 117.303]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	capture	0	capture_b	B	[[56.9638, 0.0, -9.02219] [0.0, 50.0, 0.0] [9.02219, 0.0, 56.9638] [19.5745, -0.397278, -526.091]]	
+vietnam_hills_02	Vietnam Hills (Variant 2)	levels/avg_vietnam_hills.bin	capture	0	capture_c	C	[[47.409, 0.0, -7.50886] [0.0, 50.0, 0.0] [7.50886, 0.0, 47.409] [51.7176, 5.3233, -1165.66]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [859.087, 26.8494, -549.489]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [942.052, 31.9073, -1071.18]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	aircraft	1	airfield	Airfield	[[0.451132, 0.0, 0.892456] [0.0, 1.0, 0.0] [-0.892456, 0.0, 0.451132] [7650.68, 37.5674, 11232.6]]	dynaf_pg_1line_3000_universal
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	aircraft	1	air	Air spawn	[[-271.529, 0.0, 127.563] [0.0, 300.0, 0.0] [-127.563, 0.0, -271.529] [13851.7, 2000.0, -7015.9]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.935206, 0.0, 0.354106] [0.0, 1.0, 0.0] [-0.354106, 0.0, 0.935206] [2951.61, 126.9, 2254.01]]	dynHelipad_beton_a_ussr
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.82348, 0.0, 0.567344] [0.0, 1.0, 0.0] [-0.567344, 0.0, 0.82348] [5020.05, 37.5778, 4525.71]]	dynHelipad_beton_b_ussr
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-456.04, 13.7393, -625.331]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-486.684, 15.8763, -1156.82]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	aircraft	2	airfield	Airfield	[[-0.836808, 0.0, -0.547498] [0.0, 1.0, 0.0] [0.547498, 0.0, -0.836808] [-12780.6, 34.7061, -3343.87]]	dynaf_pg_1line_3000_universal
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	aircraft	2	air	Air spawn	[[271.529, 0.0, -127.563] [0.0, 300.0, 0.0] [127.563, 0.0, 271.529] [-13292.0, 2000.0, 5752.3]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.998497, 0.0, 0.0548038] [0.0, 1.0, 0.0] [-0.0548038, 0.0, -0.998497] [-3174.48, 126.871, -819.393]]	dynHelipad_beton_a_usa
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.998518, 0.0, -0.0544202] [0.0, 1.0, 0.0] [0.0544202, 0.0, -0.998518] [-7017.65, 35.8914, -656.143]]	dynHelipad_beton_b_usa
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	capture	0	capture_a	A	[[47.4699, 0.0, -7.5185] [0.0, 30.56, 0.0] [7.5185, 0.0, 47.4699] [164.073, -0.272278, -247.777]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	capture	0	capture_b	B	[[56.9638, 0.0, -9.02219] [0.0, 50.0, 0.0] [9.02219, 0.0, 56.9638] [212.769, -0.412903, -891.171]]	
+vietnam_hills	Vietnam Hills	levels/avg_vietnam_hills.bin	capture	0	capture_c	C	[[47.409, 0.0, -7.50886] [0.0, 50.0, 0.0] [7.50886, 0.0, 47.409] [244.912, 2.64966, -1530.74]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	ground	1	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [545.3, 11.5636, 452.3]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	ground	1	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [1211.2, 16.6216, -121.4]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	aircraft	1	airfield	Airfield	[[0.626771, 0.0, 0.779202] [0.0, 1.0, 0.0] [-0.779202, 0.0, 0.626771] [7223.07, -8.38686, 10908.8]]	dynaf_pg_1line_3000_sand
+western_europe	Western Europe	levels/avg_western_europe.bin	aircraft	1	air	Air spawn	[[-105.062, 0.0, -281.003] [0.0, 300.0, 0.0] [281.003, 0.0, -105.062] [5256.88, 2000.0, 14070.8]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	helicopter	1	heli_near	Helipad вЂ” near	[[0.599208, 0.0, 0.800593] [0.0, 1.0, 0.0] [-0.800593, 0.0, 0.599208] [3783.5, -0.884, 2399.2]]	dynHelipad_beton_a_ussr
+western_europe	Western Europe	levels/avg_western_europe.bin	helicopter	1	heli_far	Helipad вЂ” far	[[0.501569, 0.0, 0.865116] [0.0, 1.0, 0.0] [-0.865116, 0.0, 0.501569] [5770.3, 36.5, 7678.7]]	dynHelipad_beton_b_ussr
+western_europe	Western Europe	levels/avg_western_europe.bin	ground	2	ground_1	Ground spawn 1	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [-465.3, -1.54637, -639.3]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	ground	2	ground_2	Ground spawn 2	[[150.0, 0.0, 0.0] [0.0, 97.6116, 0.0] [0.0, 0.0, 150.0] [80.6, 0.590622, -1255.7]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	aircraft	2	airfield	Airfield	[[-0.780466, 0.0, -0.625199] [0.0, 1.0, 0.0] [0.625199, 0.0, -0.780466] [-9163.6, -1.0, -10490.2]]	dynaf_pg_1line_3000_sand
+western_europe	Western Europe	levels/avg_western_europe.bin	aircraft	2	air	Air spawn	[[105.062, 0.0, 281.003] [0.0, 300.0, 0.0] [-281.003, 0.0, 105.062] [-5253.49, 2000.0, -14048.4]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	helicopter	2	heli_near	Helipad вЂ” near	[[-0.76852, 0.0, -0.639824] [0.0, 1.0, 0.0] [0.639824, 0.0, -0.76852] [-2115.8, 11.2, -5014.0]]	dynHelipad_beton_a_usa
+western_europe	Western Europe	levels/avg_western_europe.bin	helicopter	2	heli_far	Helipad вЂ” far	[[-0.329553, 0.0, -0.944137] [0.0, 1.0, 0.0] [0.944137, 0.0, -0.329553] [-3185.45, 2.59998, -9313.71]]	dynHelipad_beton_b_usa
+western_europe	Western Europe	levels/avg_western_europe.bin	capture	0	capture_a	A	[[57.6739, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 57.6739] [-100.0, 9.26, 27.6]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	capture	0	capture_b	B	[[48.0, 0.0, 0.0] [0.0, 50.0, 0.0] [0.0, 0.0, 48.0] [368.4, 7.41, -414.4]]	
+western_europe	Western Europe	levels/avg_western_europe.bin	capture	0	capture_c	C	[[48.0616, 0.0, 0.0] [0.0, 30.56, 0.0] [0.0, 0.0, 48.0616] [831.7, 7.41, -863.1]]	

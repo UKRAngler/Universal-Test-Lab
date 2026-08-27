@@ -1,4 +1,4 @@
-param([string]$Version = "v0.12.0-beta.1")
+param([string]$Version = "v0.12.0-beta.2")
 
 $ErrorActionPreference = "Stop"
 $projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path
@@ -26,7 +26,9 @@ try {
   foreach ($file in @("README.md", "CHANGELOG.md", "LICENSE", "THIRD_PARTY_NOTICES.md")) {
     Copy-Item -LiteralPath (Join-Path $projectRoot $file) -Destination $staging
   }
-  Copy-Item -LiteralPath (Join-Path $projectRoot "docs\RELEASE_NOTES_v0.12.0-beta.1.md") -Destination (Join-Path $staging "RELEASE_NOTES.md")
+  $releaseNotes = Join-Path $projectRoot ("docs\RELEASE_NOTES_" + $Version + ".md")
+  if (-not (Test-Path -LiteralPath $releaseNotes)) { throw "Release notes were not found: $releaseNotes" }
+  Copy-Item -LiteralPath $releaseNotes -Destination (Join-Path $staging "RELEASE_NOTES.md")
   if (Test-Path -LiteralPath $zip) { Remove-Item -LiteralPath $zip -Force }
   Compress-Archive -LiteralPath $staging -DestinationPath $zip -CompressionLevel Optimal
 }

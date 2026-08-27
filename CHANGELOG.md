@@ -1,5 +1,17 @@
 # Changelog
 
+## v0.12.0-beta.2 — 2026-08-27
+
+### Added
+
+- Added an optional **Combined Battles — Domination** solo sandbox. It currently includes 48 datamine-backed map layouts with side selection, two ground spawns, an airfield and air start for aircraft, and near/far helicopter pads. Native A/B/C zones and the two teams' relevant respawn locations are shown on the tactical map for orientation, while the generator adds no AI units, active capture logic, score, or match progression.
+- Added `Build-CombinedMaps.ps1` to regenerate the embedded spawn and realistic A/B/C marker catalog from extracted `mis.vromfs.bin` missions while excluding maps without a complete two-sided spawn set.
+
+### Fixed
+
+- Combined-battles capture points remain visible on the tactical map for every vehicle, but their rapidly changing world-distance labels are now limited to ground vehicles, matching normal combined battles.
+- Combined-battles aircraft missions now register a 40 km aviation-only map area centered between the native airfields and air spawns. The tactical map can zoom out to the full aviation scale instead of remaining constrained to the ground-battle view; this map area does not create an out-of-bounds death zone.
+
 ## v0.12.0-beta.1 — 2026-08-24
 
 ### Added

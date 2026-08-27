@@ -388,7 +388,7 @@ namespace UniversalTestLab
         <Border x:Name=""PreviewCard"" Grid.Row=""1"" CornerRadius=""15"" BorderBrush=""#78A7DFFF"" BorderThickness=""1"" Background=""#7A1D315C""><Grid x:Name=""PreviewClipContent""><Ellipse Width=""155"" Height=""105"" Fill=""#284BD5FF"" VerticalAlignment=""Top"" Margin=""0,12,0,0""/><Grid x:Name=""PreviewAircraftVisual""><Image x:Name=""PreviewAircraftImage"" Width=""220"" Height=""112"" Stretch=""Uniform"" Opacity=""0.92"" VerticalAlignment=""Top"" Margin=""0,4,0,0""/></Grid><Grid x:Name=""PreviewHelicopterVisual"" Visibility=""Collapsed""><Image x:Name=""PreviewHelicopterImage"" Width=""270"" Height=""108"" Stretch=""Uniform"" Opacity=""0.94"" VerticalAlignment=""Top"" Margin=""0,5,0,0""/></Grid><Grid x:Name=""PreviewDroneVisual"" Visibility=""Collapsed""><Image x:Name=""PreviewDroneImage"" Width=""270"" Height=""108"" Stretch=""Uniform"" Opacity=""0.94"" VerticalAlignment=""Top"" Margin=""0,5,0,0""/></Grid><Border VerticalAlignment=""Bottom"" Background=""#900A142E"" Padding=""12,10""><StackPanel><TextBlock x:Name=""PreviewName"" FontSize=""15"" FontWeight=""SemiBold"" TextTrimming=""CharacterEllipsis""/><TextBlock x:Name=""PreviewMeta"" Foreground=""{StaticResource MutedBrush}"" FontSize=""10"" Margin=""0,3,0,0"" TextTrimming=""CharacterEllipsis""/></StackPanel></Border></Grid></Border>
         <TextBlock Grid.Row=""2"" Text=""MISSION SETUP"" FontSize=""14"" FontWeight=""SemiBold"" VerticalAlignment=""Bottom""/>
         <Button x:Name=""FlightConfigureButton"" Grid.Row=""3"" Style=""{StaticResource ButtonStyle}"" Content=""FLIGHT CONFIGURE"" Margin=""0,7,0,0""/>
-        <Button x:Name=""MapButton"" Grid.Row=""4"" Style=""{StaticResource ButtonStyle}"" Content=""MAP &amp; TARGETS"" Margin=""0,7,0,0""/>
+        <Button x:Name=""MapButton"" Grid.Row=""4"" Style=""{StaticResource ButtonStyle}"" Content=""MAP &amp; SCENARIO"" Margin=""0,7,0,0""/>
         <StackPanel Grid.Row=""5"" Margin=""2,16,2,8""><TextBlock Text=""FLIGHT PROFILE"" Style=""{StaticResource Caption}""/><TextBlock x:Name=""FlightProfileText"" Foreground=""{StaticResource MutedBrush}"" FontSize=""11"" TextWrapping=""Wrap"" Margin=""0,3,0,0""/><TextBlock Text=""MAP PROFILE"" Style=""{StaticResource Caption}"" Margin=""0,14,0,0""/><TextBlock x:Name=""TargetSummaryText"" Foreground=""{StaticResource MutedBrush}"" FontSize=""11"" TextWrapping=""Wrap"" Margin=""0,3,0,0""/><TextBlock Text=""Aircraft/helicopters: reopen User Missions. Ground vehicle changes: restart War Thunder once."" Foreground=""{StaticResource Good}"" FontSize=""11"" TextWrapping=""Wrap"" Margin=""0,14,0,0""/></StackPanel>
         <Grid Visibility=""Collapsed""><ComboBox x:Name=""AirTargetBox""/><ComboBox x:Name=""AirCountBox""/><ComboBox x:Name=""GroundTargetBox""/><ComboBox x:Name=""GroundCountBox""/><ToggleButton x:Name=""HostileToggle""/><ComboBox x:Name=""ShipTargetBox""/><ComboBox x:Name=""ShipCountBox""/></Grid>
         <Button x:Name=""GenerateButton"" Grid.Row=""6"" Style=""{StaticResource PrimaryButton}"" Content=""GENERATE TEST MISSION""/>
@@ -464,6 +464,7 @@ namespace UniversalTestLab
         private List<AircraftView> aircraftViews;
         private readonly List<TargetView> configuredGroundTargets = new List<TargetView>();
         private bool passiveShip;
+        private CombinedScenarioSettings combinedScenario = new CombinedScenarioSettings();
         private bool updatingWeaponColumns;
 
         public ModernMainWindow()
@@ -840,6 +841,17 @@ namespace UniversalTestLab
             previewMeta.Text = selectedAircraft.Kind.ToUpperInvariant() + "  •  " + selectedAircraft.Nation.ToUpperInvariant() + "  •  RANK " + AircraftViewRoman(selectedAircraft.Rank);
             UpdatePreviewKind(selectedAircraft.Kind);
             UpdateVehicleWorkspaceMode();
+            if (combinedScenario != null && combinedScenario.Enabled)
+            {
+                string combinedKind = GroundSelected ? "ground" : MainForm.IsHelicopter(selectedAircraft, null) ? "helicopter" : "aircraft";
+                CombinedMap combinedMap = controller.WorkspaceCombinedMaps.FirstOrDefault(x => x.Id.Equals(combinedScenario.MapId ?? "", StringComparison.OrdinalIgnoreCase));
+                int combinedSide = combinedScenario.Side == 2 ? 2 : 1;
+                if (combinedMap != null && !combinedMap.Spawns.Any(x => x.Side == combinedSide && x.Kind.Equals(combinedKind, StringComparison.OrdinalIgnoreCase) && x.Option.Equals(combinedScenario.SpawnOption ?? "", StringComparison.OrdinalIgnoreCase)))
+                {
+                    CombinedSpawn fallback = combinedMap.Spawns.FirstOrDefault(x => x.Side == combinedSide && x.Kind.Equals(combinedKind, StringComparison.OrdinalIgnoreCase));
+                    combinedScenario.SpawnOption = fallback == null ? null : fallback.Option;
+                }
+            }
             RefreshPylons();
             UpdateConfigurationSummary();
             SetStatus("VEHICLE READY — " + selectedAircraft.Display, false);
@@ -1069,7 +1081,7 @@ namespace UniversalTestLab
                 AircraftView air = airTarget.SelectedItem as AircraftView;
                 TargetView ship = shipTarget.SelectedItem as TargetView;
                 bool generated = controller.WorkspaceGenerateMission(air == null ? null : air.Source.Id, SelectedCount(airCount), configuredGroundTargets.Select(x => x.Source.Id).ToList(),
-                    hostileToggle.IsChecked == true, ship == null ? null : ship.Source.Id, SelectedCount(shipCount), passiveShip);
+                    hostileToggle.IsChecked == true, ship == null ? null : ship.Source.Id, SelectedCount(shipCount), passiveShip, combinedScenario);
                 if (generated)
                 {
                     SetStatus("MISSION GENERATED — reopen User Missions in War Thunder", false);
@@ -1198,12 +1210,14 @@ namespace UniversalTestLab
 
         private void ShowMap()
         {
+            string playerKind = GroundSelected ? "ground" : MainForm.IsHelicopter(selectedAircraft, null) ? "helicopter" : "aircraft";
             ModernMapWindow dialog = new ModernMapWindow(
                 (airTarget.ItemsSource as IEnumerable<AircraftView>) ?? Enumerable.Empty<AircraftView>(),
                 (groundTarget.ItemsSource as IEnumerable<TargetView>) ?? Enumerable.Empty<TargetView>(),
                 (shipTarget.ItemsSource as IEnumerable<TargetView>) ?? Enumerable.Empty<TargetView>(),
                 airTarget.SelectedItem as AircraftView, SelectedCount(airCount), configuredGroundTargets,
-                hostileToggle.IsChecked == true, shipTarget.SelectedItem as TargetView, SelectedCount(shipCount), passiveShip);
+                hostileToggle.IsChecked == true, shipTarget.SelectedItem as TargetView, SelectedCount(shipCount), passiveShip,
+                controller.WorkspaceCombinedMaps, playerKind, combinedScenario);
             dialog.Owner = this;
             if (dialog.ShowDialog() != true) return;
             airTarget.SelectedItem = dialog.AirTarget;
@@ -1216,6 +1230,7 @@ namespace UniversalTestLab
             shipTarget.SelectedItem = dialog.ShipTarget;
             shipCount.SelectedItem = dialog.ShipCount;
             passiveShip = dialog.PassiveShip;
+            combinedScenario = dialog.Scenario == null ? new CombinedScenarioSettings() : dialog.Scenario.Copy();
             UpdateConfigurationSummary();
         }
 
@@ -1228,7 +1243,8 @@ namespace UniversalTestLab
                 string ammo = settings.GroundAmmoLoadouts.Count == 0 ? "native ammunition" : settings.GroundAmmoLoadouts.Count.ToString(CultureInfo.InvariantCulture) + " custom ammunition slots";
                 string tuning = settings.OverrideGroundBallistics ? "custom ballistics & mobility" : "native ballistics & mobility";
                 string sight = String.IsNullOrWhiteSpace(settings.UserSightPath) ? "game/default sight" : System.IO.Path.GetFileNameWithoutExtension(settings.UserSightPath) + " sight";
-                flightProfileText.Text = ammo + "  •  " + tuning + "\n" + sight + "  •  rearm 1 second after depletion\nInstant zero-delay respawn at the range hangar";
+                flightProfileText.Text = ammo + "  •  " + tuning + "\n" + sight + "  •  rearm 1 second after depletion\n" +
+                    (combinedScenario != null && combinedScenario.Enabled ? "Instant respawn at the selected combined-battles spawn" : "Instant zero-delay respawn at the range hangar");
             }
             else
             {
@@ -1236,7 +1252,15 @@ namespace UniversalTestLab
             string countermeasures = !settings.OverrideCountermeasures ? "Native countermeasure load" :
                 settings.CountermeasureLoadouts.Count.ToString(CultureInfo.InvariantCulture) + " configured dispenser groups";
             string belts = settings.GunBeltSelections.Count == 0 ? "default gun belts" : settings.GunBeltSelections.Count.ToString(CultureInfo.InvariantCulture) + " selected gun belt groups";
-            flightProfileText.Text = fuel + "  •  adaptive air-start speed\n" + countermeasures + "  •  " + belts + "\nAmmunition restored 1 second after depletion";
+            flightProfileText.Text = fuel + "  •  " + (combinedScenario != null && combinedScenario.Enabled ? "selected map spawn profile" : "adaptive air-start speed") + "\n" + countermeasures + "  •  " + belts + "\nAmmunition restored 1 second after depletion";
+            }
+            if (combinedScenario != null && combinedScenario.Enabled)
+            {
+                CombinedMap map = controller.WorkspaceCombinedMaps.FirstOrDefault(x => x.Id.Equals(combinedScenario.MapId ?? "", StringComparison.OrdinalIgnoreCase));
+                string playerKind = GroundSelected ? "ground" : MainForm.IsHelicopter(selectedAircraft, null) ? "helicopter" : "aircraft";
+                CombinedSpawn spawn = map == null ? null : map.Spawns.FirstOrDefault(x => x.Side == (combinedScenario.Side == 2 ? 2 : 1) && x.Kind.Equals(playerKind, StringComparison.OrdinalIgnoreCase) && x.Option.Equals(combinedScenario.SpawnOption ?? "", StringComparison.OrdinalIgnoreCase));
+                targetSummaryText.Text = "Combined Battles — Domination\n" + (map == null ? "Select a map" : map.Display) + "  •  Side " + (combinedScenario.Side == 2 ? "2" : "1") + "\n" + (spawn == null ? "Select a compatible spawn" : spawn.Label) + "  •  no AI units";
+                return;
             }
             AircraftView air = airTarget == null ? null : airTarget.SelectedItem as AircraftView;
             TargetView ground = groundTarget == null ? null : groundTarget.SelectedItem as TargetView;
@@ -1413,6 +1437,14 @@ namespace UniversalTestLab
                 !ModernXaml.Main.Contains("ChromeFill") &&
                 ModernXaml.Main.Contains("Margin=\"10,7,34,7\"") &&
                 ModernXaml.Main.Contains("Grid Grid.Row=\"1\" Margin=\"12,10,12,10\"");
+        }
+
+        internal bool CombinedCatalogReadyForSelfTest()
+        {
+            return controller.WorkspaceCombinedMaps.Count >= 40 && controller.WorkspaceCombinedMaps.All(map =>
+                !String.IsNullOrWhiteSpace(map.Level) && map.Spawns.Count == 12 && new[] { 1, 2 }.All(side =>
+                    new[] { "ground_1", "ground_2", "airfield", "air", "heli_near", "heli_far" }.All(option =>
+                        map.Spawns.Count(spawn => spawn.Side == side && spawn.Option.Equals(option, StringComparison.OrdinalIgnoreCase)) == 1)));
         }
 
         private void SetStatus(string message, bool error)
@@ -1758,6 +1790,15 @@ namespace UniversalTestLab
     {
         private readonly List<TargetView> allGround;
         private readonly List<TargetView> allShips;
+        private readonly List<CombinedMap> allCombinedMaps;
+        private readonly string playerKind;
+        private readonly ComboBox modeBox;
+        private readonly ComboBox mapBox;
+        private readonly ComboBox sideBox;
+        private readonly ComboBox spawnBox;
+        private readonly Border combinedCard;
+        private readonly StackPanel targetCards;
+        private readonly TextBlock footerHint;
         private readonly ComboBox airBox;
         private readonly ComboBox airCountBox;
         private readonly List<ComboBox> groundBoxes = new List<ComboBox>();
@@ -1777,24 +1818,39 @@ namespace UniversalTestLab
         public TargetView ShipTarget { get; private set; }
         public int ShipCount { get; private set; }
         public bool PassiveShip { get; private set; }
+        public CombinedScenarioSettings Scenario { get; private set; }
 
         public ModernMapWindow(IEnumerable<AircraftView> aircraft, IEnumerable<TargetView> ground, IEnumerable<TargetView> ships,
             AircraftView currentAir, int currentAirCount, IEnumerable<TargetView> currentGround, bool hostile,
-            TargetView currentShip, int currentShipCount, bool passiveShip) : base("Map & Targets", 1000, 800)
+            TargetView currentShip, int currentShipCount, bool passiveShip, IEnumerable<CombinedMap> combinedMaps,
+            string currentPlayerKind, CombinedScenarioSettings currentScenario) : base("Map & Scenario", 1000, 820)
         {
             allGround = ground.OrderBy(x => x.Name).ToList();
             allShips = ships.OrderBy(x => x.Name).ToList();
+            allCombinedMaps = (combinedMaps ?? Enumerable.Empty<CombinedMap>()).OrderBy(x => x.Display).ToList();
+            playerKind = String.IsNullOrWhiteSpace(currentPlayerKind) ? "aircraft" : currentPlayerKind;
+            currentScenario = currentScenario == null ? new CombinedScenarioSettings() : currentScenario.Copy();
             List<TargetView> selectedGround = (currentGround ?? Enumerable.Empty<TargetView>()).Take(7).ToList();
             while (selectedGround.Count < 7 && allGround.Count > 0) selectedGround.Add(allGround[Math.Min(selectedGround.Count, allGround.Count - 1)]);
 
             Grid layout = new Grid();
-            layout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(64) });
+            layout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(112) });
             layout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(1, GridUnitType.Star) });
             layout.RowDefinitions.Add(new RowDefinition { Height = new GridLength(58) });
             ContentCard.Child = layout;
             StackPanel header = new StackPanel();
-            header.Children.Add(Heading("MAP & TARGETS", 22));
-            header.Children.Add(new TextBlock { Text = "Configure every ground position, air opposition and the naval target.", Foreground = ModernPalette.Brush(ModernPalette.Cyan), Margin = new Thickness(0, 4, 0, 0) });
+            header.Children.Add(Heading("MAP & SCENARIO", 22));
+            header.Children.Add(new TextBlock { Text = "Use the clean test range, or a solo combined-battles Domination map with native spawn coordinates.", Foreground = ModernPalette.Brush(ModernPalette.Cyan), Margin = new Thickness(0, 4, 0, 0) });
+            Grid modeLine = new Grid { Margin = new Thickness(0, 12, 0, 0) };
+            modeLine.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(190) });
+            modeLine.ColumnDefinitions.Add(new ColumnDefinition());
+            TextBlock modeLabel = Caption("SCENARIO MODE"); modeLabel.VerticalAlignment = VerticalAlignment.Center; modeLine.Children.Add(modeLabel);
+            modeBox = new ComboBox { Margin = new Thickness(8, 0, 0, 0) };
+            modeBox.Items.Add("Clean Test Range");
+            modeBox.Items.Add("Combined Battles — Domination");
+            modeBox.SelectedIndex = currentScenario.Enabled ? 1 : 0;
+            Grid.SetColumn(modeBox, 1); modeLine.Children.Add(modeBox);
+            header.Children.Add(modeLine);
             layout.Children.Add(header);
 
             ScrollViewer scroll = new ScrollViewer { VerticalScrollBarVisibility = ScrollBarVisibility.Auto, HorizontalScrollBarVisibility = ScrollBarVisibility.Disabled, Margin = new Thickness(0, 6, 0, 8) };
@@ -1803,13 +1859,42 @@ namespace UniversalTestLab
             Grid.SetRow(scroll, 1);
             layout.Children.Add(scroll);
 
+            combinedCard = SectionCard();
+            StackPanel combinedPanel = new StackPanel();
+            combinedPanel.Children.Add(Heading("SOLO COMBINED-BATTLES SPAWN", 15));
+            combinedPanel.Children.Add(new TextBlock
+            {
+                Text = "Uses extracted native Domination spawn coordinates. Only your configured vehicle is created; AI units are not added.",
+                Foreground = ModernPalette.Brush(ModernPalette.Muted), TextWrapping = TextWrapping.Wrap, Margin = new Thickness(0, 5, 0, 12)
+            });
+            Grid combinedFields = new Grid();
+            combinedFields.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(2, GridUnitType.Star) });
+            combinedFields.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(120) });
+            combinedFields.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(1.4, GridUnitType.Star) });
+            StackPanel mapStack = new StackPanel { Margin = new Thickness(0, 0, 8, 0) }; mapStack.Children.Add(Caption("MAP"));
+            mapBox = new ComboBox { ItemsSource = allCombinedMaps, Margin = new Thickness(0, 6, 0, 0) };
+            mapBox.SelectedItem = allCombinedMaps.FirstOrDefault(x => x.Id.Equals(currentScenario.MapId ?? "", StringComparison.OrdinalIgnoreCase)) ?? allCombinedMaps.FirstOrDefault();
+            mapStack.Children.Add(mapBox); combinedFields.Children.Add(mapStack);
+            StackPanel sideStack = new StackPanel { Margin = new Thickness(0, 0, 8, 0) }; sideStack.Children.Add(Caption("SIDE"));
+            sideBox = new ComboBox { ItemsSource = new[] { "Side 1", "Side 2" }, SelectedIndex = currentScenario.Side == 2 ? 1 : 0, Margin = new Thickness(0, 6, 0, 0) };
+            sideStack.Children.Add(sideBox); Grid.SetColumn(sideStack, 1); combinedFields.Children.Add(sideStack);
+            StackPanel spawnStack = new StackPanel(); spawnStack.Children.Add(Caption("SPAWN"));
+            spawnBox = new ComboBox { Margin = new Thickness(0, 6, 0, 0), Tag = currentScenario.SpawnOption };
+            spawnStack.Children.Add(spawnBox); Grid.SetColumn(spawnStack, 2); combinedFields.Children.Add(spawnStack);
+            combinedPanel.Children.Add(combinedFields);
+            combinedCard.Child = combinedPanel;
+            content.Children.Add(combinedCard);
+
+            targetCards = new StackPanel();
+            content.Children.Add(targetCards);
+
             Border airCard = SectionCard();
             Grid airLine = new Grid();
             airLine.ColumnDefinitions.Add(new ColumnDefinition());
             airLine.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(100) });
             StackPanel airStack = new StackPanel(); airStack.Children.Add(Caption("AIR TARGET")); airBox = new ComboBox { ItemsSource = aircraft.OrderBy(x => x.Name).ToList(), SelectedItem = currentAir, Margin = new Thickness(0, 6, 8, 0) }; airStack.Children.Add(airBox); airLine.Children.Add(airStack);
             StackPanel airCountStack = new StackPanel(); airCountStack.Children.Add(Caption("COUNT")); airCountBox = CountBox(currentAirCount); airCountBox.Margin = new Thickness(0, 6, 0, 0); airCountStack.Children.Add(airCountBox); Grid.SetColumn(airCountStack, 1); airLine.Children.Add(airCountStack);
-            airCard.Child = airLine; content.Children.Add(airCard);
+            airCard.Child = airLine; targetCards.Children.Add(airCard);
 
             Border groundCard = SectionCard();
             StackPanel groundPanel = new StackPanel();
@@ -1837,7 +1922,7 @@ namespace UniversalTestLab
                 Grid.SetColumn(slot, index % 2); Grid.SetRow(slot, index / 2); groundGrid.Children.Add(slot);
             }
             groundPanel.Children.Add(groundGrid);
-            groundCard.Child = groundPanel; content.Children.Add(groundCard);
+            groundCard.Child = groundPanel; targetCards.Children.Add(groundCard);
 
             Border shipCard = SectionCard();
             StackPanel shipPanel = new StackPanel();
@@ -1853,7 +1938,7 @@ namespace UniversalTestLab
             shipBox = new ComboBox { ItemsSource = allShips, SelectedItem = currentShip, Margin = new Thickness(0, 0, 8, 0) }; shipLine.Children.Add(shipBox);
             shipCountBox = CountBox(currentShipCount); Grid.SetColumn(shipCountBox, 1); shipLine.Children.Add(shipCountBox);
             passiveShipBox = new ToggleButton { IsChecked = passiveShip, Style = (Style)DialogRoot.Resources["StatusToggleStyle"], Margin = new Thickness(8, 0, 0, 0), ToolTip = "Controls whether the naval target stays passive or returns fire after the player attacks it." }; Grid.SetColumn(passiveShipBox, 2); shipLine.Children.Add(passiveShipBox);
-            shipPanel.Children.Add(shipLine); shipCard.Child = shipPanel; content.Children.Add(shipCard);
+            shipPanel.Children.Add(shipLine); shipCard.Child = shipPanel; targetCards.Children.Add(shipCard);
 
             groundNation.SelectionChanged += delegate { RefreshGround(); };
             groundRank.SelectionChanged += delegate { RefreshGround(); };
@@ -1863,18 +1948,50 @@ namespace UniversalTestLab
             hostileBox.Unchecked += delegate { UpdateReactionButtons(); };
             passiveShipBox.Checked += delegate { UpdateReactionButtons(); };
             passiveShipBox.Unchecked += delegate { UpdateReactionButtons(); };
+            modeBox.SelectionChanged += delegate { UpdateScenarioMode(); };
+            mapBox.SelectionChanged += delegate { RefreshCombinedSpawns(); };
+            sideBox.SelectionChanged += delegate { RefreshCombinedSpawns(); };
             UpdateReactionButtons();
 
             Grid footer = new Grid(); footer.ColumnDefinitions.Add(new ColumnDefinition()); footer.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(145) }); footer.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(170) });
-            footer.Children.Add(new TextBlock { Text = "Destroyed targets recover rapidly; player ammunition rearms after depletion.", Foreground = ModernPalette.Brush(ModernPalette.Muted), VerticalAlignment = VerticalAlignment.Center });
+            footerHint = new TextBlock { Foreground = ModernPalette.Brush(ModernPalette.Muted), VerticalAlignment = VerticalAlignment.Center, TextWrapping = TextWrapping.Wrap };
+            footer.Children.Add(footerHint);
             Button cancel = DialogButton("CANCEL", false); cancel.Click += delegate { DialogResult = false; Close(); }; Grid.SetColumn(cancel, 1); footer.Children.Add(cancel);
             Button apply = DialogButton("APPLY MAP", true); apply.Click += delegate { Save(); }; Grid.SetColumn(apply, 2); footer.Children.Add(apply); Grid.SetRow(footer, 2); layout.Children.Add(footer);
+            RefreshCombinedSpawns();
+            UpdateScenarioMode();
         }
 
         public ModernMapWindow(IEnumerable<AircraftView> aircraft, IEnumerable<TargetView> ground, IEnumerable<TargetView> ships,
             AircraftView currentAir, int currentAirCount, TargetView currentGround, int currentGroundCount, bool hostile,
             TargetView currentShip, int currentShipCount)
-            : this(aircraft, ground, ships, currentAir, currentAirCount, new[] { currentGround }, hostile, currentShip, currentShipCount, false) { }
+            : this(aircraft, ground, ships, currentAir, currentAirCount, new[] { currentGround }, hostile, currentShip, currentShipCount, false,
+                Enumerable.Empty<CombinedMap>(), "aircraft", new CombinedScenarioSettings()) { }
+
+        private void UpdateScenarioMode()
+        {
+            bool combined = modeBox.SelectedIndex == 1;
+            Height = combined ? 520 : 820;
+            combinedCard.Visibility = combined ? Visibility.Visible : Visibility.Collapsed;
+            targetCards.Visibility = combined ? Visibility.Collapsed : Visibility.Visible;
+            footerHint.Text = combined
+                ? "The mission contains only your vehicle, the selected spawn base and instant player respawn."
+                : "Destroyed targets recover rapidly; player ammunition rearms after depletion.";
+        }
+
+        private void RefreshCombinedSpawns()
+        {
+            CombinedMap map = mapBox.SelectedItem as CombinedMap;
+            int side = sideBox.SelectedIndex == 1 ? 2 : 1;
+            string preferred = spawnBox.SelectedItem is CombinedSpawn ? ((CombinedSpawn)spawnBox.SelectedItem).Option : spawnBox.Tag as string;
+            List<CombinedSpawn> values = map == null ? new List<CombinedSpawn>() : map.Spawns
+                .Where(x => x.Side == side && x.Kind.Equals(playerKind, StringComparison.OrdinalIgnoreCase))
+                .OrderBy(x => x.Option.Equals("airfield", StringComparison.OrdinalIgnoreCase) || x.Option.Equals("ground_1", StringComparison.OrdinalIgnoreCase) || x.Option.Equals("heli_near", StringComparison.OrdinalIgnoreCase) ? 0 : 1)
+                .ThenBy(x => x.Option, StringComparer.OrdinalIgnoreCase).ToList();
+            spawnBox.ItemsSource = values;
+            spawnBox.SelectedItem = values.FirstOrDefault(x => x.Option.Equals(preferred ?? "", StringComparison.OrdinalIgnoreCase)) ?? values.FirstOrDefault();
+            spawnBox.Tag = null;
+        }
 
         private Border SectionCard()
         {
@@ -1956,6 +2073,21 @@ namespace UniversalTestLab
             ShipTarget = shipBox.SelectedItem as TargetView;
             ShipCount = (int)(shipCountBox.SelectedItem ?? 0);
             PassiveShip = passiveShipBox.IsChecked == true;
+            CombinedMap map = mapBox.SelectedItem as CombinedMap;
+            CombinedSpawn spawn = spawnBox.SelectedItem as CombinedSpawn;
+            Scenario = new CombinedScenarioSettings
+            {
+                Enabled = modeBox.SelectedIndex == 1,
+                MapId = map == null ? null : map.Id,
+                Side = sideBox.SelectedIndex == 1 ? 2 : 1,
+                SpawnOption = spawn == null ? null : spawn.Option
+            };
+            if (Scenario.Enabled && (map == null || spawn == null))
+            {
+                ModernMessageDialog error = new ModernMessageDialog("Map & Scenario", "Select a map, side and compatible spawn.", "CLOSE", null, true) { Owner = Owner };
+                error.ShowDialog();
+                return;
+            }
             DialogResult = true;
             Close();
         }
@@ -3076,7 +3208,11 @@ namespace UniversalTestLab
             AircraftView air = new AircraftView(new Aircraft { Id = "j_10c", Display = "J-10C", Nation = "China", Kind = "Aircraft", Rank = 9 });
             TargetView ground = new TargetView(new TargetUnit { Id = "ussr_bmpt", Display = "BMPT" });
             TargetView ship = new TargetView(new TargetUnit { Id = "jp_battleship_yamato", Display = "Yamato-class, IJN Yamato, 1945" });
-            ModernMapWindow window = new ModernMapWindow(new[] { air }, new[] { ground }, new[] { ship }, air, 1, ground, 1, true, ship, 1);
+            CombinedMap map = new CombinedMap { Id = "western_europe", Display = "Western Europe", Level = "levels/avg_western_europe.bin" };
+            map.Spawns.Add(new CombinedSpawn { Kind = "aircraft", Side = 1, Option = "airfield", Label = "Airfield" });
+            map.Spawns.Add(new CombinedSpawn { Kind = "aircraft", Side = 1, Option = "air", Label = "Air spawn" });
+            ModernMapWindow window = new ModernMapWindow(new[] { air }, new[] { ground }, new[] { ship }, air, 1, new[] { ground }, true, ship, 1, false,
+                new[] { map }, "aircraft", new CombinedScenarioSettings { Enabled = true, MapId = map.Id, Side = 1, SpawnOption = "airfield" });
             window.WindowStartupLocation = WindowStartupLocation.Manual; window.Left = 0; window.Top = 0; window.Show();
             window.Dispatcher.Invoke(new Action(delegate { }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
             RenderWindow(window, path); window.Close(); app.Shutdown();
@@ -3117,6 +3253,8 @@ namespace UniversalTestLab
             window.ExerciseDropdownForSelfTest();
             if (!window.LayoutFixesReadyForSelfTest())
                 throw new InvalidOperationException("WPF clipping/dropdown/work-area self-test failed.");
+            if (!window.CombinedCatalogReadyForSelfTest())
+                throw new InvalidOperationException("WPF combined-battles map catalog self-test failed.");
             if (!window.ExerciseOverlayForSelfTest())
                 throw new InvalidOperationException("WPF single-window overlay self-test failed.");
 

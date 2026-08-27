@@ -1,6 +1,6 @@
 # Universal Test Lab
 
-> **Public beta — v0.12.0-beta.1**
+> **Public beta — v0.12.0-beta.2**
 
 Universal Test Lab creates local War Thunder User Missions for testing aircraft, helicopters, drones, ground vehicles, custom loadouts, and targets.
 
@@ -13,6 +13,7 @@ Universal Test Lab creates local War Thunder User Missions for testing aircraft,
 - Custom loadouts with native weapons and optional experimental weapon injection.
 - Research modules, fuel, gun belts, countermeasures, shells, mobility, maps, targets, and reusable presets.
 - Custom ground sights from War Thunder `UserSights` folders.
+- Optional solo combined-battles sandbox on 48 Domination map layouts, with side selection, native ground/air/helicopter spawns, and the original A/B/C and team-spawn markers on the tactical map.
 - Rapid target recovery, unlimited player respawns, and one-second rearming after ammunition is depleted.
 
 ## Installation
@@ -34,6 +35,7 @@ The executable is not digitally signed, so Windows SmartScreen may show a warnin
 
 ## Known beta limitations
 
+- **Combined Battles — Domination** currently creates a solo sandbox, not a complete Domination match: it uses the selected map and spawn and shows the native capture/spawn locations for orientation, but intentionally adds no AI units, active capture logic, score, or match progression.
 - Native weapons are the most reliable. Injected weapons may require systems that the selected vehicle does not provide, such as a compatible seeker, radar, data link, targeting pod, HUD integration, or visual model.
 - Modern player tanks use a reserve `userVehicles` proxy. Generated projectiles retain their configured behavior, but the HUD icon, ammunition card, or kill feed may identify them as M74.
 - Some research-only ground systems, including the Black Night laser rangefinder, may not initialize through the proxy.
@@ -77,6 +79,8 @@ Requirements: Windows, .NET Framework 4.x, and PowerShell.
 ```
 
 The compiled application is written to `dist\UniversalTestLab.exe`.
+
+`Build-CombinedMaps.ps1` rebuilds `data\combined_maps.tsv` from an extracted War Thunder `mis.vromfs.bin` mission tree. It resolves the realistic briefing's A/B/C coordinates plus the native two-sided ground, aircraft, and helicopter spawns. Only maps with a complete two-sided spawn set are included.
 
 ## Contributing
 
