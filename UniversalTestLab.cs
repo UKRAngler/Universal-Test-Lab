@@ -13,11 +13,11 @@ using System.Windows.Forms;
 
 [assembly: AssemblyTitle("Universal Test Lab")]
 [assembly: AssemblyProduct("Universal Test Lab")]
-[assembly: AssemblyDescription("War Thunder User Mission and vehicle test workspace (public beta)")]
+[assembly: AssemblyDescription("War Thunder User Mission and vehicle test workspace")]
 [assembly: AssemblyCompany("AstraSEP")]
 [assembly: AssemblyVersion("0.12.0.0")]
-[assembly: AssemblyFileVersion("0.12.0.3")]
-[assembly: AssemblyInformationalVersion("0.12.0-beta.3")]
+[assembly: AssemblyFileVersion("0.12.0.0")]
+[assembly: AssemblyInformationalVersion("0.12.0")]
 
 namespace UniversalTestLab
 {
@@ -5050,7 +5050,7 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
             title.Font = new Font("Segoe UI Semibold", 20f);
             title.ForeColor = Theme.AccentLight;
             root.Controls.Add(title, 0, 0);
-            Label version = Theme.Label("Public beta  •  community-inspired mission and vehicle test workspace for War Thunder", false);
+            Label version = Theme.Label("v0.12.0  •  community-inspired mission and vehicle test workspace for War Thunder", false);
             version.Font = new Font("Segoe UI", 10.5f);
             root.Controls.Add(version, 0, 1);
             TableLayoutPanel content = new TableLayoutPanel { Dock = DockStyle.Fill, ColumnCount = 2, RowCount = 1, Margin = new Padding(0, 8, 0, 8) };

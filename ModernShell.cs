@@ -3001,7 +3001,7 @@ namespace UniversalTestLab
             ContentCard.Child = layout;
             StackPanel header = new StackPanel();
             header.Children.Add(Heading("UNIVERSAL TEST LAB", 24));
-            header.Children.Add(new TextBlock { Text = "Public beta  •  community-inspired mission and vehicle test workspace for War Thunder", Foreground = ModernPalette.Brush(ModernPalette.Cyan), FontSize = 12, Margin = new Thickness(0, 4, 0, 0) });
+            header.Children.Add(new TextBlock { Text = "v0.12.0  •  community-inspired mission and vehicle test workspace for War Thunder", Foreground = ModernPalette.Brush(ModernPalette.Cyan), FontSize = 12, Margin = new Thickness(0, 4, 0, 0) });
             layout.Children.Add(header);
             Grid content = new Grid(); content.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(3, GridUnitType.Star) }); content.ColumnDefinitions.Add(new ColumnDefinition { Width = new GridLength(2, GridUnitType.Star) });
             StackPanel info = new StackPanel { Margin = new Thickness(0, 6, 20, 0) };

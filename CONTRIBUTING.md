@@ -6,7 +6,7 @@ Thanks for helping improve Universal Test Lab.
 
 - Use the latest release.
 - Rebuild and launch a new mission; existing generated missions do not update automatically.
-- Check the README's **Known beta limitations**. The reserve M74 HUD card and missing research-only systems on a modern ground proxy are already tracked.
+- Check the README's **Known limitations**. The reserve M74 HUD card and missing research-only systems on a modern ground proxy are already tracked.
 - Include the Universal Test Lab release, War Thunder version, vehicle, module configuration, ammunition or pylon setup, target, and map.
 - Attach screenshots and the generated mission when possible. For a ground-proxy problem, also attach the generated `content/pkg_local/gameData/units/tankModels/userVehicles/us_m2a4.blk` proxy and `utl_ground_cannon.blk`.
 - Never post account credentials or private data.

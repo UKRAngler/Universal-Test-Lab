@@ -2,7 +2,7 @@
 
 ## Supported version
 
-Universal Test Lab is public-beta software. Security fixes are applied to the latest release and the current `main` branch.
+Security fixes are applied to the latest Universal Test Lab release and the current `main` branch.
 
 ## Reporting a vulnerability
 

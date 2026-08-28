@@ -1,6 +1,6 @@
 # Universal Test Lab
 
-> **Public beta — v0.12.0-beta.3**
+> **Current release — v0.12.0**
 
 Universal Test Lab creates local War Thunder User Missions for testing aircraft, helicopters, drones, ground vehicles, custom loadouts, and targets.
 
@@ -33,7 +33,7 @@ The executable is not digitally signed, so Windows SmartScreen may show a warnin
 - Helicopters use bindings from the **Helicopter controls** section for firing, switching secondary weapons, and releasing countermeasures.
 - When using a custom ground sight, press **Alt+F9** once inside the mission to reload `UserSights`.
 
-## Known beta limitations
+## Known limitations
 
 - **Combined Battles — Domination** currently creates a solo sandbox, not a complete Domination match: it uses the selected map and spawn and shows the native capture/spawn locations for orientation, but intentionally adds no AI units, active capture logic, score, or match progression.
 - Native weapons are the most reliable. Injected weapons may require systems that the selected vehicle does not provide, such as a compatible seeker, radar, data link, targeting pod, HUD integration, or visual model.
