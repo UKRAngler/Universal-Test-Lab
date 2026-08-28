@@ -379,7 +379,7 @@ namespace UniversalTestLab
         <TextBlock x:Name=""StationText"" Grid.Row=""1"" Foreground=""{StaticResource MutedBrush}"" VerticalAlignment=""Center"" TextTrimming=""CharacterEllipsis""/>
         <Border x:Name=""PylonCard"" Grid.Row=""2"" Background=""{StaticResource FieldBrush}"" CornerRadius=""12"" Padding=""5"" Margin=""0,2,0,8""><UniformGrid x:Name=""PylonPanel"" Rows=""1"" VerticalAlignment=""Center""/></Border>
         <Grid x:Name=""WeaponFilterPanel"" Grid.Row=""3""><Grid.ColumnDefinitions><ColumnDefinition Width=""175""/><ColumnDefinition Width=""*""/><ColumnDefinition Width=""155""/><ColumnDefinition Width=""125""/><ColumnDefinition Width=""145""/></Grid.ColumnDefinitions><StackPanel Margin=""0,0,5,0""><TextBlock Text=""WEAPON SOURCE"" Style=""{StaticResource Caption}"" Margin=""2,0,0,5""/><ToggleButton x:Name=""InjectionToggle"" Style=""{StaticResource ToggleStyle}"" Content=""INJECT ANY WEAPON""/></StackPanel><StackPanel Grid.Column=""1"" Margin=""5,0""><TextBlock Text=""SEARCH"" Style=""{StaticResource Caption}"" Margin=""2,0,0,5""/><TextBox x:Name=""WeaponSearch""/></StackPanel><StackPanel Grid.Column=""2"" Margin=""5,0""><TextBlock Text=""WEAPON TYPE"" Style=""{StaticResource Caption}"" Margin=""2,0,0,5""/><ComboBox x:Name=""CategoryFilter""/></StackPanel><StackPanel Grid.Column=""3"" Margin=""5,0""><TextBlock Text=""NATION"" Style=""{StaticResource Caption}"" Margin=""2,0,0,5""/><ComboBox x:Name=""WeaponNationFilter""/></StackPanel><StackPanel Grid.Column=""4"" Margin=""5,0,0,0""><TextBlock Text=""SORT"" Style=""{StaticResource Caption}"" Margin=""2,0,0,5""/><ComboBox x:Name=""SortFilter""/></StackPanel></Grid>
-        <Grid x:Name=""WeaponTableFrame"" Grid.Row=""4"" Margin=""0,10,0,10""><Border Background=""{StaticResource FieldBrush}"" CornerRadius=""12""/><Grid x:Name=""WeaponTableClipContent""><ListView x:Name=""WeaponList"" Background=""Transparent"" BorderThickness=""0"" Foreground=""{StaticResource TextBrush}"" ScrollViewer.HorizontalScrollBarVisibility=""Disabled""><ListView.Resources><Style TargetType=""ScrollBar"" BasedOn=""{StaticResource {x:Type ScrollBar}}""><Style.Triggers><Trigger Property=""Orientation"" Value=""Vertical""><Setter Property=""Margin"" Value=""0,32,0,1""/></Trigger></Style.Triggers></Style></ListView.Resources><ListView.GroupStyle><GroupStyle><GroupStyle.HeaderTemplate><DataTemplate><Border Background=""#D9152340"" BorderBrush=""#49698F"" BorderThickness=""0,1,0,1"" Padding=""10,6"" Margin=""0,4,0,2""><TextBlock Foreground=""{StaticResource CyanBrush}"" FontWeight=""SemiBold""><Run Text=""—  ""/><Run Text=""{Binding Name, Mode=OneWay}""/><Run Text=""  —""/></TextBlock></Border></DataTemplate></GroupStyle.HeaderTemplate></GroupStyle></ListView.GroupStyle><ListView.View><GridView><GridViewColumn Header=""Weapon"" Width=""330"" DisplayMemberBinding=""{Binding Name}""/><GridViewColumn Header=""Type"" Width=""185"" DisplayMemberBinding=""{Binding Category}""/><GridViewColumn Header=""Ammo"" Width=""70"" DisplayMemberBinding=""{Binding Ammo}""/><GridViewColumn Header=""Mass"" Width=""85"" DisplayMemberBinding=""{Binding Mass}""/><GridViewColumn Width=""82""><GridViewColumn.Header><GridViewColumnHeader Content=""Mode""/></GridViewColumn.Header><GridViewColumn.CellTemplate><DataTemplate><TextBlock Text=""{Binding Mode}"" HorizontalAlignment=""Center"" TextAlignment=""Center""/></DataTemplate></GridViewColumn.CellTemplate></GridViewColumn></GridView></ListView.View></ListView></Grid><Border BorderBrush=""#A8C7ECFF"" BorderThickness=""1"" CornerRadius=""12"" IsHitTestVisible=""False""/></Grid>
+        <Grid x:Name=""WeaponTableFrame"" Grid.Row=""4"" Margin=""0,10,0,10""><Border Background=""{StaticResource FieldBrush}"" CornerRadius=""12""/><Grid x:Name=""WeaponTableClipContent""><ListView x:Name=""WeaponList"" Background=""Transparent"" BorderThickness=""0"" Foreground=""{StaticResource TextBrush}"" ScrollViewer.HorizontalScrollBarVisibility=""Disabled"" ScrollViewer.CanContentScroll=""True"" VirtualizingStackPanel.IsVirtualizing=""True"" VirtualizingStackPanel.VirtualizationMode=""Recycling""><ListView.Resources><Style TargetType=""ScrollBar"" BasedOn=""{StaticResource {x:Type ScrollBar}}""><Style.Triggers><Trigger Property=""Orientation"" Value=""Vertical""><Setter Property=""Margin"" Value=""0,32,0,1""/></Trigger></Style.Triggers></Style></ListView.Resources><ListView.View><GridView><GridViewColumn Header=""Weapon"" Width=""330"" DisplayMemberBinding=""{Binding Name}""/><GridViewColumn Header=""Type"" Width=""185"" DisplayMemberBinding=""{Binding Category}""/><GridViewColumn Header=""Ammo"" Width=""70"" DisplayMemberBinding=""{Binding Ammo}""/><GridViewColumn Header=""Mass"" Width=""85"" DisplayMemberBinding=""{Binding Mass}""/><GridViewColumn Width=""82""><GridViewColumn.Header><GridViewColumnHeader Content=""Mode""/></GridViewColumn.Header><GridViewColumn.CellTemplate><DataTemplate><TextBlock Text=""{Binding Mode}"" HorizontalAlignment=""Center"" TextAlignment=""Center""/></DataTemplate></GridViewColumn.CellTemplate></GridViewColumn></GridView></ListView.View></ListView></Grid><Border BorderBrush=""#A8C7ECFF"" BorderThickness=""1"" CornerRadius=""12"" IsHitTestVisible=""False""/></Grid>
         <Grid Grid.Row=""5""><Grid.ColumnDefinitions><ColumnDefinition Width=""*""/><ColumnDefinition Width=""145""/><ColumnDefinition Width=""128""/><ColumnDefinition Width=""94""/><ColumnDefinition Width=""145""/></Grid.ColumnDefinitions><TextBlock Text=""Tip: double-click a weapon to mount it"" Foreground=""{StaticResource MutedBrush}"" VerticalAlignment=""Center""/><Button x:Name=""SystemsButton"" Grid.Column=""1"" Style=""{StaticResource ButtonStyle}"" Content=""MODULES"" Margin=""4,0""/><Button x:Name=""ClearStationButton"" Grid.Column=""2"" Style=""{StaticResource ButtonStyle}"" Content=""CLEAR STATION"" Margin=""4,0""/><Button x:Name=""ClearAllButton"" Grid.Column=""3"" Style=""{StaticResource ButtonStyle}"" Content=""CLEAR ALL"" Margin=""4,0""/><Button x:Name=""MountButton"" Grid.Column=""4"" Style=""{StaticResource PrimaryButton}"" Content=""MOUNT WEAPON"" Margin=""4,0,0,0""/></Grid>
       </Grid></Border>
 
@@ -442,6 +442,8 @@ namespace UniversalTestLab
         private TextBlock massText;
         private UniformGrid pylonPanel;
         private ToggleButton injectionToggle;
+        private System.Windows.Threading.DispatcherTimer weaponSearchTimer;
+        private bool weaponColumnsPending;
         private TextBox weaponSearch;
         private ComboBox categoryFilter;
         private ComboBox weaponNationFilter;
@@ -609,6 +611,8 @@ namespace UniversalTestLab
             pylonCard = Find<Border>("PylonCard");
             weaponFilterPanel = Find<Grid>("WeaponFilterPanel");
             injectionToggle = Find<ToggleButton>("InjectionToggle");
+            weaponSearchTimer = new System.Windows.Threading.DispatcherTimer { Interval = TimeSpan.FromMilliseconds(300) };
+            weaponSearchTimer.Tick += delegate { weaponSearchTimer.Stop(); RefreshWeapons(); };
             weaponSearch = Find<TextBox>("WeaponSearch");
             categoryFilter = Find<ComboBox>("CategoryFilter");
             weaponNationFilter = Find<ComboBox>("WeaponNationFilter");
@@ -710,7 +714,7 @@ namespace UniversalTestLab
             aircraftList.SelectionChanged += delegate { AircraftChanged(); };
             injectionToggle.Checked += delegate { RefreshWeapons(); };
             injectionToggle.Unchecked += delegate { RefreshWeapons(); };
-            weaponSearch.TextChanged += delegate { RefreshWeapons(); };
+            weaponSearch.TextChanged += delegate { weaponSearchTimer.Stop(); weaponSearchTimer.Start(); };
             categoryFilter.SelectionChanged += delegate { RefreshWeapons(); };
             weaponNationFilter.SelectionChanged += delegate { RefreshWeapons(); };
             sortFilter.SelectionChanged += delegate { RefreshWeapons(); };
@@ -984,10 +988,20 @@ namespace UniversalTestLab
             int sort = Math.Max(0, sortFilter.SelectedIndex);
             List<WeaponView> weapons = controller.WorkspaceWeapons(selectedAircraft.Id, selectedPylon.Slot, injected, weaponSearch.Text, category, nation, sort)
                 .Select(x => new WeaponView(x, injected)).ToList();
-            ListCollectionView grouped = new ListCollectionView(weapons);
-            grouped.GroupDescriptions.Add(new PropertyGroupDescription("Category"));
-            weaponList.ItemsSource = grouped;
-            weaponList.Dispatcher.BeginInvoke(new Action(UpdateWeaponColumns), System.Windows.Threading.DispatcherPriority.Loaded);
+            // WPF grouping materializes the whole collection and disables effective
+            // row virtualization. The Type column still exposes the category, so a
+            // flat, recycling list remains clear and stays responsive with thousands
+            // of injectable weapons.
+            weaponList.ItemsSource = weapons;
+            if (!weaponColumnsPending)
+            {
+                weaponColumnsPending = true;
+                weaponList.Dispatcher.BeginInvoke(new Action(delegate
+                {
+                    weaponColumnsPending = false;
+                    UpdateWeaponColumns();
+                }), System.Windows.Threading.DispatcherPriority.Background);
+            }
         }
 
         private void UpdateWeaponColumns()
@@ -1404,7 +1418,10 @@ namespace UniversalTestLab
             UpdateWeaponColumns();
             GridView weaponView = weaponList.View as GridView;
             GridViewColumnHeader scrollingMode = weaponView == null ? null : weaponView.Columns[4].Header as GridViewColumnHeader;
-            ListCollectionView groupedWeapons = weaponList.ItemsSource as ListCollectionView;
+            bool virtualizedWeapons = weaponList.ItemsSource is List<WeaponView> &&
+                ScrollViewer.GetCanContentScroll(weaponList) &&
+                VirtualizingStackPanel.GetIsVirtualizing(weaponList) &&
+                VirtualizingStackPanel.GetVirtualizationMode(weaponList) == VirtualizationMode.Recycling;
             double columnWidth = weaponView == null ? 0 : weaponView.Columns.Sum(x => x.Width);
             ScrollBar weaponScroll = FindVisibleVerticalScrollBar(weaponList);
             double weaponGutter = weaponScroll == null ? 0 : Math.Max(8, weaponScroll.ActualWidth);
@@ -1429,7 +1446,7 @@ namespace UniversalTestLab
                 weaponClip != null && weaponClip.RadiusX == 12 && weaponTableFrame.Clip == null &&
                 weaponScroll != null && unroundedModeWithoutScroll && staticHeaderTemplate && scrollingMode != null &&
                 Object.ReferenceEquals(scrollingMode.Style, root.Resources["LastGridHeader"]) &&
-                groupedWeapons != null && groupedWeapons.GroupDescriptions.Count == 1 &&
+                virtualizedWeapons &&
                 Math.Abs(columnWidth - expectedColumnWidth) < 2 && stationOrder && stationFit &&
                 rootBrush != null && rootBrush.Color.A < 255 && titleBrush != null && titleBrush.Color.A == 255 && gameFolderVisible &&
                 aircraftPreview && helicopterPreview && dronePreview &&
@@ -3276,19 +3293,24 @@ namespace UniversalTestLab
 
             window.WindowState = WindowState.Maximized;
             window.Dispatcher.Invoke(new Action(delegate { }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
-            if (window.WindowState != WindowState.Maximized || window.ActualWidth < 1100 || window.ActualHeight < 600)
+            Rect selfTestWorkArea = SystemParameters.WorkArea;
+            double requiredMaxWidth = Math.Min(1100, selfTestWorkArea.Width);
+            double requiredMaxHeight = Math.Min(600, selfTestWorkArea.Height);
+            if (window.WindowState != WindowState.Maximized || window.ActualWidth + 1 < requiredMaxWidth || window.ActualHeight + 1 < requiredMaxHeight)
                 throw new InvalidOperationException("WPF maximize/layout self-test failed.");
             window.WindowState = WindowState.Normal;
             window.Width = 1500;
             window.Height = 920;
             window.Dispatcher.Invoke(new Action(delegate { }), System.Windows.Threading.DispatcherPriority.ApplicationIdle);
-            if (window.WindowState != WindowState.Normal || window.ActualWidth < 1200 || window.ActualHeight < 640)
+            double requiredRestoreWidth = Math.Min(1200, Math.Max(960, selfTestWorkArea.Width - 24));
+            double requiredRestoreHeight = Math.Min(640, Math.Max(560, selfTestWorkArea.Height - 24));
+            if (window.WindowState != WindowState.Normal || window.ActualWidth + 1 < requiredRestoreWidth || window.ActualHeight + 1 < requiredRestoreHeight)
                 throw new InvalidOperationException("WPF restore/layout self-test failed.");
             ModernAboutWindow about = new ModernAboutWindow(2817, 1838);
             about.Close();
             window.Close();
             app.Shutdown();
-            Console.WriteLine("UISELFTEST OK wpf=yes custom-chrome=yes no-client-gap=yes dark-glass=yes dark-dropdowns=yes grouped-weapons=yes rounded-preview=yes vehicle-kind-previews=yes border-retention=yes weapon-table-fit=yes station-order=yes stations-one-row=yes vertical-scroll=yes single-window-overlays=yes styled-messages=yes solid-close=yes visible-game-path=yes blurred-background=yes work-area-fit=yes maximize-restore=yes dpi-aware=yes");
+            Console.WriteLine("UISELFTEST OK wpf=yes custom-chrome=yes no-client-gap=yes dark-glass=yes dark-dropdowns=yes virtualized-weapons=yes rounded-preview=yes vehicle-kind-previews=yes border-retention=yes weapon-table-fit=yes station-order=yes stations-one-row=yes vertical-scroll=yes single-window-overlays=yes styled-messages=yes solid-close=yes visible-game-path=yes blurred-background=yes work-area-fit=yes maximize-restore=yes dpi-aware=yes");
         }
 
         internal static void RenderWindow(Window window, string path)

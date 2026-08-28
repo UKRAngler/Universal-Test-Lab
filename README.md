@@ -1,6 +1,6 @@
 # Universal Test Lab
 
-> **Public beta — v0.12.0-beta.2**
+> **Public beta — v0.12.0-beta.3**
 
 Universal Test Lab creates local War Thunder User Missions for testing aircraft, helicopters, drones, ground vehicles, custom loadouts, and targets.
 

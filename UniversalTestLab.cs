@@ -16,8 +16,8 @@ using System.Windows.Forms;
 [assembly: AssemblyDescription("War Thunder User Mission and vehicle test workspace (public beta)")]
 [assembly: AssemblyCompany("AstraSEP")]
 [assembly: AssemblyVersion("0.12.0.0")]
-[assembly: AssemblyFileVersion("0.12.0.2")]
-[assembly: AssemblyInformationalVersion("0.12.0-beta.2")]
+[assembly: AssemblyFileVersion("0.12.0.3")]
+[assembly: AssemblyInformationalVersion("0.12.0-beta.3")]
 
 namespace UniversalTestLab
 {
@@ -2462,7 +2462,10 @@ namespace UniversalTestLab
             IEnumerable<DonorWeapon> source = injected
                 ? globalWeapons
                 : nativeWeapons.Where(w => w.AircraftId.Equals(aircraftId ?? "", StringComparison.OrdinalIgnoreCase) && w.Slot == slot)
-                    .GroupBy(w => w.Blk + "|" + w.Bullets).Select(g => g.First());
+                    // Slot 0 is the virtual whole-preset station used by legacy
+                    // aircraft. Distinct presets may start with the same weapon and
+                    // carry the same count, so preserve them by preset/mount name.
+                    .GroupBy(w => slot == 0 ? w.Mount : w.Blk + "|" + w.Bullets).Select(g => g.First());
             if (!String.IsNullOrWhiteSpace(search))
                 source = source.Where(w => w.Name.IndexOf(search, StringComparison.CurrentCultureIgnoreCase) >= 0 || w.Category.IndexOf(search, StringComparison.CurrentCultureIgnoreCase) >= 0 || w.Blk.IndexOf(search, StringComparison.OrdinalIgnoreCase) >= 0);
             if (!String.IsNullOrWhiteSpace(category) && !category.Equals("All Weapon Types", StringComparison.OrdinalIgnoreCase))
@@ -3690,6 +3693,9 @@ namespace UniversalTestLab
             int spawnSpeedKmh = ResolveSpawnSpeed(target, fm);
             AircraftSettings settings = GetAircraftSettings(target);
             bool helicopter = IsHelicopter(target, fm);
+            // Legacy aircraft store complete loadouts in flat preset files and
+            // do not expose the modern WeaponSlot tree.
+            bool presetStyle = !BlkTools.Blocks(fm, "WeaponSlot").Any();
             List<string> auxiliaryPaths = new List<string>();
             Dictionary<string, string> customCountermeasureBelts = PrepareCountermeasureBeltsByLoadout(root, token, settings, auxiliaryPaths);
             ApplyCountermeasureSettings(ref fm, settings, customCountermeasureBelts);
@@ -3706,45 +3712,106 @@ namespace UniversalTestLab
             RemoveFuelTankPresets(ref fm);
             string classId = "utl_run_" + token + "_player";
             string presetId = "utl_run_" + token + "_loadout";
+            string presetOut = null;
             StringBuilder loadout = new StringBuilder();
-            HashSet<int> assignedSlots = new HashSet<int>(assignments.Keys);
-            // Native helicopter presets contain external stations only. The turret,
-            // fixed gun and countermeasure launchers remain in commonWeapons and are
-            // attached implicitly by the helicopter usermodel. Serializing them into
-            // the preset turns the common group into the selected secondary group and
-            // prevents the normal external-weapon triggers from firing.
-            AppendCommonWeaponsToLoadout(loadout, fm, assignedSlots, helicopter);
-            // Native War Thunder helicopter presets are serialized by numeric station,
-            // not by the mirrored visual order used by the loadout UI. A 1,4,2,3 file
-            // mounts the stores, but the in-flight selector only indexes part of it.
-            foreach (PylonAssignment assignment in OrderAssignmentsForPreset(assignments.Values))
+            if (presetStyle)
             {
-                string mount;
-                if (!assignment.Injected)
+                // The virtual station carries a whole native loadout scheme. With no
+                // explicit selection, keep the vehicle's default preset.
+                PylonAssignment scheme = assignments.Values.FirstOrDefault(x => x != null && x.Weapon != null);
+                if (scheme != null && scheme.Injected)
                 {
-                    mount = assignment.Weapon.Mount;
-                    if (String.IsNullOrEmpty(mount)) throw new InvalidOperationException("Native mount information is missing for station " + assignment.Pylon.Slot + ".");
+                    // There is no station mount to receive injected ordnance. Reuse
+                    // the emitters from the stock preset and replace each store with
+                    // the selected injected weapon.
+                    string weaponBlk = PrepareInjectedWeapon(root, scheme.Weapon);
+                    string basePreset = String.Empty;
+                    string stockPreset = String.IsNullOrWhiteSpace(target.DefaultPreset) ? null : target.DefaultPreset;
+                    if (stockPreset != null)
+                    {
+                        Match stock = Regex.Match(fm, @"(?s)preset\s*\{\s*name:t\s*=\s*""" + Regex.Escape(stockPreset) + @"""\s*blk:t\s*=\s*""([^""]+)""", RegexOptions.IgnoreCase);
+                        if (stock.Success)
+                        {
+                            string relative = Regex.Replace(stock.Groups[1].Value.Replace('\\', '/'), @"(?i)^gameData/FlightModels/", "gamedata/flightmodels/");
+                            basePreset = File.ReadAllText(ExtractGameBlk(root, relative), Encoding.UTF8);
+                        }
+                    }
+                    if (String.IsNullOrWhiteSpace(basePreset))
+                    {
+                        basePreset = "Weapon {" + Environment.NewLine
+                            + "\ttrigger:t = \"" + scheme.Weapon.Trigger + "\"" + Environment.NewLine
+                            + "\tblk:t = \"" + weaponBlk + "\"" + Environment.NewLine
+                            + "\temitter:t = \"inj1\"" + Environment.NewLine
+                            + "\texternal:b = true" + Environment.NewLine
+                            + "\tseparate:b = true" + Environment.NewLine
+                            + "\tbullets:i = " + Math.Max(1, scheme.Weapon.Bullets).ToString(CultureInfo.InvariantCulture) + Environment.NewLine + "}";
+                    }
+                    else
+                    {
+                        BlockSpan[] stores = BlkTools.Blocks(basePreset, "Weapon").OrderByDescending(x => x.Start).ToArray();
+                        if (stores.Length == 0)
+                        {
+                            basePreset = basePreset.TrimEnd() + Environment.NewLine + "Weapon {" + Environment.NewLine
+                                + "\ttrigger:t = \"" + scheme.Weapon.Trigger + "\"" + Environment.NewLine
+                                + "\tblk:t = \"" + weaponBlk + "\"" + Environment.NewLine
+                                + "\temitter:t = \"inj1\"" + Environment.NewLine
+                                + "\texternal:b = true" + Environment.NewLine
+                                + "\tseparate:b = true" + Environment.NewLine
+                                + "\tbullets:i = " + Math.Max(1, scheme.Weapon.Bullets).ToString(CultureInfo.InvariantCulture) + Environment.NewLine + "}";
+                        }
+                        else
+                        {
+                            foreach (BlockSpan store in stores)
+                            {
+                                string block = Regex.Replace(store.Text, @"(?m)^\s*blk:t\s*=\s*""[^""]*""", "blk:t = \"" + weaponBlk + "\"");
+                                block = Regex.Replace(block, @"(?m)^\s*trigger:t\s*=\s*""[^""]*""", "trigger:t = \"" + scheme.Weapon.Trigger + "\"");
+                                basePreset = basePreset.Substring(0, store.Start) + block + basePreset.Substring(store.End);
+                            }
+                        }
+                    }
+                    RegisterPreset(ref fm, presetId);
+                    presetOut = Path.Combine(root, @"content\pkg_user\gameData\flightModels\weaponPresets", presetId + ".blk");
+                    WriteBytes(presetOut, new UTF8Encoding(false).GetBytes(basePreset));
                 }
-                else
+                else if (scheme != null && !String.IsNullOrWhiteSpace(scheme.Weapon.Mount))
                 {
-                    // Keep the aircraft's native mount ID. The F2 pylon display is built from
-                    // these registered station entries and ignores newly appended ad-hoc IDs.
-                    mount = assignment.Pylon.AnchorMount;
-                    string weaponBlk = PrepareInjectedWeapon(root, assignment.Weapon);
-                    AddInjectedMount(ref fm, assignment.Pylon, assignment.Weapon, mount, weaponBlk);
+                    presetId = scheme.Weapon.Mount;
                 }
-                loadout.AppendLine("Weapon {");
-                loadout.AppendLine("\tslot:i = " + assignment.Pylon.Slot.ToString(CultureInfo.InvariantCulture));
-                loadout.AppendLine("\tpreset:t = \"" + mount + "\"");
-                loadout.AppendLine("}");
+                else presetId = String.IsNullOrWhiteSpace(target.DefaultPreset) ? presetId : target.DefaultPreset;
             }
-            string modelId = BlkTools.Field(fm, "model", "t");
-            RegisterPreset(ref fm, presetId);
+            else
+            {
+                HashSet<int> assignedSlots = new HashSet<int>(assignments.Keys);
+                // Native helicopter presets contain external stations only. The turret,
+                // fixed gun and countermeasure launchers remain in commonWeapons and are
+                // attached implicitly by the helicopter usermodel.
+                AppendCommonWeaponsToLoadout(loadout, fm, assignedSlots, helicopter);
+                foreach (PylonAssignment assignment in OrderAssignmentsForPreset(assignments.Values))
+                {
+                    string mount;
+                    if (!assignment.Injected)
+                    {
+                        mount = assignment.Weapon.Mount;
+                        if (String.IsNullOrEmpty(mount)) throw new InvalidOperationException("Native mount information is missing for station " + assignment.Pylon.Slot + ".");
+                    }
+                    else
+                    {
+                        mount = assignment.Pylon.AnchorMount;
+                        string weaponBlk = PrepareInjectedWeapon(root, assignment.Weapon);
+                        AddInjectedMount(ref fm, assignment.Pylon, assignment.Weapon, mount, weaponBlk);
+                    }
+                    loadout.AppendLine("Weapon {");
+                    loadout.AppendLine("\tslot:i = " + assignment.Pylon.Slot.ToString(CultureInfo.InvariantCulture));
+                    loadout.AppendLine("\tpreset:t = \"" + mount + "\"");
+                    loadout.AppendLine("}");
+                }
+                RegisterPreset(ref fm, presetId);
+                presetOut = Path.Combine(root, @"content\pkg_user\gameData\flightModels\weaponPresets", presetId + ".blk");
+                WriteBytes(presetOut, new UTF8Encoding(false).GetBytes(loadout.ToString()));
+            }
             string fmOut = Path.Combine(root, @"content\pkg_user\gameData\flightModels", classId + ".blk");
-            string presetOut = Path.Combine(root, @"content\pkg_user\gameData\flightModels\weaponPresets", presetId + ".blk");
             WriteBytes(fmOut, new UTF8Encoding(false).GetBytes(fm));
-            WriteBytes(presetOut, new UTF8Encoding(false).GetBytes(loadout.ToString()));
-            GeneratedAircraft generated = new GeneratedAircraft { ClassId = classId, PresetId = presetId, ModelId = modelId, FlightModelPath = fmOut, PresetPath = presetOut, SpawnSpeedKmh = spawnSpeedKmh };
+            GeneratedAircraft generated = new GeneratedAircraft { ClassId = classId, PresetId = presetId, ModelId = BlkTools.Field(fm, "model", "t"), FlightModelPath = fmOut, PresetPath = presetOut, SpawnSpeedKmh = spawnSpeedKmh };
             generated.AuxiliaryPaths.AddRange(auxiliaryPaths);
             return generated;
         }
@@ -3892,6 +3959,18 @@ namespace UniversalTestLab
             return Regex.Replace(block.Text, @"^\s*""?" + Regex.Escape(name) + @"""?\s*\{", "\"@override:" + name + "\" {", RegexOptions.IgnoreCase);
         }
 
+        internal static void AppendGroundCommonWeaponsReplacement(StringBuilder proxy, string commonWeapons)
+        {
+            if (proxy == null) throw new ArgumentNullException("proxy");
+            if (String.IsNullOrWhiteSpace(commonWeapons)) throw new ArgumentException("Ground commonWeapons block cannot be empty.", "commonWeapons");
+            // An include proxy already inherits commonWeapons. @override merges the
+            // replacement with that inherited block and leaves two gunner0 mounts,
+            // which makes one trigger pull fire two shells. Delete it first, then add
+            // one complete replacement block.
+            proxy.AppendLine("\"@delete:commonWeapons\"{}");
+            proxy.AppendLine(Regex.Replace(commonWeapons, @"^\s*commonWeapons\s*\{", "commonWeapons {", RegexOptions.IgnoreCase));
+        }
+
         internal static string AppendGroundModuleEffectOverrides(StringBuilder proxy, string nativeUnit, AircraftSettings settings)
         {
             if (proxy == null || String.IsNullOrWhiteSpace(nativeUnit) || settings == null) return null;
@@ -4036,8 +4115,7 @@ namespace UniversalTestLab
                 if (settings.OverrideGroundBallistics && settings.ReloadSeconds > 0) weaponBlock = SetOrInsertNumber(weaponBlock, "shotFreq", 1.0 / settings.ReloadSeconds);
                 if (settings.OverrideGroundBallistics) weaponBlock = ReplaceFirstScaledNumber(weaponBlock, "recoilOffset", settings.RecoilMultiplier);
                 commonOverride = BlkTools.ReplaceSpan(commonOverride, mainWeapon, weaponBlock);
-                commonOverride = Regex.Replace(commonOverride, @"^\s*commonWeapons\s*\{", "\"@override:commonWeapons\" {", RegexOptions.IgnoreCase);
-                proxy.AppendLine(commonOverride);
+                AppendGroundCommonWeaponsReplacement(proxy, commonOverride);
             }
 
             string unit = proxy.ToString();
@@ -4657,7 +4735,9 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 {
                     foreach (string file in Directory.GetFiles(presetDir, "utl_run_*_loadout.blk"))
                     {
-                        if (!Path.GetFullPath(file).Equals(Path.GetFullPath(current.PresetPath), StringComparison.OrdinalIgnoreCase)) try { File.Delete(file); } catch { }
+                        // Native preset-style aircraft do not publish a generated
+                        // utl_run_* file, so PresetPath can legitimately be null.
+                        if (String.IsNullOrEmpty(current.PresetPath) || !Path.GetFullPath(file).Equals(Path.GetFullPath(current.PresetPath), StringComparison.OrdinalIgnoreCase)) try { File.Delete(file); } catch { }
                     }
                 }
             }
@@ -5176,6 +5256,24 @@ fpvCameraOffset:p3 = 0.2, -0.1, 0
                 string normalizedWeaponPath = MainForm.NormalizeGameResourcePath(@"gameData\Weapons\groundModels_weapons\120mm_L30A1_2e_user_cannon.blk");
                 if (normalizedWeaponPath != "gamedata/weapons/groundmodels_weapons/120mm_l30a1_2e_user_cannon.blk")
                     throw new InvalidOperationException("VROM resource-path normalization self-test failed.");
+                StringBuilder groundWeaponProxy = new StringBuilder("include \"native_tank.blk\"" + Environment.NewLine);
+                MainForm.AppendGroundCommonWeaponsReplacement(groundWeaponProxy, "commonWeapons { Weapon { trigger:t = \"gunner0\" } }");
+                string groundWeaponProxyText = groundWeaponProxy.ToString();
+                if (groundWeaponProxyText.IndexOf("\"@delete:commonWeapons\"{}", StringComparison.Ordinal) < 0 ||
+                    groundWeaponProxyText.IndexOf("@override:commonWeapons", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                    Regex.Matches(groundWeaponProxyText, @"trigger:t\s*=\s*\""gunner0\""", RegexOptions.IgnoreCase).Count != 1)
+                    throw new InvalidOperationException("Ground common-weapons replacement self-test failed.");
+                string legacySlots = Embedded.Text("UTL.aircraft_slots.tsv");
+                string legacyWeapons = Embedded.Text("UTL.donor_weapons.tsv");
+                string gunPodCatalogData = Embedded.Text("UTL.weapon_catalog.tsv");
+                if (legacySlots.IndexOf("a-20g\t0\t0\t0\t0\tA-20G_500lb", StringComparison.Ordinal) < 0 ||
+                    legacyWeapons.IndexOf("a-20g\tA-20G-25 Havoc\t0\tA-20G_500lb", StringComparison.Ordinal) < 0)
+                    throw new InvalidOperationException("Legacy preset-style aircraft catalog self-test failed.");
+                string gau4 = gunPodCatalogData.Replace("\r", "").Split('\n').FirstOrDefault(line => line.IndexOf("gameData/Weapons/cannonGAU4.blk\t1200", StringComparison.OrdinalIgnoreCase) >= 0);
+                if (String.IsNullOrWhiteSpace(gau4)) throw new InvalidOperationException("Gun-pod catalog self-test entry is missing.");
+                string[] gau4Fields = gau4.Split('\t');
+                if (gau4Fields.Length < 8 || gau4Fields[6] != gau4Fields[7])
+                    throw new InvalidOperationException("Gun-pod fitted-mass self-test failed.");
                 if (MainForm.HotMissionName != "universal_test_lab_hot.blk")
                     throw new InvalidOperationException("Stable hot-mission path self-test failed.");
                 string text = Embedded.Text("UTL.universal_test_lab.blk");

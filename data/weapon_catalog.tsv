@@ -1456,66 +1456,66 @@ bombs	gameData/Weapons/BombGuns/su_rds4_30kt_nt.blk	1	bombs_heavy_middle_nuke	RD
 bombs	gameData/Weapons/BombGuns/su_rds4_5kt_nt.blk	1	bombs_large_nuke	RDS-4 nuclear bomb	Nuclear Weapons	1200	1200
 bombs	gameData/Weapons/BombGuns/su_rn_28.blk	1	bombs_large_nuke	RN-28 nuclear bomb	Nuclear Weapons	2983	2983
 bombs	gameData/Weapons/BombGuns/su_rds37.blk	1	bombs_heavy_nuke	RDS-37 thermonuclear bomb (1.6 Mt)	Nuclear Weapons	5570	5570
-additional gun	gameData/Weapons/cannon_type23_2k.blk	240	cannon_inner	23 mm Type 23-2K autocannon	Other Weapons	0.174	41.76
+additional gun	gameData/Weapons/cannon_type23_2k.blk	240	cannon_inner	23 mm Type 23-2K autocannon	Other Weapons	0.174	0.174
 boosters	gameData/Weapons/payloadguns/pucara_jato_1.blk	1	booster_container	Start JATO rocket booster	Other Weapons	44.5	44.5
 boosters	gameData/Weapons/payloadguns/jato_booster_left.blk	1	booster_container	Start JATO rocket booster	Other Weapons	100	100
 boosters	gameData/Weapons/payloadguns/jato_booster_right.blk	1	booster_container	Start JATO rocket booster	Other Weapons	100	100
-additional gun	gameData/Weapons/cannonDEFA554_gunpod.blk	600	doublebarreled_box	30 mm DEFA 554 cannon	Other Weapons	0.275	165
+additional gun	gameData/Weapons/cannonDEFA554_gunpod.blk	600	doublebarreled_box	30 mm DEFA 554 cannon	Other Weapons	0.275	0.275
 boosters	gameData/Weapons/payloadguns/mirage_3c_sepr_841_rocket.blk	1	booster_container	SEPR 841 liquid-propellant rocket booster	Other Weapons	210	210
 boosters	gameData/Weapons/payloadguns/mirage_3c_sepr_844_rocket.blk	1	booster_container	SEPR 844 liquid-propellant rocket booster	Other Weapons	210	210
-additional gun	gameData/Weapons/cannonMK103_underwing.blk	35	machine_gun	30 mm MK 103 cannon (secondary)	Other Weapons	150	5250
-additional gun	gameData/Weapons/gunfn_60_30_mgp.blk	950	doublebarreled_box	7.62 mm FN 60.30 machine gun	Other Weapons	10	9500
-additional gun	gameData/Weapons/gunMG81_underwing.blk	1500	doublebarreled_box	7.92 mm MG 81 machine gun (secondary)	Other Weapons	6.5	9750
-additional gun	gameData/Weapons/cannon2A42.blk	200	cannon_inner	30 mm 2A42 cannon	Other Weapons	50	10000
-additional gun	gameData/Weapons/gunBrowning50_M3.blk	350	machine_gun	12.7 mm M3 Browning machine gun	Other Weapons	29	10150
-additional gun	gameData/Weapons/cannonDEFA553_gunpod.blk	130	machine_gun	30 mm DEFA 553 cannon	Other Weapons	81	10530
-additional gun	gameData/Weapons/cannonADEN_mk4.blk	130	machine_gun	30 mm ADEN Mk.4 cannon	Other Weapons	87	11310
-additional gun	gameData/Weapons/cannonGSh_23L.blk	250	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	50.5	12625
-additional gun	gameData/Weapons/cannonGSh_23L.blk	260	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	50.5	13130
-additional gun	gameData/Weapons/cannonADEN_25.blk	102	machine_gun	25 mm ADEN 25 cannon	Other Weapons	130	13260
-additional gun	gameData/Weapons/gun_pk3.blk	1500	doublebarreled_box	7.62 mm PK machine gun	Other Weapons	9	13500
-additional gun	gameData/Weapons/cannonLR30.blk	250	cannon_inner	30 mm LR30 cannon	Other Weapons	55.9	13975
-additional gun	gameData/Weapons/cannonDEFA553_gunpod.blk	180	machine_gun	30 mm DEFA 553 cannon	Other Weapons	81	14580
-machine gun	gameData/Weapons/gunBrowning50_M3.blk	600	cannon_inner_x2	12.7 mm M3 Browning machine gun	Other Weapons	29	17400
-additional gun	gameData/Weapons/gunKsp_m22.blk	800	doublebarreled_box	8 mm Ksp m/22 machine gun	Other Weapons	23	18400
-additional gun	gameData/Weapons/cannonBK37_underwing.blk	66	machine_gun	37 mm BK 3.7 cannon (secondary)	Other Weapons	295	19470
-additional gun	gameData/Weapons/cannonM197_external.blk	300	multibarrel_box_cannon	20 mm M197 cannon	Other Weapons	66	19800
-additional gun	gameData/Weapons/cannonDEFA553_gunpod.blk	250	machine_gun	30 mm DEFA 553 cannon	Other Weapons	81	20250
-additional gun	gameData/Weapons/gunFN_M3P.blk	250	machine_gun	12.7 mm FN M3P machine gun	Other Weapons	89	22250
-additional gun	gameData/Weapons/gunFN_M3P_cwp.blk	250	machine_gun_rockets	12.7 mm FN M3P machine gun	Other Weapons	89	22250
-machine gun	gameData/Weapons/gunFN_M3P_cwp.blk	250	machine_gun_rockets	12.7 mm FN M3P machine gun	Other Weapons	89	22250
-additional gun	gameData/Weapons/cannonOerliconKAD_B.blk	570	machine_gun	20 mm Oerlikon KAD-B cannon	Other Weapons	42.4	24168
-additional gun	gameData/Weapons/cannonGSh_23L_upk_23_250_deafult.blk	250	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	120	30000
-additional gun	gameData/Weapons/cannonGSh_23L_upk_23_250.blk	250	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	120	30000
-machine gun	gameData/Weapons/cannonMG15120.blk	750	cannon_inner_x2	20 mm MG 151 cannon	Other Weapons	42.4	31800
-additional gun	gameData/Weapons/gunFN_M3P.blk	400	machine_gun	12.7 mm FN M3P machine gun	Other Weapons	89	35600
-machine gun	gameData/Weapons/gunFN_M3P.blk	400	machine_gun	12.7 mm FN M3P machine gun	Other Weapons	89	35600
-additional gun	gameData/Weapons/cannonGSh_6_23M_gun_pod.blk	500	multibarrel_box	23 mm GSh-6-23M cannon	Other Weapons	76	38000
-gunner1	gameData/Weapons/cannonGSh_6_23M_gun_pod_turret.blk	500	multibarrel_box	23 mm GSh-6-23M cannon	Other Weapons	76	38000
-machine gun	gameData/Weapons/cannonMG15120_underwing.blk	400	cannon_inner_x2	20 mm MG 151 cannon (secondary)	Other Weapons	100	40000
-additional gun	gameData/Weapons/cannonMG15120_underwing.blk	400	cannon_inner_x2	20 mm MG 151 cannon (secondary)	Other Weapons	100	40000
-gunner1	gameData/Weapons/cannonXM140.blk	600	machine_gun	30 mm XM140 cannon	Other Weapons	66.7	40020
-gunner2	gameData/Weapons/cannonXM140.blk	600	machine_gun	30 mm XM140 cannon	Other Weapons	66.7	40020
-additional gun	gameData/Weapons/gun_qjk_99_12_7_1.blk	1000	machine_gun	12.7 mm QJK99-12.7-1 machine gun	Other Weapons	42.25	42250
-additional gun	gameData/Weapons/cannonAkan_m55_underwing.blk	150	machine_gun	30 mm Akan m/55 cannon	Other Weapons	324	48600
-additional gun	gameData/Weapons/cannonGAU_12U.blk	300	multibarrel_box	25 mm GAU-12/U cannon	Other Weapons	203	60900
-additional gun	gameData/Weapons/gunGAU_19.blk	550	gau_19_new	12.7 mm GAU-19 machine gun	Other Weapons	114	62700
-additional gun	gameData/Weapons/gunBrowning50_M2_underwing.blk	680	doublebarreled_box	12.7 mm M2 Browning machine gun (secondary)	Other Weapons	102	69360
-additional gun	gameData/Weapons/cannonM195.blk	950	multibarrel_box_cannon	20 mm M195 cannon	Other Weapons	109	103550
-additional gun	gameData/Weapons/gunGAU_19.blk	1200	multibarrel_box	12.7 mm GAU-19 machine gun	Other Weapons	114	136800
-additional gun	gameData/Weapons/gunM134_Minigun.blk	1500	multibarrel_box	7.62 mm M134 Minigun machine gun	Other Weapons	111	166500
-additional gun	gameData/Weapons/cannonGAU_13A.blk	353	machine_gun	30 mm GAU-13/A cannon	Other Weapons	624	220272
-additional gun	gameData/Weapons/cannonMK11_mod5.blk	750	doublebarreled_box	20 mm Mk 11 mod 5 cannon	Other Weapons	357	267750
-additional gun	gameData/Weapons/cannonM61A1.blk	1200	multibarrel_box	20 mm M61A1 cannon	Other Weapons	229.5	275400
-additional gun	gameData/Weapons/gunBrowning50_M2_underwing.blk	3200	doublebarreled_box	12.7 mm M2 Browning machine gun (secondary)	Other Weapons	102	326400
-additional gun	gameData/Weapons/gunGShG_guv.blk	3600	multibarrel_guv_gun	7.62 mm GShG-7.62 machine gun	Other Weapons	140	504000
-gunner2	gameData/Weapons/gunM134_Minigun_default.blk	3000	multibarrel_box_gun	7.62 mm M134 Minigun machine gun	Other Weapons	182.3	546900
-gunner1	gameData/Weapons/gunM134_Minigun_default.blk	3000	multibarrel_box_gun	7.62 mm M134 Minigun machine gun	Other Weapons	182.3	546900
-additional gun	gameData/Weapons/cannonJGAU4.blk	1200	multibarrel_box	20 mm GAU-4 cannon	Other Weapons	494	592800
-additional gun	gameData/Weapons/cannonGAU4_default.blk	1200	multibarrel_box	20 mm GAU-4 cannon	Other Weapons	494	592800
-additional gun	gameData/Weapons/cannonGAU4.blk	1200	multibarrel_box	20 mm GAU-4 cannon	Other Weapons	494	592800
-additional gun	gameData/Weapons/gunM134_Minigun.blk	6000	multibarrel_box_gun	7.62 mm M134 Minigun machine gun	Other Weapons	111	666000
-additional gun	gameData/Weapons/cannonM61A1_default.blk	2000	multibarrel_box_cannon	20 mm M61A1 cannon	Other Weapons	500	1000000
+additional gun	gameData/Weapons/cannonMK103_underwing.blk	35	machine_gun	30 mm MK 103 cannon (secondary)	Other Weapons	150	150
+additional gun	gameData/Weapons/gunfn_60_30_mgp.blk	950	doublebarreled_box	7.62 mm FN 60.30 machine gun	Other Weapons	10	10
+additional gun	gameData/Weapons/gunMG81_underwing.blk	1500	doublebarreled_box	7.92 mm MG 81 machine gun (secondary)	Other Weapons	6.5	6.5
+additional gun	gameData/Weapons/cannon2A42.blk	200	cannon_inner	30 mm 2A42 cannon	Other Weapons	50	50
+additional gun	gameData/Weapons/gunBrowning50_M3.blk	350	machine_gun	12.7 mm M3 Browning machine gun	Other Weapons	29	29
+additional gun	gameData/Weapons/cannonDEFA553_gunpod.blk	130	machine_gun	30 mm DEFA 553 cannon	Other Weapons	81	81
+additional gun	gameData/Weapons/cannonADEN_mk4.blk	130	machine_gun	30 mm ADEN Mk.4 cannon	Other Weapons	87	87
+additional gun	gameData/Weapons/cannonGSh_23L.blk	250	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	50.5	50.5
+additional gun	gameData/Weapons/cannonGSh_23L.blk	260	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	50.5	50.5
+additional gun	gameData/Weapons/cannonADEN_25.blk	102	machine_gun	25 mm ADEN 25 cannon	Other Weapons	130	130
+additional gun	gameData/Weapons/gun_pk3.blk	1500	doublebarreled_box	7.62 mm PK machine gun	Other Weapons	9	9
+additional gun	gameData/Weapons/cannonLR30.blk	250	cannon_inner	30 mm LR30 cannon	Other Weapons	55.9	55.9
+additional gun	gameData/Weapons/cannonDEFA553_gunpod.blk	180	machine_gun	30 mm DEFA 553 cannon	Other Weapons	81	81
+machine gun	gameData/Weapons/gunBrowning50_M3.blk	600	cannon_inner_x2	12.7 mm M3 Browning machine gun	Other Weapons	29	29
+additional gun	gameData/Weapons/gunKsp_m22.blk	800	doublebarreled_box	8 mm Ksp m/22 machine gun	Other Weapons	23	23
+additional gun	gameData/Weapons/cannonBK37_underwing.blk	66	machine_gun	37 mm BK 3.7 cannon (secondary)	Other Weapons	295	295
+additional gun	gameData/Weapons/cannonM197_external.blk	300	multibarrel_box_cannon	20 mm M197 cannon	Other Weapons	66	66
+additional gun	gameData/Weapons/cannonDEFA553_gunpod.blk	250	machine_gun	30 mm DEFA 553 cannon	Other Weapons	81	81
+additional gun	gameData/Weapons/gunFN_M3P.blk	250	machine_gun	12.7 mm FN M3P machine gun	Other Weapons	89	89
+additional gun	gameData/Weapons/gunFN_M3P_cwp.blk	250	machine_gun_rockets	12.7 mm FN M3P machine gun	Other Weapons	89	89
+machine gun	gameData/Weapons/gunFN_M3P_cwp.blk	250	machine_gun_rockets	12.7 mm FN M3P machine gun	Other Weapons	89	89
+additional gun	gameData/Weapons/cannonOerliconKAD_B.blk	570	machine_gun	20 mm Oerlikon KAD-B cannon	Other Weapons	42.4	42.4
+additional gun	gameData/Weapons/cannonGSh_23L_upk_23_250_deafult.blk	250	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	120	120
+additional gun	gameData/Weapons/cannonGSh_23L_upk_23_250.blk	250	doublebarreled_box	23 mm GSh-23L cannon	Other Weapons	120	120
+machine gun	gameData/Weapons/cannonMG15120.blk	750	cannon_inner_x2	20 mm MG 151 cannon	Other Weapons	42.4	42.4
+additional gun	gameData/Weapons/gunFN_M3P.blk	400	machine_gun	12.7 mm FN M3P machine gun	Other Weapons	89	89
+machine gun	gameData/Weapons/gunFN_M3P.blk	400	machine_gun	12.7 mm FN M3P machine gun	Other Weapons	89	89
+additional gun	gameData/Weapons/cannonGSh_6_23M_gun_pod.blk	500	multibarrel_box	23 mm GSh-6-23M cannon	Other Weapons	76	76
+gunner1	gameData/Weapons/cannonGSh_6_23M_gun_pod_turret.blk	500	multibarrel_box	23 mm GSh-6-23M cannon	Other Weapons	76	76
+machine gun	gameData/Weapons/cannonMG15120_underwing.blk	400	cannon_inner_x2	20 mm MG 151 cannon (secondary)	Other Weapons	100	100
+additional gun	gameData/Weapons/cannonMG15120_underwing.blk	400	cannon_inner_x2	20 mm MG 151 cannon (secondary)	Other Weapons	100	100
+gunner1	gameData/Weapons/cannonXM140.blk	600	machine_gun	30 mm XM140 cannon	Other Weapons	66.7	66.7
+gunner2	gameData/Weapons/cannonXM140.blk	600	machine_gun	30 mm XM140 cannon	Other Weapons	66.7	66.7
+additional gun	gameData/Weapons/gun_qjk_99_12_7_1.blk	1000	machine_gun	12.7 mm QJK99-12.7-1 machine gun	Other Weapons	42.25	42.25
+additional gun	gameData/Weapons/cannonAkan_m55_underwing.blk	150	machine_gun	30 mm Akan m/55 cannon	Other Weapons	324	324
+additional gun	gameData/Weapons/cannonGAU_12U.blk	300	multibarrel_box	25 mm GAU-12/U cannon	Other Weapons	203	203
+additional gun	gameData/Weapons/gunGAU_19.blk	550	gau_19_new	12.7 mm GAU-19 machine gun	Other Weapons	114	114
+additional gun	gameData/Weapons/gunBrowning50_M2_underwing.blk	680	doublebarreled_box	12.7 mm M2 Browning machine gun (secondary)	Other Weapons	102	102
+additional gun	gameData/Weapons/cannonM195.blk	950	multibarrel_box_cannon	20 mm M195 cannon	Other Weapons	109	109
+additional gun	gameData/Weapons/gunGAU_19.blk	1200	multibarrel_box	12.7 mm GAU-19 machine gun	Other Weapons	114	114
+additional gun	gameData/Weapons/gunM134_Minigun.blk	1500	multibarrel_box	7.62 mm M134 Minigun machine gun	Other Weapons	111	111
+additional gun	gameData/Weapons/cannonGAU_13A.blk	353	machine_gun	30 mm GAU-13/A cannon	Other Weapons	624	624
+additional gun	gameData/Weapons/cannonMK11_mod5.blk	750	doublebarreled_box	20 mm Mk 11 mod 5 cannon	Other Weapons	357	357
+additional gun	gameData/Weapons/cannonM61A1.blk	1200	multibarrel_box	20 mm M61A1 cannon	Other Weapons	229.5	229.5
+additional gun	gameData/Weapons/gunBrowning50_M2_underwing.blk	3200	doublebarreled_box	12.7 mm M2 Browning machine gun (secondary)	Other Weapons	102	102
+additional gun	gameData/Weapons/gunGShG_guv.blk	3600	multibarrel_guv_gun	7.62 mm GShG-7.62 machine gun	Other Weapons	140	140
+gunner2	gameData/Weapons/gunM134_Minigun_default.blk	3000	multibarrel_box_gun	7.62 mm M134 Minigun machine gun	Other Weapons	182.3	182.3
+gunner1	gameData/Weapons/gunM134_Minigun_default.blk	3000	multibarrel_box_gun	7.62 mm M134 Minigun machine gun	Other Weapons	182.3	182.3
+additional gun	gameData/Weapons/cannonJGAU4.blk	1200	multibarrel_box	20 mm GAU-4 cannon	Other Weapons	494	494
+additional gun	gameData/Weapons/cannonGAU4_default.blk	1200	multibarrel_box	20 mm GAU-4 cannon	Other Weapons	494	494
+additional gun	gameData/Weapons/cannonGAU4.blk	1200	multibarrel_box	20 mm GAU-4 cannon	Other Weapons	494	494
+additional gun	gameData/Weapons/gunM134_Minigun.blk	6000	multibarrel_box_gun	7.62 mm M134 Minigun machine gun	Other Weapons	111	111
+additional gun	gameData/Weapons/cannonM61A1_default.blk	2000	multibarrel_box_cannon	20 mm M61A1 cannon	Other Weapons	500	500
 rockets	gameData/Weapons/rocketGuns/su_m8.blk	1	rockets_he_small	M-8 rockets	Rockets	7.84	7.84
 rockets	gameData/Weapons/rocketGuns/su_ros_82.blk	2	rockets_he_middle_group	ROS-82 rockets	Rockets	6.8	13.6
 rockets	gameData/Weapons/rocketGuns/su_rbs82.blk	1	rockets_ap_small	RBS-82 rockets	Rockets	15	15
@@ -1836,3 +1836,363 @@ torpedoes	gameData/Weapons/torpedoes/us_mk13_torpedo.blk	1	air_torpedo	Mk.13-6 C
 torpedoes	gameData/weapons/torpedoes/su_45_36man_1952_torpedo.blk	1	air_torpedo	450 mm 45-36MAN torpedo	Torpedoes	970	970
 torpedoes	gameData/Weapons/torpedoes/us_mk13_torpedo_no_case.blk	2	air_torpedo_x2	Mk.13-6 torpedo (2216 lbs)	Torpedoes	884.05	1768.1
 torpedoes	gameData/Weapons/torpedoes/us_mk13_torpedo.blk	2	air_torpedo_x2	Mk.13-6 Case Torpedo (2216 lbs)	Torpedoes	964.79	1929.58
+aam	gameData/Weapons/rocketGuns/su_pl2.blk	2		2x PL-2 air-to-air missiles	Air-to-Air Missiles	75.3	150.6
+aam	gameData/Weapons/rocketGuns/fr_r_550_magic.blk	2		2x Matra R550 Magic 1 air-to-air missiles	Air-to-Air Missiles	89	178
+aam	gameData/Weapons/rocketGuns/us_aim9b_sidewinder.blk	4		4x AIM-9B Sidewinder air-to-air missiles	Air-to-Air Missiles	72.57	290.28
+aam	gameData/Weapons/rocketGuns/uk_fireflash.blk	2		2x Fireflash air-to-air missiles	Air-to-Air Missiles	150	300
+aam	gameData/Weapons/rocketGuns/fr_r_530_matra_radar.blk	2		2x Matra R530 air-to-air missiles	Air-to-Air Missiles	193.5	387
+aam	gameData/Weapons/rocketGuns/fr_r_530_matra_ir.blk	2		2x Matra R530E air-to-air missiles	Air-to-Air Missiles	193.5	387
+atgm	gameData/Weapons/rocketGuns/swd_rb53.blk	6		6x RB 53 Bantam missiles	Air-to-Ground Missiles	7.6	45.6
+atgm	gameData/Weapons/rocketGuns/swd_rb55c.blk	4		4x RB 55C Heli TOW missiles	Air-to-Ground Missiles	21.45	85.8
+atgm	gameData/Weapons/containers/mq_1_hellfire_x1_default.blk	2		2x AGM-114K Hellfire II air-to-ground missiles	Air-to-Ground Missiles	53.132	106.264
+atgm	gameData/Weapons/rocketGuns/fr_ss_11.blk	4		4x AS.11 missiles	Air-to-Ground Missiles	29.99	119.96
+atgm	gameData/Weapons/rocketGuns/swd_rb52.blk	4		4x RB 52 A missiles	Air-to-Ground Missiles	29.99	119.96
+atgm	gameData/Weapons/rocketGuns/fr_ss_12.blk	2		2x AS.12 missiles	Air-to-Ground Missiles	76	152
+atgm	gameData/Weapons/rocketGuns/swd_rb55b.blk	8		8x RB 55B Heli TOW missiles	Air-to-Ground Missiles	19.05	152.4
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_servo_controll.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_engine.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_air_ballon.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_fuel_leak.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_pipe.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_guidance.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b_event_broken_warhead.blk	1		Ki-148 I-Go 1B	Air-to-Ground Missiles	680	680
+atgm	gameData/weapons/rocketGuns/jp_ki_148_i_go_1b.blk	1		Ki-148 I-Go Model 1B missile	Air-to-Ground Missiles	680	680
+atgm	gameData/Weapons/rocketGuns/swd_rb55b.blk	404		12.7 mm FN M3P machine gun; 4x RB 55B Heli TOW missiles	Air-to-Ground Missiles	19.05	7696.2
+atgm	gameData/Weapons/rocketGuns/swd_rb55c.blk	402		12.7 mm FN M3P machine gun; 2x RB 55C Heli TOW missiles	Air-to-Ground Missiles	21.45	8622.9
+atgm	gameData/Weapons/rocketGuns/fr_ss_11.blk	1008		4x 7.62 mm Browning machine gun; 2x AS.11 missiles; 6x HVAR rockets	Air-to-Ground Missiles	29.99	30229.92
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg	2		2x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	0	0
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	1		50 kg Army Type 94 GPHE bomb	Bombs	48.43	48.43
+bombs	gameData/Weapons/BombGuns/de_sd10a.blk	6		6x 10 kg SD10C bomb	Bombs	10	60
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	2		2x 50 kg Army Type 94 GPHE bomb	Bombs	48.43	96.86
+bombs	gameData/Weapons/BombGuns/fi_50kg_1938.blk	2		2x 50 Kg Model 1938 bomb	Bombs	49.76	99.52
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	2		2x 100 lb AN-M30A1 bomb	Bombs	49.9	99.8
+bombs	gameData/Weapons/BombGuns/uk_250lbs.blk	0		2x G.P. 250 lb Mk.IV bomb	Bombs	104.3	104.3
+bombs	gameData/Weapons/BombGuns/fr_50kg_gammn.blk	2		2x 50 kg G.A. MMN. 50	Bombs	53	106
+bombs	gameData/Weapons/BombGuns/swd_50kg_sb_m37a.blk	2		2x 50 kg mb m/37AT bomb	Bombs	59	118
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	2		2x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	120.8
+bombs	gameData/Weapons/BombGuns/su_fab50.blk	3		250 kg FAB-250sv bomb; 2x 50 kg FAB-50sv (forged) bomb	Bombs	49.76	149.28
+bombs	gameData/Weapons/BombGuns/fi_50kg_1938.blk	4		4x 50 Kg Model 1938 bomb	Bombs	49.76	199.04
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	4		4x 100 lb AN-M30A1 bomb	Bombs	49.9	199.6
+bombs	gameData/Weapons/BombGuns/de_sd50.blk	4		4x 50 kg SD50 bomb	Bombs	50	200
+bombs	gameData/Weapons/BombGuns/su_fab100_short_fin.blk	2		2x 100 kg FAB-100sv bomb	Bombs	103.5	207
+bombs	gameData/Weapons/BombGuns/fi_100kg_1938.blk	2		2x 100 Kg Model 1938 bomb	Bombs	103.5	207
+bombs	gameData/Weapons/BombGuns/uk_250lbs_late.blk	2		2x G.P. 250 lb Mk.IV bomb	Bombs	104.3	208.6
+bombs	gameData/Weapons/BombGuns/uk_250lbs.blk	2		2x G.P. 250 lb Mk.IV bomb	Bombs	104.3	208.6
+bombs	gameData/Weapons/BombGuns/uk_250lbs_43.blk	2		2x G.P. 250 lb Mk.IV bomb	Bombs	104.3	208.6
+bombs	gameData/Weapons/BombGuns/it_100kg_m.blk	2		2x 100 kg SAP 100M bomb	Bombs	109	218
+bombs	gameData/Weapons/BombGuns/de_flam_250.blk	2		2x Flam C 250 incendiary bomb	Bombs	110	220
+bombs	gameData/Weapons/BombGuns/jp_type94mod10.blk	2		2x 100 kg Army Type 94 GPHE bomb	Bombs	112.76	225.52
+bombs	gameData/Weapons/BombGuns/it_50kg_t_vert.blk	4		4x 50 kg GP 50 bomb	Bombs	58	232
+bombs	gameData/Weapons/BombGuns/fr_100kg.blk	2		2x 100 kg No.1	Bombs	118	236
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	4		4x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	241.6
+bombs	gameData/Weapons/BombGuns/us_300lb_m_31.blk	2		2x 300 lb H.E. M31 bomb	Bombs	124.2	248.4
+bombs	gameData/Weapons/BombGuns/jp_type92mod25.blk	1		250 kg Army Type 92 GPHE bomb	Bombs	250	250
+bombs	gameData/Weapons/BombGuns/de_sc250.blk	0		2x 250 kg SC250JA bomb	Bombs	250	250
+bombs	gameData/Weapons/bombGuns/jp_navy_mod25mark2_250kg.blk	1		250 kg Navy Type Number 25 Model 2 bomb	Bombs	257	257
+bombs	gameData/Weapons/BombGuns/de_sd70.blk	4		4x 70 kg SD70 bomb	Bombs	66	264
+bombs	gameData/Weapons/bombGuns/cn_gp_100_2.blk	2		2x 100 kg 100-2 bomb	Bombs	140	280
+bombs	gameData/Weapons/BombGuns/de_sc50.blk	6		6x 50 kg SC50JA bomb	Bombs	50	300
+bombs	gameData/Weapons/BombGuns/it_160kg_ap.blk	2		2x 160 kg A.P 160 bomb	Bombs	151.1	302.2
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	6		6x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	362.4
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	8		8x 50 kg Army Type 94 GPHE bomb	Bombs	48.43	387.44
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	8		6x 100 lb AN-M30A1 bomb; 2x 500 lb AN-M64A1 bomb	Bombs	49.9	399.2
+bombs	gameData/Weapons/BombGuns/fi_100kg_1938.blk	4		4x 100 Kg Model 1938 bomb	Bombs	103.5	414
+bombs	gameData/Weapons/BombGuns/fr_50kg_gammn.blk	8		8x 50 kg G.A. MMN. 50	Bombs	53	424
+bombs	gameData/Weapons/BombGuns/uk_500lb_he_mc_mk2.blk	2		2x 500 lb H.E. M.C. Mk.II bomb	Bombs	213.1	426.2
+bombs	gameData/Weapons/BombGuns/uk_500lbs.blk	2		2x G.P. 500 lb Mk.IV bomb	Bombs	213.1	426.2
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	9		9x 50 kg Army Type 94 GPHE bomb	Bombs	48.43	435.87
+bombs	gameData/Weapons/BombGuns/it_100kg_m_vert.blk	4		4x 100 kg SAP 100M bomb	Bombs	109	436
+bombs	gameData/Weapons/BombGuns/uk_500lb_sap_mkII_ap.blk	2		2x 500 LB S.A.P. Mk.II bomb	Bombs	222.3	444.6
+bombs	gameData/Weapons/BombGuns/fr_50kg_dt2.blk	8		8x 50 kg D.T. No.2	Bombs	55.7	445.6
+bombs	gameData/Weapons/BombGuns/fr_200kg.blk	2		2x 200 kg No.1	Bombs	225	450
+bombs	gameData/Weapons/BombGuns/swd_50kg_sb_m42.blk	9		9x 50 kg sb m/42 bomb	Bombs	50	450
+bombs	gameData/Weapons/BombGuns/jp_type94mod10.blk	4		4x 100 kg Army Type 94 GPHE bomb	Bombs	112.76	451.04
+bombs	gameData/Weapons/BombGuns/swd_250kg_minb_m40.blk	2		2x 250 kg mb m/40 bomb	Bombs	230	460
+bombs	gameData/Weapons/BombGuns/us_250lb_anm57.blk	4		4x 250 lb AN-M57 bomb	Bombs	117.9	471.6
+bombs	gameData/Weapons/BombGuns/jp_navy_type98mod25_250kg.blk	2		2x 250 kg Navy Type 98 Number 25 bomb	Bombs	242.2	484.4
+bombs	gameData/Weapons/BombGuns/jp_type92mod50.blk	1		500 kg Army Type 92 GPHE bomb	Bombs	495	495
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	10		6x 100 lb AN-M30A1 bomb; 4x 250 lb AN-M57 bomb	Bombs	49.9	499
+bombs	gameData/Weapons/BombGuns/jp_type92mod25.blk	2		2x 250 kg Army Type 92 GPHE bomb	Bombs	250	500
+bombs	gameData/Weapons/bombGuns/su_fab_250m_46.blk	2		2x 250 kg FAB-250M-46 bomb	Bombs	252.2	504.4
+bombs	gameData/Weapons/BombGuns/jp_navy_mod25mark2_250kg.blk	2		2x 250 kg Navy Type Number 25 Model 2 bomb	Bombs	257	514
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	12		12x 50 kg Army Type 94 GPHE bomb	Bombs	48.43	581.16
+bombs	gameData/Weapons/bombGuns/su_fab50.blk	12		12x 50 kg FAB-50sv (forged) bomb	Bombs	49.76	597.12
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	12		12x 100 lb AN-M30A1 bomb	Bombs	49.9	598.8
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	10		10x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	604
+bombs	gameData/Weapons/BombGuns/it_100kg_m.blk	6		6x 100 kg SAP 100M bomb	Bombs	109	654
+bombs	gameData/Weapons/BombGuns/su_ofab100_120.blk	6		6x 100 kg OFAB-100 bomb	Bombs	114	684
+bombs	gameData/Weapons/BombGuns/it_50kg_t_vert.blk	12		12x 50 kg GP 50 bomb	Bombs	58	696
+bombs	gameData/Weapons/BombGuns/it_50kg_t.blk	12		12x 50 kg GP 50 bomb	Bombs	58	696
+bombs	gameData/Weapons/BombGuns/fr_100kg.blk	6		6x 100 kg No.1	Bombs	118	708
+bombs	gameData/Weapons/BombGuns/uk_520lb_herl_mk_1_n.blk	3		3x HERL 520 lb Mk.IN bomb	Bombs	238.1	714.3
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	12		12x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	724.8
+bombs	gameData/Weapons/BombGuns/uk_230lbs.blk	8		8x H.E. R.F.C. 230 lb Mk.III bomb	Bombs	90.7	725.6
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	15		15x 50 kg Army Type 94 GPHE bomb	Bombs	48.43	726.45
+bombs	gameData/Weapons/BombGuns/uk_1650lb_sn_he.blk	1		1650 lb SNHE bomb	Bombs	748	748
+bombs	gameData/Weapons/BombGuns/jp_type92mod25.blk	3		3x 250 kg Army Type 92 GPHE bomb	Bombs	250	750
+bombs	gameData/Weapons/BombGuns/jp_navy_mod25mark2_250kg.blk	3		250 kg Navy Type Number 25 Model 2 bomb; 2x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	257	771
+bombs	gameData/Weapons/BombGuns/jp_navy_type99mod80_800kg.blk	1		800 kg Navy Type 99 Number 80 AP bomb	Bombs	796.8	796.8
+bombs	gameData/Weapons/BombGuns/swd_50kg_sb_m42.blk	16		16x 50 kg sb m/42 bomb	Bombs	50	800
+bombs	gameData/Weapons/BombGuns/us_250lb_anm57.blk	7		7x 250 lb AN-M57 bomb	Bombs	117.9	825.3
+bombs	gameData/Weapons/BombGuns/su_fab100.blk	8		8x 100 kg FAB-100sv (forged) bomb	Bombs	103.5	828
+bombs	gameData/Weapons/BombGuns/uk_250lbs.blk	8		8x G.P. 250 lb Mk.IV bomb	Bombs	104.3	834.4
+bombs	gameData/Weapons/BombGuns/uk_500lbs_43.blk	4		4x G.P. 500 lb Mk.IV bomb	Bombs	213.1	852.4
+bombs	gameData/Weapons/BombGuns/fr_50kg_dt2.blk	16		16x 50 kg D.T. No.2	Bombs	55.7	891.2
+bombs	gameData/Weapons/BombGuns/jp_type94mod10.blk	8		8x 100 kg Army Type 94 GPHE bomb	Bombs	112.76	902.08
+bombs	gameData/Weapons/bombGuns/su_ofab100_120.blk	8		8x 100 kg OFAB-100 bomb	Bombs	114	912
+bombs	gameData/Weapons/BombGuns/uk_250lbs_mc_mk1_mk2_bomb.blk	9		6x 1000 lb M.C. Mk.II bomb; 3x M.C. 250 lb Mk.I bomb	Bombs	102	918
+bombs	gameData/Weapons/BombGuns/swd_250kg_minb_m40.blk	4		4x 250 kg mb m/40 bomb	Bombs	230	920
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1.blk	2		2x 1000 lb M.C. Mk.I bomb	Bombs	474.4	948.8
+bombs	gameData/Weapons/BombGuns/su_fab500_m54.blk	2		2x 500 kg FAB-500M-54 bomb	Bombs	478	956
+bombs	gameData/Weapons/bombGuns/jp_navy_type97mod6_60kg.blk	16		16x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	966.4
+bombs	gameData/Weapons/BombGuns/jp_type94mod5.blk	20		20x 50 kg Army Type 94 GPHE bomb	Bombs	48.43	968.6
+bombs	gameData/Weapons/BombGuns/jp_navy_type98mod25_250kg.blk	4		4x 250 kg Navy Type 98 Number 25 bomb	Bombs	242.2	968.8
+bombs	gameData/Weapons/bombGuns/jp_type92mod50.blk	2		2x 500 kg Army Type 92 GPHE bomb	Bombs	495	990
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	20		20x 100 lb AN-M30A1 bomb	Bombs	49.9	998
+bombs	gameData/Weapons/BombGuns/de_sc50.blk	20		20x 50 kg SC50JA bomb	Bombs	50	1000
+bombs	gameData/Weapons/bombGuns/jp_type92mod25.blk	4		4x 250 kg Army Type 92 GPHE bomb	Bombs	250	1000
+bombs	gameData/Weapons/BombGuns/su_ofab250.blk	4		4x 250 kg OFAB-250sv bomb	Bombs	250	1000
+bombs	gameData/Weapons/bombGuns/jp_navy_mod50mark2_500kg.blk	2		2x 500 kg Navy Type Number 50 Model 2 bomb	Bombs	507	1014
+bombs	gameData/Weapons/BombGuns/it_500kg_gp.blk	2		2x 500 kg GP 500 bomb	Bombs	508	1016
+bombs	gameData/Weapons/BombGuns/jp_navy_mod25mark2_250kg.blk	4		4x 250 kg Navy Type Number 25 Model 2 bomb	Bombs	257	1028
+bombs	gameData/Weapons/BombGuns/it_250kg_gp.blk	4		4x 250 kg GP 250 bomb	Bombs	259	1036
+bombs	gameData/Weapons/BombGuns/uk_250lbs.blk	10		10x G.P. 250 lb Mk.IV bomb	Bombs	104.3	1043
+bombs	gameData/Weapons/bombGuns/su_fab_1000m_43.blk	1		1000 kg FAB-1000M-43 bomb	Bombs	1077	1077
+bombs	gameData/Weapons/bombGuns/cn_gp_250_2_incendiary.blk	8		8x 250-2 incendiary bomb	Bombs	135	1080
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	18		18x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	1087.2
+bombs	gameData/Weapons/BombGuns/jp_type94mod10.blk	10		10x 100 kg Army Type 94 GPHE bomb	Bombs	112.76	1127.6
+bombs	gameData/Weapons/BombGuns/us_250lb_anm57.blk	10		6x 100 lb AN-M30A1 bomb; 4x 250 lb AN-M57 bomb	Bombs	117.9	1179
+bombs	gameData/Weapons/BombGuns/it_100kg_t.blk	12		12x 100 kg GP 100T bomb	Bombs	100	1200
+bombs	gameData/Weapons/BombGuns/it_100kg_t_vert.blk	12		12x 100 kg GP 100T bomb	Bombs	100	1200
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	5		4x 100 lb AN-M30A1 bomb; 500 lb AN-M64A1 bomb	Bombs	242.6	1213
+bombs	gameData/Weapons/BombGuns/us_750lb_mk_78_mod_2.blk	3		3x Mk 78 incendiary bomb	Bombs	416.4	1249.2
+bombs	gameData/Weapons/BombGuns/de_sc250.blk	5		250 kg SC250JA bomb; 4x 50 kg SC50JA bomb	Bombs	250	1250
+bombs	gameData/Weapons/BombGuns/it_250kg_gp.blk	5		5x 250 kg GP 250 bomb	Bombs	259	1295
+bombs	gameData/Weapons/bombGuns/su_fab250_m54.blk	6		6x 250 kg FAB-250M-54 bomb	Bombs	236	1416
+bombs	gameData/Weapons/BombGuns/uk_250lbs_mc_mk1_mk2_bomb.blk	14		14x M.C. 250 lb Mk.I bomb	Bombs	102	1428
+bombs	gameData/Weapons/BombGuns/jp_navy_type97mod6_60kg.blk	24		24x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	60.4	1449.6
+bombs	gameData/Weapons/BombGuns/jp_navy_type98mod25_250kg.blk	6		4x 60 kg Navy Type 97 Number 6 ground bomb; 2x 250 kg Navy Type 98 Number 25 bomb	Bombs	242.2	1453.2
+bombs	gameData/Weapons/BombGuns/uk_250lbs_43.blk	14		14x G.P. 250 lb Mk.IV bomb	Bombs	104.3	1460.2
+bombs	gameData/Weapons/BombGuns/us_100lb_anm30.blk	30		30x 100 lb AN-M30A1 bomb	Bombs	49.9	1497
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65a1.blk	3		3x 1000 lb AN-M65A1 bomb	Bombs	500.76	1502.28
+bombs	gameData/Weapons/BombGuns/su_fab500.blk	3		3x 500 kg FAB-500sv (welded) bomb	Bombs	508.3	1524.9
+bombs	gameData/Weapons/bombGuns/jp_navy_type99mod80_800kg.blk	2		2x 800 kg Navy Type 99 Number 80 AP bomb	Bombs	796.8	1593.6
+bombs	gameData/Weapons/BombGuns/it_100kg_t_vert.blk	16		16x 100 kg GP 100T bomb	Bombs	100	1600
+bombs	gameData/Weapons/BombGuns/de_sc50.blk	32		32x 50 kg SC50JA bomb	Bombs	50	1600
+bombs	gameData/Weapons/bombGuns/jp_navy_mod80mark1_800kg.blk	2		2x 800 kg Number 80 Mod. 1 bomb	Bombs	805	1610
+bombs	gameData/Weapons/BombGuns/it_50kg_t_vert.blk	28		28x 50 kg GP 50 bomb	Bombs	58	1624
+bombs	gameData/Weapons/BombGuns/it_800kg_gp.blk	2		2x 800 kg GP 800 bomb	Bombs	821.6	1643.2
+bombs	gameData/Weapons/bombGuns/su_fab_100m_43.blk	16		16x 100 kg FAB-100M-43 bomb	Bombs	103.5	1656
+bombs	gameData/Weapons/bombGuns/cn_gp_100_2.blk	12		12x 100 kg 100-2 bomb	Bombs	140	1680
+bombs	gameData/Weapons/BombGuns/jp_navy_type98mod25_250kg.blk	7		6x 60 kg Navy Type 97 Number 6 ground bomb; 250 kg Navy Type 98 Number 25 bomb	Bombs	242.2	1695.4
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	7		4x 250 lb AN-M57 bomb; 3x 500 lb AN-M64A1 bomb	Bombs	242.6	1698.2
+bombs	gameData/Weapons/BombGuns/us_300lb_m_31.blk	14		14x 300 lb H.E. M31 bomb	Bombs	124.2	1738.8
+bombs	gameData/Weapons/BombGuns/jp_navy_mod25mark2_250kg.blk	7		250 kg Navy Type Number 25 Model 2 bomb; 6x 60 kg Navy Type 97 Number 6 ground bomb	Bombs	257	1799
+bombs	gameData/Weapons/BombGuns/it_250kg_gp.blk	7		7x 250 kg GP 250 bomb	Bombs	259	1813
+bombs	gameData/Weapons/BombGuns/uk_250lbs.blk	18		18x G.P. 250 lb Mk.IV bomb	Bombs	104.3	1877.4
+bombs	gameData/Weapons/BombGuns/us_250lb_anm57.blk	16		16x 250 lb AN-M57 bomb	Bombs	117.9	1886.4
+bombs	gameData/Weapons/bombGuns/cn_gp_250_2.blk	8		8x 250 kg 250-2 bomb	Bombs	236	1888
+bombs	gameData/Weapons/bombGuns/cn_gp_500_2.blk	4		4x 500 kg 500-2 bomb	Bombs	473	1892
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1.blk	4		4x 1000 lb M.C. Mk.I bomb	Bombs	474.4	1897.6
+bombs	gameData/Weapons/BombGuns/uk_500lbs.blk	9		9x G.P. 500 lb Mk.IV bomb	Bombs	213.1	1917.9
+bombs	gameData/Weapons/bombGuns/jp_navy_type98mod25_250kg.blk	8		8x 250 kg Navy Type 98 Number 25 bomb	Bombs	242.2	1937.6
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	8		8x 500 lb AN-M64A1 bomb	Bombs	242.6	1940.8
+bombs	gameData/Weapons/BombGuns/it_50kg_t.blk	34		34x 50 kg GP 50 bomb	Bombs	58	1972
+bombs	gameData/Weapons/BombGuns/su_fab50.blk	40		40x 50 kg FAB-50sv (forged) bomb	Bombs	49.76	1990.4
+bombs	gameData/Weapons/BombGuns/uk_500lb_sap_mkII_ap.blk	9		9x 500 LB S.A.P. Mk.II bomb	Bombs	222.3	2000.7
+bombs	gameData/Weapons/BombGuns/fr_100kg.blk	17		7x 100 kg No.1; 10x 200 kg No.1	Bombs	118	2006
+bombs	gameData/Weapons/BombGuns/it_500kg_gp.blk	4		4x 500 kg GP 500 bomb	Bombs	508	2032
+bombs	gameData/Weapons/BombGuns/jp_navy_mod25mark2_250kg.blk	8		8x 250 kg Navy Type Number 25 Model 2 bomb	Bombs	257	2056
+bombs	gameData/Weapons/BombGuns/fr_500kg_3_1.blk	4		4x 500 kg No.2	Bombs	520	2080
+bombs	gameData/Weapons/BombGuns/us_250lb_anm57.blk	18		6x 100 lb AN-M30A1 bomb; 4x 250 lb AN-M57 bomb; 8x AP Mk I rockets	Bombs	117.9	2122.2
+bombs	gameData/Weapons/BombGuns/il_250_50_kg_gp.blk	8		8x 250/50 kg G.P. bomb	Bombs	265.7	2125.6
+bombs	gameData/Weapons/BombGuns/uk_500lbs.blk	10		2x G.P. 500 lb Mk.IV bomb; 4x RP-3 rockets; 4x RP-3 rockets	Bombs	213.1	2131
+bombs	gameData/Weapons/BombGuns/il_100_50_kg_gp.blk	16		16x 100/50 kg G.P. bomb	Bombs	134	2144
+bombs	gameData/Weapons/BombGuns/us_600lb_m_32.blk	8		8x 600 lb H.E. M32 bomb	Bombs	281.7	2253.6
+bombs	gameData/Weapons/BombGuns/uk_500lb_mc_mk1_mk4_long_tail_bomb.blk	10		2x M.C. 500 lb Mk.I bomb; 4x RP-3 rockets; 4x RP-3 rockets	Bombs	231.7	2317
+bombs	gameData/Weapons/BombGuns/jp_navy_type99mod80_800kg.blk	3		3x 800 kg Navy Type 99 Number 80 AP bomb	Bombs	796.8	2390.4
+bombs	gameData/Weapons/BombGuns/de_sc2500.blk	1		2500 kg SC2500 bomb	Bombs	2400	2400
+bombs	gameData/Weapons/BombGuns/jp_navy_mod80mark1_800kg.blk	3		3x 800 kg Number 80 Mod. 1 bomb	Bombs	805	2415
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	10		10x 500 lb AN-M64A1 bomb	Bombs	242.6	2426
+bombs	gameData/Weapons/BombGuns/su_fab100.blk	24		24x 100 kg FAB-100sv (forged) bomb	Bombs	103.5	2484
+bombs	gameData/Weapons/BombGuns/su_fab250.blk	10		2x 250 kg FAB-250sv bomb; 8x 50 kg FAB-50sv (forged) bomb	Bombs	252.2	2522
+bombs	gameData/Weapons/bombGuns/su_fab_500m_46.blk	6		6x 500 kg FAB-500M-46 bomb	Bombs	428	2568
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	11		500 lb AN-M64A1 bomb; 10x HVAR rockets	Bombs	242.6	2668.6
+bombs	gameData/Weapons/BombGuns/fr_200kg.blk	12		7x 100 kg No.1; 5x 200 kg No.1	Bombs	225	2700
+bombs	gameData/Weapons/BombGuns/il_500_50_kg_gp.blk	6		6x 500/50 G.P. bomb	Bombs	453.6	2721.6
+bombs	gameData/Weapons/BombGuns/de_sc250.blk	11		250 kg SC250JA bomb; 10x 50 kg SC50JA bomb	Bombs	250	2750
+bombs	gameData/Weapons/BombGuns/fr_50kg_gammn.blk	52		52x 50 kg G.A. MMN. 50	Bombs	53	2756
+bombs	gameData/Weapons/bombGuns/su_fab_1500m_46.blk	2		2x 1500 kg FAB-1500M-46 bomb	Bombs	1400	2800
+bombs	gameData/Weapons/BombGuns/uk_250lbs.blk	27		27x G.P. 250 lb Mk.IV bomb	Bombs	104.3	2816.1
+bombs	gameData/Weapons/BombGuns/us_600lb_m_32.blk	10		10x 600 lb H.E. M32 bomb	Bombs	281.7	2817
+bombs	gameData/Weapons/bombGuns/cn_gp_3000_2.blk	1		3000 kg 3000-2 bomb	Bombs	2840	2840
+bombs	gameData/Weapons/BombGuns/su_brab_220_1930_ap.blk	12		12x 220 kg BRAB-220 (1930) armor-piercing bomb	Bombs	240	2880
+bombs	gameData/Weapons/BombGuns/us_1600lb_ap_an_mk1.blk	4		4x 1600 lb AN-Mk 1 armor-piercing bomb	Bombs	721.2	2884.8
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	12		12x 500 lb AN-M64A1 bomb	Bombs	242.6	2911.2
+bombs	gameData/Weapons/BombGuns/us_750lb_mk_78_mod_2.blk	7		Mk 78 incendiary bomb; 6x M8 rocket	Bombs	416.4	2914.8
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_gp_mk1.blk	6		6x 1000 lb G.P. Mk.I bomb	Bombs	495.7	2974.2
+bombs	gameData/Weapons/BombGuns/uk_500lbs_43.blk	14		14x G.P. 500 lb Mk.IV bomb	Bombs	213.1	2983.4
+bombs	gameData/Weapons/BombGuns/jp_ijnaf_type_3_number_150_1500kg_ap.blk	2		2x 1500 kg Navy Type 3 Number 150 AP bomb	Bombs	1498.6	2997.2
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65a1.blk	6		6x 1000 lb AN-M65A1 bomb	Bombs	500.76	3004.56
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65_cone.blk	6		6x 1000 lb AN-M65A1 Fin M129 bomb	Bombs	500.76	3004.56
+bombs	gameData/Weapons/bombGuns/su_fab_250m_46.blk	12		12x 250 kg FAB-250M-46 bomb	Bombs	252.2	3026.4
+bombs	gameData/Weapons/BombGuns/su_fab250.blk	12		12x 250 kg FAB-250sv bomb	Bombs	252.2	3026.4
+bombs	gameData/Weapons/BombGuns/su_fab250x.blk	12		12x 250 kg FAB-250sv bomb	Bombs	252.2	3026.4
+bombs	gameData/Weapons/BombGuns/su_fab500.blk	6		4x 250 kg FAB-250sv bomb; 2x 500 kg FAB-500sv (welded) bomb	Bombs	508.3	3049.8
+bombs	gameData/Weapons/BombGuns/jp_navy_mod25mark2_250kg.blk	12		12x 250 kg Navy Type Number 25 Model 2 bomb	Bombs	257	3084
+bombs	gameData/Weapons/BombGuns/il_250_50_kg_gp.blk	12		12x 250/50 kg G.P. bomb	Bombs	265.7	3188.4
+bombs	gameData/Weapons/BombGuns/jp_navy_mod80mark1_800kg.blk	4		4x 800 kg Number 80 Mod. 1 bomb	Bombs	805	3220
+bombs	gameData/Weapons/BombGuns/uk_500lb_mc_mk1_mk4_long_tail_bomb.blk	14		8x M.C. 250 lb Mk.I bomb; 6x M.C. 500 lb Mk.I bomb	Bombs	231.7	3243.8
+bombs	gameData/Weapons/BombGuns/it_100kg_t.blk	34		34x 100 kg GP 100T bomb	Bombs	100	3400
+bombs	gameData/Weapons/BombGuns/it_500kg_gp.blk	7		7x 500 kg GP 500 bomb	Bombs	508	3556
+bombs	gameData/Weapons/BombGuns/uk_8000lb_hc_mkI_n33_bomb.blk	1		8000 lb H.C. Mk.II bomb	Bombs	3787.04	3787.04
+bombs	gameData/Weapons/BombGuns/uk_8000lb_hc_mkI_n52_bomb.blk	1		8000 lb H.C. Mk.II bomb	Bombs	3787.04	3787.04
+bombs	gameData/Weapons/BombGuns/uk_500lbs_43.blk	18		2x G.P. 500 lb Mk.IV bomb; 8x RP-3 rockets; 8x RP-3 rockets	Bombs	213.1	3835.8
+bombs	gameData/Weapons/mines/us_mine_mk13_mod0.blk	8		8x 1000 lbs Type A Mark I aircraft laid magnetic mine	Bombs	494.4	3955.2
+bombs	gameData/Weapons/BombGuns/us_4000lb_anm56_box.blk	2		2x 4000 lb AN-M56 bomb	Bombs	1981.3	3962.6
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_gp_mk1.blk	8		2x 1000 lb G.P. Mk.I bomb; 6x G.P. 250 lb Mk.IV bomb	Bombs	495.7	3965.6
+bombs	gameData/Weapons/BombGuns/us_2000lbs_anm66.blk	4		4x 2000 lb AN-M66A2 bomb	Bombs	996.3	3985.2
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65a1.blk	8		8x 1000 lb AN-M65A1 bomb	Bombs	500.76	4006.08
+bombs	gameData/Weapons/BombGuns/su_fab500.blk	8		4x 250 kg FAB-250sv bomb; 4x 500 kg FAB-500sv (welded) bomb	Bombs	508.3	4066.4
+bombs	gameData/Weapons/BombGuns/su_fab100.blk	40		40x 100 kg FAB-100sv (forged) bomb	Bombs	103.5	4140
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1_mk2_bomb.blk	9		1000 lb M.C. Mk.II bomb; 2x M.C. 250 lb Mk.I bomb; 6x M.C. 500 lb Mk.I bomb	Bombs	463.1	4167.9
+bombs	gameData/Weapons/bombGuns/de_sc_ag300.blk	14		14x 300 kg SC AG bomb	Bombs	300	4200
+bombs	gameData/Weapons/BombGuns/su_brab_500_1938_ap.blk	8		4x 220 kg BRAB-220 (1930) armor-piercing bomb; 4x 500 kg BRAB-500 (1938) armor-piercing bomb	Bombs	531.3	4250.4
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1.blk	9		9x 1000 lb M.C. Mk.I bomb	Bombs	474.4	4269.6
+bombs	gameData/Weapons/BombGuns/su_fab1000.blk	4		4x 1000 kg FAB-1000 (welded) bomb	Bombs	1080	4320
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	20		20x 500 lb AN-M64A1 bomb	Bombs	242.6	4852
+bombs	gameData/Weapons/BombGuns/fr_200kg.blk	22		7x 100 kg No.1; 15x 200 kg No.1	Bombs	225	4950
+bombs	gameData/Weapons/BombGuns/de_sc250.blk	20		20x 250 kg SC250JA bomb	Bombs	250	5000
+bombs	gameData/Weapons/BombGuns/su_fab5000.blk	1		5000 kg bomb FAB-5000	Bombs	5080	5080
+bombs	gameData/Weapons/BombGuns/su_fab500.blk	10		9x 50 kg FAB-50sv (forged) bomb; 500 kg FAB-500sv (welded) bomb	Bombs	508.3	5083
+bombs	gameData/Weapons/BombGuns/su_fab_500m_46.blk	12		12x 500 kg FAB-500M-46 bomb	Bombs	428	5136
+bombs	gameData/Weapons/BombGuns/uk_500lb_he_mc_mk2.blk	25		25x 500 lb H.E. M.C. Mk.II bomb	Bombs	213.1	5327.5
+bombs	gameData/Weapons/BombGuns/cn_gp_250_2_incendiary.blk	40		40x 250-2 incendiary bomb	Bombs	135	5400
+bombs	gameData/Weapons/BombGuns/cn_gp_100_2.blk	40		40x 100 kg 100-2 bomb	Bombs	140	5600
+bombs	gameData/Weapons/BombGuns/cn_gp_500_2.blk	12		12x 500 kg 500-2 bomb	Bombs	473	5676
+bombs	gameData/Weapons/BombGuns/uk_12000lb_hc_mkI_n52_bomb.blk	1		12000 lb H.C Mk.I bomb	Bombs	5740.6	5740.6
+bombs	gameData/Weapons/BombGuns/uk_500lbs.blk	27		27x G.P. 500 lb Mk.IV bomb	Bombs	213.1	5753.7
+bombs	gameData/Weapons/BombGuns/us_1600lb_ap_an_mk1.blk	8		8x 1600 lb AN-Mk 1 armor-piercing bomb	Bombs	721.2	5769.6
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65a1.blk	12		2x 1000 lb AN-M65A1 bomb; 10x HVAR rockets	Bombs	500.76	6009.12
+bombs	gameData/Weapons/BombGuns/su_fab250.blk	24		24x 250 kg FAB-250sv bomb	Bombs	252.2	6052.8
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1_mk2_bomb.blk	14		14x 1000 lb M.C. Mk.II bomb	Bombs	463.1	6483.4
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65a1.blk	13		2x 1000 lb AN-M65A1 bomb; 500 lb AN-M64A1 bomb; 10x HVAR rockets	Bombs	500.76	6509.88
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1.blk	14		14x 1000 lb M.C. Mk.I bomb	Bombs	474.4	6641.6
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1.blk	15		15x 1000 lb M.C. Mk.I bomb	Bombs	474.4	7116
+bombs	gameData/Weapons/BombGuns/su_fab_1000m_44.blk	8		8x 1000 kg FAB-1000M-44 bomb	Bombs	890.69	7125.52
+bombs	gameData/Weapons/BombGuns/us_4000lb_anm56_box.blk	4		4x 4000 lb AN-M56 bomb	Bombs	1981.3	7925.2
+bombs	gameData/Weapons/BombGuns/us_2000lbs_anm66.blk	8		8x 2000 lb AN-M66A2 bomb	Bombs	996.3	7970.4
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_mc_mk1.blk	18		2x 1000 lb M.C. Mk.I bomb; 8x RP-3 rockets; 8x RP-3 rockets	Bombs	474.4	8539.2
+bombs	gameData/Weapons/BombGuns/su_fab_500m_46.blk	20		20x 500 kg FAB-500M-46 bomb	Bombs	428	8560
+bombs	gameData/Weapons/BombGuns/uk_1000lbs_gp.blk	18		2x 1000 lb H.E. M.C. Mk.13 bomb; 8x RP-3 rockets; 8x RP-3 rockets	Bombs	486	8748
+bombs	gameData/Weapons/BombGuns/us_1000lb_anm65a1.blk	18		18x 1000 lb AN-M65A1 bomb	Bombs	500.76	9013.68
+bombs	gameData/Weapons/BombGuns/cn_gp_250_2.blk	40		40x 250 kg 250-2 bomb	Bombs	236	9440
+bombs	gameData/Weapons/BombGuns/cn_gp_500_2.blk	20		20x 500 kg 500-2 bomb	Bombs	473	9460
+bombs	gameData/Weapons/BombGuns/us_500lb_anm64a1.blk	40		40x 500 lb AN-M64A1 bomb	Bombs	242.6	9704
+bombs	gameData/Weapons/BombGuns/su_fab_250m_46.blk	40		40x 250 kg FAB-250M-46 bomb	Bombs	252.2	10088
+bombs	gameData/Weapons/BombGuns/su_fab_1500m_46.blk	8		8x 1500 kg FAB-1500M-46 bomb	Bombs	1400	11200
+bombs	gameData/Weapons/BombGuns/cn_gp_3000_2.blk	4		4x 3000 kg 3000-2 bomb	Bombs	2840	11360
+bombs	gameData/Weapons/BombGuns/cn_gp_1500_2.blk	8		8x 1500 kg 1500-2 bomb	Bombs	1447	11576
+bombs	gameData/Weapons/BombGuns/su_fab_3000m_46.blk	4		4x 3000 kg FAB-3000M-46 bomb	Bombs	2983	11932
+bombs	gameData/Weapons/BombGuns/uk_mk2_cookie.blk	9		6x 1000 lb M.C. Mk.II bomb; 2x G.P. 250 lb Mk.IV bomb; 4000 lb H.C. Mk.II bomb	Bombs	1782.61	16043.49
+bombs	gameData/Weapons/BombGuns/uk_8000lb_hc_mkI_n33_bomb.blk	7		6x G.P. 500 lb Mk.IV bomb; 8000 lb H.C. Mk.II bomb	Bombs	3787.04	26509.28
+bombs	gameData/Weapons/BombGuns/fr_50kg_type_61c.blk	1010		10x 50 kg Type 61C; 4x 7.62 mm Browning machine gun	Bombs	45.8	46258
+bombs	gameData/Weapons/BombGuns/fr_an52.blk	1		AN-52 nuclear bomb	Nuclear Weapons	996.3	996.3
+bombs	gameData/Weapons/BombGuns/us_mk6.blk	1		Mark 6 nuclear bomb	Nuclear Weapons	996.3	996.3
+bombs	gameData/Weapons/BombGuns/us_mk7.blk	1		Mark 7 nuclear bomb	Nuclear Weapons	996.3	996.3
+bombs	gameData/Weapons/BombGuns/su_rds4.blk	1		RDS-4 nuclear bomb	Nuclear Weapons	2983	2983
+bombs	gameData/Weapons/containers/b_52h_bomb_nuclear_x1.blk	1243		20 mm M61A1 cannon; B28 thermonuclear bomb (1.45 Mt)	Nuclear Weapons	1053	1308879
+gunner0	gameData/Weapons/gunUB_turret.blk	600		3x 12.7 mm Berezin UBT machine gun	Other Weapons	0.044	0.044
+additional gun	gameData/Weapons/gunBrowning50_M3.blk	2032		4x 12.7 mm M3 Browning machine gun; 32x FFAR Mighty Mouse rockets	Other Weapons	29	29
+machine gun	gameData/Weapons/cannonMG15115.blk	400		2x 15 mm MG 151 cannon	Other Weapons	38.13	38.13
+additional gun	gameData/Weapons/cannonMG15115_underwing.blk	250		2x 15 mm MG 151 cannon (secondary)	Other Weapons	38.13	38.13
+machine gun	gameData/Weapons/cannonMG15120.blk	400		2x 20 mm MG 151 cannon	Other Weapons	42.4	42.4
+additional gun	gameData/Weapons/cannonMG15120.blk	160		2x 20 mm MG 151 cannon	Other Weapons	42.4	42.4
+cannon	gameData/Weapons/cannonAN_M3.blk	1942		2x 20 mm M3 cannon; 4x 7.62 mm Browning machine gun; 2x 12.7 mm M3 Browning machine gun; 40x FFAR Mighty Mouse rockets; 2x HVAR rockets	Other Weapons	56.8	56.8
+additional gun	gameData/Weapons/cannonMK108_underwing.blk	70		2x 30 mm MK 108 cannon (secondary)	Other Weapons	58	58
+cannon	gameData/Weapons/cannonADEN.blk	404		2x 30 mm ADEN cannon; 4x Firestreak air-to-air missiles	Other Weapons	87	87
+cannon	gameData/Weapons/cannonADEN.blk	800		4x 30 mm ADEN cannon	Other Weapons	87	87
+cannon	gameData/Weapons/cannonADEN.blk	802		4x 30 mm ADEN cannon; 2x Firestreak air-to-air missiles	Other Weapons	87	87
+cannon	gameData/Weapons/cannonADEN.blk	804		4x 30 mm ADEN cannon; 4x Firestreak air-to-air missiles	Other Weapons	87	87
+additional gun	gameData/Weapons/gunFN_M3P.blk	800		2x 12.7 mm FN M3P machine gun	Other Weapons	89	89
+additional gun	gameData/Weapons/gunFN_M3P.blk	300		2x 12.7 mm FN M3P machine gun	Other Weapons	89	89
+additional gun	gameData/Weapons/cannonMG15120_underwing.blk	270		2x 20 mm MG 151 cannon (secondary)	Other Weapons	100	100
+additional gun	gameData/Weapons/cannonMG15120_underwing.blk	500		4x 20 mm MG 151 cannon (secondary)	Other Weapons	100	100
+additional gun	gameData/Weapons/gunBrowning50_M2_underwing.blk	1360		4x 12.7 mm M2 Browning machine gun (secondary)	Other Weapons	102	102
+additional gun	gameData/Weapons/cannonHughesMk11Mod0.blk	401		20 mm Mk 11 cannon; AGM-12B Bullpup air-to-ground missiles	Other Weapons	109	109
+additional gun	gameData/Weapons/cannonMK103_underwing.blk	100		30 mm MK 103 cannon (secondary)	Other Weapons	150	150
+cannon	gameData/Weapons/cannonVickers_S_underwing.blk	32		2x 40 mm Vickers S cannon (secondary)	Other Weapons	161	161
+additional gun	gameData/Weapons/cannonBK37_underwing.blk	12		37 mm BK 3.7 cannon (secondary)	Other Weapons	295	295
+rockets	gameData/Weapons/rocketGuns/de_rz65_rocket.blk	8		8x RZ.65 rockets	Rockets	2.766	22.128
+rockets	gameData/Weapons/rocketGuns/jp_navy_rocket_type5_number1_13kg.blk	2		2x Type 5 No.1 Mod.9 rockets	Rockets	13	26
+rockets	gameData/Weapons/rocketGuns/su_ros_82.blk	6		6x ROS-82 rockets	Rockets	6.8	40.8
+rockets	gameData/Weapons/rocketGuns/su_ros_82.blk	8		8x ROS-82 rockets	Rockets	6.8	54.4
+rockets	gameData/Weapons/rocketGuns/su_ros_82op_event.blk	8		8x Su Ros 82Op Event	Rockets	6.8	54.4
+rockets	gameData/Weapons/rocketGuns/su_s_5m_rocket.blk	16		17x S-5M rockets	Rockets	3.86	61.76
+rockets	gameData/Weapons/rocketGuns/su_s_5kp_rocket.blk	16		17x S-5KP rockets	Rockets	5.01	80.16
+rockets	gameData/Weapons/rocketGuns/su_rbs82.blk	6		6x RBS-82 rockets	Rockets	15	90
+rockets	gameData/Weapons/rocketGuns/de_r4m_orkan_rocket.blk	24		24x R4M rockets	Rockets	3.85	92.4
+rockets	gameData/Weapons/rocketGuns/jp_navy_rocket_type3_number1_9kg.blk	10		10x Type 3 No.1 Mod.28 Mk.1 rockets	Rockets	10	100
+rockets	gameData/Weapons/rocketGuns/us_m8bazooka.blk	6		6x M8 rocket	Rockets	17.28	103.68
+rockets	gameData/Weapons/rocketGuns/su_rbs82.blk	8		8x RBS-82 rockets	Rockets	15	120
+rockets	gameData/Weapons/rocketGuns/jp_navy_rocket_type3_number6_66kg.blk	2		2x Type 3 No.6 Mod.27 Mk.1 rockets	Rockets	65.8	131.6
+rockets	gameData/Weapons/rocketGuns/jp_navy_rocket_type5_number6_84kg.blk	2		2x Type 5 No.6 Mod.9 rockets	Rockets	84	168
+rockets	gameData/Weapons/rocketGuns/de_r4m_orkan_rocket.blk	48		48x R4M rockets	Rockets	3.85	184.8
+rockets	gameData/Weapons/rocketGuns/su_s_5m_rocket.blk	48		49x S-5M rockets	Rockets	3.86	185.28
+rockets	gameData/Weapons/rocketGuns/fr_sneb_type23.blk	38		38x Type 23 SNEB rockets	Rockets	5.05	191.9
+rockets	gameData/weapons/rocketGuns/sws_oerlikon_oe82.blk	16		16x 8-cm Flz.-Rakete Oerlikon rockets	Rockets	12.84	205.44
+rockets	gameData/Weapons/rocketGuns/us_m8bazooka.blk	12		12x M8 rocket	Rockets	17.28	207.36
+rockets	gameData/Weapons/rocketGuns/uk_25lb_ap_mk1.blk	8		8x AP Mk I rockets	Rockets	27.26	218.08
+rockets	gameData/Weapons/rocketGuns/fr_matra_t_10_140b.blk	8		4x T10 140 rockets; 4x T10 140 rockets	Rockets	28	224
+rockets	gameData/Weapons/rocketGuns/fr_matra_t_10_151b.blk	8		4x T10 151 rockets; 4x T10 151 rockets	Rockets	28	224
+rockets	gameData/Weapons/rocketGuns/su_s_21_rocket.blk	2		2x S-21 rockets	Rockets	117.8	235.6
+rockets	gameData/Weapons/rocketGuns/su_s_5kp_rocket.blk	48		49x S-5KP rockets	Rockets	5.01	240.48
+rockets	gameData/Weapons/rocketGuns/uk_rp3.blk	6		6x RP-3 rockets	Rockets	43.1	258.6
+rockets	gameData/Weapons/rocketGuns/us_5_in_ar_mk1.blk	8		8x AR rockets	Rockets	37.6	300.8
+rockets	gameData/Weapons/rocketGuns/su_rofs132.blk	8		8x ROFS-132 rockets	Rockets	41.9	335.2
+rockets	gameData/Weapons/rocketGuns/swd_145mm_psrak_m49a_mount.blk	8		4x 14,5 cm psrak m/49B rockets; 4x 14,5 cm psrak m/49B rockets	Rockets	42	336
+rockets	gameData/Weapons/rocketGuns/uk_rp3_4b.blk	8		4x RP-3 rockets; 4x RP-3 rockets	Rockets	43.1	344.8
+rockets	gameData/Weapons/rocketGuns/uk_rp3_2.blk	8		4x RP-3 rockets; 4x RP-3 rockets	Rockets	43.1	344.8
+rockets	gameData/Weapons/rocketGuns/uk_rp3_3.blk	8		8x RP-3 rockets	Rockets	43.1	344.8
+rockets	gameData/Weapons/rocketGuns/uk_rp3.blk	8		8x RP-3 rockets	Rockets	43.1	344.8
+rockets	gameData/Weapons/rocketGuns/uk_rp3_4a.blk	8		8x RP-3 rockets	Rockets	43.1	344.8
+rockets	gameData/Weapons/rocketGuns/su_rbs132.blk	8		8x RBS-132 rockets	Rockets	51.6	412.8
+rockets	gameData/Weapons/rocketGuns/de_br20.blk	4		5x Wfr.Gr.21 rockets	Rockets	112	448
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar.blk	8		8x HVAR rockets	Rockets	62.8	502.4
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar_2.blk	8		8x HVAR rockets	Rockets	62.8	502.4
+rockets	gameData/Weapons/rocketGuns/uk_hvar.blk	8		8x HVAR rockets	Rockets	62.8	502.4
+rockets	gameData/Weapons/rocketGuns/swd_150mm_srak_m51_mount.blk	8		4x 15 cm srak m/51 rockets; 4x 15 cm srak m/51 rockets	Rockets	64	512
+rockets	gameData/Weapons/rocketGuns/uk_rp3_2.blk	12		6x RP-3 rockets; 6x RP-3 rockets	Rockets	43.1	517.2
+rockets	gameData/Weapons/rocketGuns/uk_hvar.blk	10		10x HVAR rockets	Rockets	62.8	628
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar.blk	10		10x HVAR rockets	Rockets	62.8	628
+rockets	gameData/Weapons/rocketGuns/uk_rp3.blk	16		16x RP-3 rockets	Rockets	43.1	689.6
+rockets	gameData/Weapons/rocketGuns/uk_rp3_4b.blk	16		8x RP-3 rockets; 8x RP-3 rockets	Rockets	43.1	689.6
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar_2.blk	12		12x HVAR rockets	Rockets	62.8	753.6
+rockets	gameData/Weapons/rocketGuns/su_c1of_rocket.blk	8		9x S-1of rockets	Rockets	102.4	819.2
+rockets	gameData/Weapons/rocketGuns/us_2_75_in_ffar_mighty_mouse_m439.blk	104		104x FFAR Mighty Mouse rockets M439	Rockets	8.12	844.48
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar_2.blk	14		14x HVAR rockets	Rockets	62.8	879.2
+rockets	gameData/Weapons/rocketGuns/us_2_75_in_ffar_mighty_mouse.blk	104		104x FFAR Mighty Mouse rockets	Rockets	8.981	934.037
+rockets	gameData/Weapons/rocketGuns/uk_rp3.blk	23		15x 1000 lb M.C. Mk.I bomb; 8x RP-3 rockets	Rockets	43.1	991.3
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar_b.blk	16		8x HVAR rockets; 8x HVAR rockets	Rockets	62.8	1004.8
+rockets	gameData/Weapons/rocketGuns/uk_rp3_4b.blk	24		12x RP-3 rockets; 12x RP-3 rockets	Rockets	43.1	1034.4
+rockets	gameData/weapons/rocketGuns/us_11_75_in_tiny_tim.blk	2		2x Tiny Tim rockets	Rockets	534.15	1068.3
+rockets	gameData/Weapons/rocketGuns/uk_rp3.blk	26		18x G.P. 250 lb Mk.IV bomb; 8x RP-3 rockets	Rockets	43.1	1120.6
+rockets	gameData/Weapons/rocketGuns/uk_rp3.blk	33		25x 500 lb H.E. M.C. Mk.II bomb; 8x RP-3 rockets	Rockets	43.1	1422.3
+rockets	gameData/Weapons/rocketGuns/uk_uncle_tom_a.blk	4		2x Uncle Tom rockets; 2x Uncle Tom rockets	Rockets	467.2	1868.8
+rockets	gameData/Weapons/rocketGuns/us_5_in_hvar_b.blk	120		104x FFAR Mighty Mouse rockets; 8x HVAR rockets; 8x HVAR rockets	Rockets	62.8	7536
+torpedoes	gameData/Weapons/torpedoes/test_torpedo.blk	2		2x Test Torpedo	Torpedoes	100	200
+torpedoes	gameData/Weapons/torpedoes/de_450_torpedo_f5b.blk	1		F5b torpedo	Torpedoes	752	752
+torpedoes	gameData/Weapons/torpedoes/uk_mk15_torpedo_no_stab.blk	1		18 inch Mark XV torpedo (1801 lbs)	Torpedoes	816	816
+torpedoes	gameData/Weapons/torpedoes/jp_type91mod2_torpedo.blk	1		Type 91 Model 2 torpedo (835 kg)	Torpedoes	835	835
+torpedoes	gameData/Weapons/torpedoes/jp_type91mod3_torpedo.blk	1		Type 91 Model 3 torpedo (850 kg)	Torpedoes	850	850
+torpedoes	gameData/Weapons/torpedoes/swd_m41_torpedo.blk	1		m/41 torpedo	Torpedoes	853	853
+torpedoes	gameData/Weapons/torpedoes/us_mk13_mod1.blk	1		Mk.13-1 torpedo (2216 lbs)	Torpedoes	884.05	884.05
+torpedoes	gameData/Weapons/torpedoes/it_f200_450_torpedo.blk	1		450 mm W 170/450/5.46 torpedo	Torpedoes	905	905
+torpedoes	gameData/weapons/torpedoes/su_45_54vt_1954_torpedo.blk	1		450 mm 45-54VT torpedo for high-altitude torpedo dropping	Torpedoes	950	950
+torpedoes	gameData/Weapons/torpedoes/uk_mk12_torpedo.blk	2		2x 18 inch Mark XII torpedo (1548 lbs)	Torpedoes	702	1404
+torpedoes	gameData/Weapons/torpedoes/jp_type91mod2_torpedo.blk	2		2x Type 91 Model 2 torpedo (835 kg)	Torpedoes	835	1670
+torpedoes	gameData/Weapons/torpedoes/jp_type91mod3_torpedo.blk	2		2x Type 91 Model 3 torpedo (850 kg)	Torpedoes	850	1700
+torpedoes	gameData/Weapons/torpedoes/it_f200_450_torpedo.blk	2		2x 450 mm W 170/450/5.46 torpedo	Torpedoes	905	1810
+torpedoes	gameData/Weapons/torpedoes/de_f5w_torpedo.blk	2		2x F5W torpedo	Torpedoes	905	1810
+torpedoes	gameData/Weapons/torpedoes/it_f200_450_torpedo.blk	3		3x 450 mm W 170/450/5.46 torpedo	Torpedoes	905	2715

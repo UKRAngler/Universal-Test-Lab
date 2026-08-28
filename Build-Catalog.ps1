@@ -285,6 +285,13 @@ function Get-WeaponMeta([string]$blk, [string]$trigger, [string]$icon, [int]$bul
   }
   $massMatch = [regex]::Match($text, '(?m)^\s*mass:r\s*=\s*([0-9.]+)')
   $mass = if ($massMatch.Success) { [double]::Parse($massMatch.Groups[1].Value, [Globalization.CultureInfo]::InvariantCulture) } else { 0.0 }
+  # For gun pods, mass:r is already the mass of the complete fitted pod. The
+  # bullets:i value is the ammunition count, so multiplying both values made a
+  # 100 kg pod with 250 rounds appear as a 25 tonne store.
+  $isCannon = $trigger -match '(?i)(?:gun|cannon)' -or
+    $text -match '(?m)^\s*cannon:b\s*=\s*true' -or
+    $text -match '(?m)^\s*iconType:t\s*=\s*"(?:machine_gun|multibarrel_)' -or
+    $text -match '(?m)^\s*weaponType:i\s*=\s*3'
   $category = Get-WeaponCategory $trigger $icon $name $text $blk
   if ($text -match '(?m)^\s*container:b\s*=\s*true') {
     $innerBlk = [regex]::Match($text, '(?m)^\s*blk:t\s*=\s*"([^"]+)"')
@@ -297,7 +304,8 @@ function Get-WeaponMeta([string]$blk, [string]$trigger, [string]$icon, [int]$bul
       $mass += $inner.TotalMass
     }
   }
-  $meta = [pscustomobject]@{ Name = $name; Category = $category; Mass = $mass; TotalMass = $mass * [Math]::Max(1, $bullets) }
+  $totalMass = if ($isCannon) { $mass } else { $mass * [Math]::Max(1, $bullets) }
+  $meta = [pscustomobject]@{ Name = $name; Category = $category; Mass = $mass; TotalMass = $totalMass }
   $weaponMetaCache[$cacheKey] = $meta
   return $meta
 }
@@ -402,10 +410,22 @@ if ((Test-Path -LiteralPath $v1Path) -and -not $playable.ContainsKey($v1Id)) {
   $playable[$v1Id] = [pscustomobject]@{ Display = 'V-1 (Fi 103)'; Text = $v1Text }
 }
 
+function Get-PresetWeaponSummary([string]$presetText, [string]$fallbackTrigger) {
+  $groups = [regex]::Matches($presetText, 'blk:t\s*=\s*"([^"]+)"') | ForEach-Object { $_.Groups[1].Value } | Group-Object
+  if (-not $groups -or $groups.Count -eq 0) { return 'no suspended armament' }
+  $parts = foreach ($group in ($groups | Sort-Object Name)) {
+    $meta = Get-WeaponMeta $group.Name $fallbackTrigger '' $group.Count
+    $label = Clean-Field $meta.Name
+    if ($group.Count -gt 1) { "$($group.Count)x $label" } else { $label }
+  }
+  return ($parts -join '; ')
+}
+
 foreach ($id in ($playable.Keys | Sort-Object)) {
   $display = $playable[$id].Display
   $text = $playable[$id].Text
-  foreach ($slotBlock in (Get-NamedBlocks $text 'WeaponSlot')) {
+  $weaponSlotBlocks = @(Get-NamedBlocks $text 'WeaponSlot')
+  foreach ($slotBlock in $weaponSlotBlocks) {
     $slotMatch = [regex]::Match($slotBlock.Text, 'index:i\s*=\s*(\d+)')
     if (-not $slotMatch.Success) { continue }
     $slot = $slotMatch.Groups[1].Value
@@ -453,7 +473,51 @@ foreach ($id in ($playable.Keys | Sort-Object)) {
         $weaponCatalogRows.Add("$($trigger.Groups[1].Value)`t$($blk.Groups[1].Value)`t$bullets`t$icon`t$label`t$($meta.Category)`t$mass`t$totalMass")
       }
     }
-    if ($anchorMount) { $aircraftSlotRows.Add("$id`t$slot`t$order`t$tier`t$maxload`t$anchorMount") }
+    if ($anchorMount) {
+      $aircraftSlotRows.Add("$id`t$slot`t$order`t$tier`t$maxload`t$anchorMount")
+    }
+  }
+
+  # Older aircraft keep complete loadouts in flat preset files and have no
+  # WeaponSlot tree. Expose each native preset as one selectable scheme on a
+  # virtual station. The mission then references that native preset by name.
+  if ($weaponSlotBlocks.Count -eq 0) {
+    $presetStylePairs = Get-PresetPairs $text 'gameData/FlightModels/weaponPresets/'
+    $stationAdded = $false
+    foreach ($pair in $presetStylePairs) {
+      $presetName = $pair.Groups[1].Value
+      $presetFileName = $pair.Groups[2].Value + '.blk'
+      $presetPath = Join-Path (Join-Path $FlightModelsRoot 'weaponpresets') $presetFileName
+      if (-not (Test-Path -LiteralPath $presetPath)) { continue }
+      $presetText = [IO.File]::ReadAllText($presetPath)
+      $weaponBlocks = Get-NamedBlocks $presetText 'Weapon'
+      if ($weaponBlocks.Count -eq 0) { continue }
+      $first = $weaponBlocks[0].Text
+      $trigger = [regex]::Match($first, 'trigger:t\s*=\s*"([^"]+)"')
+      $blk = [regex]::Match($first, 'blk:t\s*=\s*"([^"]+)"')
+      $emitter = [regex]::Match($first, 'emitter:t\s*=\s*"([^"]+)"')
+      if (-not $trigger.Success -or -not $blk.Success) { continue }
+      $totalBullets = 0
+      foreach ($weaponBlock in $weaponBlocks) {
+        $bulletCount = [regex]::Match($weaponBlock.Text, 'bullets:i\s*=\s*(\d+)')
+        $totalBullets += if ($bulletCount.Success) { [int]$bulletCount.Groups[1].Value } else { 1 }
+      }
+      $summary = Get-PresetWeaponSummary $presetText $trigger.Groups[1].Value
+      $meta = Get-WeaponMeta $blk.Groups[1].Value $trigger.Groups[1].Value '' $totalBullets
+      $mass = $meta.Mass.ToString('0.###', [Globalization.CultureInfo]::InvariantCulture)
+      $totalMass = $meta.TotalMass.ToString('0.###', [Globalization.CultureInfo]::InvariantCulture)
+      $emitterValue = if ($emitter.Success) { $emitter.Groups[1].Value } else { '' }
+      $donorRows.Add("$id`t$display`t0`t$presetName`t$($trigger.Groups[1].Value)`t$($blk.Groups[1].Value)`t$emitterValue`t$totalBullets`t`t$summary`t$($meta.Category)`t$mass`t$totalMass")
+      $catalogKey = "$($blk.Groups[1].Value)|$($trigger.Groups[1].Value)|$totalBullets"
+      if (-not $weaponCatalogSeen.ContainsKey($catalogKey)) {
+        $weaponCatalogSeen[$catalogKey] = $true
+        $weaponCatalogRows.Add("$($trigger.Groups[1].Value)`t$($blk.Groups[1].Value)`t$totalBullets`t`t$summary`t$($meta.Category)`t$mass`t$totalMass")
+      }
+      if (-not $stationAdded) {
+        $aircraftSlotRows.Add("$id`t0`t0`t0`t0`t$presetName")
+        $stationAdded = $true
+      }
+    }
   }
 }
 

@@ -1,5 +1,18 @@
 # Changelog
 
+## v0.12.0-beta.3 — 2026-08-28
+
+### Added
+
+- Added native whole-preset loadouts for older aircraft that do not use the modern pylon tree.
+
+### Fixed
+
+- Ground vehicles no longer fire two shells from one trigger pull.
+- Gun-pod mass is no longer multiplied by its ammunition count.
+- Large injected-weapon lists now use recycling virtualization and delayed search filtering.
+- GitHub Actions UI checks now adapt to the runner's actual virtual-screen size.
+
 ## v0.12.0-beta.2 — 2026-08-27
 
 ### Added

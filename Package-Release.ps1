@@ -1,4 +1,4 @@
-param([string]$Version = "v0.12.0-beta.2")
+param([string]$Version = "v0.12.0-beta.3")
 
 $ErrorActionPreference = "Stop"
 $projectRoot = Split-Path -Parent $MyInvocation.MyCommand.Path

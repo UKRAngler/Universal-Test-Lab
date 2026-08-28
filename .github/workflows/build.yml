@@ -14,7 +14,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Build and run self-tests
         shell: powershell
@@ -22,7 +22,7 @@ jobs:
 
       - name: Package beta
         shell: powershell
-        run: .\Package-Release.ps1 -Version v0.12.0-beta.2
+        run: .\Package-Release.ps1 -Version v0.12.0-beta.3
 
       - name: Upload beta artifact
         uses: actions/upload-artifact@v4
@@ -30,6 +30,6 @@ jobs:
           name: Universal-Test-Lab-beta-${{ github.sha }}
           path: |
             dist/UniversalTestLab.exe
-            dist/Universal_Test_Lab_v0.12.0-beta.2.zip
+            dist/Universal_Test_Lab_v0.12.0-beta.3.zip
             dist/SHA256SUMS.txt
           if-no-files-found: error
